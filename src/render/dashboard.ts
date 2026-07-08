@@ -32,9 +32,12 @@ function metricBadges(event: SurfacedEvent): string {
 }
 
 function detailCard(event: SurfacedEvent): string {
-  const link = event.sourceUrl
-    ? `<a href="${esc(event.sourceUrl)}" rel="noopener">source</a>`
-    : "";
+  // Feeds are untrusted: only link http(s) URLs — entity-escaping alone
+  // does not stop javascript: (and other scheme) injection into href.
+  const link =
+    event.sourceUrl && /^https?:\/\//i.test(event.sourceUrl)
+      ? `<a href="${esc(event.sourceUrl)}" rel="noopener">source</a>`
+      : "";
   return `
     <article class="card tier-${event.tier}">
       <header>
