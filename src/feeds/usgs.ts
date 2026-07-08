@@ -1,4 +1,4 @@
-import type { Event, PagerAlert } from "../types.js";
+import type { Event, FeedResult, PagerAlert } from "../types.js";
 
 /**
  * USGS real-time earthquake feed (feeds/usgs.md). GeoJSON FeatureCollection.
@@ -69,4 +69,27 @@ function parseFeature(feature: UsgsFeature | null): Event | undefined {
     },
     sourceUrl: typeof props.url === "string" ? props.url : undefined,
   };
+}
+
+const USGS_ALL_DAY_URL =
+  "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson";
+
+/**
+ * Thin HTTP adapter — the only networked USGS code. Never throws: any
+ * failure becomes a FeedResult the core turns into a degradation notice
+ * (ADR 0008). Not unit-tested (no network in tests); exercised by the run.
+ */
+export async function fetchUsgs(): Promise<FeedResult> {
+  try {
+    const res = await fetch(USGS_ALL_DAY_URL, {
+      headers: { "user-agent": "hadr-monitor (workshop build)" },
+      signal: AbortSignal.timeout(30_000),
+    });
+    if (!res.ok) {
+      return { feed: "USGS", status: "unavailable", error: `HTTP ${res.status}` };
+    }
+    return { feed: "USGS", status: "ok", rawPayload: await res.json() };
+  } catch (err) {
+    return { feed: "USGS", status: "unavailable", error: String(err) };
+  }
 }
