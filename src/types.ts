@@ -6,6 +6,9 @@ export type FeedName = "USGS" | "GDACS" | "ReliefWeb";
 
 export type PagerAlert = "green" | "yellow" | "orange" | "red";
 
+/** GDACS colour-coded alert level (GDACS only — never conflate with PagerAlert). */
+export type GdacsAlertLevel = "green" | "orange" | "red";
+
 /** One disaster occurrence as reported by one feed, normalised. */
 export interface Event {
   feed: FeedName;
@@ -21,7 +24,10 @@ export interface Event {
   metrics: {
     mag?: number;
     sig?: number;
+    /** USGS PAGER impact alert. */
     pagerAlert?: PagerAlert;
+    /** GDACS colour-coded alert level. */
+    alertLevel?: GdacsAlertLevel;
   };
   sourceUrl?: string;
 }
@@ -31,6 +37,12 @@ export interface SurfacedEvent extends Event {
   tier: Tier;
   /** LLM-written narrative; filled outside the pure core (ADR 0003). */
   assessment?: string;
+  /**
+   * Set when this event is a likely duplicate of an earlier, higher-priority
+   * surfaced event from another feed (ADR 0007). Flagged, never merged: both
+   * events remain in `surfaced`.
+   */
+  duplicateOf?: { feed: FeedName; feedEventId: string; title: string };
 }
 
 /** Raw result of one feed fetch — failures are data, not exceptions (ADR 0008). */

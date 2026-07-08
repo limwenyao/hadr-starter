@@ -1,5 +1,6 @@
 import { writeFileSync } from "node:fs";
 import { fetchUsgs } from "./feeds/usgs.js";
+import { fetchGdacs } from "./feeds/gdacs.js";
 import { buildSitrep } from "./core/buildSitrep.js";
 import { claudeCliWriter, fillAssessments } from "./assessment/writer.js";
 import { renderDashboard } from "./render/dashboard.js";
@@ -13,8 +14,10 @@ import { renderDashboard } from "./render/dashboard.js";
  * than crash unhandled — never fail silently (CLAUDE.md #4).
  */
 try {
-  const usgs = await fetchUsgs();
-  const model = buildSitrep([usgs], null, new Date());
+  // Feeds are independent — poll them concurrently; each returns a FeedResult
+  // (never throws), so one feed being down never sinks the others (ADR 0008).
+  const feedResults = await Promise.all([fetchUsgs(), fetchGdacs()]);
+  const model = buildSitrep(feedResults, null, new Date());
 
   console.log(
     `surfaced ${model.surfaced.length} event(s)` +

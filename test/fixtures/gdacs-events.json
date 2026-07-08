@@ -1,0 +1,78 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [141.845, 40.4353] },
+      "properties": {
+        "eventtype": "EQ",
+        "eventid": 1550421,
+        "episodeid": 1716583,
+        "name": "Earthquake in Japan",
+        "htmldescription": "Green M 4.6 Earthquake in Japan at: 06 Jul 2026 11:29:36.",
+        "alertlevel": "Green",
+        "alertscore": 1,
+        "country": "Japan",
+        "fromdate": "2026-07-06T11:29:36",
+        "todate": "2026-07-06T11:29:36",
+        "datemodified": "2026-07-06T12:09:48",
+        "iso3": "JPN",
+        "source": "NEIC",
+        "url": {
+          "report": "https://www.gdacs.org/report.aspx?eventid=1550421&episodeid=1716583&eventtype=EQ",
+          "details": "https://www.gdacs.org/gdacsapi/api/events/geteventdata?eventtype=EQ&eventid=1550421"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [125.0, 12.0] },
+      "properties": {
+        "eventtype": "TC",
+        "eventid": 1550500,
+        "episodeid": 1716600,
+        "name": "Tropical Cyclone MALA",
+        "alertlevel": "Orange",
+        "alertscore": 1.5,
+        "country": "Philippines",
+        "fromdate": "2026-07-06T00:00:00",
+        "url": {
+          "report": "https://www.gdacs.org/report.aspx?eventid=1550500&eventtype=TC"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-70.5, -30.2] },
+      "properties": {
+        "eventtype": "EQ",
+        "eventid": 1550600,
+        "episodeid": 1716700,
+        "name": "Earthquake in Chile",
+        "alertlevel": "Red",
+        "alertscore": 2.5,
+        "country": "Chile",
+        "fromdate": "2026-07-06T09:15:00",
+        "url": {
+          "report": "https://www.gdacs.org/report.aspx?eventid=1550600&eventtype=EQ"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [90.4, 23.7] },
+      "properties": {
+        "eventtype": "FL",
+        "eventid": 1550700,
+        "episodeid": 1716800,
+        "name": "Flood",
+        "alertlevel": "Orange",
+        "alertscore": 1.2,
+        "fromdate": "2026-07-05T00:00:00",
+        "url": {
+          "report": "https://www.gdacs.org/report.aspx?eventid=1550700&eventtype=FL"
+        }
+      }
+    }
+  ]
+}

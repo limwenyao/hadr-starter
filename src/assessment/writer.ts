@@ -17,15 +17,23 @@ export const FALLBACK_ASSESSMENT =
 /** Pure. One batched prompt for all surfaced events (keeps token use modest). */
 export function buildAssessmentPrompt(events: SurfacedEvent[]): string {
   const eventLines = events.map((e) =>
+    // JSON.stringify drops undefined-valued keys, so feed-specific metrics only
+    // appear when present (magnitude for USGS, alertLevel for GDACS).
     JSON.stringify({
       id: e.feedEventId,
+      feed: e.feed,
       tier: e.tier,
+      hazardType: e.hazardType,
       title: e.title,
       location: e.locationName,
       timeUtc: formatUtc(e.time),
       magnitude: e.metrics.mag,
       pagerAlert: e.metrics.pagerAlert,
+      alertLevel: e.metrics.alertLevel,
       sig: e.metrics.sig,
+      likelyDuplicateOf: e.duplicateOf
+        ? `${e.duplicateOf.feed} — ${e.duplicateOf.title}`
+        : undefined,
     }),
   );
 
