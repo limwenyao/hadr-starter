@@ -1,5 +1,11 @@
 import { describe, it, expect } from "vitest";
-import { renderDashboard } from "../src/render/dashboard.js";
+import {
+  renderDashboard,
+  MAPLIBRE_JS,
+  MAPLIBRE_CSS,
+  MAP_STYLE_URL,
+} from "../src/render/dashboard.js";
+import { buildViewModel } from "../src/render/viewModel.js";
 import type { SitrepModel, SurfacedEvent } from "../src/types.js";
 
 function surfaced(over: Partial<SurfacedEvent>): SurfacedEvent {
@@ -9,6 +15,7 @@ function surfaced(over: Partial<SurfacedEvent>): SurfacedEvent {
     hazardType: "EQ",
     title: "M 5.8 - test quake",
     locationName: "near Testville",
+    coordinates: { lon: 178.4, lat: -19.1, depthKm: 550 },
     time: Date.UTC(2026, 6, 8, 0, 15),
     metrics: { mag: 5.8 },
     tier: "HIGH",
@@ -26,209 +33,103 @@ function model(over: Partial<SitrepModel>): SitrepModel {
   };
 }
 
-describe("renderDashboard (priority view — ADR 0005, map is a later slice)", () => {
-  it("orders tier sections most-severe-first", () => {
-    const html = renderDashboard(
-      model({
-        surfaced: [
-          surfaced({ feedEventId: "c", tier: "CRITICAL", title: "crit quake" }),
-          surfaced({ feedEventId: "h", tier: "HIGH", title: "high quake" }),
-          surfaced({ feedEventId: "m", tier: "MODERATE", title: "mod quake" }),
-        ],
-      }),
-    );
-    const critical = html.indexOf("crit quake");
-    const high = html.indexOf("high quake");
-    const moderate = html.indexOf("mod quake");
-    expect(critical).toBeGreaterThan(-1);
-    expect(critical).toBeLessThan(high);
-    expect(high).toBeLessThan(moderate);
+/** Pull the embedded payload back out of the page. */
+function extractPayload(html: string): unknown {
+  const m = /<script id="sitrep-data" type="application\/json">([\s\S]*?)<\/script>/.exec(html);
+  expect(m).not.toBeNull();
+  return JSON.parse(m![1]);
+}
+
+describe("renderDashboard (map-first shell — ADR 0005)", () => {
+  it("embeds the view-model JSON, round-tripping exactly", () => {
+    const m = model({
+      surfaced: [
+        surfaced({ feedEventId: "c", tier: "CRITICAL", metrics: { mag: 7.2 } }),
+        surfaced({ feedEventId: "h" }),
+      ],
+      degradation: [{ feed: "ReliefWeb", reason: "HTTP 406" }],
+    });
+    // Direct equality with the view-model (no JSON pre-cycle on the expected
+    // side): a field dropped or renamed by the embed step must fail here.
+    expect(extractPayload(renderDashboard(m))).toEqual(buildViewModel(m));
   });
 
-  it("renders the detail card: feed, tier, location, metrics, assessment", () => {
+  it("keeps hostile feed text from breaking out of the script block", () => {
+    const hostile = '</script><script>alert(1)</script>';
     const html = renderDashboard(
-      model({
-        surfaced: [surfaced({ metrics: { mag: 5.8, pagerAlert: "yellow" } })],
-      }),
+      model({ surfaced: [surfaced({ title: hostile, locationName: hostile })] }),
     );
-    expect(html).toContain("USGS");
-    expect(html).toContain("HIGH");
-    expect(html).toContain("near Testville");
-    expect(html).toContain("M 5.8");
-    expect(html).toContain("PAGER yellow");
-    expect(html).toContain("A strong quake near Testville.");
+    // Exactly the three legitimate script opens: payload, maplibre CDN, client.
+    expect(html.match(/<script/g)).toHaveLength(3);
+    // The "<" characters are embedded in escaped form...
+    expect(html).toContain("\\u003c/script>");
+    // ...and the hostile string survives the round-trip intact for the client.
+    const vm = extractPayload(html) as { tiers: { events: { title: string }[] }[] };
+    expect(vm.tiers[0].events[0].title).toBe(hostile);
   });
 
-  it("shows the generated-at timestamp (UTC)", () => {
+  it("round-trips U+2028/U+2029 (JSON-valid, JS-literal-hostile) titles", () => {
+    // Pins that the embed is parsed as JSON (script type=application/json),
+    // not as a JS literal — where these separators would be syntax errors.
+    const tricky =
+      "line one" + String.fromCharCode(0x2028) + "line two" + String.fromCharCode(0x2029) + "end";
+    const html = renderDashboard(model({ surfaced: [surfaced({ title: tricky })] }));
+    const vm = extractPayload(html) as { tiers: { events: { title: string }[] }[] };
+    expect(vm.tiers[0].events[0].title).toBe(tricky);
+  });
+
+  it("never emits non-http(s) source URLs anywhere in the page", () => {
+    const html = renderDashboard(
+      model({ surfaced: [surfaced({ sourceUrl: "javascript:alert(1)" })] }),
+    );
+    expect(html).not.toContain("javascript:alert(1)");
+  });
+
+  it("pins the map library and dark style by exact URL", () => {
     const html = renderDashboard(model({}));
-    expect(html).toContain("2026-07-08T00:30:00.000Z");
+    expect(MAPLIBRE_JS).toMatch(/maplibre-gl@\d+\.\d+\.\d+\/dist\/maplibre-gl\.js$/);
+    expect(html).toContain(`src="${MAPLIBRE_JS}"`);
+    expect(html).toContain(`href="${MAPLIBRE_CSS}"`);
+    expect(MAP_STYLE_URL).toBe("https://tiles.openfreemap.org/styles/fiord");
+    // The client script hardcodes the style URL: pin it to the exported
+    // constant so the two sources of truth cannot drift silently.
+    expect(html).toContain(`"${MAP_STYLE_URL}"`);
   });
 
-  it("states explicitly when a feed was unavailable (ADR 0008)", () => {
-    const html = renderDashboard(
-      model({ degradation: [{ feed: "USGS", reason: "HTTP 503" }] }),
-    );
-    expect(html).toContain("USGS feed unavailable");
-    expect(html).toContain("HTTP 503");
+  it("positions the map only after the style load event (fitBounds-drop guard)", () => {
+    expect(renderDashboard(model({}))).toContain('map.on("load"');
   });
 
-  it("shows a quiet-morning message when nothing surfaced", () => {
+  it("builds tier subsections as collapsible details/summary, default open", () => {
     const html = renderDashboard(model({}));
-    expect(html).toContain("No surfaced events");
+    expect(html).toContain('el("details", "group")');
+    expect(html).toContain("section.open = true");
+    expect(html).toContain('el("summary", "group-title t-"');
   });
 
-  it("escapes feed-derived text (no HTML injection from feed data)", () => {
+  it("renders the shell: map, icon rail, events button, panel, fallback banner, noscript", () => {
+    const html = renderDashboard(model({}));
+    for (const id of ["map", "fallback-banner", "fallback-reason", "banner-close", "rail", "btn-events", "btn-status", "count-badge", "panel", "meta", "notices", "groups"]) {
+      expect(html).toContain(`id="${id}"`);
+    }
+    expect(html).toContain("<noscript>");
+    // Dismissible bottom banner, hidden until the client detects a map failure.
+    expect(html).toContain("Interactive map unavailable");
+    expect(html).toMatch(/<div id="fallback-banner" hidden/);
+  });
+
+  it("applies the dark-blue theme tokens", () => {
+    const html = renderDashboard(model({}));
+    expect(html).toContain("--bg: #0a1628");
+    expect(html).toContain("--accent: #38bdf8");
+    expect(html).toContain("--critical: #ef4444");
+  });
+
+  it("contains no feed-derived text outside the JSON payload", () => {
     const html = renderDashboard(
-      model({
-        surfaced: [
-          surfaced({
-            title: '<script>alert("x")</script>',
-            assessment: "safe & sound",
-          }),
-        ],
-      }),
+      model({ surfaced: [surfaced({ title: "UNIQUE-TITLE-MARKER" })] }),
     );
-    expect(html).not.toContain("<script>alert");
-    expect(html).toContain("&lt;script&gt;");
-    expect(html).toContain("safe &amp; sound");
-  });
-
-  it("escapes hostile locationName (feed place text is untrusted)", () => {
-    const html = renderDashboard(
-      model({
-        surfaced: [surfaced({ locationName: '<img src=x onerror="alert(1)">' })],
-      }),
-    );
-    expect(html).not.toContain("<img src=x");
-    expect(html).toContain("&lt;img src=x onerror=&quot;alert(1)&quot;&gt;");
-  });
-
-  it("escapes hostile degradation reason (error text is untrusted)", () => {
-    const html = renderDashboard(
-      model({
-        degradation: [{ feed: "USGS", reason: "<b>503</b> & timeout" }],
-      }),
-    );
-    expect(html).not.toContain("<b>503</b>");
-    expect(html).toContain("&lt;b&gt;503&lt;/b&gt; &amp; timeout");
-  });
-
-  it("renders an empty assessment paragraph when assessment is undefined", () => {
-    const html = renderDashboard(
-      model({ surfaced: [surfaced({ assessment: undefined })] }),
-    );
-    expect(html).not.toContain("undefined");
-    expect(html).toContain('<p class="assessment"></p>');
-  });
-
-  it("blocks non-http(s) sourceUrl schemes but links http(s) ones", () => {
-    const hostile = renderDashboard(
-      model({
-        surfaced: [surfaced({ sourceUrl: "javascript:alert(1)" })],
-      }),
-    );
-    expect(hostile).not.toContain("javascript:");
-
-    const safe = renderDashboard(
-      model({
-        surfaced: [
-          surfaced({ sourceUrl: "https://earthquake.usgs.gov/ev/id-x" }),
-        ],
-      }),
-    );
-    expect(safe).toContain('href="https://earthquake.usgs.gov/ev/id-x"');
-  });
-
-  it("omits empty tier sections", () => {
-    const html = renderDashboard(
-      model({ surfaced: [surfaced({ tier: "CRITICAL" })] }),
-    );
-    expect(html).not.toContain("MODERATE");
-  });
-
-  it("does not throw on an out-of-range event time and shows the fallback marker", () => {
-    let html = "";
-    expect(() => {
-      html = renderDashboard(model({ surfaced: [surfaced({ time: 8.7e15 })] }));
-    }).not.toThrow();
-    // Assert the degraded marker, not just non-throw: a regression that emitted
-    // "undefined"/"NaN" instead of throwing would otherwise slip through.
-    expect(html).toContain("time unavailable");
-  });
-
-  it("orders the tier-colour CSS most-severe-first regardless of surfaced order", () => {
-    const html = renderDashboard(
-      model({
-        surfaced: [
-          surfaced({ feedEventId: "m", tier: "MODERATE" }),
-          surfaced({ feedEventId: "c", tier: "CRITICAL" }),
-        ],
-      }),
-    );
-    // The generated `.tier-CRITICAL` rule must appear before `.tier-MODERATE`.
-    expect(html.indexOf(".tier-CRITICAL .tier")).toBeLessThan(
-      html.indexOf(".tier-MODERATE .tier"),
-    );
-  });
-
-  it("renders the GDACS alert level and hazard type as badges", () => {
-    const html = renderDashboard(
-      model({
-        surfaced: [
-          surfaced({
-            feed: "GDACS",
-            hazardType: "TC",
-            metrics: { alertLevel: "orange" },
-          }),
-        ],
-      }),
-    );
-    expect(html).toContain("GDACS");
-    expect(html).toContain("alert orange");
-    expect(html).toContain(">TC<"); // hazard badge for non-EQ
-  });
-
-  it("renders the duplicate-flag note when an event is flagged (escaped)", () => {
-    const html = renderDashboard(
-      model({
-        surfaced: [
-          surfaced({
-            feed: "GDACS",
-            duplicateOf: {
-              feed: "USGS",
-              feedEventId: "us-1",
-              title: "<b>USGS</b> quake",
-            },
-          }),
-        ],
-      }),
-    );
-    expect(html).toContain("Likely the same event as USGS");
-    expect(html).not.toContain("<b>USGS</b>");
-    expect(html).toContain("&lt;b&gt;USGS&lt;/b&gt; quake");
-  });
-
-  it("renders a ReliefWeb card (HIGH, source link, no metric badges)", () => {
-    const html = renderDashboard(
-      model({
-        surfaced: [
-          surfaced({
-            feed: "ReliefWeb",
-            hazardType: "EQ",
-            title: "Venezuela: Earthquakes - Jun 2026",
-            locationName: "Venezuela",
-            metrics: {},
-            coordinates: undefined,
-            sourceUrl: "https://reliefweb.int/disaster/eq-ven",
-            assessment: "Curated humanitarian disaster entry.",
-          }),
-        ],
-      }),
-    );
-    expect(html).toContain("ReliefWeb");
-    expect(html).toContain("HIGH"); // tier badge renders
-    expect(html).toContain("Venezuela: Earthquakes - Jun 2026");
-    expect(html).toContain('href="https://reliefweb.int/disaster/eq-ven"');
-    expect(html).not.toContain('<span class="metric">'); // no severity metrics
+    const occurrences = html.split("UNIQUE-TITLE-MARKER").length - 1;
+    expect(occurrences).toBe(1); // once, inside the payload only
   });
 });
