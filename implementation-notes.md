@@ -81,6 +81,24 @@ Kept by the agent, reviewed by you. One entry per working block.
   bundles `fetch`+`parse`; `reliefWebSource` is the single active binding (RSS now).
   The API implementation drops in by flipping that one line.
 
+- **2026-07-08 — Map dashboard pulls pinned CDN assets.** The dashboard is a single
+  static HTML file, but MapLibre GL JS/CSS (pinned 5.24.0, unpkg) and the OpenFreeMap
+  `fiord` style/tiles load from CDNs. A fully-offline page was never possible (map
+  tiles need network), and inlining ~800KB of library into every daily committed
+  dashboard.html would bloat git history. Keyless throughout — no API keys (ADR 0005).
+
+- **2026-07-08 — Dashboard client script is not unit-tested.** Tests run no browser
+  (CLAUDE.md), so the inlined client JS (`src/render/client.ts`) is exercised only by
+  the live run. Mitigation: all render logic (tier order, badges, sanitized URLs,
+  duplicate notes, formatted times) is precomputed in the unit-tested `buildViewModel`;
+  the client only builds DOM from the embedded JSON via textContent (never innerHTML
+  with feed text — XSS discipline moved from server-side entity-escaping to
+  script-block-safe JSON + textContent).
+
+- **2026-07-08 — Light list-only dashboard replaced.** The v1-slice light-themed
+  list page is superseded by the map-first dark-blue console (ADR 0005's spatial +
+  priority views in one page: full-screen map, icon rail, slide-out tier list).
+
 - **2026-07-08 — ReliefWeb does not participate in duplicate flagging.** RSS is
   country-level with no coordinates (ADR 0008), so the haversine heuristic never
   matches it (ADR 0007). GLIDE-based correlation is deferred (USGS/GDACS expose no

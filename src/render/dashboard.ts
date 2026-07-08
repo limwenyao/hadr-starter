@@ -1,110 +1,154 @@
-import type { SitrepModel, SurfacedEvent, Tier } from "../types.js";
-import { formatUtc } from "../time.js";
+import type { SitrepModel } from "../types.js";
+import { buildViewModel } from "./viewModel.js";
+import { CLIENT_SCRIPT } from "./client.js";
 
 /**
- * Priority view of the daily brief (ADR 0005): ranked tier sections,
- * colour-coded, detail card per surfaced event. Static HTML, no JS needed
- * yet — the interactive map/spatial view is a later slice (ADR 0010).
- * All feed-derived text is escaped: feeds are untrusted input.
+ * Map-first dashboard (ADR 0005): full-screen keyless MapLibre map, right icon
+ * rail, slide-out tier list, detail cards. Dark-blue tech theme. Pure string
+ * function — the page's data is the embedded view-model JSON; the inlined
+ * client script only builds DOM from it (all logic is in the tested view-model).
+ *
+ * The shell itself contains no feed-derived text: everything untrusted travels
+ * inside the JSON payload (script-block-safe, `<` escaped) and is rendered
+ * client-side via textContent.
  */
 
-const TIERS: readonly Tier[] = ["CRITICAL", "HIGH", "MODERATE"];
+export const MAPLIBRE_JS =
+  "https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js";
+export const MAPLIBRE_CSS =
+  "https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css";
+export const MAP_STYLE_URL = "https://tiles.openfreemap.org/styles/fiord";
 
-const TIER_META: Record<Tier, { emoji: string; colour: string }> = {
-  CRITICAL: { emoji: "\u{1F534}", colour: "#c0392b" },
-  HIGH: { emoji: "\u{1F7E0}", colour: "#e67e22" },
-  MODERATE: { emoji: "\u{1F7E1}", colour: "#b7950b" },
-};
+const THEME_CSS = `
+  :root {
+    --bg: #0a1628; --surface: #0f2137; --panel: rgba(13, 27, 48, 0.92);
+    --border: #1e3a5c; --text: #dbe7f3; --muted: #7d95b5; --accent: #38bdf8;
+    --critical: #ef4444; --high: #f59e0b; --moderate: #eab308;
+    --rail-w: 56px; --panel-w: 380px;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg); color: var(--text); overflow: hidden;
+  }
+  #map { position: absolute; inset: 0 var(--rail-w) 0 0; background: var(--bg); }
 
-function esc(text: string): string {
-  return text
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;");
-}
+  /* --- map fallback (no WebGL / library failed) --- */
+  #map-fallback {
+    position: absolute; inset: 0 var(--rail-w) 0 0; display: flex;
+    align-items: center; justify-content: center; text-align: center; padding: 2rem;
+  }
+  #map-fallback .box {
+    max-width: 26rem; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 1.25rem 1.5rem; color: var(--muted);
+  }
+  #map-fallback h2 { color: var(--text); margin: 0 0 0.5rem; font-size: 1rem; }
 
-function metricBadges(event: SurfacedEvent): string {
-  const badges: string[] = [];
-  // Show the hazard type for non-earthquake hazards (GDACS is multi-hazard).
-  if (event.hazardType && event.hazardType !== "EQ") badges.push(event.hazardType);
-  if (event.metrics.mag !== undefined) badges.push(`M ${event.metrics.mag}`);
-  if (event.metrics.pagerAlert) badges.push(`PAGER ${event.metrics.pagerAlert}`);
-  if (event.metrics.alertLevel) badges.push(`alert ${event.metrics.alertLevel}`);
-  if (event.metrics.sig !== undefined) badges.push(`sig ${event.metrics.sig}`);
-  return badges.map((b) => `<span class="metric">${esc(b)}</span>`).join(" ");
-}
+  /* --- icon rail --- */
+  #rail {
+    position: absolute; top: 0; right: 0; bottom: 0; width: var(--rail-w);
+    background: var(--surface); border-left: 1px solid var(--border);
+    display: flex; flex-direction: column; align-items: center;
+    padding: 0.75rem 0; gap: 0.75rem; z-index: 30;
+  }
+  #rail .mark {
+    width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center;
+    justify-content: center; font-weight: 800; font-size: 0.7rem; letter-spacing: 0.03em;
+    color: #06121f; background: var(--accent); user-select: none;
+  }
+  #rail button {
+    position: relative; width: 38px; height: 38px; border-radius: 9px;
+    border: 1px solid var(--border); background: transparent; color: var(--muted);
+    font-size: 1.05rem; cursor: pointer; transition: color .15s, border-color .15s;
+  }
+  #rail button:hover { color: var(--text); border-color: var(--accent); }
+  #rail #btn-status { color: var(--high); }
+  #count-badge {
+    position: absolute; top: -6px; right: -6px; min-width: 18px; height: 18px;
+    border-radius: 9px; background: var(--accent); color: #06121f;
+    font-size: 0.68rem; font-weight: 700; line-height: 18px; padding: 0 4px;
+  }
 
-/** Duplicate-flag note (ADR 0007): labelled, both events still shown. */
-function duplicateNote(event: SurfacedEvent): string {
-  if (!event.duplicateOf) return "";
-  const { feed, title } = event.duplicateOf;
-  return `<p class="dup">⚠ Likely the same event as ${esc(feed)} — ${esc(title)}</p>`;
-}
+  /* --- slide-out event list panel --- */
+  #panel {
+    position: absolute; top: 0; right: var(--rail-w); bottom: 0; width: var(--panel-w);
+    max-width: calc(100vw - var(--rail-w)); background: var(--panel);
+    backdrop-filter: blur(6px); border-left: 1px solid var(--border);
+    transform: translateX(110%); transition: transform 0.22s ease; z-index: 20;
+    display: flex; flex-direction: column;
+  }
+  body.panel-open #panel { transform: translateX(0); }
+  #panel header { padding: 1rem 1.25rem 0.5rem; border-bottom: 1px solid var(--border); }
+  #panel h1 { margin: 0; font-size: 1rem; letter-spacing: 0.04em; }
+  #panel h1 span { color: var(--accent); }
+  #meta { margin: 0.3rem 0 0.75rem; color: var(--muted); font-size: 0.78rem; }
+  #notices { padding: 0 1.25rem; }
+  #notices .notice {
+    background: rgba(245, 158, 11, 0.12); border: 1px solid var(--high);
+    border-radius: 8px; padding: 0.5rem 0.75rem; margin: 0.75rem 0 0;
+    font-size: 0.8rem; color: var(--text);
+  }
+  #groups { overflow-y: auto; padding: 0.5rem 1.25rem 1.5rem; flex: 1; }
+  .group-title {
+    font-size: 0.78rem; letter-spacing: 0.08em; margin: 1.1rem 0 0.4rem;
+    padding-bottom: 0.3rem; border-bottom: 1px solid var(--border);
+  }
+  .quiet { color: var(--muted); font-style: italic; padding: 1rem 0; }
+  .row {
+    padding: 0.6rem 0.6rem; border-radius: 8px; border: 1px solid transparent;
+    cursor: pointer; margin: 0.25rem 0;
+  }
+  .row:hover { background: var(--surface); border-color: var(--border); }
+  .row.no-coords { cursor: default; }
+  .row-title { font-size: 0.86rem; font-weight: 600; margin-top: 0.3rem; }
+  .row-meta { color: var(--muted); font-size: 0.74rem; margin-top: 0.15rem; }
 
-function detailCard(event: SurfacedEvent): string {
-  // Feeds are untrusted: only link http(s) URLs — entity-escaping alone
-  // does not stop javascript: (and other scheme) injection into href.
-  const link =
-    event.sourceUrl && /^https?:\/\//i.test(event.sourceUrl)
-      ? `<a href="${esc(event.sourceUrl)}" rel="noopener">source</a>`
-      : "";
-  return `
-    <article class="card tier-${event.tier}">
-      <header>
-        <span class="feed">${esc(event.feed)}</span>
-        <span class="tier">${esc(event.tier)}</span>
-        <strong>${esc(event.title)}</strong>
-      </header>
-      <p class="meta">
-        ${esc(event.locationName)} ·
-        ${esc(formatUtc(event.time))} ·
-        ${metricBadges(event)} ${link}
-      </p>
-      ${duplicateNote(event)}
-      <p class="assessment">${esc(event.assessment ?? "")}</p>
-    </article>`;
-}
+  /* --- chips, badges, tier colours --- */
+  .chips { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+  .chip {
+    font-size: 0.62rem; font-weight: 700; letter-spacing: 0.06em;
+    padding: 0.12rem 0.4rem; border-radius: 4px; background: var(--border);
+    color: var(--text);
+  }
+  .chip.tier.t-CRITICAL, .group-title.t-CRITICAL { color: var(--critical); }
+  .chip.tier.t-HIGH, .group-title.t-HIGH { color: var(--high); }
+  .chip.tier.t-MODERATE, .group-title.t-MODERATE { color: var(--moderate); }
+  .chip.tier { background: rgba(255, 255, 255, 0.06); }
+  .chip.listonly { color: var(--muted); }
+  .badge {
+    display: inline-block; font-size: 0.7rem; background: var(--border);
+    border-radius: 4px; padding: 0.05rem 0.35rem; margin-right: 0.3rem;
+  }
 
-function tierSection(tier: Tier, events: SurfacedEvent[]): string {
-  if (events.length === 0) return "";
-  const { emoji, colour } = TIER_META[tier];
-  return `
-  <section class="tier-section" style="border-left: 6px solid ${colour}">
-    <h2>${emoji} ${tier} (${events.length})</h2>
-    ${events.map(detailCard).join("\n")}
-  </section>`;
-}
+  /* --- map markers --- */
+  .mk {
+    width: 15px; height: 15px; border-radius: 50%; padding: 0; cursor: pointer;
+    background: var(--mk, var(--accent)); border: 2px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 10px 3px var(--mk, var(--accent));
+  }
 
-function degradationNotices(model: SitrepModel): string {
-  if (model.degradation.length === 0) return "";
-  const items = model.degradation
-    .map(
-      (d) =>
-        `<li><strong>${esc(d.feed)} feed unavailable</strong> this run — ${esc(d.reason)}. Events from this feed are missing below.</li>`,
-    )
-    .join("\n");
-  return `<aside class="degradation"><ul>${items}</ul></aside>`;
-}
+  /* --- detail card inside the maplibre popup --- */
+  .maplibregl-popup-content {
+    background: var(--surface); color: var(--text); border: 1px solid var(--border);
+    border-radius: 10px; padding: 0.9rem 1rem; box-shadow: 0 8px 30px rgba(0,0,0,.45);
+    font-family: inherit;
+  }
+  .maplibregl-popup-tip { border-top-color: var(--surface) !important; }
+  .maplibregl-popup-close-button { color: var(--muted); font-size: 1.1rem; right: 4px; }
+  .card { max-width: 320px; }
+  .card-title { margin: 0.45rem 0 0.2rem; font-size: 0.92rem; }
+  .card-meta { color: var(--muted); font-size: 0.75rem; margin: 0 0 0.4rem; }
+  .card .dup { color: var(--moderate); font-size: 0.76rem; font-style: italic; margin: 0.4rem 0 0; }
+  .card .assessment { font-size: 0.82rem; margin: 0.45rem 0 0; line-height: 1.45; }
+  .card .src { margin: 0.45rem 0 0; }
+  .card a { color: var(--accent); }
+`;
 
 export function renderDashboard(model: SitrepModel): string {
-  const activeTiers = new Set(model.surfaced.map((e) => e.tier));
-
-  // Emit in severity order (the TIERS constant), not surfaced order — the CSS
-  // reads top-down regardless of how events happen to be sorted.
-  const tierCss = TIERS.filter((tier) => activeTiers.has(tier))
-    .map(
-      (tier) =>
-        `.tier-${tier} .tier { background: ${TIER_META[tier].colour}; color: #fff; }`,
-    )
-    .join("\n  ");
-
-  const body =
-    model.surfaced.length === 0
-      ? `<p class="quiet">No surfaced events this run — a quiet morning.</p>`
-      : TIERS.map((tier) =>
-          tierSection(tier, model.surfaced.filter((e) => e.tier === tier)),
-        ).join("\n");
+  // Escape every "<" in the JSON (to the \\u003c sequence) so feed text can
+  // never close the script block (e.g. a hostile "</script>" in a title).
+  const payload = JSON.stringify(buildViewModel(model)).replace(/</g, "\\u003c");
 
   return `<!doctype html>
 <html lang="en">
@@ -112,28 +156,40 @@ export function renderDashboard(model: SitrepModel): string {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HADR Monitor — Situation Report</title>
-<style>
-  body { font-family: system-ui, sans-serif; max-width: 60rem; margin: 2rem auto; padding: 0 1rem; color: #1c2833; }
-  h1 { margin-bottom: 0.25rem; }
-  .generated { color: #566573; margin-top: 0; }
-  .degradation { background: #fdecea; border: 1px solid #c0392b; border-radius: 6px; padding: 0.5rem 1rem; margin: 1rem 0; }
-  .tier-section { margin: 1.5rem 0; padding: 0.25rem 1rem; background: #fbfcfc; border-radius: 4px; }
-  .card { border-bottom: 1px solid #e5e8e8; padding: 0.75rem 0; }
-  .card:last-child { border-bottom: none; }
-  .feed, .tier { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; padding: 0.1rem 0.4rem; border-radius: 3px; background: #eaecee; margin-right: 0.5rem; }
-  ${tierCss}
-  .meta { color: #566573; font-size: 0.9rem; }
-  .metric { background: #eaecee; border-radius: 3px; padding: 0 0.3rem; }
-  .dup { margin: 0.25rem 0 0; color: #7d6608; font-size: 0.85rem; font-style: italic; }
-  .assessment { margin: 0.25rem 0 0; }
-  .quiet { color: #566573; font-style: italic; }
-</style>
+<link rel="stylesheet" href="${MAPLIBRE_CSS}">
+<style>${THEME_CSS}</style>
 </head>
-<body>
-<h1>HADR Monitor — Situation Report</h1>
-<p class="generated">Generated ${esc(formatUtc(model.generatedAt))} · feeds: USGS, GDACS, ReliefWeb</p>
-${degradationNotices(model)}
-${body}
+<body class="panel-open">
+<div id="map"></div>
+<div id="map-fallback" hidden>
+  <div class="box">
+    <h2>Map unavailable</h2>
+    <p>The interactive map could not be loaded. All surfaced events remain
+    available in the events panel.</p>
+    <p id="fallback-detail"></p>
+  </div>
+</div>
+<nav id="rail" aria-label="Dashboard controls">
+  <div class="mark" title="HADR Monitor">HM</div>
+  <button id="btn-events" title="Toggle event list" aria-label="Toggle event list">▤<span id="count-badge"></span></button>
+  <button id="btn-status" hidden title="Feed status notices" aria-label="Feed status notices">⚠</button>
+</nav>
+<aside id="panel" aria-label="Surfaced events">
+  <header>
+    <h1>HADR <span>MONITOR</span> — Situation Report</h1>
+    <p id="meta"></p>
+  </header>
+  <div id="notices"></div>
+  <div id="groups"></div>
+</aside>
+<noscript>
+  <p style="position:absolute;z-index:99;background:#0f2137;color:#dbe7f3;padding:1rem;margin:1rem;border-radius:8px;">
+    This brief needs JavaScript for the interactive map and event list.
+  </p>
+</noscript>
+<script id="sitrep-data" type="application/json">${payload}</script>
+<script src="${MAPLIBRE_JS}"></script>
+<script>${CLIENT_SCRIPT}</script>
 </body>
 </html>`;
 }
