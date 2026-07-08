@@ -1,4 +1,5 @@
 import type { Event, FeedResult, PagerAlert } from "../types.js";
+import { isValidEventTime } from "../time.js";
 
 /**
  * USGS real-time earthquake feed (feeds/usgs.md). GeoJSON FeatureCollection.
@@ -38,7 +39,9 @@ export function parseUsgs(rawPayload: unknown): Event[] {
 function parseFeature(feature: UsgsFeature | null): Event | undefined {
   const props = feature?.properties;
   if (!feature || typeof feature.id !== "string" || !props) return undefined;
-  if (typeof props.time !== "number") return undefined;
+  // A usable timestamp is mandatory: reject NaN/Infinity and out-of-Date-range
+  // values so a malformed time can never crash a downstream formatter.
+  if (typeof props.time !== "number" || !isValidEventTime(props.time)) return undefined;
 
   const place = typeof props.place === "string" ? props.place : "location unknown";
   const coords = Array.isArray(feature.geometry?.coordinates)

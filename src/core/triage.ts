@@ -29,7 +29,12 @@ export function passesNoiseFloor(event: Event): boolean {
   return false;
 }
 
-/** Priority tier (ADR 0004). Call only on events that passed the noise floor. */
+/**
+ * Priority tier (ADR 0004). Precondition: the event has passed `passesNoiseFloor`.
+ * Not enforced at runtime — a sub-floor event would just be assigned the MODERATE tier, and
+ * throwing here would violate the core's no-crash contract (CLAUDE.md #4). The sole
+ * caller (`buildSitrep`) filters through the noise floor immediately before this.
+ */
 export function tierFor(event: Event): Tier {
   const mag = event.metrics.mag ?? Number.NEGATIVE_INFINITY;
   if (isPagerCritical(event) || mag >= USGS_CRITICAL_MAG) return "CRITICAL";

@@ -51,4 +51,38 @@ describe("parseUsgs", () => {
     expect(parseUsgs(null)).toEqual([]);
     expect(parseUsgs("not json-shaped")).toEqual([]);
   });
+
+  const feature = (props: Record<string, unknown>, over: Record<string, unknown> = {}) => ({
+    id: "us-test",
+    properties: { time: 1783300000000, ...props },
+    geometry: { coordinates: [1, 2, 3] },
+    ...over,
+  });
+
+  it("skips a feature whose time is not a number", () => {
+    expect(parseUsgs({ features: [feature({ time: "2026-01-01" })] })).toEqual([]);
+    expect(parseUsgs({ features: [feature({ time: null })] })).toEqual([]);
+  });
+
+  it("skips a feature whose time is NaN or out of the valid Date range", () => {
+    expect(parseUsgs({ features: [feature({ time: NaN })] })).toEqual([]);
+    expect(parseUsgs({ features: [feature({ time: 8.7e15 })] })).toEqual([]);
+  });
+
+  it("keeps a feature with missing/invalid geometry (coordinates undefined)", () => {
+    const noGeom = parseUsgs({ features: [feature({}, { geometry: null })] });
+    expect(noGeom).toHaveLength(1);
+    expect(noGeom[0].coordinates).toBeUndefined();
+
+    const badCoords = parseUsgs({
+      features: [feature({}, { geometry: { coordinates: "nope" } })],
+    });
+    expect(badCoords[0].coordinates).toBeUndefined();
+  });
+
+  it("skips primitive (non-object) features entries instead of throwing", () => {
+    const events = parseUsgs({ features: [42, "quake", true, feature({})] });
+    expect(events).toHaveLength(1);
+    expect(events[0].feedEventId).toBe("us-test");
+  });
 });
