@@ -4,6 +4,13 @@ Kept by the agent, reviewed by you. One entry per working block.
 
 ## Decisions
 
+- **2026-07-08 — PAGER-critical events bypass the magnitude noise floor.**
+  ADR 0004 literally reads "noise floor: USGS M ≥ 4.5" and separately "CRITICAL:
+  PAGER orange/red". A PAGER-red M4.2 quake would satisfy the tier rule but fail
+  the floor. Resolved in favour of the cardinal rule (never miss a major event):
+  `passesNoiseFloor` surfaces any USGS event with PAGER orange/red regardless of
+  magnitude. Green/yellow PAGER does not bypass the floor.
+
 ## Open questions
 
 ## Deviations
