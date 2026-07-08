@@ -133,8 +133,11 @@ export const CLIENT_SCRIPT = String.raw`
     openPanel();
   }
   vm.tiers.forEach(function (group) {
-    var section = el("section", "group");
-    var h = el("h2", "group-title t-" + group.tier, group.tier + " (" + group.count + ")");
+    // Native details/summary: each tier subsection toggles open/closed with
+    // keyboard support for free. Default expanded.
+    var section = el("details", "group");
+    section.open = true;
+    var h = el("summary", "group-title t-" + group.tier, group.tier + " (" + group.count + ")");
     section.appendChild(h);
     group.events.forEach(function (ev) {
       var row = el("div", "row" + (ev.coordinates ? "" : " no-coords"));

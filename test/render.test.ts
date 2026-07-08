@@ -100,6 +100,13 @@ describe("renderDashboard (map-first shell — ADR 0005)", () => {
     expect(renderDashboard(model({}))).toContain('map.on("load"');
   });
 
+  it("builds tier subsections as collapsible details/summary, default open", () => {
+    const html = renderDashboard(model({}));
+    expect(html).toContain('el("details", "group")');
+    expect(html).toContain("section.open = true");
+    expect(html).toContain('el("summary", "group-title t-"');
+  });
+
   it("renders the shell: map, icon rail, events button, panel, fallback banner, noscript", () => {
     const html = renderDashboard(model({}));
     for (const id of ["map", "fallback-banner", "fallback-reason", "banner-close", "rail", "btn-events", "btn-status", "count-badge", "panel", "meta", "notices", "groups"]) {

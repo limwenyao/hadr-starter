@@ -98,7 +98,10 @@ const THEME_CSS = `
   .group-title {
     font-size: 0.78rem; letter-spacing: 0.08em; margin: 1.1rem 0 0.4rem;
     padding-bottom: 0.3rem; border-bottom: 1px solid var(--border);
+    cursor: pointer; user-select: none;
   }
+  .group-title::marker { color: var(--muted); }
+  .group-title:hover { border-bottom-color: var(--accent); }
   .quiet { color: var(--muted); font-style: italic; padding: 1rem 0; }
   .row {
     padding: 0.6rem 0.6rem; border-radius: 8px; border: 1px solid transparent;
