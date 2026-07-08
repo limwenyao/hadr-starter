@@ -93,6 +93,24 @@ describe("renderDashboard (priority view — ADR 0005, map is a later slice)", (
     expect(html).toContain("safe &amp; sound");
   });
 
+  it("blocks non-http(s) sourceUrl schemes but links http(s) ones", () => {
+    const hostile = renderDashboard(
+      model({
+        surfaced: [surfaced({ sourceUrl: "javascript:alert(1)" })],
+      }),
+    );
+    expect(hostile).not.toContain("javascript:");
+
+    const safe = renderDashboard(
+      model({
+        surfaced: [
+          surfaced({ sourceUrl: "https://earthquake.usgs.gov/ev/id-x" }),
+        ],
+      }),
+    );
+    expect(safe).toContain('href="https://earthquake.usgs.gov/ev/id-x"');
+  });
+
   it("omits empty tier sections", () => {
     const html = renderDashboard(
       model({ surfaced: [surfaced({ tier: "CRITICAL" })] }),
