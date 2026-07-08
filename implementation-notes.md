@@ -11,6 +11,11 @@ Kept by the agent, reviewed by you. One entry per working block.
   `passesNoiseFloor` surfaces any USGS event with PAGER orange/red regardless of
   magnitude. Green/yellow PAGER does not bypass the floor.
 
+- **2026-07-08 — v1 slice complete: first manual run.** `npm run sitrep`
+  fetched live USGS data, filtered/tiered deterministically, wrote assessments
+  via `claude -p`, and rendered `dashboard.html` (priority view only; map,
+  other feeds, snapshots, and scheduling are later slices per ADR 0010).
+
 ## Open questions
 
 ## Deviations
