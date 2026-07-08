@@ -34,16 +34,21 @@ const THEME_CSS = `
   }
   #map { position: absolute; inset: 0 var(--rail-w) 0 0; background: var(--bg); }
 
-  /* --- map fallback (no WebGL / library failed) --- */
-  #map-fallback {
-    position: absolute; inset: 0 var(--rail-w) 0 0; display: flex;
-    align-items: center; justify-content: center; text-align: center; padding: 2rem;
+  /* --- map fallback banner (no WebGL / library failed) — dismissible --- */
+  #fallback-banner {
+    position: absolute; left: 1rem; right: calc(var(--rail-w) + 1rem); bottom: 1rem;
+    z-index: 40; display: flex; align-items: center; gap: 0.6rem;
+    background: var(--surface); border: 1px solid var(--high); border-radius: 10px;
+    padding: 0.6rem 0.9rem; font-size: 0.82rem; color: var(--text);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
   }
-  #map-fallback .box {
-    max-width: 26rem; background: var(--surface); border: 1px solid var(--border);
-    border-radius: 10px; padding: 1.25rem 1.5rem; color: var(--muted);
+  #fallback-banner[hidden] { display: none; }
+  #fallback-reason { color: var(--muted); font-size: 0.74rem; }
+  #banner-close {
+    margin-left: auto; background: transparent; border: none; color: var(--muted);
+    font-size: 1.1rem; cursor: pointer; line-height: 1; padding: 0 0.2rem;
   }
-  #map-fallback h2 { color: var(--text); margin: 0 0 0.5rem; font-size: 1rem; }
+  #banner-close:hover { color: var(--text); }
 
   /* --- icon rail --- */
   #rail {
@@ -161,13 +166,10 @@ export function renderDashboard(model: SitrepModel): string {
 </head>
 <body class="panel-open">
 <div id="map"></div>
-<div id="map-fallback" hidden>
-  <div class="box">
-    <h2>Map unavailable</h2>
-    <p>The interactive map could not be loaded. All surfaced events remain
-    available in the events panel.</p>
-    <p id="fallback-detail"></p>
-  </div>
+<div id="fallback-banner" hidden role="status">
+  <span>⚠ Interactive map unavailable — all surfaced events remain available in the events panel.</span>
+  <span id="fallback-reason"></span>
+  <button id="banner-close" aria-label="Dismiss map warning" title="Dismiss">✕</button>
 </div>
 <nav id="rail" aria-label="Dashboard controls">
   <div class="mark" title="HADR Monitor">HM</div>

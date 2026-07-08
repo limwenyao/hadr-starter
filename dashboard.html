@@ -20,16 +20,21 @@
   }
   #map { position: absolute; inset: 0 var(--rail-w) 0 0; background: var(--bg); }
 
-  /* --- map fallback (no WebGL / library failed) --- */
-  #map-fallback {
-    position: absolute; inset: 0 var(--rail-w) 0 0; display: flex;
-    align-items: center; justify-content: center; text-align: center; padding: 2rem;
+  /* --- map fallback banner (no WebGL / library failed) — dismissible --- */
+  #fallback-banner {
+    position: absolute; left: 1rem; right: calc(var(--rail-w) + 1rem); bottom: 1rem;
+    z-index: 40; display: flex; align-items: center; gap: 0.6rem;
+    background: var(--surface); border: 1px solid var(--high); border-radius: 10px;
+    padding: 0.6rem 0.9rem; font-size: 0.82rem; color: var(--text);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
   }
-  #map-fallback .box {
-    max-width: 26rem; background: var(--surface); border: 1px solid var(--border);
-    border-radius: 10px; padding: 1.25rem 1.5rem; color: var(--muted);
+  #fallback-banner[hidden] { display: none; }
+  #fallback-reason { color: var(--muted); font-size: 0.74rem; }
+  #banner-close {
+    margin-left: auto; background: transparent; border: none; color: var(--muted);
+    font-size: 1.1rem; cursor: pointer; line-height: 1; padding: 0 0.2rem;
   }
-  #map-fallback h2 { color: var(--text); margin: 0 0 0.5rem; font-size: 1rem; }
+  #banner-close:hover { color: var(--text); }
 
   /* --- icon rail --- */
   #rail {
@@ -133,13 +138,10 @@
 </head>
 <body class="panel-open">
 <div id="map"></div>
-<div id="map-fallback" hidden>
-  <div class="box">
-    <h2>Map unavailable</h2>
-    <p>The interactive map could not be loaded. All surfaced events remain
-    available in the events panel.</p>
-    <p id="fallback-detail"></p>
-  </div>
+<div id="fallback-banner" hidden role="status">
+  <span>⚠ Interactive map unavailable — all surfaced events remain available in the events panel.</span>
+  <span id="fallback-reason"></span>
+  <button id="banner-close" aria-label="Dismiss map warning" title="Dismiss">✕</button>
 </div>
 <nav id="rail" aria-label="Dashboard controls">
   <div class="mark" title="HADR Monitor">HM</div>
@@ -159,7 +161,7 @@
     This brief needs JavaScript for the interactive map and event list.
   </p>
 </noscript>
-<script id="sitrep-data" type="application/json">{"generatedUtc":"2026-07-08T07:05:15.762Z","feedsLine":"USGS, GDACS, ReliefWeb","totalCount":20,"tiers":[{"tier":"CRITICAL","count":1,"events":[{"id":"1001279","feed":"GDACS","tier":"CRITICAL","title":"Tropical Cyclone BAVI-26","location":"Guam, Northern Mariana Islands, Japan, Taiwan, China","timeUtc":"2026-07-01T00:00:00.000Z","badges":["TC","alert red"],"duplicateNote":null,"assessment":"Tropical Cyclone BAVI-26 is under a GDACS red alert, the highest alert level, with a footprint spanning Guam, the Northern Mariana Islands, Japan, Taiwan, and China. The event has been tracked since 1 July 2026. No casualty or damage figures are available in the feed data; populations across the listed territories are potentially exposed along the storm's path.","sourceUrl":"https://www.gdacs.org/report.aspx?eventid=1001279&episodeid=29&eventtype=TC","coordinates":{"lon":134.1,"lat":16.9}}]},{"tier":"HIGH","count":2,"events":[{"id":"1103933","feed":"GDACS","tier":"HIGH","title":"Flood in China","location":"China","timeUtc":"2026-06-06T01:00:00.000Z","badges":["FL","alert orange"],"duplicateNote":null,"assessment":"GDACS reports flooding in China under an orange alert, indicating a potentially significant humanitarian impact. The event has been tracked since 6 June 2026, suggesting a prolonged situation. The feed data does not include casualty figures or affected-population counts.","sourceUrl":"https://www.gdacs.org/report.aspx?eventid=1103933&episodeid=17&eventtype=FL","coordinates":{"lon":111.0272,"lat":27.1176}},{"id":"1029331","feed":"GDACS","tier":"HIGH","title":"Forest fires in France","location":"France","timeUtc":"2026-07-04T00:00:00.000Z","badges":["WF","alert orange"],"duplicateNote":null,"assessment":"GDACS reports forest fires in France under an orange alert, tracked since 4 July 2026. No figures on burned area, casualties, or displacement are available in the feed data.","sourceUrl":"https://www.gdacs.org/report.aspx?eventid=1029331&episodeid=6&eventtype=WF","coordinates":{"lon":2.5678,"lat":42.6724}}]},{"tier":"MODERATE","count":17,"events":[{"id":"us6000talg","feed":"USGS","tier":"MODERATE","title":"M 5.4 - 162 km NNW of Tobelo, Indonesia","location":"162 km NNW of Tobelo, Indonesia","timeUtc":"2026-07-07T07:16:26.844Z","badges":["M 5.4","PAGER green","sig 449"],"duplicateNote":null,"assessment":"M 5.4 earthquake 162 km NNW of Tobelo, Indonesia, with a green PAGER alert indicating low likelihood of casualties or damage.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000talg","coordinates":{"lon":127.5573,"lat":3.1239}},{"id":"us6000tary","feed":"USGS","tier":"MODERATE","title":"M 5.3 - 95 km WSW of Labuan, Indonesia","location":"95 km WSW of Labuan, Indonesia","timeUtc":"2026-07-07T19:44:52.435Z","badges":["M 5.3","sig 433"],"duplicateNote":null,"assessment":"M 5.3 earthquake 95 km WSW of Labuan, Indonesia; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tary","coordinates":{"lon":105.0646,"lat":-6.7717}},{"id":"us6000tarc","feed":"USGS","tier":"MODERATE","title":"M 5.3 - 10 km WSW of Orotina, Costa Rica","location":"10 km WSW of Orotina, Costa Rica","timeUtc":"2026-07-07T18:11:32.787Z","badges":["M 5.3","sig 444"],"duplicateNote":null,"assessment":"M 5.3 earthquake 10 km WSW of Orotina, Costa Rica; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tarc","coordinates":{"lon":-84.6042,"lat":9.8644}},{"id":"us6000tatd","feed":"USGS","tier":"MODERATE","title":"M 5.1 - 13 km W of Changning, China","location":"13 km W of Changning, China","timeUtc":"2026-07-07T22:12:29.518Z","badges":["M 5.1","sig 401"],"duplicateNote":null,"assessment":"M 5.1 earthquake 13 km W of Changning, China; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tatd","coordinates":{"lon":104.788,"lat":28.5702}},{"id":"us6000taui","feed":"USGS","tier":"MODERATE","title":"M 5.0 - 15 km NNE of Xunchang, China","location":"15 km NNE of Xunchang, China","timeUtc":"2026-07-08T02:08:48.776Z","badges":["M 5","sig 385"],"duplicateNote":null,"assessment":"M 5.0 earthquake 15 km NNE of Xunchang, China; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000taui","coordinates":{"lon":104.7549,"lat":28.5871}},{"id":"us6000talm","feed":"USGS","tier":"MODERATE","title":"M 5.0 - Reykjanes Ridge","location":"Reykjanes Ridge","timeUtc":"2026-07-07T08:30:56.236Z","badges":["M 5","sig 385"],"duplicateNote":null,"assessment":"M 5.0 earthquake on the Reykjanes Ridge, a remote mid-ocean location; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000talm","coordinates":{"lon":-30.3683,"lat":59.4768}},{"id":"us6000tatn","feed":"USGS","tier":"MODERATE","title":"M 4.9 - 21 km ESE of Karakenja, Tajikistan","location":"21 km ESE of Karakenja, Tajikistan","timeUtc":"2026-07-07T22:42:36.894Z","badges":["M 4.9","sig 369"],"duplicateNote":null,"assessment":"M 4.9 earthquake 21 km ESE of Karakenja, Tajikistan; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tatn","coordinates":{"lon":71.7429,"lat":39.1463}},{"id":"us6000tasa","feed":"USGS","tier":"MODERATE","title":"M 4.9 - 88 km WNW of Hicks Bay, New Zealand","location":"88 km WNW of Hicks Bay, New Zealand","timeUtc":"2026-07-07T20:33:15.705Z","badges":["M 4.9","PAGER green","sig 371"],"duplicateNote":null,"assessment":"M 4.9 earthquake 88 km WNW of Hicks Bay, New Zealand, with a green PAGER alert indicating low likelihood of casualties or damage.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tasa","coordinates":{"lon":177.4292,"lat":-37.2165}},{"id":"us6000tar3","feed":"USGS","tier":"MODERATE","title":"M 4.9 - 298 km SSE of Ushuaia, Argentina","location":"298 km SSE of Ushuaia, Argentina","timeUtc":"2026-07-07T17:39:56.121Z","badges":["M 4.9","sig 369"],"duplicateNote":null,"assessment":"M 4.9 earthquake 298 km SSE of Ushuaia, Argentina, well offshore; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tar3","coordinates":{"lon":-66.8183,"lat":-57.3541}},{"id":"us6000tauz","feed":"USGS","tier":"MODERATE","title":"M 4.7 - 25 km NNE of Santa Rosa, Peru","location":"25 km NNE of Santa Rosa, Peru","timeUtc":"2026-07-08T05:00:32.411Z","badges":["M 4.7","sig 340"],"duplicateNote":null,"assessment":"M 4.7 earthquake 25 km NNE of Santa Rosa, Peru; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tauz","coordinates":{"lon":-74.7855,"lat":-10.7092}},{"id":"us6000tauv","feed":"USGS","tier":"MODERATE","title":"M 4.7 - 61 km ENE of Olonkinbyen, Svalbard and Jan Mayen","location":"61 km ENE of Olonkinbyen, Svalbard and Jan Mayen","timeUtc":"2026-07-08T04:21:46.738Z","badges":["M 4.7","sig 340"],"duplicateNote":null,"assessment":"M 4.7 earthquake 61 km ENE of Olonkinbyen, Svalbard and Jan Mayen; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tauv","coordinates":{"lon":-7.1298,"lat":71.1194}},{"id":"us6000tau8","feed":"USGS","tier":"MODERATE","title":"M 4.6 - 132 km WNW of Ternate, Indonesia","location":"132 km WNW of Ternate, Indonesia","timeUtc":"2026-07-07T23:35:51.427Z","badges":["M 4.6","sig 326"],"duplicateNote":null,"assessment":"M 4.6 earthquake 132 km WNW of Ternate, Indonesia; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tau8","coordinates":{"lon":126.3577,"lat":1.3973}},{"id":"us6000tati","feed":"USGS","tier":"MODERATE","title":"M 4.6 - 13 km SSE of Yibin, China","location":"13 km SSE of Yibin, China","timeUtc":"2026-07-07T22:22:13.825Z","badges":["M 4.6","sig 326"],"duplicateNote":null,"assessment":"M 4.6 earthquake 13 km SSE of Yibin, China; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tati","coordinates":{"lon":104.7122,"lat":28.6565}},{"id":"us6000tase","feed":"USGS","tier":"MODERATE","title":"M 4.5 - 7 km SSE of Calatagan, Philippines","location":"7 km SSE of Calatagan, Philippines","timeUtc":"2026-07-07T20:37:40.097Z","badges":["M 4.5","sig 312"],"duplicateNote":null,"assessment":"M 4.5 earthquake 7 km SSE of Calatagan, Philippines; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tase","coordinates":{"lon":120.6627,"lat":13.7713}},{"id":"us6000tara","feed":"USGS","tier":"MODERATE","title":"M 4.5 - 81 km NNE of Adak, Alaska","location":"81 km NNE of Adak, Alaska","timeUtc":"2026-07-07T18:07:41.091Z","badges":["M 4.5","sig 312"],"duplicateNote":null,"assessment":"M 4.5 earthquake 81 km NNE of Adak, Alaska; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tara","coordinates":{"lon":-176.2826,"lat":52.5711}},{"id":"us6000tant","feed":"USGS","tier":"MODERATE","title":"M 4.5 - 172 km NNW of Tobelo, Indonesia","location":"172 km NNW of Tobelo, Indonesia","timeUtc":"2026-07-07T14:21:22.044Z","badges":["M 4.5","sig 312"],"duplicateNote":null,"assessment":"M 4.5 earthquake 172 km NNW of Tobelo, Indonesia; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tant","coordinates":{"lon":127.2906,"lat":3.1116}},{"id":"us6000talr","feed":"USGS","tier":"MODERATE","title":"M 4.5 - 32 km NE of Yaguaraparo, Venezuela","location":"32 km NE of Yaguaraparo, Venezuela","timeUtc":"2026-07-07T08:41:37.390Z","badges":["M 4.5","sig 312"],"duplicateNote":null,"assessment":"M 4.5 earthquake 32 km NE of Yaguaraparo, Venezuela; no PAGER alert issued in the feed data.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000talr","coordinates":{"lon":-62.58,"lat":10.7321}}]}],"degradation":[{"feed":"ReliefWeb","reason":"HTTP 406"}]}</script>
+<script id="sitrep-data" type="application/json">{"generatedUtc":"2026-07-08T07:20:44.032Z","feedsLine":"USGS, GDACS, ReliefWeb","totalCount":20,"tiers":[{"tier":"CRITICAL","count":1,"events":[{"id":"1001279","feed":"GDACS","tier":"CRITICAL","title":"Tropical Cyclone BAVI-26","location":"Guam, Northern Mariana Islands, Japan, Taiwan, China","timeUtc":"2026-07-01T00:00:00.000Z","badges":["TC","alert red"],"duplicateNote":null,"assessment":"Tropical Cyclone BAVI-26 triggered a GDACS red alert on 1 July, the highest severity level, as it tracked across a broad arc spanning Guam, the Northern Mariana Islands, Japan, Taiwan, and China. The red classification signals potential for high humanitarian impact across these populated island and coastal areas. Populations along the storm's path are the primary concern pending further data.","sourceUrl":"https://www.gdacs.org/report.aspx?eventid=1001279&episodeid=29&eventtype=TC","coordinates":{"lon":134.1,"lat":16.9}}]},{"tier":"HIGH","count":3,"events":[{"id":"1029260","feed":"GDACS","tier":"HIGH","title":"Forest fires in Portugal","location":"Portugal","timeUtc":"2026-07-02T00:00:00.000Z","badges":["WF","alert orange"],"duplicateNote":null,"assessment":"Forest fires in Portugal prompted a GDACS orange alert on 2 July, indicating a significant wildfire event. The orange level points to moderate-to-high potential impact warranting close monitoring of affected areas.","sourceUrl":"https://www.gdacs.org/report.aspx?eventid=1029260&episodeid=11&eventtype=WF","coordinates":{"lon":-8.2824,"lat":40.6204}},{"id":"1103933","feed":"GDACS","tier":"HIGH","title":"Flood in China","location":"China","timeUtc":"2026-06-06T01:00:00.000Z","badges":["FL","alert orange"],"duplicateNote":null,"assessment":"A flood in China drew a GDACS orange alert on 6 June, signalling a significant event with potential humanitarian consequences. The orange classification indicates moderate-to-high expected impact across affected areas.","sourceUrl":"https://www.gdacs.org/report.aspx?eventid=1103933&episodeid=17&eventtype=FL","coordinates":{"lon":111.0272,"lat":27.1176}},{"id":"1029331","feed":"GDACS","tier":"HIGH","title":"Forest fires in France","location":"France","timeUtc":"2026-07-04T00:00:00.000Z","badges":["WF","alert orange"],"duplicateNote":null,"assessment":"Forest fires in France triggered a GDACS orange alert on 4 July, marking a significant wildfire event. The orange level indicates moderate-to-high potential impact requiring continued monitoring.","sourceUrl":"https://www.gdacs.org/report.aspx?eventid=1029331&episodeid=6&eventtype=WF","coordinates":{"lon":2.5678,"lat":42.6724}}]},{"tier":"MODERATE","count":16,"events":[{"id":"us6000tary","feed":"USGS","tier":"MODERATE","title":"M 5.3 - 95 km WSW of Labuan, Indonesia","location":"95 km WSW of Labuan, Indonesia","timeUtc":"2026-07-07T19:44:52.435Z","badges":["M 5.3","sig 433"],"duplicateNote":null,"assessment":"A magnitude 5.3 earthquake struck 95 km WSW of Labuan, Indonesia, on 7 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tary","coordinates":{"lon":105.0646,"lat":-6.7717}},{"id":"us6000tarc","feed":"USGS","tier":"MODERATE","title":"M 5.3 - 10 km WSW of Orotina, Costa Rica","location":"10 km WSW of Orotina, Costa Rica","timeUtc":"2026-07-07T18:11:32.787Z","badges":["M 5.3","sig 444"],"duplicateNote":null,"assessment":"A magnitude 5.3 earthquake struck 10 km WSW of Orotina, Costa Rica, on 7 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tarc","coordinates":{"lon":-84.6042,"lat":9.8644}},{"id":"us6000tatd","feed":"USGS","tier":"MODERATE","title":"M 5.1 - 13 km W of Changning, China","location":"13 km W of Changning, China","timeUtc":"2026-07-07T22:12:29.518Z","badges":["M 5.1","sig 401"],"duplicateNote":null,"assessment":"A magnitude 5.1 earthquake struck 13 km W of Changning, China, on 7 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tatd","coordinates":{"lon":104.788,"lat":28.5702}},{"id":"us6000taui","feed":"USGS","tier":"MODERATE","title":"M 5.0 - 15 km NNE of Xunchang, China","location":"15 km NNE of Xunchang, China","timeUtc":"2026-07-08T02:08:48.776Z","badges":["M 5","sig 385"],"duplicateNote":null,"assessment":"A magnitude 5.0 earthquake struck 15 km NNE of Xunchang, China, on 8 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000taui","coordinates":{"lon":104.7549,"lat":28.5871}},{"id":"us6000talm","feed":"USGS","tier":"MODERATE","title":"M 5.0 - Reykjanes Ridge","location":"Reykjanes Ridge","timeUtc":"2026-07-07T08:30:56.236Z","badges":["M 5","sig 385"],"duplicateNote":null,"assessment":"A magnitude 5.0 earthquake occurred on the Reykjanes Ridge on 7 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000talm","coordinates":{"lon":-30.3683,"lat":59.4768}},{"id":"us6000tatn","feed":"USGS","tier":"MODERATE","title":"M 4.9 - 21 km ESE of Karakenja, Tajikistan","location":"21 km ESE of Karakenja, Tajikistan","timeUtc":"2026-07-07T22:42:36.894Z","badges":["M 4.9","sig 369"],"duplicateNote":null,"assessment":"A magnitude 4.9 earthquake struck 21 km ESE of Karakenja, Tajikistan, on 7 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tatn","coordinates":{"lon":71.7429,"lat":39.1463}},{"id":"us6000tasa","feed":"USGS","tier":"MODERATE","title":"M 4.9 - 88 km WNW of Hicks Bay, New Zealand","location":"88 km WNW of Hicks Bay, New Zealand","timeUtc":"2026-07-07T20:33:15.705Z","badges":["M 4.9","PAGER green","sig 371"],"duplicateNote":null,"assessment":"A magnitude 4.9 earthquake struck 88 km WNW of Hicks Bay, New Zealand, on 7 July, with a USGS PAGER green alert indicating minimal expected impact.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tasa","coordinates":{"lon":177.4292,"lat":-37.2165}},{"id":"us6000tar3","feed":"USGS","tier":"MODERATE","title":"M 4.9 - 298 km SSE of Ushuaia, Argentina","location":"298 km SSE of Ushuaia, Argentina","timeUtc":"2026-07-07T17:39:56.121Z","badges":["M 4.9","sig 369"],"duplicateNote":null,"assessment":"A magnitude 4.9 earthquake occurred 298 km SSE of Ushuaia, Argentina, on 7 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tar3","coordinates":{"lon":-66.8183,"lat":-57.3541}},{"id":"us6000tauz","feed":"USGS","tier":"MODERATE","title":"M 4.7 - 25 km NNE of Santa Rosa, Peru","location":"25 km NNE of Santa Rosa, Peru","timeUtc":"2026-07-08T05:00:32.411Z","badges":["M 4.7","sig 340"],"duplicateNote":null,"assessment":"A magnitude 4.7 earthquake struck 25 km NNE of Santa Rosa, Peru, on 8 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tauz","coordinates":{"lon":-74.7855,"lat":-10.7092}},{"id":"us6000tauv","feed":"USGS","tier":"MODERATE","title":"M 4.7 - 61 km ENE of Olonkinbyen, Svalbard and Jan Mayen","location":"61 km ENE of Olonkinbyen, Svalbard and Jan Mayen","timeUtc":"2026-07-08T04:21:46.738Z","badges":["M 4.7","sig 340"],"duplicateNote":null,"assessment":"A magnitude 4.7 earthquake struck 61 km ENE of Olonkinbyen, Svalbard and Jan Mayen, on 8 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tauv","coordinates":{"lon":-7.1298,"lat":71.1194}},{"id":"us6000tau8","feed":"USGS","tier":"MODERATE","title":"M 4.6 - 132 km WNW of Ternate, Indonesia","location":"132 km WNW of Ternate, Indonesia","timeUtc":"2026-07-07T23:35:51.427Z","badges":["M 4.6","sig 326"],"duplicateNote":null,"assessment":"A magnitude 4.6 earthquake struck 132 km WNW of Ternate, Indonesia, on 7 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tau8","coordinates":{"lon":126.3577,"lat":1.3973}},{"id":"us6000tati","feed":"USGS","tier":"MODERATE","title":"M 4.6 - 13 km SSE of Yibin, China","location":"13 km SSE of Yibin, China","timeUtc":"2026-07-07T22:22:13.825Z","badges":["M 4.6","sig 326"],"duplicateNote":null,"assessment":"A magnitude 4.6 earthquake struck 13 km SSE of Yibin, China, on 7 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tati","coordinates":{"lon":104.7122,"lat":28.6565}},{"id":"us6000tase","feed":"USGS","tier":"MODERATE","title":"M 4.5 - 7 km SSE of Calatagan, Philippines","location":"7 km SSE of Calatagan, Philippines","timeUtc":"2026-07-07T20:37:40.097Z","badges":["M 4.5","sig 312"],"duplicateNote":null,"assessment":"A magnitude 4.5 earthquake struck 7 km SSE of Calatagan, Philippines, on 7 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tase","coordinates":{"lon":120.6627,"lat":13.7713}},{"id":"us6000tara","feed":"USGS","tier":"MODERATE","title":"M 4.5 - 81 km NNE of Adak, Alaska","location":"81 km NNE of Adak, Alaska","timeUtc":"2026-07-07T18:07:41.091Z","badges":["M 4.5","sig 312"],"duplicateNote":null,"assessment":"A magnitude 4.5 earthquake struck 81 km NNE of Adak, Alaska, on 7 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tara","coordinates":{"lon":-176.2826,"lat":52.5711}},{"id":"us6000tant","feed":"USGS","tier":"MODERATE","title":"M 4.5 - 172 km NNW of Tobelo, Indonesia","location":"172 km NNW of Tobelo, Indonesia","timeUtc":"2026-07-07T14:21:22.044Z","badges":["M 4.5","sig 312"],"duplicateNote":null,"assessment":"A magnitude 4.5 earthquake struck 172 km NNW of Tobelo, Indonesia, on 7 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tant","coordinates":{"lon":127.2906,"lat":3.1116}},{"id":"us6000talr","feed":"USGS","tier":"MODERATE","title":"M 4.5 - 32 km NE of Yaguaraparo, Venezuela","location":"32 km NE of Yaguaraparo, Venezuela","timeUtc":"2026-07-07T08:41:37.390Z","badges":["M 4.5","sig 312"],"duplicateNote":null,"assessment":"A magnitude 4.5 earthquake struck 32 km NE of Yaguaraparo, Venezuela, on 7 July.","sourceUrl":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000talr","coordinates":{"lon":-62.58,"lat":10.7321}}]}],"degradation":[{"feed":"ReliefWeb","reason":"HTTP 406"}]}</script>
 <script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
 <script>
 (function () {
@@ -176,7 +178,6 @@
   var STYLE_URL = "https://tiles.openfreemap.org/styles/fiord";
   var openPopup = null;
   var map = null;
-  var markers = {}; // event id -> maplibre Marker
 
   // --- tiny DOM helpers (textContent only for data — feeds are untrusted) ---
   function el(tag, cls, text) {
@@ -186,14 +187,20 @@
     return node;
   }
 
+  // Map failure (no WebGL, blocked CDN, bad payload) is announced with a
+  // dismissible bottom banner — never a dead end: the events panel auto-opens
+  // and carries the full brief (never fail silently).
   function showFallback(reason) {
-    var mapDiv = document.getElementById("map");
-    if (mapDiv) mapDiv.hidden = true;
-    var fb = document.getElementById("map-fallback");
-    if (fb) {
-      fb.hidden = false;
-      var detail = document.getElementById("fallback-detail");
-      if (detail && reason) detail.textContent = reason;
+    var banner = document.getElementById("fallback-banner");
+    if (banner) {
+      banner.hidden = false;
+      var detail = document.getElementById("fallback-reason");
+      if (detail && reason) {
+        // Engine errors can be huge JSON blobs — keep the banner readable.
+        var brief = String(reason);
+        if (brief.length > 120) brief = brief.slice(0, 117) + "...";
+        detail.textContent = "(" + brief + ")";
+      }
     }
     openPanel();
   }
@@ -244,6 +251,9 @@
       .setLngLat([ev.coordinates.lon, ev.coordinates.lat])
       .setDOMContent(buildCard(ev))
       .addTo(map);
+    // Clear the reference when the user closes the card (X / map click),
+    // so we never hold a stale removed popup.
+    openPopup.on("close", function () { openPopup = null; });
   }
 
   function flyToEvent(ev) {
@@ -296,9 +306,12 @@
     groups.appendChild(section);
   });
 
-  // --- rail buttons ---
+  // --- rail buttons + banner dismiss ---
   document.getElementById("btn-events").addEventListener("click", togglePanel);
   document.getElementById("btn-status").addEventListener("click", openPanel);
+  document.getElementById("banner-close").addEventListener("click", function () {
+    document.getElementById("fallback-banner").hidden = true;
+  });
 
   // --- map ---
   var withCoords = [];
@@ -324,21 +337,26 @@
         e.stopPropagation();
         openCard(ev);
       });
-      markers[ev.id] = new maplibregl.Marker({ element: dot })
+      new maplibregl.Marker({ element: dot })
         .setLngLat([ev.coordinates.lon, ev.coordinates.lat])
         .addTo(map);
     });
 
-    if (withCoords.length === 1) {
-      map.setCenter([withCoords[0].coordinates.lon, withCoords[0].coordinates.lat]);
-      map.setZoom(4);
-    } else if (withCoords.length > 1) {
-      var b = new maplibregl.LngLatBounds();
-      withCoords.forEach(function (ev) {
-        b.extend([ev.coordinates.lon, ev.coordinates.lat]);
-      });
-      map.fitBounds(b, { padding: 80, maxZoom: 6 });
-    }
+    // Position the view only once the style has loaded — calling fitBounds
+    // synchronously after construction can be dropped on slow style loads,
+    // leaving every marker off-screen.
+    map.on("load", function () {
+      if (withCoords.length === 1) {
+        map.setCenter([withCoords[0].coordinates.lon, withCoords[0].coordinates.lat]);
+        map.setZoom(4);
+      } else if (withCoords.length > 1) {
+        var b = new maplibregl.LngLatBounds();
+        withCoords.forEach(function (ev) {
+          b.extend([ev.coordinates.lon, ev.coordinates.lat]);
+        });
+        map.fitBounds(b, { padding: 80, maxZoom: 6 });
+      }
+    });
   } catch (e) {
     showFallback(String(e && e.message ? e.message : e));
   }

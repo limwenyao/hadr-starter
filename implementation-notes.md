@@ -95,6 +95,14 @@ Kept by the agent, reviewed by you. One entry per working block.
   with feed text — XSS discipline moved from server-side entity-escaping to
   script-block-safe JSON + textContent).
 
+- **2026-07-08 — No-WebGL machines get a bannered fallback, not a raster map.**
+  MapLibre GL requires WebGL; on machines without it (e.g. VMs without GPU
+  acceleration — including the primary dev machine) the map cannot render. The
+  user-directed behaviour: keep the MapLibre stack, announce the failure with a
+  **dismissible bottom banner** (reason included) and auto-open the events panel —
+  the brief stays fully usable, the map area stays empty. A Leaflet raster
+  fallback was considered and declined (second map library, two code paths).
+
 - **2026-07-08 — Light list-only dashboard replaced.** The v1-slice light-themed
   list page is superseded by the map-first dark-blue console (ADR 0005's spatial +
   priority views in one page: full-screen map, icon rail, slide-out tier list).

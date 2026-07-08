@@ -49,9 +49,9 @@ describe("renderDashboard (map-first shell — ADR 0005)", () => {
       ],
       degradation: [{ feed: "ReliefWeb", reason: "HTTP 406" }],
     });
-    expect(extractPayload(renderDashboard(m))).toEqual(
-      JSON.parse(JSON.stringify(buildViewModel(m))),
-    );
+    // Direct equality with the view-model (no JSON pre-cycle on the expected
+    // side): a field dropped or renamed by the embed step must fail here.
+    expect(extractPayload(renderDashboard(m))).toEqual(buildViewModel(m));
   });
 
   it("keeps hostile feed text from breaking out of the script block", () => {
@@ -61,9 +61,21 @@ describe("renderDashboard (map-first shell — ADR 0005)", () => {
     );
     // Exactly the three legitimate script opens: payload, maplibre CDN, client.
     expect(html.match(/<script/g)).toHaveLength(3);
-    // And the hostile string survives the round-trip intact for the client.
+    // The "<" characters are embedded in escaped form...
+    expect(html).toContain("\\u003c/script>");
+    // ...and the hostile string survives the round-trip intact for the client.
     const vm = extractPayload(html) as { tiers: { events: { title: string }[] }[] };
     expect(vm.tiers[0].events[0].title).toBe(hostile);
+  });
+
+  it("round-trips U+2028/U+2029 (JSON-valid, JS-literal-hostile) titles", () => {
+    // Pins that the embed is parsed as JSON (script type=application/json),
+    // not as a JS literal — where these separators would be syntax errors.
+    const tricky =
+      "line one" + String.fromCharCode(0x2028) + "line two" + String.fromCharCode(0x2029) + "end";
+    const html = renderDashboard(model({ surfaced: [surfaced({ title: tricky })] }));
+    const vm = extractPayload(html) as { tiers: { events: { title: string }[] }[] };
+    expect(vm.tiers[0].events[0].title).toBe(tricky);
   });
 
   it("never emits non-http(s) source URLs anywhere in the page", () => {
@@ -79,16 +91,24 @@ describe("renderDashboard (map-first shell — ADR 0005)", () => {
     expect(html).toContain(`src="${MAPLIBRE_JS}"`);
     expect(html).toContain(`href="${MAPLIBRE_CSS}"`);
     expect(MAP_STYLE_URL).toBe("https://tiles.openfreemap.org/styles/fiord");
-    expect(html).toContain("styles/fiord"); // client script points at the same style
+    // The client script hardcodes the style URL: pin it to the exported
+    // constant so the two sources of truth cannot drift silently.
+    expect(html).toContain(`"${MAP_STYLE_URL}"`);
   });
 
-  it("renders the shell: map, icon rail, events button, panel, fallback, noscript", () => {
+  it("positions the map only after the style load event (fitBounds-drop guard)", () => {
+    expect(renderDashboard(model({}))).toContain('map.on("load"');
+  });
+
+  it("renders the shell: map, icon rail, events button, panel, fallback banner, noscript", () => {
     const html = renderDashboard(model({}));
-    for (const id of ["map", "map-fallback", "rail", "btn-events", "btn-status", "count-badge", "panel", "meta", "notices", "groups"]) {
+    for (const id of ["map", "fallback-banner", "fallback-reason", "banner-close", "rail", "btn-events", "btn-status", "count-badge", "panel", "meta", "notices", "groups"]) {
       expect(html).toContain(`id="${id}"`);
     }
     expect(html).toContain("<noscript>");
-    expect(html).toContain("Map unavailable");
+    // Dismissible bottom banner, hidden until the client detects a map failure.
+    expect(html).toContain("Interactive map unavailable");
+    expect(html).toMatch(/<div id="fallback-banner" hidden/);
   });
 
   it("applies the dark-blue theme tokens", () => {

@@ -25,7 +25,6 @@ export const CLIENT_SCRIPT = String.raw`
   var STYLE_URL = "https://tiles.openfreemap.org/styles/fiord";
   var openPopup = null;
   var map = null;
-  var markers = {}; // event id -> maplibre Marker
 
   // --- tiny DOM helpers (textContent only for data — feeds are untrusted) ---
   function el(tag, cls, text) {
@@ -35,14 +34,20 @@ export const CLIENT_SCRIPT = String.raw`
     return node;
   }
 
+  // Map failure (no WebGL, blocked CDN, bad payload) is announced with a
+  // dismissible bottom banner — never a dead end: the events panel auto-opens
+  // and carries the full brief (never fail silently).
   function showFallback(reason) {
-    var mapDiv = document.getElementById("map");
-    if (mapDiv) mapDiv.hidden = true;
-    var fb = document.getElementById("map-fallback");
-    if (fb) {
-      fb.hidden = false;
-      var detail = document.getElementById("fallback-detail");
-      if (detail && reason) detail.textContent = reason;
+    var banner = document.getElementById("fallback-banner");
+    if (banner) {
+      banner.hidden = false;
+      var detail = document.getElementById("fallback-reason");
+      if (detail && reason) {
+        // Engine errors can be huge JSON blobs — keep the banner readable.
+        var brief = String(reason);
+        if (brief.length > 120) brief = brief.slice(0, 117) + "...";
+        detail.textContent = "(" + brief + ")";
+      }
     }
     openPanel();
   }
@@ -93,6 +98,9 @@ export const CLIENT_SCRIPT = String.raw`
       .setLngLat([ev.coordinates.lon, ev.coordinates.lat])
       .setDOMContent(buildCard(ev))
       .addTo(map);
+    // Clear the reference when the user closes the card (X / map click),
+    // so we never hold a stale removed popup.
+    openPopup.on("close", function () { openPopup = null; });
   }
 
   function flyToEvent(ev) {
@@ -145,9 +153,12 @@ export const CLIENT_SCRIPT = String.raw`
     groups.appendChild(section);
   });
 
-  // --- rail buttons ---
+  // --- rail buttons + banner dismiss ---
   document.getElementById("btn-events").addEventListener("click", togglePanel);
   document.getElementById("btn-status").addEventListener("click", openPanel);
+  document.getElementById("banner-close").addEventListener("click", function () {
+    document.getElementById("fallback-banner").hidden = true;
+  });
 
   // --- map ---
   var withCoords = [];
@@ -173,21 +184,26 @@ export const CLIENT_SCRIPT = String.raw`
         e.stopPropagation();
         openCard(ev);
       });
-      markers[ev.id] = new maplibregl.Marker({ element: dot })
+      new maplibregl.Marker({ element: dot })
         .setLngLat([ev.coordinates.lon, ev.coordinates.lat])
         .addTo(map);
     });
 
-    if (withCoords.length === 1) {
-      map.setCenter([withCoords[0].coordinates.lon, withCoords[0].coordinates.lat]);
-      map.setZoom(4);
-    } else if (withCoords.length > 1) {
-      var b = new maplibregl.LngLatBounds();
-      withCoords.forEach(function (ev) {
-        b.extend([ev.coordinates.lon, ev.coordinates.lat]);
-      });
-      map.fitBounds(b, { padding: 80, maxZoom: 6 });
-    }
+    // Position the view only once the style has loaded — calling fitBounds
+    // synchronously after construction can be dropped on slow style loads,
+    // leaving every marker off-screen.
+    map.on("load", function () {
+      if (withCoords.length === 1) {
+        map.setCenter([withCoords[0].coordinates.lon, withCoords[0].coordinates.lat]);
+        map.setZoom(4);
+      } else if (withCoords.length > 1) {
+        var b = new maplibregl.LngLatBounds();
+        withCoords.forEach(function (ev) {
+          b.extend([ev.coordinates.lon, ev.coordinates.lat]);
+        });
+        map.fitBounds(b, { padding: 80, maxZoom: 6 });
+      }
+    });
   } catch (e) {
     showFallback(String(e && e.message ? e.message : e));
   }
