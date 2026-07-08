@@ -70,4 +70,37 @@ describe("buildSitrep (the seam — pure, deterministic)", () => {
     const model = buildSitrep([usgsOk], null, NOW);
     for (const e of model.surfaced) expect(e.assessment).toBeUndefined();
   });
+
+  it("surfaces the ok feed's events AND reports the unavailable feed (mixed run)", () => {
+    // One healthy feed alongside one that is down — the run must not go dark on
+    // the good feed, and must state the missing one (ADR 0008). This is the
+    // shape every multi-feed run takes once GDACS/ReliefWeb land.
+    const gdacsDown: FeedResult = {
+      feed: "GDACS",
+      status: "unavailable",
+      error: "timeout",
+    };
+    const model = buildSitrep([usgsOk, gdacsDown], null, NOW);
+    expect(model.surfaced.length).toBeGreaterThan(0);
+    expect(model.surfaced.every((e) => e.feed === "USGS")).toBe(true);
+    expect(model.degradation).toEqual([{ feed: "GDACS", reason: "timeout" }]);
+  });
+
+  it("breaks CRITICAL ties by magnitude, sorting a null-mag PAGER event last", () => {
+    // A PAGER-red event with no magnitude surfaces (never miss a major event)
+    // and is CRITICAL; its undefined mag must sort as 0 — after a real M5.0,
+    // never ahead of it. Locks the `(mag ?? 0)` tie-break.
+    const feat = (id: string, mag: number | null) => ({
+      id,
+      properties: { time: 1783300000000, mag, alert: "red", place: "somewhere" },
+      geometry: { coordinates: [0, 0, 10] },
+    });
+    const payload = { features: [feat("null-mag", null), feat("mag-5", 5.0)] };
+    const model = buildSitrep(
+      [{ feed: "USGS", status: "ok", rawPayload: payload }],
+      null,
+      NOW,
+    );
+    expect(model.surfaced.map((e) => e.feedEventId)).toEqual(["mag-5", "null-mag"]);
+  });
 });

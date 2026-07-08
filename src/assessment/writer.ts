@@ -1,5 +1,6 @@
 import { spawn } from "node:child_process";
 import type { SitrepModel, SurfacedEvent } from "../types.js";
+import { formatUtc } from "../time.js";
 
 /**
  * The LLM step (ADR 0003): writes the assessment narrative for surfaced
@@ -21,7 +22,7 @@ export function buildAssessmentPrompt(events: SurfacedEvent[]): string {
       tier: e.tier,
       title: e.title,
       location: e.locationName,
-      timeUtc: new Date(e.time).toISOString(),
+      timeUtc: formatUtc(e.time),
       magnitude: e.metrics.mag,
       pagerAlert: e.metrics.pagerAlert,
       sig: e.metrics.sig,
@@ -79,7 +80,8 @@ export async function fillAssessments(
   model: SitrepModel,
   writer: AssessmentWriter,
 ): Promise<SitrepModel> {
-  if (model.surfaced.length === 0) return model;
+  // Return a fresh object (not the input) so callers never share mutable state.
+  if (model.surfaced.length === 0) return { ...model };
 
   let assessments = new Map<string, string>();
   try {

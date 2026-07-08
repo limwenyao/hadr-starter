@@ -69,6 +69,17 @@ describe("parseAssessmentResponse", () => {
   it("returns an empty map when no JSON array is found", () => {
     expect(parseAssessmentResponse("Sorry, I cannot help.").size).toBe(0);
   });
+
+  it("fails safe to an empty map when trailing prose contains a stray ']'", () => {
+    // Known limitation of the first-[/last-] heuristic: a bracket in prose after
+    // a valid array widens the slice past the JSON, JSON.parse throws, and we
+    // fall back to empty — the run then uses FALLBACK_ASSESSMENT per event.
+    // Documented so a future fix (balanced-bracket scan) has a regression anchor.
+    const map = parseAssessmentResponse(
+      '[{"id":"id-a","assessment":"Ok."}]\nNotes for the officer [see brief].',
+    );
+    expect(map.size).toBe(0);
+  });
 });
 
 describe("fillAssessments (never crash the run — ADR 0008 spirit)", () => {
@@ -102,6 +113,13 @@ describe("fillAssessments (never crash the run — ADR 0008 spirit)", () => {
     const out = await fillAssessments(model([]), writer);
     expect(writer).not.toHaveBeenCalled();
     expect(out.surfaced).toEqual([]);
+  });
+
+  it("returns a fresh object even when nothing surfaced (no shared reference)", async () => {
+    const input = model([]);
+    const out = await fillAssessments(input, async () => new Map());
+    expect(out).not.toBe(input);
+    expect(out).toEqual(input);
   });
 
   it("does not mutate the input model", async () => {

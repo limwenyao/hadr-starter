@@ -1,4 +1,5 @@
 import type { SitrepModel, SurfacedEvent, Tier } from "../types.js";
+import { formatUtc } from "../time.js";
 
 /**
  * Priority view of the daily brief (ADR 0005): ranked tier sections,
@@ -47,7 +48,7 @@ function detailCard(event: SurfacedEvent): string {
       </header>
       <p class="meta">
         ${esc(event.locationName)} ·
-        ${esc(new Date(event.time).toISOString())} ·
+        ${esc(formatUtc(event.time))} ·
         ${metricBadges(event)} ${link}
       </p>
       <p class="assessment">${esc(event.assessment ?? "")}</p>
@@ -78,7 +79,9 @@ function degradationNotices(model: SitrepModel): string {
 export function renderDashboard(model: SitrepModel): string {
   const activeTiers = new Set(model.surfaced.map((e) => e.tier));
 
-  const tierCss = Array.from(activeTiers)
+  // Emit in severity order (the TIERS constant), not surfaced order — the CSS
+  // reads top-down regardless of how events happen to be sorted.
+  const tierCss = TIERS.filter((tier) => activeTiers.has(tier))
     .map(
       (tier) =>
         `.tier-${tier} .tier { background: ${TIER_META[tier].colour}; color: #fff; }`,
@@ -116,7 +119,7 @@ export function renderDashboard(model: SitrepModel): string {
 </head>
 <body>
 <h1>HADR Monitor — Situation Report</h1>
-<p class="generated">Generated ${esc(new Date(model.generatedAt).toISOString())} · feeds: USGS (GDACS and ReliefWeb land in later slices)</p>
+<p class="generated">Generated ${esc(formatUtc(model.generatedAt))} · feeds: USGS (GDACS and ReliefWeb land in later slices)</p>
 ${degradationNotices(model)}
 ${body}
 </body>

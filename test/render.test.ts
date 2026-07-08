@@ -93,6 +93,34 @@ describe("renderDashboard (priority view — ADR 0005, map is a later slice)", (
     expect(html).toContain("safe &amp; sound");
   });
 
+  it("escapes hostile locationName (feed place text is untrusted)", () => {
+    const html = renderDashboard(
+      model({
+        surfaced: [surfaced({ locationName: '<img src=x onerror="alert(1)">' })],
+      }),
+    );
+    expect(html).not.toContain("<img src=x");
+    expect(html).toContain("&lt;img src=x onerror=&quot;alert(1)&quot;&gt;");
+  });
+
+  it("escapes hostile degradation reason (error text is untrusted)", () => {
+    const html = renderDashboard(
+      model({
+        degradation: [{ feed: "USGS", reason: "<b>503</b> & timeout" }],
+      }),
+    );
+    expect(html).not.toContain("<b>503</b>");
+    expect(html).toContain("&lt;b&gt;503&lt;/b&gt; &amp; timeout");
+  });
+
+  it("renders an empty assessment paragraph when assessment is undefined", () => {
+    const html = renderDashboard(
+      model({ surfaced: [surfaced({ assessment: undefined })] }),
+    );
+    expect(html).not.toContain("undefined");
+    expect(html).toContain('<p class="assessment"></p>');
+  });
+
   it("blocks non-http(s) sourceUrl schemes but links http(s) ones", () => {
     const hostile = renderDashboard(
       model({
@@ -116,5 +144,30 @@ describe("renderDashboard (priority view — ADR 0005, map is a later slice)", (
       model({ surfaced: [surfaced({ tier: "CRITICAL" })] }),
     );
     expect(html).not.toContain("MODERATE");
+  });
+
+  it("does not throw on an out-of-range event time and shows the fallback marker", () => {
+    let html = "";
+    expect(() => {
+      html = renderDashboard(model({ surfaced: [surfaced({ time: 8.7e15 })] }));
+    }).not.toThrow();
+    // Assert the degraded marker, not just non-throw: a regression that emitted
+    // "undefined"/"NaN" instead of throwing would otherwise slip through.
+    expect(html).toContain("time unavailable");
+  });
+
+  it("orders the tier-colour CSS most-severe-first regardless of surfaced order", () => {
+    const html = renderDashboard(
+      model({
+        surfaced: [
+          surfaced({ feedEventId: "m", tier: "MODERATE" }),
+          surfaced({ feedEventId: "c", tier: "CRITICAL" }),
+        ],
+      }),
+    );
+    // The generated `.tier-CRITICAL` rule must appear before `.tier-MODERATE`.
+    expect(html.indexOf(".tier-CRITICAL .tier")).toBeLessThan(
+      html.indexOf(".tier-MODERATE .tier"),
+    );
   });
 });
