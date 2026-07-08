@@ -28,6 +28,9 @@ describe("parseReliefWeb", () => {
     // Country-level only — never carries coordinates or severity metrics.
     expect(e!.coordinates).toBeUndefined();
     expect(e!.metrics).toEqual({});
+    // The description is HTML with encoded entities; the extracted country must be
+    // decoded and tag-free (no residual &lt;/&amp; or angle brackets).
+    expect(e!.locationName).not.toMatch(/[<>]|&(lt|gt|amp);/);
   });
 
   it("derives hazardType from the GLIDE prefix", () => {

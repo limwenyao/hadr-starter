@@ -226,6 +226,7 @@ describe("renderDashboard (priority view — ADR 0005, map is a later slice)", (
       }),
     );
     expect(html).toContain("ReliefWeb");
+    expect(html).toContain("HIGH"); // tier badge renders
     expect(html).toContain("Venezuela: Earthquakes - Jun 2026");
     expect(html).toContain('href="https://reliefweb.int/disaster/eq-ven"');
     expect(html).not.toContain('<span class="metric">'); // no severity metrics
