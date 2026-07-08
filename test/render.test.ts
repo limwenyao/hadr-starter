@@ -207,4 +207,27 @@ describe("renderDashboard (priority view — ADR 0005, map is a later slice)", (
     expect(html).not.toContain("<b>USGS</b>");
     expect(html).toContain("&lt;b&gt;USGS&lt;/b&gt; quake");
   });
+
+  it("renders a ReliefWeb card (HIGH, source link, no metric badges)", () => {
+    const html = renderDashboard(
+      model({
+        surfaced: [
+          surfaced({
+            feed: "ReliefWeb",
+            hazardType: "EQ",
+            title: "Venezuela: Earthquakes - Jun 2026",
+            locationName: "Venezuela",
+            metrics: {},
+            coordinates: undefined,
+            sourceUrl: "https://reliefweb.int/disaster/eq-ven",
+            assessment: "Curated humanitarian disaster entry.",
+          }),
+        ],
+      }),
+    );
+    expect(html).toContain("ReliefWeb");
+    expect(html).toContain("Venezuela: Earthquakes - Jun 2026");
+    expect(html).toContain('href="https://reliefweb.int/disaster/eq-ven"');
+    expect(html).not.toContain('<span class="metric">'); // no severity metrics
+  });
 });

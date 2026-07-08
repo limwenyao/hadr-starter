@@ -131,7 +131,7 @@ export function renderDashboard(model: SitrepModel): string {
 </head>
 <body>
 <h1>HADR Monitor — Situation Report</h1>
-<p class="generated">Generated ${esc(formatUtc(model.generatedAt))} · feeds: USGS, GDACS (ReliefWeb lands in a later slice)</p>
+<p class="generated">Generated ${esc(formatUtc(model.generatedAt))} · feeds: USGS, GDACS, ReliefWeb</p>
 ${degradationNotices(model)}
 ${body}
 </body>

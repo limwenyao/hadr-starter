@@ -8,6 +8,7 @@ import type {
 } from "../types.js";
 import { parseUsgs } from "../feeds/usgs.js";
 import { parseGdacs } from "../feeds/gdacs.js";
+import { reliefWebSource } from "../feeds/reliefweb.js";
 import { passesNoiseFloor, tierFor } from "./triage.js";
 import { flagDuplicates } from "./duplicates.js";
 
@@ -17,6 +18,7 @@ const TIER_ORDER: Record<Tier, number> = { CRITICAL: 0, HIGH: 1, MODERATE: 2 };
 const PARSERS: Partial<Record<FeedName, (raw: unknown) => Event[]>> = {
   USGS: parseUsgs,
   GDACS: parseGdacs,
+  ReliefWeb: reliefWebSource.parse,
 };
 
 /**

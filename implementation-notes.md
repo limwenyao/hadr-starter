@@ -69,3 +69,20 @@ Kept by the agent, reviewed by you. One entry per working block.
   prompt. With GDACS added, a second feed now contributes untrusted text. Left
   unhardened for v1 per the standing decision; to be addressed with the model-call
   gating in the scheduled-workflow slice (ADR 0010).
+
+- **2026-07-08 — fast-xml-parser is the repo's first runtime dependency.** CLAUDE.md
+  asks to keep dependencies few; ReliefWeb is RSS/XML (CDATA, entity-encoded bodies),
+  and a hand-rolled parser would be fragile. One small, zero-dependency, well-
+  maintained parser was judged the correct trade for robustness. Kept behind the
+  `parseReliefWeb` pure function so it stays fixture-testable.
+
+- **2026-07-08 — ReliefWeb consumed via RSS behind a swappable interface.** ADR 0008:
+  the approved-`appname` API may not arrive in the build window. `ReliefWebSource`
+  bundles `fetch`+`parse`; `reliefWebSource` is the single active binding (RSS now).
+  The API implementation drops in by flipping that one line.
+
+- **2026-07-08 — ReliefWeb does not participate in duplicate flagging.** RSS is
+  country-level with no coordinates (ADR 0008), so the haversine heuristic never
+  matches it (ADR 0007). GLIDE-based correlation is deferred (USGS/GDACS expose no
+  GLIDE). `feedEventId` is the `<link>` (stable per-disaster URL); `hazardType` is
+  the GLIDE prefix when present, else `"unknown"`.

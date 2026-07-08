@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>ReliefWeb - Disasters</title>
+    <link>https://reliefweb.int/disasters</link>
+    <description>Latest disasters</description>
+    <item>
+      <title>Venezuela: Earthquakes - Jun 2026</title>
+      <link>https://reliefweb.int/disaster/eq-2026-000093-ven</link>
+      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+      <description>
+        &lt;div class="tag country"&gt;Affected country: Venezuela (Bolivarian Republic of)&lt;/div&gt;
+        &lt;div class="tag glide"&gt;Glide: EQ-2026-000093-VEN&lt;/div&gt;
+        &lt;p&gt;On 24 June 2026, two strong earthquakes, preliminarily measured at
+        magnitudes 7.1 and 7.5, struck north-central Venezuela.&lt;/p&gt;
+      </description>
+    </item>
+    <item>
+      <title>Philippines: Tropical Cyclone Mala - Jul 2026</title>
+      <link>https://reliefweb.int/disaster/tc-2026-000100-phl</link>
+      <pubDate>Sun, 05 Jul 2026 06:30:00 +0000</pubDate>
+      <description>
+        &lt;div class="tag country"&gt;Affected country: Philippines&lt;/div&gt;
+        &lt;div class="tag glide"&gt;Glide: TC-2026-000100-PHL&lt;/div&gt;
+        &lt;p&gt;Tropical Cyclone Mala made landfall over eastern Samar.&lt;/p&gt;
+      </description>
+    </item>
+    <item>
+      <title>Sahel: Food Insecurity - 2026</title>
+      <link>https://reliefweb.int/disaster/ot-2026-000111-sah</link>
+      <pubDate>Tue, 01 Jul 2026 12:00:00 +0000</pubDate>
+      <description>
+        &lt;p&gt;Worsening food insecurity across the Sahel region.&lt;/p&gt;
+      </description>
+    </item>
+  </channel>
+</rss>

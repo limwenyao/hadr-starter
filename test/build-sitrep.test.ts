@@ -175,4 +175,50 @@ describe("buildSitrep (the seam — pure, deterministic)", () => {
     expect(usgs!.duplicateOf).toBeUndefined(); // USGS is primary (sorted first)
     expect(dup!.duplicateOf).toMatchObject({ feed: "USGS", feedEventId: "us7000aaa1" });
   });
+
+  // --- ReliefWeb feed (ADR 0004: all surface, HIGH; ADR 0008: no coordinates) ---
+
+  const reliefWebOk = (xml: string): FeedResult => ({
+    feed: "ReliefWeb",
+    status: "ok",
+    rawPayload: xml,
+  });
+
+  const rwItem = (link: string, title: string, pubDate: string) =>
+    `<item><title>${title}</title><link>${link}</link><pubDate>${pubDate}</pubDate>
+     <description>&lt;div class="tag glide"&gt;Glide: EQ-2026-000093-VEN&lt;/div&gt;</description></item>`;
+
+  it("surfaces every ReliefWeb item as HIGH (ADR 0004)", () => {
+    const xml = `<rss><channel>
+      ${rwItem("https://reliefweb.int/disaster/a", "Venezuela: Earthquakes", "Wed, 24 Jun 2026 00:00:00 +0000")}
+      ${rwItem("https://reliefweb.int/disaster/b", "Chad: Floods", "Fri, 03 Jul 2026 00:00:00 +0000")}
+    </channel></rss>`;
+    const model = buildSitrep([reliefWebOk(xml)], null, NOW);
+    expect(model.surfaced).toHaveLength(2);
+    expect(model.surfaced.every((e) => e.feed === "ReliefWeb" && e.tier === "HIGH")).toBe(true);
+  });
+
+  it("never flags a ReliefWeb item as a duplicate (no coordinates to match on)", () => {
+    // A ReliefWeb Venezuela EQ alongside a USGS quake at the same instant: without
+    // coordinates the spatial heuristic can't match, so ReliefWeb is never flagged.
+    const sameTime = "Wed, 24 Jun 2026 00:00:00 +0000";
+    const rwXml = `<rss><channel>${rwItem(
+      "https://reliefweb.int/disaster/eq-ven",
+      "Venezuela: Earthquakes",
+      sameTime,
+    )}</channel></rss>`;
+    const usgsFeat = {
+      id: "us-ven",
+      properties: { time: Date.parse(sameTime), mag: 7.2, place: "Venezuela" },
+      geometry: { coordinates: [-68, 10, 10] },
+    };
+    const model = buildSitrep(
+      [{ feed: "USGS", status: "ok", rawPayload: { features: [usgsFeat] } }, reliefWebOk(rwXml)],
+      null,
+      NOW,
+    );
+    const rw = model.surfaced.find((e) => e.feed === "ReliefWeb");
+    expect(rw).toBeDefined();
+    expect(rw!.duplicateOf).toBeUndefined();
+  });
 });

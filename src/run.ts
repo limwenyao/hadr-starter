@@ -1,6 +1,7 @@
 import { writeFileSync } from "node:fs";
 import { fetchUsgs } from "./feeds/usgs.js";
 import { fetchGdacs } from "./feeds/gdacs.js";
+import { reliefWebSource } from "./feeds/reliefweb.js";
 import { buildSitrep } from "./core/buildSitrep.js";
 import { claudeCliWriter, fillAssessments } from "./assessment/writer.js";
 import { renderDashboard } from "./render/dashboard.js";
@@ -16,7 +17,11 @@ import { renderDashboard } from "./render/dashboard.js";
 try {
   // Feeds are independent — poll them concurrently; each returns a FeedResult
   // (never throws), so one feed being down never sinks the others (ADR 0008).
-  const feedResults = await Promise.all([fetchUsgs(), fetchGdacs()]);
+  const feedResults = await Promise.all([
+    fetchUsgs(),
+    fetchGdacs(),
+    reliefWebSource.fetch(),
+  ]);
   const model = buildSitrep(feedResults, null, new Date());
 
   console.log(

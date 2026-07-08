@@ -38,7 +38,10 @@ export function passesNoiseFloor(event: Event): boolean {
   if (event.feed === "GDACS") {
     return gdacsSurfaces(event);
   }
-  // ReliefWeb lands in a later slice (ADR 0010).
+  if (event.feed === "ReliefWeb") {
+    // Human-curated: every item surfaces (ADR 0004).
+    return true;
+  }
   return false;
 }
 
@@ -49,6 +52,8 @@ export function passesNoiseFloor(event: Event): boolean {
  * caller (`buildSitrep`) filters through the noise floor immediately before this.
  */
 export function tierFor(event: Event): Tier {
+  // ReliefWeb has no magnitude; its curated presence alone warrants HIGH (ADR 0004).
+  if (event.feed === "ReliefWeb") return "HIGH";
   if (event.feed === "GDACS") {
     return event.metrics.alertLevel === GDACS_CRITICAL_ALERT ? "CRITICAL" : "HIGH";
   }
