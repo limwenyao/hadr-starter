@@ -66,10 +66,12 @@ export const CLIENT_SCRIPT = String.raw`
     var chips = el("div", "chips");
     chips.appendChild(el("span", "chip feed", ev.feed));
     chips.appendChild(el("span", "chip tier t-" + ev.tier, ev.tier));
+    if (ev.isNew) chips.appendChild(el("span", "chip new", "NEW"));
     card.appendChild(chips);
     card.appendChild(el("h3", "card-title", ev.title));
     var meta = el("p", "card-meta", ev.location + " · " + ev.timeUtc);
     card.appendChild(meta);
+    if (ev.changeNote) card.appendChild(el("p", "chg", "△ " + ev.changeNote));
     if (ev.badges.length) {
       var badges = el("div", "badges");
       ev.badges.forEach(function (b) {
@@ -111,7 +113,8 @@ export const CLIENT_SCRIPT = String.raw`
 
   // --- panel: meta line, degradation notices, tier groups ---
   document.getElementById("meta").textContent =
-    "Generated " + vm.generatedUtc + " · feeds: " + vm.feedsLine;
+    "Generated " + vm.generatedUtc + " · feeds: " + vm.feedsLine +
+    (vm.changesLine ? " · " + vm.changesLine : "");
 
   var badge = document.getElementById("count-badge");
   badge.textContent = String(vm.totalCount);
@@ -124,6 +127,15 @@ export const CLIENT_SCRIPT = String.raw`
         el("p", "notice", d.feed + " feed unavailable this run — " + d.reason +
           ". Events from this feed are missing."),
       );
+    });
+  }
+
+  // "Changes since yesterday" block: possibly-withdrawn notes (ADR 0009).
+  var changes = document.getElementById("changes");
+  if (vm.withdrawn.length) {
+    changes.appendChild(el("h2", "changes-title", "Changes since yesterday"));
+    vm.withdrawn.forEach(function (note) {
+      changes.appendChild(el("p", "notice chg-notice", note));
     });
   }
 
@@ -144,10 +156,12 @@ export const CLIENT_SCRIPT = String.raw`
       var chips = el("div", "chips");
       chips.appendChild(el("span", "chip tier t-" + ev.tier, ev.tier));
       chips.appendChild(el("span", "chip feed", ev.feed));
+      if (ev.isNew) chips.appendChild(el("span", "chip new", "NEW"));
       if (!ev.coordinates) chips.appendChild(el("span", "chip listonly", "list-only"));
       row.appendChild(chips);
       row.appendChild(el("div", "row-title", ev.title));
       row.appendChild(el("div", "row-meta", ev.location + " · " + ev.timeUtc));
+      if (ev.changeNote) row.appendChild(el("div", "chg", "△ " + ev.changeNote));
       if (ev.coordinates) {
         row.addEventListener("click", function () { flyToEvent(ev); });
       }

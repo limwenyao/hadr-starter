@@ -22,7 +22,13 @@ function surfaced(id: string, tier: SurfacedEvent["tier"], mag: number): Surface
 }
 
 function model(events: SurfacedEvent[]): SitrepModel {
-  return { generatedAt: 1783310000000, surfaced: events, degradation: [] };
+  return {
+    generatedAt: 1783310000000,
+    surfaced: events,
+    degradation: [],
+    withdrawn: [],
+    changeSummary: null,
+  };
 }
 
 describe("buildAssessmentPrompt", () => {

@@ -23,6 +23,8 @@ function model(over: Partial<SitrepModel>): SitrepModel {
     generatedAt: Date.UTC(2026, 6, 8, 0, 30),
     surfaced: [],
     degradation: [],
+    withdrawn: [],
+    changeSummary: null,
     ...over,
   };
 }
@@ -122,6 +124,49 @@ describe("buildViewModel (all render logic lives here — client stays dumb)", (
   it("defaults a missing assessment to an empty string", () => {
     const vm = buildViewModel(model({ surfaced: [surfaced({ assessment: undefined })] }));
     expect(vm.tiers[0].events[0].assessment).toBe("");
+  });
+
+  it("passes change flags through: isNew, changeNote", () => {
+    const vm = buildViewModel(
+      model({
+        surfaced: [
+          surfaced({ feedEventId: "n", change: { kind: "new" } }),
+          surfaced({
+            feedEventId: "r",
+            change: { kind: "revised", note: "revised since yesterday: M 5.8 → M 5.1" },
+          }),
+          surfaced({ feedEventId: "u" }),
+        ],
+      }),
+    );
+    const byId = new Map(vm.tiers[0].events.map((e) => [e.id, e]));
+    expect(byId.get("n")).toMatchObject({ isNew: true, changeNote: null });
+    expect(byId.get("r")).toMatchObject({
+      isNew: false,
+      changeNote: "revised since yesterday: M 5.8 → M 5.1",
+    });
+    expect(byId.get("u")).toMatchObject({ isNew: false, changeNote: null });
+  });
+
+  it("builds the changes line from the summary, null on first runs", () => {
+    const withSummary = buildViewModel(
+      model({ changeSummary: { new: 3, revised: 1, withdrawn: 2 } }),
+    );
+    expect(withSummary.changesLine).toBe(
+      "since yesterday: 3 new · 1 revised · 2 possibly withdrawn",
+    );
+    expect(buildViewModel(model({})).changesLine).toBeNull();
+  });
+
+  it("passes withdrawn notes through as plain strings", () => {
+    const vm = buildViewModel(
+      model({
+        withdrawn: [
+          { feed: "USGS", feedEventId: "gone", note: "no longer listed by USGS…" },
+        ],
+      }),
+    );
+    expect(vm.withdrawn).toEqual(["no longer listed by USGS…"]);
   });
 
   it("passes degradation notices through", () => {

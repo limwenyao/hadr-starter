@@ -29,6 +29,8 @@ function model(over: Partial<SitrepModel>): SitrepModel {
     generatedAt: Date.UTC(2026, 6, 8, 0, 30),
     surfaced: [],
     degradation: [],
+    withdrawn: [],
+    changeSummary: null,
     ...over,
   };
 }
@@ -98,6 +100,14 @@ describe("renderDashboard (map-first shell — ADR 0005)", () => {
 
   it("positions the map only after the style load event (fitBounds-drop guard)", () => {
     expect(renderDashboard(model({}))).toContain('map.on("load"');
+  });
+
+  it("renders change affordances: NEW chip, revision note, changes block", () => {
+    const html = renderDashboard(model({}));
+    expect(html).toContain('id="changes"'); // panel block container
+    expect(html).toContain('el("span", "chip new", "NEW")'); // chip in client
+    expect(html).toContain("Changes since yesterday"); // withdrawn block title
+    expect(html).toContain("ev.changeNote"); // revision note wiring
   });
 
   it("builds tier subsections as collapsible details/summary, default open", () => {

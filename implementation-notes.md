@@ -107,6 +107,17 @@ Kept by the agent, reviewed by you. One entry per working block.
   list page is superseded by the map-first dark-blue console (ADR 0005's spatial +
   priority views in one page: full-screen map, icon rail, slide-out tier list).
 
+- **2026-07-08 — Change-detection interpretations of ADR 0009.** (a) Magnitude
+  revisions below `MAG_REVISION_MIN` (0.1) are jitter, not material — unnoted.
+  (b) "Withdrawn" is flagged only while the event's time is inside the feed's
+  rolling window (`FEED_WINDOW_MS`, 24 h): beyond it, disappearing is normal
+  aging-out and flagging would overstate (cardinal rule). Wording stays hedged
+  ("possibly withdrawn"). (c) Snapshots store the **assessed** model, so each
+  `data/YYYY-MM-DD.json` records what the brief actually said (audit trail).
+  (d) Intraday re-runs compare against the latest snapshot **strictly before
+  today** (yesterday), keeping "since yesterday" notes stable; today's file is
+  overwritten (latest state wins). Snapshot date is the UTC date of the run.
+
 - **2026-07-08 — ReliefWeb does not participate in duplicate flagging.** RSS is
   country-level with no coordinates (ADR 0008), so the haversine heuristic never
   matches it (ADR 0007). GLIDE-based correlation is deferred (USGS/GDACS expose no
