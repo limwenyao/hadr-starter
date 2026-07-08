@@ -1,0 +1,112 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1783340000000,
+    "title": "USGS All Earthquakes, Past Day",
+    "count": 6
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "us7000aaa1",
+      "properties": {
+        "mag": 7.2,
+        "place": "100 km S of Suva, Fiji",
+        "time": 1783300000000,
+        "updated": 1783301000000,
+        "alert": null,
+        "status": "reviewed",
+        "sig": 900,
+        "type": "earthquake",
+        "title": "M 7.2 - 100 km S of Suva, Fiji",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000aaa1"
+      },
+      "geometry": { "type": "Point", "coordinates": [178.4, -19.1, 550] }
+    },
+    {
+      "type": "Feature",
+      "id": "us7000aaa2",
+      "properties": {
+        "mag": 5.8,
+        "place": "12 km NE of Kushiro, Japan",
+        "time": 1783310000000,
+        "updated": 1783311000000,
+        "alert": "green",
+        "status": "reviewed",
+        "sig": 518,
+        "type": "earthquake",
+        "title": "M 5.8 - 12 km NE of Kushiro, Japan",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000aaa2"
+      },
+      "geometry": { "type": "Point", "coordinates": [144.5, 43.0, 45] }
+    },
+    {
+      "type": "Feature",
+      "id": "us7000aaa3",
+      "properties": {
+        "mag": 4.6,
+        "place": "central Mid-Atlantic Ridge",
+        "time": 1783320000000,
+        "updated": 1783321000000,
+        "alert": null,
+        "status": "automatic",
+        "sig": 326,
+        "type": "earthquake",
+        "title": "M 4.6 - central Mid-Atlantic Ridge",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000aaa3"
+      },
+      "geometry": { "type": "Point", "coordinates": [-20.1, 0.5, 10] }
+    },
+    {
+      "type": "Feature",
+      "id": "ci41287863",
+      "properties": {
+        "mag": 3.0,
+        "place": "9 km NNE of Avalon, CA",
+        "time": 1783330000000,
+        "updated": 1783331000000,
+        "alert": null,
+        "status": "automatic",
+        "sig": 143,
+        "type": "earthquake",
+        "title": "M 3.0 - 9 km NNE of Avalon, CA",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci41287863"
+      },
+      "geometry": { "type": "Point", "coordinates": [-118.3, 33.4, 12.1] }
+    },
+    {
+      "type": "Feature",
+      "id": "us7000aaa5",
+      "properties": {
+        "mag": 4.8,
+        "place": "2 km W of Kathmandu, Nepal",
+        "time": 1783335000000,
+        "updated": 1783336000000,
+        "alert": "red",
+        "status": "reviewed",
+        "sig": 780,
+        "type": "earthquake",
+        "title": "M 4.8 - 2 km W of Kathmandu, Nepal",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000aaa5"
+      },
+      "geometry": { "type": "Point", "coordinates": [85.3, 27.7, 8] }
+    },
+    {
+      "type": "Feature",
+      "id": "us7000aaa6",
+      "properties": {
+        "mag": null,
+        "place": "42 km SSW of Adak, Alaska",
+        "time": 1783338000000,
+        "updated": 1783339000000,
+        "alert": null,
+        "status": "automatic",
+        "sig": 0,
+        "type": "earthquake",
+        "title": "M ? - 42 km SSW of Adak, Alaska",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000aaa6"
+      },
+      "geometry": { "type": "Point", "coordinates": [-176.8, 51.5, 30] }
+    }
+  ]
+}
