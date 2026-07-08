@@ -13,22 +13,76 @@
   .card { border-bottom: 1px solid #e5e8e8; padding: 0.75rem 0; }
   .card:last-child { border-bottom: none; }
   .feed, .tier { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; padding: 0.1rem 0.4rem; border-radius: 3px; background: #eaecee; margin-right: 0.5rem; }
+  .tier-CRITICAL .tier { background: #c0392b; color: #fff; }
+  .tier-HIGH .tier { background: #e67e22; color: #fff; }
   .tier-MODERATE .tier { background: #b7950b; color: #fff; }
   .meta { color: #566573; font-size: 0.9rem; }
   .metric { background: #eaecee; border-radius: 3px; padding: 0 0.3rem; }
+  .dup { margin: 0.25rem 0 0; color: #7d6608; font-size: 0.85rem; font-style: italic; }
   .assessment { margin: 0.25rem 0 0; }
   .quiet { color: #566573; font-style: italic; }
 </style>
 </head>
 <body>
 <h1>HADR Monitor — Situation Report</h1>
-<p class="generated">Generated 2026-07-08T04:39:56.644Z · feeds: USGS (GDACS and ReliefWeb land in later slices)</p>
+<p class="generated">Generated 2026-07-08T06:22:21.529Z · feeds: USGS, GDACS (ReliefWeb lands in a later slice)</p>
 
 
+  <section class="tier-section" style="border-left: 6px solid #c0392b">
+    <h2>🔴 CRITICAL (1)</h2>
+    
+    <article class="card tier-CRITICAL">
+      <header>
+        <span class="feed">GDACS</span>
+        <span class="tier">CRITICAL</span>
+        <strong>Tropical Cyclone BAVI-26</strong>
+      </header>
+      <p class="meta">
+        Guam, Northern Mariana Islands, Japan, Taiwan, China ·
+        2026-07-01T00:00:00.000Z ·
+        <span class="metric">TC</span> <span class="metric">alert red</span> <a href="https://www.gdacs.org/report.aspx?eventid=1001279&amp;episodeid=29&amp;eventtype=TC" rel="noopener">source</a>
+      </p>
+      
+      <p class="assessment">Tropical Cyclone BAVI-26 has triggered a GDACS red alert — the highest severity level — as it tracks across Guam, the Northern Mariana Islands, Japan, Taiwan, and China. The red designation indicates potential for high humanitarian impact across this multi-country path. Monitoring began 1 July 2026.</p>
+    </article>
+  </section>
 
+  <section class="tier-section" style="border-left: 6px solid #e67e22">
+    <h2>🟠 HIGH (2)</h2>
+    
+    <article class="card tier-HIGH">
+      <header>
+        <span class="feed">GDACS</span>
+        <span class="tier">HIGH</span>
+        <strong>Flood in China</strong>
+      </header>
+      <p class="meta">
+        China ·
+        2026-06-06T01:00:00.000Z ·
+        <span class="metric">FL</span> <span class="metric">alert orange</span> <a href="https://www.gdacs.org/report.aspx?eventid=1103933&amp;episodeid=17&amp;eventtype=FL" rel="noopener">source</a>
+      </p>
+      
+      <p class="assessment">Flooding in China has reached a GDACS orange alert level, indicating moderate-to-high potential humanitarian impact. The event has been tracked since 6 June 2026.</p>
+    </article>
+
+    <article class="card tier-HIGH">
+      <header>
+        <span class="feed">GDACS</span>
+        <span class="tier">HIGH</span>
+        <strong>Forest fires in France</strong>
+      </header>
+      <p class="meta">
+        France ·
+        2026-07-04T00:00:00.000Z ·
+        <span class="metric">WF</span> <span class="metric">alert orange</span> <a href="https://www.gdacs.org/report.aspx?eventid=1029331&amp;episodeid=6&amp;eventtype=WF" rel="noopener">source</a>
+      </p>
+      
+      <p class="assessment">Forest fires in France carry a GDACS orange alert level, signaling moderate-to-high potential impact. The event has been monitored since 4 July 2026.</p>
+    </article>
+  </section>
 
   <section class="tier-section" style="border-left: 6px solid #b7950b">
-    <h2>🟡 MODERATE (18)</h2>
+    <h2>🟡 MODERATE (16)</h2>
     
     <article class="card tier-MODERATE">
       <header>
@@ -41,7 +95,8 @@
         2026-07-07T07:16:26.844Z ·
         <span class="metric">M 5.4</span> <span class="metric">PAGER green</span> <span class="metric">sig 449</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000talg" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 5.4 earthquake struck offshore 162 km NNW of Tobelo, Indonesia, with a green PAGER alert indicating low expected impact.</p>
+      
+      <p class="assessment">M5.4 earthquake 162 km NNW of Tobelo, Indonesia (PAGER green).</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -55,7 +110,8 @@
         2026-07-07T19:44:52.435Z ·
         <span class="metric">M 5.3</span> <span class="metric">sig 433</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000tary" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 5.3 earthquake occurred 95 km WSW of Labuan, Indonesia, with no PAGER alert or impact data reported.</p>
+      
+      <p class="assessment">M5.3 earthquake 95 km WSW of Labuan, Indonesia.</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -69,21 +125,8 @@
         2026-07-07T18:11:32.787Z ·
         <span class="metric">M 5.3</span> <span class="metric">sig 444</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000tarc" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 5.3 earthquake struck 10 km WSW of Orotina, Costa Rica, with no impact data reported.</p>
-    </article>
-
-    <article class="card tier-MODERATE">
-      <header>
-        <span class="feed">USGS</span>
-        <span class="tier">MODERATE</span>
-        <strong>M 5.3 - Reykjanes Ridge</strong>
-      </header>
-      <p class="meta">
-        Reykjanes Ridge ·
-        2026-07-07T05:55:40.352Z ·
-        <span class="metric">M 5.3</span> <span class="metric">sig 432</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000tal2" rel="noopener">source</a>
-      </p>
-      <p class="assessment">A magnitude 5.3 earthquake occurred on the Reykjanes Ridge, a remote mid-ocean location, with no impact data reported.</p>
+      
+      <p class="assessment">M5.3 earthquake 10 km WSW of Orotina, Costa Rica.</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -97,7 +140,8 @@
         2026-07-07T22:12:29.518Z ·
         <span class="metric">M 5.1</span> <span class="metric">sig 401</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000tatd" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 5.1 earthquake struck 13 km W of Changning, China, with no impact data reported.</p>
+      
+      <p class="assessment">M5.1 earthquake 13 km W of Changning, China.</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -111,7 +155,8 @@
         2026-07-08T02:08:48.776Z ·
         <span class="metric">M 5</span> <span class="metric">sig 385</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000taui" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 5.0 earthquake occurred 15 km NNE of Xunchang, China, with no impact data reported.</p>
+      
+      <p class="assessment">M5.0 earthquake 15 km NNE of Xunchang, China.</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -125,21 +170,8 @@
         2026-07-07T08:30:56.236Z ·
         <span class="metric">M 5</span> <span class="metric">sig 385</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000talm" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 5.0 earthquake occurred on the Reykjanes Ridge, a remote mid-ocean location, with no impact data reported.</p>
-    </article>
-
-    <article class="card tier-MODERATE">
-      <header>
-        <span class="feed">USGS</span>
-        <span class="tier">MODERATE</span>
-        <strong>M 5.0 - Reykjanes Ridge</strong>
-      </header>
-      <p class="meta">
-        Reykjanes Ridge ·
-        2026-07-07T05:00:43.964Z ·
-        <span class="metric">M 5</span> <span class="metric">sig 385</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000takw" rel="noopener">source</a>
-      </p>
-      <p class="assessment">A magnitude 5.0 earthquake occurred on the Reykjanes Ridge, a remote mid-ocean location, with no impact data reported.</p>
+      
+      <p class="assessment">M5.0 earthquake on the Reykjanes Ridge.</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -153,7 +185,8 @@
         2026-07-07T22:42:36.894Z ·
         <span class="metric">M 4.9</span> <span class="metric">sig 369</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000tatn" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 4.9 earthquake struck 21 km ESE of Karakenja, Tajikistan, with no impact data reported.</p>
+      
+      <p class="assessment">M4.9 earthquake 21 km ESE of Karakenja, Tajikistan.</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -167,7 +200,8 @@
         2026-07-07T20:33:15.705Z ·
         <span class="metric">M 4.9</span> <span class="metric">PAGER green</span> <span class="metric">sig 371</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000tasa" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 4.9 earthquake occurred offshore 88 km WNW of Hicks Bay, New Zealand, with a green PAGER alert indicating low expected impact.</p>
+      
+      <p class="assessment">M4.9 earthquake 88 km WNW of Hicks Bay, New Zealand (PAGER green).</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -181,7 +215,8 @@
         2026-07-07T17:39:56.121Z ·
         <span class="metric">M 4.9</span> <span class="metric">sig 369</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000tar3" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 4.9 earthquake occurred offshore 298 km SSE of Ushuaia, Argentina, with no impact data reported.</p>
+      
+      <p class="assessment">M4.9 earthquake 298 km SSE of Ushuaia, Argentina.</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -195,7 +230,8 @@
         2026-07-08T04:21:46.738Z ·
         <span class="metric">M 4.7</span> <span class="metric">sig 340</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000tauv" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 4.7 earthquake occurred 61 km ENE of Olonkinbyen, Svalbard and Jan Mayen, with no impact data reported.</p>
+      
+      <p class="assessment">M4.7 earthquake 61 km ENE of Olonkinbyen, Svalbard and Jan Mayen.</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -209,7 +245,8 @@
         2026-07-07T23:35:51.427Z ·
         <span class="metric">M 4.6</span> <span class="metric">sig 326</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000tau8" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 4.6 earthquake occurred offshore 132 km WNW of Ternate, Indonesia, with no impact data reported.</p>
+      
+      <p class="assessment">M4.6 earthquake 132 km WNW of Ternate, Indonesia.</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -223,7 +260,8 @@
         2026-07-07T22:22:13.825Z ·
         <span class="metric">M 4.6</span> <span class="metric">sig 326</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000tati" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 4.6 earthquake struck 13 km SSE of Yibin, China, with no impact data reported.</p>
+      
+      <p class="assessment">M4.6 earthquake 13 km SSE of Yibin, China.</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -237,7 +275,8 @@
         2026-07-07T20:37:40.097Z ·
         <span class="metric">M 4.5</span> <span class="metric">sig 312</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000tase" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 4.5 earthquake struck 7 km SSE of Calatagan, Philippines, with no impact data reported.</p>
+      
+      <p class="assessment">M4.5 earthquake 7 km SSE of Calatagan, Philippines.</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -251,7 +290,8 @@
         2026-07-07T18:07:41.091Z ·
         <span class="metric">M 4.5</span> <span class="metric">sig 312</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000tara" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 4.5 earthquake occurred 81 km NNE of Adak, Alaska, with no impact data reported.</p>
+      
+      <p class="assessment">M4.5 earthquake 81 km NNE of Adak, Alaska.</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -265,7 +305,8 @@
         2026-07-07T14:21:22.044Z ·
         <span class="metric">M 4.5</span> <span class="metric">sig 312</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000tant" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 4.5 earthquake struck offshore 172 km NNW of Tobelo, Indonesia, with no impact data reported.</p>
+      
+      <p class="assessment">M4.5 earthquake 172 km NNW of Tobelo, Indonesia.</p>
     </article>
 
     <article class="card tier-MODERATE">
@@ -279,7 +320,8 @@
         2026-07-07T08:41:37.390Z ·
         <span class="metric">M 4.5</span> <span class="metric">sig 312</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000talr" rel="noopener">source</a>
       </p>
-      <p class="assessment">A magnitude 4.5 earthquake struck 32 km NE of Yaguaraparo, Venezuela, with no impact data reported.</p>
+      
+      <p class="assessment">M4.5 earthquake 32 km NE of Yaguaraparo, Venezuela.</p>
     </article>
   </section>
 </body>

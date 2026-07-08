@@ -26,10 +26,20 @@ function esc(text: string): string {
 
 function metricBadges(event: SurfacedEvent): string {
   const badges: string[] = [];
+  // Show the hazard type for non-earthquake hazards (GDACS is multi-hazard).
+  if (event.hazardType && event.hazardType !== "EQ") badges.push(event.hazardType);
   if (event.metrics.mag !== undefined) badges.push(`M ${event.metrics.mag}`);
   if (event.metrics.pagerAlert) badges.push(`PAGER ${event.metrics.pagerAlert}`);
+  if (event.metrics.alertLevel) badges.push(`alert ${event.metrics.alertLevel}`);
   if (event.metrics.sig !== undefined) badges.push(`sig ${event.metrics.sig}`);
   return badges.map((b) => `<span class="metric">${esc(b)}</span>`).join(" ");
+}
+
+/** Duplicate-flag note (ADR 0007): labelled, both events still shown. */
+function duplicateNote(event: SurfacedEvent): string {
+  if (!event.duplicateOf) return "";
+  const { feed, title } = event.duplicateOf;
+  return `<p class="dup">⚠ Likely the same event as ${esc(feed)} — ${esc(title)}</p>`;
 }
 
 function detailCard(event: SurfacedEvent): string {
@@ -51,6 +61,7 @@ function detailCard(event: SurfacedEvent): string {
         ${esc(formatUtc(event.time))} ·
         ${metricBadges(event)} ${link}
       </p>
+      ${duplicateNote(event)}
       <p class="assessment">${esc(event.assessment ?? "")}</p>
     </article>`;
 }
@@ -113,13 +124,14 @@ export function renderDashboard(model: SitrepModel): string {
   ${tierCss}
   .meta { color: #566573; font-size: 0.9rem; }
   .metric { background: #eaecee; border-radius: 3px; padding: 0 0.3rem; }
+  .dup { margin: 0.25rem 0 0; color: #7d6608; font-size: 0.85rem; font-style: italic; }
   .assessment { margin: 0.25rem 0 0; }
   .quiet { color: #566573; font-style: italic; }
 </style>
 </head>
 <body>
 <h1>HADR Monitor — Situation Report</h1>
-<p class="generated">Generated ${esc(formatUtc(model.generatedAt))} · feeds: USGS (GDACS and ReliefWeb land in later slices)</p>
+<p class="generated">Generated ${esc(formatUtc(model.generatedAt))} · feeds: USGS, GDACS (ReliefWeb lands in a later slice)</p>
 ${degradationNotices(model)}
 ${body}
 </body>

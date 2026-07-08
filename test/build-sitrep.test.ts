@@ -103,4 +103,76 @@ describe("buildSitrep (the seam — pure, deterministic)", () => {
     );
     expect(model.surfaced.map((e) => e.feedEventId)).toEqual(["mag-5", "null-mag"]);
   });
+
+  // --- GDACS feed (ADR 0004 rules, ADR 0007 duplicate flagging) ---
+
+  const gdacsFeat = (
+    id: string,
+    alertlevel: string,
+    over: Record<string, unknown> = {},
+  ) => ({
+    properties: {
+      eventtype: "EQ",
+      eventid: id,
+      name: `GDACS ${id}`,
+      alertlevel,
+      country: "Testland",
+      fromdate: "2026-07-06T09:15:00",
+      url: { report: "https://www.gdacs.org/report.aspx" },
+      ...over,
+    },
+    geometry: { coordinates: [10, 10] },
+  });
+
+  const gdacsOk = (...feats: unknown[]): FeedResult => ({
+    feed: "GDACS",
+    status: "ok",
+    rawPayload: { features: feats },
+  });
+
+  it("surfaces GDACS Orange/Red and drops Green (ADR 0004 noise floor)", () => {
+    const model = buildSitrep(
+      [gdacsOk(gdacsFeat("g-green", "Green"), gdacsFeat("g-orange", "Orange"), gdacsFeat("g-red", "Red"))],
+      null,
+      NOW,
+    );
+    const ids = model.surfaced.map((e) => e.feedEventId);
+    expect(ids).toContain("g-orange");
+    expect(ids).toContain("g-red");
+    expect(ids).not.toContain("g-green");
+  });
+
+  it("tiers GDACS Red as CRITICAL and Orange as HIGH (ADR 0004)", () => {
+    const model = buildSitrep(
+      [gdacsOk(gdacsFeat("g-red", "Red"), gdacsFeat("g-orange", "Orange"))],
+      null,
+      NOW,
+    );
+    const tierOf = (id: string) =>
+      model.surfaced.find((e) => e.feedEventId === id)?.tier;
+    expect(tierOf("g-red")).toBe("CRITICAL");
+    expect(tierOf("g-orange")).toBe("HIGH");
+  });
+
+  it("flags a GDACS quake as a duplicate of the co-located USGS quake, keeping both", () => {
+    // USGS aaa1 is the Fiji M7.2 (CRITICAL, lon 178.4/lat -19.1, time 1783300000000).
+    // A GDACS Red EQ at the same place & time is the same physical event via NEIC.
+    const sameTime = new Date(1783300000000).toISOString();
+    const gdacs = gdacsOk(
+      gdacsFeat("g-fiji", "Red", {
+        fromdate: sameTime,
+      }),
+    );
+    // Override the GDACS feature's coordinates to match USGS aaa1.
+    (gdacs as { rawPayload: { features: { geometry: { coordinates: number[] } }[] } })
+      .rawPayload.features[0].geometry.coordinates = [178.4, -19.1];
+
+    const model = buildSitrep([usgsOk, gdacs], null, NOW);
+    const usgs = model.surfaced.find((e) => e.feedEventId === "us7000aaa1");
+    const dup = model.surfaced.find((e) => e.feedEventId === "g-fiji");
+    expect(usgs).toBeDefined();
+    expect(dup).toBeDefined(); // never dropped
+    expect(usgs!.duplicateOf).toBeUndefined(); // USGS is primary (sorted first)
+    expect(dup!.duplicateOf).toMatchObject({ feed: "USGS", feedEventId: "us7000aaa1" });
+  });
 });

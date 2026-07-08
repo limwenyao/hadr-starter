@@ -44,3 +44,28 @@ Kept by the agent, reviewed by you. One entry per working block.
   the floor. Resolved in favour of the cardinal rule (never miss a major event):
   `passesNoiseFloor` surfaces any USGS event with PAGER orange/red regardless of
   magnitude. Green/yellow PAGER does not bypass the floor.
+
+- **2026-07-08 — GDACS magnitude is not extracted.** GDACS carries magnitude only
+  inside the `htmldescription` prose string, not a structured field. Parsing it is
+  fragile and unnecessary: GDACS tiering is driven entirely by alert level (ADR
+  0004), so `metrics.mag` stays undefined for GDACS. Consequence: within a tier the
+  magnitude tie-break sorts GDACS events (mag → 0) after magnitude-bearing USGS
+  events. Acceptable for v1; revisit if within-tier ordering matters.
+
+- **2026-07-08 — Duplicate flagging is cross-feed only.** ADR 0007 says flag likely
+  duplicates (same hazard + close time + close space). We additionally require the
+  pair to come from *different* feeds, so two genuinely distinct nearby quakes in a
+  single feed are never mislabelled as duplicates. Matches the ADR's rationale (the
+  same physical event arriving via USGS and GDACS/NEIC). Window constants
+  `DUP_TIME_WINDOW_MS` (±90 min) and `DUP_DISTANCE_KM` (100) live in `thresholds.ts`.
+
+- **2026-07-08 — Duplicate primary selection is severity-order-first.** Within a
+  duplicate cluster the primary (unflagged) event is the first in the
+  already-severity-sorted list; later members carry `duplicateOf`. Both remain in
+  `surfaced` — flagged, never merged or dropped (CLAUDE.md #5).
+
+- **2026-07-08 — Prompt-injection remains an accepted v1 risk (now live).** Feed
+  text (`title`, `locationName`/`country`) flows into the `claude -p` assessment
+  prompt. With GDACS added, a second feed now contributes untrusted text. Left
+  unhardened for v1 per the standing decision; to be addressed with the model-call
+  gating in the scheduled-workflow slice (ADR 0010).

@@ -1,14 +1,23 @@
 import type {
   Event,
+  FeedName,
   FeedResult,
   SitrepModel,
   SurfacedEvent,
   Tier,
 } from "../types.js";
 import { parseUsgs } from "../feeds/usgs.js";
+import { parseGdacs } from "../feeds/gdacs.js";
 import { passesNoiseFloor, tierFor } from "./triage.js";
+import { flagDuplicates } from "./duplicates.js";
 
 const TIER_ORDER: Record<Tier, number> = { CRITICAL: 0, HIGH: 1, MODERATE: 2 };
+
+/** Per-feed pure parsers. Feeds not yet built parse to nothing (ADR 0010). */
+const PARSERS: Partial<Record<FeedName, (raw: unknown) => Event[]>> = {
+  USGS: parseUsgs,
+  GDACS: parseGdacs,
+};
 
 /**
  * THE seam (docs/PRD.md → Implementation Decisions). Pure and deterministic:
@@ -29,9 +38,9 @@ export function buildSitrep(
 
   const events: Event[] = feedResults
     .filter((r) => r.status === "ok")
-    .flatMap((r) => (r.feed === "USGS" ? parseUsgs(r.rawPayload) : []));
+    .flatMap((r) => PARSERS[r.feed]?.(r.rawPayload) ?? []);
 
-  const surfaced: SurfacedEvent[] = events
+  const sorted: SurfacedEvent[] = events
     .filter(passesNoiseFloor)
     .map((e) => ({ ...e, tier: tierFor(e) }))
     .sort(
@@ -39,6 +48,10 @@ export function buildSitrep(
         TIER_ORDER[a.tier] - TIER_ORDER[b.tier] ||
         (b.metrics.mag ?? 0) - (a.metrics.mag ?? 0),
     );
+
+  // Flag likely cross-feed duplicates after ranking, so the first member of any
+  // cluster (the most severe) is the primary (ADR 0007 — flag, never merge).
+  const surfaced = flagDuplicates(sorted);
 
   return { generatedAt: now.getTime(), surfaced, degradation };
 }

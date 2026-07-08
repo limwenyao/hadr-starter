@@ -170,4 +170,41 @@ describe("renderDashboard (priority view — ADR 0005, map is a later slice)", (
       html.indexOf(".tier-MODERATE .tier"),
     );
   });
+
+  it("renders the GDACS alert level and hazard type as badges", () => {
+    const html = renderDashboard(
+      model({
+        surfaced: [
+          surfaced({
+            feed: "GDACS",
+            hazardType: "TC",
+            metrics: { alertLevel: "orange" },
+          }),
+        ],
+      }),
+    );
+    expect(html).toContain("GDACS");
+    expect(html).toContain("alert orange");
+    expect(html).toContain(">TC<"); // hazard badge for non-EQ
+  });
+
+  it("renders the duplicate-flag note when an event is flagged (escaped)", () => {
+    const html = renderDashboard(
+      model({
+        surfaced: [
+          surfaced({
+            feed: "GDACS",
+            duplicateOf: {
+              feed: "USGS",
+              feedEventId: "us-1",
+              title: "<b>USGS</b> quake",
+            },
+          }),
+        ],
+      }),
+    );
+    expect(html).toContain("Likely the same event as USGS");
+    expect(html).not.toContain("<b>USGS</b>");
+    expect(html).toContain("&lt;b&gt;USGS&lt;/b&gt; quake");
+  });
 });
