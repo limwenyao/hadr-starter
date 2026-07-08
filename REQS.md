@@ -1,0 +1,1 @@
+The app i want to build is a geospatial analysis application, which should show a map and the data feeds integrated into the map. There should also be a panel at the side of realtime alerts from the feeds. The app should also constantly use an agent to pull data for new alerts. The app should be hosted on web.
