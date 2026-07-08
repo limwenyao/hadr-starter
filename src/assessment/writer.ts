@@ -104,13 +104,14 @@ export async function fillAssessments(
  */
 export const claudeCliWriter: AssessmentWriter = (events) =>
   new Promise((resolve, reject) => {
-    const child = spawn("claude", ["-p"], {
-      shell: true, // resolves claude.cmd shim on Windows
+    const child = spawn("claude -p", {
+      shell: true, // resolves the claude.cmd shim on Windows
       stdio: ["pipe", "pipe", "inherit"],
     });
     let stdout = "";
     child.stdout.on("data", (chunk) => (stdout += chunk));
     child.on("error", reject);
+    child.stdin.on("error", reject);
     child.on("close", (code) => {
       if (code !== 0) return reject(new Error(`claude -p exited with ${code}`));
       resolve(parseAssessmentResponse(stdout));
