@@ -4,6 +4,7 @@ import type * as schema from "./schema.js";
 import type { EventVersionRow } from "./schema.js";
 import { rowToSurfacedEvent } from "./mapping.js";
 import type { SurfacedEvent } from "../types.js";
+import type { FeatureCollection } from "geojson";
 
 type Db = PostgresJsDatabase<typeof schema>;
 
@@ -25,4 +26,22 @@ export async function latestSurfacedEvents(db: Db): Promise<SurfacedEvent[]> {
     assessment: (r.assessment ?? null) as string | null, footprint: r.footprint ?? null,
     sourceUrl: (r.source_url ?? null) as string | null, ingestedAt: r.ingested_at as Date,
   } as unknown as EventVersionRow));
+}
+
+/** Newest footprint geometry per event, keyed by `${feed} ${feedEventId}` (the
+ *  footprint key). Only events whose latest version has geometry appear. Kept
+ *  separate from latestSurfacedEvents so the blob never rides the /api/events
+ *  or buildSitrep paths. */
+export async function latestGeometryById(db: Db): Promise<Record<string, FeatureCollection>> {
+  const rows = await db.execute(sql`
+    SELECT DISTINCT ON (feed, feed_event_id) feed, feed_event_id, footprint_geometry
+    FROM event_versions
+    WHERE footprint_geometry IS NOT NULL
+    ORDER BY feed, feed_event_id, source_updated_at DESC
+  `);
+  const out: Record<string, FeatureCollection> = {};
+  for (const r of rows as unknown as Record<string, unknown>[]) {
+    out[`${r.feed as string} ${r.feed_event_id as string}`] = r.footprint_geometry as FeatureCollection;
+  }
+  return out;
 }
