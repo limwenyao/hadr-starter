@@ -40,9 +40,16 @@ jobs:
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           FORCE: ${{ github.event_name == 'workflow_dispatch' }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}   # Neon (ADR 0011 dual-write)
         run: npm run sitrep
 
       - name: Commit dashboard + snapshot to main (ADR 0006)
+        # Always commit the JSON snapshot/dashboard, even if the sitrep step
+        # exited non-zero because the DB dual-write failed (ADR 0011): the run
+        # writes the snapshot to disk *before* the DB write and a DB blip must
+        # not lose the audit net (spec design.md:150; run.ts flags the failure
+        # via exit code, it does not discard the run). No-op when nothing staged.
+        if: always()
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

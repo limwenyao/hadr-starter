@@ -64,6 +64,25 @@ try {
   // said (audit trail — ADR 0006). Geometry is not persisted (summary-only).
   writeSnapshot("data", now, assessed);
   console.log("wrote dashboard.html and data snapshot");
+
+  // Transitional dual-write (ADR 0011): the DB is the new source of truth; the
+  // JSON snapshot above stays as the git audit net. A DB failure must not crash
+  // the run or lose the snapshot — log it, flag it, exit non-zero (CLAUDE.md #4).
+  if (process.env.DATABASE_URL) {
+    const { getDb, closeDb } = await import("./db/client.js");
+    const { persistRun } = await import("./db/persist.js");
+    try {
+      const { inserted } = await persistRun(getDb(), assessed, feedResults, now);
+      console.log(`db: wrote ${inserted} new event version(s)`);
+    } catch (dbErr) {
+      console.error(`db write failed (dashboard still served from last good state): ${String(dbErr)}`);
+      process.exitCode = 1;
+    } finally {
+      await closeDb();
+    }
+  } else {
+    console.log("db: DATABASE_URL unset — skipped DB write (snapshot-only run)");
+  }
 } catch (err) {
   console.error(`run failed: ${err instanceof Error ? err.stack : String(err)}`);
   process.exitCode = 1;

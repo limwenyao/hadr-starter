@@ -104,4 +104,31 @@ describe("parseUsgs", () => {
     }] };
     expect(parseUsgs(payload)[0].footprintRef).toBeUndefined();
   });
+
+  it("captures properties.updated as sourceUpdatedAt with 'source' provenance", () => {
+    const payload = { features: [{
+      id: "us-upd",
+      properties: { mag: 5.1, place: "x", time: 1783300000000, updated: 1783309999000 },
+      geometry: { coordinates: [1, 2, 10] },
+    }] };
+    const e = parseUsgs(payload)[0];
+    expect(e.sourceUpdatedAt).toBe(1783309999000);
+    expect(e.updateProvenance).toBe("source");
+  });
+
+  it("falls back to event time as sourceUpdatedAt with 'inferred' provenance when updated is missing/invalid", () => {
+    const missing = parseUsgs({ features: [{
+      id: "us-noupd", properties: { mag: 5.1, place: "x", time: 1783300000000 },
+      geometry: { coordinates: [1, 2] },
+    }] })[0];
+    expect(missing.sourceUpdatedAt).toBe(1783300000000);
+    expect(missing.updateProvenance).toBe("inferred");
+
+    const bad = parseUsgs({ features: [{
+      id: "us-badupd", properties: { mag: 5.1, place: "x", time: 1783300000000, updated: "nope" },
+      geometry: { coordinates: [1, 2] },
+    }] })[0];
+    expect(bad.updateProvenance).toBe("inferred");
+    expect(bad.sourceUpdatedAt).toBe(1783300000000);
+  });
 });

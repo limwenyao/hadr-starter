@@ -15,6 +15,7 @@ interface UsgsFeature {
     mag?: unknown;
     place?: unknown;
     time?: unknown;
+    updated?: unknown;
     alert?: unknown;
     sig?: unknown;
     title?: unknown;
@@ -49,6 +50,10 @@ function parseFeature(feature: UsgsFeature | null): Event | undefined {
     ? (feature.geometry!.coordinates as unknown[])
     : undefined;
 
+  const hasUpdated = typeof props.updated === "number" && isValidEventTime(props.updated);
+  const sourceUpdatedAt = hasUpdated ? (props.updated as number) : props.time;
+  const updateProvenance = hasUpdated ? "source" as const : "inferred" as const;
+
   return {
     feed: "USGS",
     feedEventId: feature.id,
@@ -64,6 +69,8 @@ function parseFeature(feature: UsgsFeature | null): Event | undefined {
           }
         : undefined,
     time: props.time,
+    sourceUpdatedAt,
+    updateProvenance,
     metrics: {
       mag: typeof props.mag === "number" ? props.mag : undefined,
       sig: typeof props.sig === "number" ? props.sig : undefined,

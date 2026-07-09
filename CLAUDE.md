@@ -15,6 +15,9 @@ governs *how* we build; those govern *what* and *why*.
 - **Scheduling**: GitHub Actions cron; the report step invokes headless Claude
   (`claude -p`). Prefer the current Claude model; keep token use modest.
 - Keep dependencies few. No database (state is dated JSON snapshots — ADR 0006).
+- **App build step (ADR 0011):** the deployed app is a **Next.js** project on Vercel and
+  therefore has a build step, superseding the "no build step" rule *for the app*. The
+  pure core (`src/`) and its scripts still run under **tsx**; tests still use Vitest.
 
 ## Test command
 

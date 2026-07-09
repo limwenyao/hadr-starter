@@ -32,10 +32,64 @@ Kept by the agent, reviewed by you. One entry per working block.
   prompt frames event data as untrusted / to be ignored if it contains instructions.
   Rules still decide inclusion/tier (ADR 0003/0004). Residuals accepted below.
 
+- **2026-07-10 — Deferred hardening from the Slice 1 review (opencode/GLM-5.2).**
+  An adversarial review of `platform-migration-slice1` found no Critical/High-severity
+  bugs beyond the three already fixed (snapshot-commit-on-DB-failure `if: always()`;
+  `db_write_ok=false` failure audit; 503 no longer leaks DB error text). The remaining
+  Low-severity items are accepted for now and tracked here:
+  - **#4 `app/` is not typechecked by `npm run typecheck`.** `tsconfig.include` is
+    `src`/`test`; CI runs `tsc` but not `next build`, so Next route-handler type errors
+    surface only at deploy time. Fix later: add `"app"` to include, or run `next build`
+    in CI.
+  - **#5 `/api/events` has no error handling.** A DB outage throws an unstructured 500,
+    inconsistent with the root route's 503. Fix later: try/catch → `Response.json({...},
+    { status: 503 })`.
+  - **#6 `/api/events` returns `sourceUrl` unsanitized.** The HTML path sanitizes URLs;
+    the JSON API does not. Latent only — nothing but our sanitized dashboard consumes the
+    API in Slice 1. Sanitize at the read seam when a second consumer appears (Slice 4).
+  - **#7 `String(dbErr)` in `run.ts` may log connection details to CI logs.** Low
+    exposure (CI logs are private). Fix later: log `err.message` only.
+  - **#8 `persistRun` is not transactional.** The event insert and the `ingest_runs`
+    insert are separate statements; a mid-failure can leave them disagreeing. Wrap in
+    `db.transaction(...)` when it matters.
+
 ## Deviations
 
 <!-- Anything built that departs from the PRD or CLAUDE.md is recorded here,
      with the reason. An undocumented deviation is a bug. -->
+
+- **2026-07-09 — Vitest file parallelism disabled (`vitest.config.ts`, ADR 0011).**
+  The two DB integration test files (`db-integration`, `db-persist`) share one Postgres
+  and `TRUNCATE` it between cases; Vitest's default parallel file execution let them wipe
+  each other's rows mid-test, an intermittent failure caught locally before CI. Set
+  `fileParallelism: false` so files run serially. The whole suite is ~2s, so the cost is
+  negligible; a per-worker database would be the heavier alternative if parallelism is
+  ever needed back. Not in the Slice 1 plan, which omitted cross-file DB test isolation.
+
+- **2026-07-09 — Platform migration (ADR 0011), Slice 1.** Introduced a hosted Postgres
+  (Neon) + Drizzle and a Next.js app on Vercel, superseding the static/no-DB v1 design
+  (ADRs 0005/0006) and adding a build step (CLAUDE.md tooling note updated). Events are
+  stored bitemporally (one row per upstream version). JSON snapshots are dual-written as
+  a transitional audit net. Only USGS captures a real `source_updated_at` this slice;
+  GDACS/ReliefWeb fall back to `inferred` until Slice 2.
+
+- **2026-07-09 — Schema additions beyond the Slice 1 plan: `depth_km` column +
+  CHECK constraints on `feed`/`tier`/`update_provenance` (ADR 0011 / Slice 1).**
+  The Slice 1 plan's `event_versions` schema stored only `lon`/`lat` and left
+  `feed`/`tier`/`update_provenance` as unconstrained `text`. Two Important findings
+  from the final code review were adopted before the (never-yet-applied) Drizzle
+  migration was regenerated, so no alter-migration debt was incurred: (a)
+  `coordinates.depthKm` was silently dropped on every Postgres round-trip —
+  an unrecoverable data gap for earthquake depth once events age out of the
+  live feed; added a nullable `depth_km` column plus mapping in both
+  directions. (b) an unknown `tier` value written to the DB would be silently
+  excluded from every tier group on read (the `as Tier` cast in
+  `rowToSurfacedEvent` trusts the column), violating the cardinal "never miss
+  a major event" rule; added Postgres CHECK constraints on `feed`, `tier`, and
+  `update_provenance` so bad values are rejected at write time instead of
+  degrading the read path. CHECK (not `pgEnum`) was chosen because feed
+  sources are expected to grow over time and CHECK constraints are easier to
+  evolve without an enum migration.
 
 - **2026-07-08 — PAGER-critical events bypass the magnitude noise floor.**
   ADR 0004 literally reads "noise floor: USGS M ≥ 4.5" and separately "CRITICAL:

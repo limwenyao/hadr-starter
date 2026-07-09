@@ -1,5 +1,6 @@
 import type { FeedName, FootprintSummary, SitrepModel, SurfacedEvent, Tier } from "../types.js";
 import { formatUtc } from "../time.js";
+import { STALE_AFTER_MS } from "../thresholds.js";
 
 /**
  * View-model for the map dashboard (ADR 0005). ALL render logic lives here,
@@ -37,6 +38,14 @@ export interface EventCardVM {
   coordinates: { lon: number; lat: number } | null;
   /** Impact-area summary (impact-zones slice), or null when the event has no zone. */
   footprint: FootprintSummary | null;
+  /** Upstream last-updated time, formatted UTC (bitemporal source clock). */
+  sourceUpdatedUtc: string;
+  /** Human relative age of the source update, e.g. "~2h ago". */
+  sourceUpdatedAgeLabel: string;
+  /** Source update older than STALE_AFTER_MS — soft hint only. */
+  stalenessHint: boolean;
+  /** Whether the update time came from the source or was inferred from event time. */
+  updateProvenance: "source" | "inferred";
 }
 
 export interface DashboardVM {
@@ -62,7 +71,16 @@ function badgesFor(event: SurfacedEvent): string[] {
   return badges;
 }
 
-function cardFor(event: SurfacedEvent): EventCardVM {
+function ageLabel(ms: number): string {
+  if (ms < 0) ms = 0;
+  const mins = Math.round(ms / 60_000);
+  if (mins < 60) return `~${mins}m ago`;
+  const hrs = Math.round(mins / 60);
+  if (hrs < 48) return `~${hrs}h ago`;
+  return `~${Math.round(hrs / 24)}d ago`;
+}
+
+function cardFor(event: SurfacedEvent, generatedAt: number): EventCardVM {
   return {
     id: event.feedEventId,
     key: `${event.feed} ${event.feedEventId}`,
@@ -88,12 +106,18 @@ function cardFor(event: SurfacedEvent): EventCardVM {
       ? { lon: event.coordinates.lon, lat: event.coordinates.lat }
       : null,
     footprint: event.footprint ?? null,
+    sourceUpdatedUtc: formatUtc(event.sourceUpdatedAt ?? event.time),
+    sourceUpdatedAgeLabel: ageLabel(generatedAt - (event.sourceUpdatedAt ?? event.time)),
+    stalenessHint: generatedAt - (event.sourceUpdatedAt ?? event.time) > STALE_AFTER_MS,
+    updateProvenance: event.updateProvenance ?? "inferred",
   };
 }
 
 export function buildViewModel(model: SitrepModel): DashboardVM {
   const tiers = TIERS.map((tier) => {
-    const events = model.surfaced.filter((e) => e.tier === tier).map(cardFor);
+    const events = model.surfaced
+      .filter((e) => e.tier === tier)
+      .map((e) => cardFor(e, model.generatedAt));
     return { tier, count: events.length, events };
   }).filter((group) => group.count > 0);
 
