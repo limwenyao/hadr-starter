@@ -49,13 +49,18 @@ function isLikelyDuplicate(primary: SurfacedEvent, candidate: SurfacedEvent): bo
  * member of any duplicate cluster is the primary. Pure; does not mutate input.
  */
 export function flagDuplicates(surfaced: SurfacedEvent[]): SurfacedEvent[] {
-  return surfaced.map((event, index) => {
+  const result: SurfacedEvent[] = [];
+  for (let index = 0; index < surfaced.length; index++) {
+    const event = surfaced[index];
+    let flagged: SurfacedEvent = event;
     for (let i = 0; i < index; i++) {
-      const primary = surfaced[i];
-      // Skip primaries that are themselves flagged — attribute to the cluster head.
+      // Read the already-computed result for i, not the (never-mutated) input —
+      // otherwise this guard is dead and a duplicate can be attributed to an
+      // intermediate duplicate instead of the true cluster head.
+      const primary = result[i];
       if (primary.duplicateOf) continue;
       if (isLikelyDuplicate(primary, event)) {
-        return {
+        flagged = {
           ...event,
           duplicateOf: {
             feed: primary.feed,
@@ -63,8 +68,10 @@ export function flagDuplicates(surfaced: SurfacedEvent[]): SurfacedEvent[] {
             title: primary.title,
           },
         };
+        break;
       }
     }
-    return event;
-  });
+    result.push(flagged);
+  }
+  return result;
 }

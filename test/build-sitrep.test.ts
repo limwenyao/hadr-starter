@@ -247,4 +247,17 @@ describe("buildSitrep (the seam — pure, deterministic)", () => {
     });
     expect(model.changeSummary).toEqual({ new: 0, revised: 1, withdrawn: 0 });
   });
+
+  it("does not report withdrawals for a feed that went unavailable this run", () => {
+    // Prior run had USGS events surfaced; this run USGS is down. Its prior
+    // events vanishing is the outage, not a retraction — must not be flagged
+    // "possibly withdrawn" (CLAUDE.md #5: never overstate).
+    const prior = buildSitrep([usgsOk], null, NOW);
+    expect(prior.surfaced.length).toBeGreaterThan(0);
+
+    const model = buildSitrep([usgsDown], prior, NOW);
+    expect(model.degradation).toEqual([{ feed: "USGS", reason: "HTTP 503" }]);
+    expect(model.withdrawn).toEqual([]);
+    expect(model.changeSummary).toEqual({ new: 0, revised: 0, withdrawn: 0 });
+  });
 });

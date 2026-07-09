@@ -56,10 +56,14 @@ export function buildSitrep(
 
   // Annotate vs the prior snapshot: new / revised notes on surfaced events,
   // possibly-withdrawn notes, and the deterministic change summary (ADR 0009).
+  // Events from a feed that was unavailable this run are excluded from
+  // withdrawal flagging — their absence is the outage, not a retraction.
+  const unavailableFeeds = new Set(degradation.map((d) => d.feed));
   const { surfaced, withdrawn, changeSummary } = detectChanges(
     flagged,
     priorSnapshot,
     now,
+    unavailableFeeds,
   );
 
   return { generatedAt: now.getTime(), surfaced, degradation, withdrawn, changeSummary };
