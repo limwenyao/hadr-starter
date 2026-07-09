@@ -23,6 +23,7 @@ export const eventVersions = pgTable(
     hazardType: text("hazard_type").notNull(),
     assessment: text("assessment"),
     footprint: jsonb("footprint"),
+    footprintGeometry: jsonb("footprint_geometry"),
     sourceUrl: text("source_url"),
     ingestedAt: timestamp("ingested_at", { withTimezone: true }).notNull(),
   },

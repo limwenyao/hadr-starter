@@ -58,6 +58,14 @@ Kept by the agent, reviewed by you. One entry per working block.
 <!-- Anything built that departs from the PRD or CLAUDE.md is recorded here,
      with the reason. An undocumented deviation is a bug. -->
 
+- **2026-07-10 — Footprint geometry persisted (Slice 1.5, ADR 0011).** Added a
+  nullable `footprint_geometry` jsonb column to `event_versions`, versioned per
+  source-update, storing the simplified GeoJSON FeatureCollection verbatim. A
+  dedicated `latestGeometryById` reader feeds it back to the dashboard map (kept
+  off `/api/events` and the core). Restores the impact-area polygons that Slice 1
+  had dropped on the DB-backed app. PostGIS is the future path if spatial queries
+  arrive (design doc §Decisions).
+
 - **2026-07-09 — Vitest file parallelism disabled (`vitest.config.ts`, ADR 0011).**
   The two DB integration test files (`db-integration`, `db-persist`) share one Postgres
   and `TRUNCATE` it between cases; Vitest's default parallel file execution let them wipe

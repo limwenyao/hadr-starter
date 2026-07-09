@@ -1,0 +1,1 @@
+ALTER TABLE "event_versions" ADD COLUMN "footprint_geometry" jsonb;
