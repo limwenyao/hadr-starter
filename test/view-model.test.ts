@@ -178,4 +178,21 @@ describe("buildViewModel (all render logic lives here — client stays dumb)", (
     expect(vm.totalCount).toBe(0);
     expect(vm.tiers).toEqual([]);
   });
+
+  it("carries a composite footprint key and the footprint summary onto the card", () => {
+    const vm = buildViewModel(model({
+      surfaced: [surfaced({
+        feed: "GDACS", feedEventId: "42",
+        footprint: { provenance: "gdacs", label: "Modeled affected area (GDACS · earthquake)", isEstimate: false, radiusKm: 50 },
+      })],
+    }));
+    const card = vm.tiers[0].events[0];
+    expect(card.key).toBe("GDACS 42");
+    expect(card.footprint!.label).toContain("GDACS");
+  });
+
+  it("sets card.footprint to null when the event has no footprint", () => {
+    const vm = buildViewModel(model({ surfaced: [surfaced({})] }));
+    expect(vm.tiers[0].events[0].footprint).toBeNull();
+  });
 });
