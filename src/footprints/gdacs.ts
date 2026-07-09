@@ -1,7 +1,7 @@
 import type { Feature, FeatureCollection, Geometry, Position } from "geojson";
 import type { FootprintResult } from "../types.js";
 import { simplifyGeometry, eachPosition } from "./simplify.js";
-import { GEOMETRY_SIMPLIFY_TOLERANCE_DEG } from "../thresholds.js";
+import { GEOMETRY_SIMPLIFY_TOLERANCE_DEG, KM_PER_DEG_LAT } from "../thresholds.js";
 
 const AREA_TYPES = new Set(["Polygon", "MultiPolygon", "LineString", "MultiLineString"]);
 
@@ -30,8 +30,8 @@ function bboxRadiusKm(features: Feature[]): number {
   }
   if (!Number.isFinite(minLon)) return 0;
   const midLat = ((minLat + maxLat) / 2) * Math.PI / 180;
-  const dLatKm = (maxLat - minLat) * 111;
-  const dLonKm = (maxLon - minLon) * 111 * Math.cos(midLat);
+  const dLatKm = (maxLat - minLat) * KM_PER_DEG_LAT;
+  const dLonKm = (maxLon - minLon) * KM_PER_DEG_LAT * Math.cos(midLat);
   return Math.round(Math.hypot(dLatKm, dLonKm) / 2);
 }
 

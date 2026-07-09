@@ -90,3 +90,5 @@ export const GEOMETRY_SIMPLIFY_TOLERANCE_DEG = 0.01;
 export const FOOTPRINT_FETCH_TIMEOUT_MS = 30_000;
 /** Max events fetched concurrently in fillFootprints — poll feeds politely, ADR 0008. */
 export const FOOTPRINT_FETCH_CONCURRENCY = 6;
+/** Kilometres per degree of latitude — for rough equirectangular bbox sizing. */
+export const KM_PER_DEG_LAT = 111;

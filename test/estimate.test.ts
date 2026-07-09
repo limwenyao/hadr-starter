@@ -32,6 +32,14 @@ describe("circlePolygon", () => {
     const north = Math.max(...ring.map((p) => p[1]));
     expect(north).toBeCloseTo(1, 1);
   });
+
+  it("emits only finite coordinates at a near-polar latitude (cos(lat)→0 guard)", () => {
+    const poly = circlePolygon(0, 89.999, 100, EST_RING_POINTS);
+    const allFinite = poly.coordinates[0].every(
+      (p) => Number.isFinite(p[0]) && Number.isFinite(p[1]),
+    );
+    expect(allFinite).toBe(true);
+  });
 });
 
 describe("estimateFootprint", () => {
