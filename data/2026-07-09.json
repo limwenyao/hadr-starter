@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1783566777151,
+  "generatedAt": 1783580618476,
   "surfaced": [
     {
       "feed": "GDACS",
@@ -16,7 +16,14 @@
         "alertLevel": "red"
       },
       "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001279&episodeid=33&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001279&episodeid=33",
       "tier": "CRITICAL",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 3060
+      },
       "assessment": "Assessment unavailable this run — the metrics above are authoritative."
     },
     {
@@ -37,9 +44,16 @@
         "pagerAlert": "green"
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tawe",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tawe.geojson",
       "tier": "HIGH",
       "change": {
         "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
       },
       "assessment": "Assessment unavailable this run — the metrics above are authoritative."
     },
@@ -61,9 +75,16 @@
         "pagerAlert": "green"
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz2b",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000sz2b.geojson",
       "tier": "HIGH",
       "change": {
         "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
       },
       "assessment": "Assessment unavailable this run — the metrics above are authoritative."
     },
@@ -82,7 +103,14 @@
         "alertLevel": "orange"
       },
       "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1029331&episodeid=7&eventtype=WF",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=WF&eventid=1029331&episodeid=7",
       "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · wildfire)",
+        "isEstimate": false,
+        "radiusKm": 7
+      },
       "assessment": "Assessment unavailable this run — the metrics above are authoritative."
     },
     {
@@ -403,9 +431,16 @@
         "pagerAlert": "green"
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000taww",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000taww.geojson",
       "tier": "MODERATE",
       "change": {
         "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
       },
       "assessment": "Assessment unavailable this run — the metrics above are authoritative."
     },
@@ -427,9 +462,16 @@
         "pagerAlert": "green"
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tay7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tay7.geojson",
       "tier": "MODERATE",
       "change": {
         "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
       },
       "assessment": "Assessment unavailable this run — the metrics above are authoritative."
     },
@@ -450,9 +492,16 @@
         "sig": 416
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tawt",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tawt.geojson",
       "tier": "MODERATE",
       "change": {
         "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
       },
       "assessment": "Assessment unavailable this run — the metrics above are authoritative."
     },
@@ -473,9 +522,16 @@
         "sig": 385
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz3z",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000sz3z.geojson",
       "tier": "MODERATE",
       "change": {
         "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
       },
       "assessment": "Assessment unavailable this run — the metrics above are authoritative."
     },
@@ -496,9 +552,16 @@
         "sig": 385
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tawr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tawr.geojson",
       "tier": "MODERATE",
       "change": {
         "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 67
       },
       "assessment": "Assessment unavailable this run — the metrics above are authoritative."
     },
@@ -519,9 +582,16 @@
         "sig": 369
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz31",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000sz31.geojson",
       "tier": "MODERATE",
       "change": {
         "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
       },
       "assessment": "Assessment unavailable this run — the metrics above are authoritative."
     },
@@ -542,6 +612,7 @@
         "sig": 354
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tavx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tavx.geojson",
       "tier": "MODERATE",
       "change": {
         "kind": "new"
@@ -565,9 +636,16 @@
         "sig": 340
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz4q",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000sz4q.geojson",
       "tier": "MODERATE",
       "change": {
         "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 40
       },
       "assessment": "Assessment unavailable this run — the metrics above are authoritative."
     },
@@ -588,50 +666,11 @@
         "sig": 340
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tavs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tavs.geojson",
       "tier": "MODERATE",
       "change": {
         "kind": "new"
       },
-      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
-    },
-    {
-      "feed": "USGS",
-      "feedEventId": "us6000tauz",
-      "hazardType": "EQ",
-      "title": "M 4.7 - 25 km NNE of Santa Rosa, Peru",
-      "locationName": "25 km NNE of Santa Rosa, Peru",
-      "coordinates": {
-        "lon": -74.7855,
-        "lat": -10.7092,
-        "depthKm": 10
-      },
-      "time": 1783486832411,
-      "metrics": {
-        "mag": 4.7,
-        "sig": 340
-      },
-      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tauz",
-      "tier": "MODERATE",
-      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
-    },
-    {
-      "feed": "USGS",
-      "feedEventId": "us6000tauv",
-      "hazardType": "EQ",
-      "title": "M 4.7 - 61 km ENE of Olonkinbyen, Svalbard and Jan Mayen",
-      "locationName": "61 km ENE of Olonkinbyen, Svalbard and Jan Mayen",
-      "coordinates": {
-        "lon": -7.1298,
-        "lat": 71.1194,
-        "depthKm": 10
-      },
-      "time": 1783484506738,
-      "metrics": {
-        "mag": 4.7,
-        "sig": 340
-      },
-      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tauv",
-      "tier": "MODERATE",
       "assessment": "Assessment unavailable this run — the metrics above are authoritative."
     },
     {
@@ -651,6 +690,7 @@
         "sig": 312
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz4p",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000sz4p.geojson",
       "tier": "MODERATE",
       "change": {
         "kind": "new"
@@ -674,9 +714,16 @@
         "sig": 312
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tazy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tazy.geojson",
       "tier": "MODERATE",
       "change": {
         "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
       },
       "assessment": "Assessment unavailable this run — the metrics above are authoritative."
     }
