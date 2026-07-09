@@ -94,8 +94,10 @@ export const FOOTPRINT_FETCH_CONCURRENCY = 6;
 export const KM_PER_DEG_LAT = 111;
 
 /**
- * Freshness hint (ADR 0011). A surfaced event whose upstream source has not been
- * updated within this window shows a soft "possibly stale" hint — an input for the
- * duty officer's own judgement, never a hard verdict (CLAUDE.md #5). Tunable.
+ * Recency colour bands for the "Updated: ~x ago" indicator (ADR 0011). The age
+ * of an event's last upstream update is shown green within RECENCY_FRESH_MS,
+ * yellow up to STALE_AFTER_MS, and orange beyond — an input for the duty
+ * officer's judgement, never a hard verdict (CLAUDE.md #5). Tunable.
  */
-export const STALE_AFTER_MS = 24 * 60 * 60_000; // 24h
+export const RECENCY_FRESH_MS = 60 * 60_000;     // 60 min — "fresh" (green)
+export const STALE_AFTER_MS = 24 * 60 * 60_000;  // 24h — beyond is "stale" (orange)
