@@ -221,4 +221,30 @@ describe("buildSitrep (the seam — pure, deterministic)", () => {
     expect(rw).toBeDefined();
     expect(rw!.duplicateOf).toBeUndefined();
   });
+
+  // --- change detection through the seam (ADR 0009) ---
+
+  it("annotates changes vs the prior snapshot passed through the seam", () => {
+    // Run once to get a prior, then run again with a revised magnitude.
+    const prior = buildSitrep([usgsOk], null, NOW);
+    expect(prior.changeSummary).toBeNull(); // first run: no notes
+
+    const revised = JSON.parse(JSON.stringify(fixture));
+    const aaa1 = revised.features.find(
+      (f: { id: string }) => f.id === "us7000aaa1",
+    );
+    aaa1.properties.mag = 7.6; // was 7.2 — material revision
+
+    const model = buildSitrep(
+      [{ feed: "USGS", status: "ok", rawPayload: revised }],
+      prior,
+      NOW,
+    );
+    const e = model.surfaced.find((x) => x.feedEventId === "us7000aaa1");
+    expect(e!.change).toEqual({
+      kind: "revised",
+      note: "revised since yesterday: M 7.2 → M 7.6",
+    });
+    expect(model.changeSummary).toEqual({ new: 0, revised: 1, withdrawn: 0 });
+  });
 });

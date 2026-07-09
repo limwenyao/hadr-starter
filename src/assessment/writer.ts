@@ -34,6 +34,8 @@ export function buildAssessmentPrompt(events: SurfacedEvent[]): string {
       likelyDuplicateOf: e.duplicateOf
         ? `${e.duplicateOf.feed} — ${e.duplicateOf.title}`
         : undefined,
+      // Deterministic revision note (ADR 0009) — the narrative may mention it.
+      changeSinceYesterday: e.change?.note,
     }),
   );
 

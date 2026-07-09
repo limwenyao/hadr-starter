@@ -124,6 +124,18 @@ const THEME_CSS = `
   .chip.tier.t-MODERATE, .group-title.t-MODERATE { color: var(--moderate); }
   .chip.tier { background: rgba(255, 255, 255, 0.06); }
   .chip.listonly { color: var(--muted); }
+  .chip.new { color: var(--accent); background: rgba(56, 189, 248, 0.12); }
+  .chg { color: var(--moderate); font-size: 0.74rem; font-style: italic; margin: 0.2rem 0 0; }
+  #changes { padding: 0 1.25rem; }
+  .changes-title {
+    font-size: 0.78rem; letter-spacing: 0.08em; margin: 1rem 0 0.2rem;
+    color: var(--muted);
+  }
+  .chg-notice {
+    background: rgba(234, 179, 8, 0.1); border: 1px solid var(--moderate);
+    border-radius: 8px; padding: 0.5rem 0.75rem; margin: 0.5rem 0 0;
+    font-size: 0.8rem;
+  }
   .badge {
     display: inline-block; font-size: 0.7rem; background: var(--border);
     border-radius: 4px; padding: 0.05rem 0.35rem; margin-right: 0.3rem;
@@ -185,6 +197,7 @@ export function renderDashboard(model: SitrepModel): string {
     <p id="meta"></p>
   </header>
   <div id="notices"></div>
+  <div id="changes"></div>
   <div id="groups"></div>
 </aside>
 <noscript>

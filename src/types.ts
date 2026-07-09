@@ -43,6 +43,12 @@ export interface SurfacedEvent extends Event {
    * events remain in `surfaced`.
    */
   duplicateOf?: { feed: FeedName; feedEventId: string; title: string };
+  /**
+   * Change vs the prior snapshot (ADR 0009): newly surfaced, or materially
+   * revised (magnitude/tier/alert level) with a deterministic note. Absent when
+   * unchanged or when no prior snapshot existed.
+   */
+  change?: { kind: "new" | "revised"; note?: string };
 }
 
 /** Raw result of one feed fetch — failures are data, not exceptions (ADR 0008). */
@@ -56,4 +62,14 @@ export interface SitrepModel {
   /** Sorted most-severe-first. */
   surfaced: SurfacedEvent[];
   degradation: { feed: FeedName; reason: string }[];
+  /**
+   * Previously-reported events that vanished from their feed while still inside
+   * its visibility window (ADR 0009) — possibly withdrawn. Panel notes only.
+   */
+  withdrawn: { feed: FeedName; feedEventId: string; note: string }[];
+  /**
+   * Deterministic change verdict vs the prior snapshot; null when no prior
+   * snapshot existed (first run). The scheduled quiet-gate's input (ADR 0010).
+   */
+  changeSummary: { new: number; revised: number; withdrawn: number } | null;
 }

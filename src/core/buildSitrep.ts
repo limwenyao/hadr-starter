@@ -11,6 +11,7 @@ import { parseGdacs } from "../feeds/gdacs.js";
 import { reliefWebSource } from "../feeds/reliefweb.js";
 import { passesNoiseFloor, tierFor } from "./triage.js";
 import { flagDuplicates } from "./duplicates.js";
+import { detectChanges } from "./changes.js";
 
 const TIER_ORDER: Record<Tier, number> = { CRITICAL: 0, HIGH: 1, MODERATE: 2 };
 
@@ -24,16 +25,14 @@ const PARSERS: Partial<Record<FeedName, (raw: unknown) => Event[]>> = {
 /**
  * THE seam (docs/PRD.md → Implementation Decisions). Pure and deterministic:
  * no network, no LLM, no ambient clock. Feed failures arrive as data and leave
- * as degradation notices (ADR 0008). priorSnapshot is part of the contract but
- * unused this slice — change detection lands with snapshots (ADR 0010).
+ * as degradation notices (ADR 0008). The prior snapshot drives new/revised/
+ * withdrawn change notes (ADR 0009).
  */
 export function buildSitrep(
   feedResults: FeedResult[],
   priorSnapshot: SitrepModel | null,
   now: Date,
 ): SitrepModel {
-  void priorSnapshot; // reserved for change detection (later slice)
-
   const degradation = feedResults
     .filter((r) => r.status === "unavailable")
     .map((r) => ({ feed: r.feed, reason: r.error }));
@@ -53,7 +52,15 @@ export function buildSitrep(
 
   // Flag likely cross-feed duplicates after ranking, so the first member of any
   // cluster (the most severe) is the primary (ADR 0007 — flag, never merge).
-  const surfaced = flagDuplicates(sorted);
+  const flagged = flagDuplicates(sorted);
 
-  return { generatedAt: now.getTime(), surfaced, degradation };
+  // Annotate vs the prior snapshot: new / revised notes on surfaced events,
+  // possibly-withdrawn notes, and the deterministic change summary (ADR 0009).
+  const { surfaced, withdrawn, changeSummary } = detectChanges(
+    flagged,
+    priorSnapshot,
+    now,
+  );
+
+  return { generatedAt: now.getTime(), surfaced, degradation, withdrawn, changeSummary };
 }

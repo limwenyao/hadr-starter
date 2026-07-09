@@ -30,3 +30,18 @@ export const GDACS_CRITICAL_ALERT: GdacsAlertLevel = "red";
  */
 export const DUP_TIME_WINDOW_MS = 90 * 60_000; // ±90 minutes
 export const DUP_DISTANCE_KM = 100;
+
+/**
+ * Change detection vs the prior snapshot (ADR 0009).
+ */
+
+/** Magnitude revisions smaller than this are jitter, not a material change. */
+export const MAG_REVISION_MIN = 0.1;
+
+/**
+ * A previously-reported event missing from its feed is flagged "possibly
+ * withdrawn" only while its event time is still inside the feed's rolling
+ * visibility window — beyond it, disappearing is just normal aging-out
+ * (USGS all_day spans 24 h; GDACS current-events treated the same).
+ */
+export const FEED_WINDOW_MS = 24 * 60 * 60_000;

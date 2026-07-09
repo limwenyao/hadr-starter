@@ -1,0 +1,406 @@
+{
+  "generatedAt": 1783498134806,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001279",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone BAVI-26",
+      "locationName": "Guam, Northern Mariana Islands, Japan, Taiwan, China",
+      "coordinates": {
+        "lon": 134.1,
+        "lat": 16.9
+      },
+      "time": 1782864000000,
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001279&episodeid=29&eventtype=TC",
+      "tier": "CRITICAL",
+      "assessment": "Tropical Cyclone BAVI-26 is active under a GDACS red alert, tracking across Guam, the Northern Mariana Islands, Japan, Taiwan, and China. The red alert level signals potential for significant humanitarian impact across this multi-country path. No casualty or damage figures are yet available from the feed."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1029260",
+      "hazardType": "WF",
+      "title": "Forest fires in Portugal",
+      "locationName": "Portugal",
+      "coordinates": {
+        "lon": -8.2824,
+        "lat": 40.6204
+      },
+      "time": 1782950400000,
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1029260&episodeid=11&eventtype=WF",
+      "tier": "HIGH",
+      "assessment": "GDACS has issued an orange alert for forest fires burning in Portugal. No casualty or damage details are available from the feed at this time."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1103933",
+      "hazardType": "FL",
+      "title": "Flood in China",
+      "locationName": "China",
+      "coordinates": {
+        "lon": 111.0272,
+        "lat": 27.1176
+      },
+      "time": 1780707600000,
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1103933&episodeid=17&eventtype=FL",
+      "tier": "HIGH",
+      "assessment": "GDACS has issued an orange alert for flooding in China. No casualty or damage figures are provided in the feed at this time."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1029331",
+      "hazardType": "WF",
+      "title": "Forest fires in France",
+      "locationName": "France",
+      "coordinates": {
+        "lon": 2.5678,
+        "lat": 42.6724
+      },
+      "time": 1783123200000,
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1029331&episodeid=6&eventtype=WF",
+      "tier": "HIGH",
+      "assessment": "GDACS has issued an orange alert for forest fires burning in France. No casualty or damage details are available from the feed."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tary",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 95 km WSW of Labuan, Indonesia",
+      "locationName": "95 km WSW of Labuan, Indonesia",
+      "coordinates": {
+        "lon": 105.0646,
+        "lat": -6.7717,
+        "depthKm": 35
+      },
+      "time": 1783453492435,
+      "metrics": {
+        "mag": 5.3,
+        "sig": 433
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tary",
+      "tier": "MODERATE",
+      "assessment": "M5.3 earthquake struck 95 km WSW of Labuan, Indonesia."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tarc",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 10 km WSW of Orotina, Costa Rica",
+      "locationName": "10 km WSW of Orotina, Costa Rica",
+      "coordinates": {
+        "lon": -84.6042,
+        "lat": 9.8644,
+        "depthKm": 47.784
+      },
+      "time": 1783447892787,
+      "metrics": {
+        "mag": 5.3,
+        "sig": 444
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tarc",
+      "tier": "MODERATE",
+      "assessment": "M5.3 earthquake struck 10 km WSW of Orotina, Costa Rica."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tatd",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 13 km W of Changning, China",
+      "locationName": "13 km W of Changning, China",
+      "coordinates": {
+        "lon": 104.788,
+        "lat": 28.5702,
+        "depthKm": 10
+      },
+      "time": 1783462349518,
+      "metrics": {
+        "mag": 5.1,
+        "sig": 401
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tatd",
+      "tier": "MODERATE",
+      "assessment": "M5.1 earthquake struck 13 km W of Changning, China."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000taui",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 15 km NNE of Xunchang, China",
+      "locationName": "15 km NNE of Xunchang, China",
+      "coordinates": {
+        "lon": 104.7549,
+        "lat": 28.5871,
+        "depthKm": 10
+      },
+      "time": 1783476528776,
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000taui",
+      "tier": "MODERATE",
+      "assessment": "M5.0 earthquake struck 15 km NNE of Xunchang, China."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000talm",
+      "hazardType": "EQ",
+      "title": "M 5.0 - Reykjanes Ridge",
+      "locationName": "Reykjanes Ridge",
+      "coordinates": {
+        "lon": -30.3683,
+        "lat": 59.4768,
+        "depthKm": 10
+      },
+      "time": 1783413056236,
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000talm",
+      "tier": "MODERATE",
+      "assessment": "M5.0 earthquake struck the Reykjanes Ridge."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tatn",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 21 km ESE of Karakenja, Tajikistan",
+      "locationName": "21 km ESE of Karakenja, Tajikistan",
+      "coordinates": {
+        "lon": 71.7429,
+        "lat": 39.1463,
+        "depthKm": 10
+      },
+      "time": 1783464156894,
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tatn",
+      "tier": "MODERATE",
+      "assessment": "M4.9 earthquake struck 21 km ESE of Karakenja, Tajikistan."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tasa",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 88 km WNW of Hicks Bay, New Zealand",
+      "locationName": "88 km WNW of Hicks Bay, New Zealand",
+      "coordinates": {
+        "lon": 177.4292,
+        "lat": -37.2165,
+        "depthKm": 121.41
+      },
+      "time": 1783456395705,
+      "metrics": {
+        "mag": 4.9,
+        "sig": 371,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tasa",
+      "tier": "MODERATE",
+      "assessment": "M4.9 earthquake struck 88 km WNW of Hicks Bay, New Zealand, with a green PAGER alert."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tar3",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 298 km SSE of Ushuaia, Argentina",
+      "locationName": "298 km SSE of Ushuaia, Argentina",
+      "coordinates": {
+        "lon": -66.8183,
+        "lat": -57.3541,
+        "depthKm": 10
+      },
+      "time": 1783445996121,
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tar3",
+      "tier": "MODERATE",
+      "assessment": "M4.9 earthquake struck 298 km SSE of Ushuaia, Argentina."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tauz",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 25 km NNE of Santa Rosa, Peru",
+      "locationName": "25 km NNE of Santa Rosa, Peru",
+      "coordinates": {
+        "lon": -74.7855,
+        "lat": -10.7092,
+        "depthKm": 10
+      },
+      "time": 1783486832411,
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tauz",
+      "tier": "MODERATE",
+      "assessment": "M4.7 earthquake struck 25 km NNE of Santa Rosa, Peru."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tauv",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 61 km ENE of Olonkinbyen, Svalbard and Jan Mayen",
+      "locationName": "61 km ENE of Olonkinbyen, Svalbard and Jan Mayen",
+      "coordinates": {
+        "lon": -7.1298,
+        "lat": 71.1194,
+        "depthKm": 10
+      },
+      "time": 1783484506738,
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tauv",
+      "tier": "MODERATE",
+      "assessment": "M4.7 earthquake struck 61 km ENE of Olonkinbyen, Svalbard and Jan Mayen."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tau8",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 132 km WNW of Ternate, Indonesia",
+      "locationName": "132 km WNW of Ternate, Indonesia",
+      "coordinates": {
+        "lon": 126.3577,
+        "lat": 1.3973,
+        "depthKm": 49.277
+      },
+      "time": 1783467351427,
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tau8",
+      "tier": "MODERATE",
+      "assessment": "M4.6 earthquake struck 132 km WNW of Ternate, Indonesia."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tati",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 13 km SSE of Yibin, China",
+      "locationName": "13 km SSE of Yibin, China",
+      "coordinates": {
+        "lon": 104.7122,
+        "lat": 28.6565,
+        "depthKm": 10
+      },
+      "time": 1783462933825,
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tati",
+      "tier": "MODERATE",
+      "assessment": "M4.6 earthquake struck 13 km SSE of Yibin, China."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tase",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 7 km SSE of Calatagan, Philippines",
+      "locationName": "7 km SSE of Calatagan, Philippines",
+      "coordinates": {
+        "lon": 120.6627,
+        "lat": 13.7713,
+        "depthKm": 155.427
+      },
+      "time": 1783456660097,
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tase",
+      "tier": "MODERATE",
+      "assessment": "M4.5 earthquake struck 7 km SSE of Calatagan, Philippines."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tara",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 81 km NNE of Adak, Alaska",
+      "locationName": "81 km NNE of Adak, Alaska",
+      "coordinates": {
+        "lon": -176.2826,
+        "lat": 52.5711,
+        "depthKm": 172.427
+      },
+      "time": 1783447661091,
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tara",
+      "tier": "MODERATE",
+      "assessment": "M4.5 earthquake struck 81 km NNE of Adak, Alaska."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tant",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 172 km NNW of Tobelo, Indonesia",
+      "locationName": "172 km NNW of Tobelo, Indonesia",
+      "coordinates": {
+        "lon": 127.2906,
+        "lat": 3.1116,
+        "depthKm": 35
+      },
+      "time": 1783434082044,
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tant",
+      "tier": "MODERATE",
+      "assessment": "M4.5 earthquake struck 172 km NNW of Tobelo, Indonesia."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000talr",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 32 km NE of Yaguaraparo, Venezuela",
+      "locationName": "32 km NE of Yaguaraparo, Venezuela",
+      "coordinates": {
+        "lon": -62.58,
+        "lat": 10.7321,
+        "depthKm": 126.81
+      },
+      "time": 1783413697390,
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000talr",
+      "tier": "MODERATE",
+      "assessment": "M4.5 earthquake struck 32 km NE of Yaguaraparo, Venezuela."
+    }
+  ],
+  "degradation": [
+    {
+      "feed": "ReliefWeb",
+      "reason": "HTTP 406"
+    }
+  ],
+  "withdrawn": [],
+  "changeSummary": null
+}

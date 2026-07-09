@@ -22,6 +22,10 @@ export interface EventCardVM {
   badges: string[];
   /** ADR 0007 flag note, or null when unflagged. */
   duplicateNote: string | null;
+  /** New since the prior snapshot (ADR 0009). */
+  isNew: boolean;
+  /** Deterministic revision note, or null when unchanged (ADR 0009). */
+  changeNote: string | null;
   assessment: string;
   /** Sanitized server-side: http(s) only, anything else becomes null. */
   sourceUrl: string | null;
@@ -36,6 +40,10 @@ export interface DashboardVM {
   /** Severity order, empty tiers omitted. */
   tiers: { tier: Tier; count: number; events: EventCardVM[] }[];
   degradation: { feed: FeedName; reason: string }[];
+  /** Possibly-withdrawn notes (ADR 0009) — panel text, never pins. */
+  withdrawn: string[];
+  /** One-line change summary vs the prior snapshot, or null on first runs. */
+  changesLine: string | null;
 }
 
 function badgesFor(event: SurfacedEvent): string[] {
@@ -60,6 +68,8 @@ function cardFor(event: SurfacedEvent): EventCardVM {
     duplicateNote: event.duplicateOf
       ? `Likely the same event as ${event.duplicateOf.feed} — ${event.duplicateOf.title}`
       : null,
+    isNew: event.change?.kind === "new",
+    changeNote: event.change?.note ?? null,
     assessment: event.assessment ?? "",
     // Entity-escaping alone does not stop javascript:-scheme injection into href.
     sourceUrl:
@@ -78,11 +88,16 @@ export function buildViewModel(model: SitrepModel): DashboardVM {
     return { tier, count: events.length, events };
   }).filter((group) => group.count > 0);
 
+  const s = model.changeSummary;
   return {
     generatedUtc: formatUtc(model.generatedAt),
     feedsLine: "USGS, GDACS, ReliefWeb",
     totalCount: model.surfaced.length,
     tiers,
     degradation: model.degradation.map((d) => ({ feed: d.feed, reason: d.reason })),
+    withdrawn: model.withdrawn.map((w) => w.note),
+    changesLine: s
+      ? `since yesterday: ${s.new} new · ${s.revised} revised · ${s.withdrawn} possibly withdrawn`
+      : null,
   };
 }

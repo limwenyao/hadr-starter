@@ -2,6 +2,7 @@ import { writeFileSync } from "node:fs";
 import { fetchUsgs } from "./feeds/usgs.js";
 import { fetchGdacs } from "./feeds/gdacs.js";
 import { reliefWebSource } from "./feeds/reliefweb.js";
+import { readPriorSnapshot, writeSnapshot } from "./snapshots.js";
 import { buildSitrep } from "./core/buildSitrep.js";
 import { claudeCliWriter, fillAssessments } from "./assessment/writer.js";
 import { renderDashboard } from "./render/dashboard.js";
@@ -22,18 +23,28 @@ try {
     fetchGdacs(),
     reliefWebSource.fetch(),
   ]);
-  const model = buildSitrep(feedResults, null, new Date());
 
+  const now = new Date();
+  const prior = readPriorSnapshot("data", now);
+  const model = buildSitrep(feedResults, prior, now);
+
+  const changes = model.changeSummary
+    ? `; changes vs prior: ${model.changeSummary.new} new, ${model.changeSummary.revised} revised, ${model.changeSummary.withdrawn} possibly withdrawn`
+    : "; no prior snapshot (first run — no change notes)";
   console.log(
     `surfaced ${model.surfaced.length} event(s)` +
       (model.degradation.length
         ? `; feeds unavailable: ${model.degradation.map((d) => d.feed).join(", ")}`
-        : ""),
+        : "") +
+      changes,
   );
 
   const assessed = await fillAssessments(model, claudeCliWriter);
   writeFileSync("dashboard.html", renderDashboard(assessed), "utf8");
-  console.log("wrote dashboard.html");
+  // Persist the assessed model: the snapshot records what the brief actually
+  // said (audit trail — ADR 0006). Committing is the caller's job.
+  writeSnapshot("data", now, assessed);
+  console.log("wrote dashboard.html and data snapshot");
 } catch (err) {
   console.error(`run failed: ${err instanceof Error ? err.stack : String(err)}`);
   process.exitCode = 1;
