@@ -14,3 +14,12 @@ __pycache__/
 .venv/
 node_modules/
 .DS_Store
+
+# Partial snapshot writes (writeSnapshot writes <name>.tmp-* then renames).
+data/*.tmp-*
+
+# Agent/tooling scratch state — personal, not project source.
+.agents/
+.superpowers/
+.claude/settings.local.json
+skills-lock.json

@@ -266,8 +266,10 @@ writer) so that `buildSitrep` remains deterministic and testable without a model
 ### Scheduling & persistence (ADR 0002 / 0006)
 
 - GitHub Actions cron timed to 08:30 SGT (UTC+8; cron expressed in UTC), plus
-  `workflow_dispatch`. Enable by renaming `sitrep.yml.disabled` once both TODO
-  steps exist.
+  `workflow_dispatch`. Live as `.github/workflows/sitrep.yml` since 2026-07-09
+  (validated by a manual dispatch); the deterministic quiet-gate lives inside
+  `run.ts` (`shouldAssess`) rather than as a separate workflow step — see
+  implementation-notes Deviations.
 - Workflow order: deterministic change-check (no model) → model/report only if
   changed → commit dated JSON snapshot (`data/YYYY-MM-DD.json`) + regenerated
   `dashboard.html`.

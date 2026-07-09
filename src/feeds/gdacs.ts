@@ -3,8 +3,9 @@ import { isValidEventTime } from "../time.js";
 
 /**
  * GDACS multi-hazard feed (feeds/gdacs.md). GeoJSON FeatureCollection. We store
- * the event-level `eventid` as feedEventId — stable identity across runs; the
- * revision-level `episodeid` is deferred to the change-detection slice (ADR 0009).
+ * the event-level `eventid` as feedEventId — stable identity across runs. Change
+ * detection (ADR 0009) keys on (feed, feedEventId); the revision-level `episodeid`
+ * is parsed but not used for identity (episode-granular tracking is out of scope).
  * GDACS carries an *alert level* (colour), distinct from USGS's PAGER alert.
  */
 
