@@ -32,13 +32,13 @@ export function carryForwardAssessments(
   prior: SitrepModel | null,
 ): SitrepModel {
   const priorProse = new Map(
-    (prior?.surfaced ?? []).map((e) => [e.feedEventId, e.assessment]),
+    (prior?.surfaced ?? []).map((e) => [`${e.feed} ${e.feedEventId}`, e.assessment]),
   );
   return {
     ...model,
     surfaced: model.surfaced.map((e) => ({
       ...e,
-      assessment: priorProse.get(e.feedEventId) ?? FALLBACK_ASSESSMENT,
+      assessment: priorProse.get(`${e.feed} ${e.feedEventId}`) ?? FALLBACK_ASSESSMENT,
     })),
   };
 }

@@ -68,6 +68,22 @@ describe("carryForwardAssessments (quiet day — reuse prior prose, no model cal
     ]);
   });
 
+  it("keys prior prose by (feed, feedEventId) — no cross-feed collision on shared ids", () => {
+    const prior = model([
+      surfaced("shared", { feed: "USGS", assessment: "USGS prose." }),
+      surfaced("shared", { feed: "GDACS", assessment: "GDACS prose." }),
+    ]);
+    const out = carryForwardAssessments(
+      model([
+        surfaced("shared", { feed: "USGS" }),
+        surfaced("shared", { feed: "GDACS" }),
+      ]),
+      prior,
+    );
+    expect(out.surfaced[0].assessment).toBe("USGS prose.");
+    expect(out.surfaced[1].assessment).toBe("GDACS prose.");
+  });
+
   it("returns a fresh object and does not mutate the input", () => {
     const input = model([surfaced("a")]);
     const prior = model([surfaced("a", { assessment: "A." })]);
