@@ -53,3 +53,13 @@ export const FEED_WINDOW_MS = 24 * 60 * 60_000;
  * is almost certainly a payload.
  */
 export const MAX_FIELD_CHARS = 200;
+
+/**
+ * `claude -p` invocation timeout (assessment writer adapter). Unlike feed
+ * adapters (AbortSignal.timeout(30_000)), a batched-prompt model call over one
+ * run's surfaced events legitimately takes longer than a feed fetch — 3 minutes
+ * is generous headroom while still guaranteeing the run cannot hang forever
+ * (a hung run would also queue behind the next day's, since the workflow uses
+ * concurrency: cancel-in-progress: false).
+ */
+export const CLAUDE_CLI_TIMEOUT_MS = 180_000;
