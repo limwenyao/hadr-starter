@@ -40,8 +40,12 @@ export function simplifyGeometry(geometry: Geometry, toleranceDeg: number): Geom
   }
 }
 
-/** Visit every Position in a geometry (Point/Line/Poly/Multi*). */
+/** Visit every Position in a geometry (Point/Line/Poly/Multi/GeometryCollection). */
 export function eachPosition(geometry: Geometry, fn: (pos: Position) => void): void {
+  if ("geometries" in geometry) {
+    geometry.geometries.forEach((g) => eachPosition(g, fn));
+    return;
+  }
   const walk = (c: unknown): void => {
     if (Array.isArray(c) && typeof c[0] === "number") { fn(c as Position); return; }
     if (Array.isArray(c)) c.forEach(walk);

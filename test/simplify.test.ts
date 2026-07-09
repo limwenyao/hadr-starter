@@ -15,6 +15,9 @@ describe("simplifyGeometry (RDP)", () => {
     const out = simplifyGeometry(poly as any, 0.01) as any;
     expect(out.type).toBe("Polygon");
     expect(out.coordinates[0].length).toBeLessThan(6);
+    // Ring stays closed: first position equals last.
+    const ring = out.coordinates[0];
+    expect(ring[0]).toEqual(ring[ring.length - 1]);
   });
   it("handles MultiLineString without throwing", () => {
     const mls = { type: "MultiLineString", coordinates: [[[0, 0], [1, 0], [2, 0]]] };
@@ -28,6 +31,19 @@ describe("eachPosition", () => {
     const poly = { type: "Polygon", coordinates: [[[0, 0], [1, 1], [2, 2], [0, 0]]] };
     const seen: number[][] = [];
     eachPosition(poly as any, (p) => seen.push(p));
+    expect(seen).toHaveLength(4);
+  });
+  it("visits every coordinate of a GeometryCollection's members", () => {
+    const gc = {
+      type: "GeometryCollection",
+      geometries: [
+        { type: "Point", coordinates: [0, 0] },
+        { type: "LineString", coordinates: [[1, 1], [2, 2], [3, 3]] },
+      ],
+    };
+    const seen: number[][] = [];
+    eachPosition(gc as any, (p) => seen.push(p));
+    // 1 from the Point + 3 from the LineString = 4 positions.
     expect(seen).toHaveLength(4);
   });
 });
