@@ -351,6 +351,15 @@ Per ADR 0010, explicitly **not** in v1:
 the map, per-event) shipped as a post-v1 slice — spec at
 `docs/superpowers/specs/2026-07-09-impact-zones-design.md`.
 
+**Post-v1 (planned, unbuilt):** a **"Data Sources" tab** on the dashboard. A second
+tab lists each feed (USGS, GDACS, ReliefWeb) with its source name/description, a
+hyperlink to its address, and its **last successful data fetch time**. The per-source
+information currently shown at the top of the event list moves into this tab; the
+event list no longer surfaces source info at the top. Last-successful-fetch time is
+derivable from `ingest_runs` / per-feed fetch status and is distinct from
+`source_updated_at` (when upstream last revised an event, not when we last fetched).
+Not yet slotted into a slice or ADR.
+
 ## Further Notes
 
 - **Cardinal trust rule (ADR 0004):** never miss a major event — false negatives
