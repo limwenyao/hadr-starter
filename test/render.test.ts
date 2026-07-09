@@ -186,4 +186,13 @@ describe("impact zones (impact-zones slice)", () => {
   it("always shows the not-an-evacuation-boundary caption", () => {
     expect(renderDashboard(model({}))).toContain("not official evacuation boundaries");
   });
+  it("wires a single impact source with data-driven paint and a default hide-all filter", () => {
+    const html = renderDashboard(model({}));
+    expect(html).toContain("sitrep-geometry");           // client reads the 2nd block
+    expect(html).toContain('addSource("impact"');
+    expect(html).toContain("line-dasharray");            // estimate styling hook
+    expect(html).toContain('["get", "eventId"]');        // selection filter expression
+    expect(html).toContain('["get", "color"]');          // data-driven colour
+    expect(html).toContain("impact-toggle");             // toggle wired
+  });
 });
