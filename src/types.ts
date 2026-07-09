@@ -23,6 +23,13 @@ export interface Event {
   coordinates?: { lon: number; lat: number; depthKm?: number };
   /** Event time, epoch milliseconds UTC. */
   time: number;
+  /**
+   * Upstream last-modified time, epoch ms UTC (bitemporal source clock, ADR 0011).
+   * `updateProvenance` records whether this came from the source or was inferred
+   * from `time` when the feed exposes no usable update stamp (never overstate).
+   */
+  sourceUpdatedAt?: number;
+  updateProvenance?: "source" | "inferred";
   metrics: {
     mag?: number;
     sig?: number;
