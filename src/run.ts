@@ -72,7 +72,7 @@ try {
     const { getDb, closeDb } = await import("./db/client.js");
     const { persistRun } = await import("./db/persist.js");
     try {
-      const { inserted } = await persistRun(getDb(), assessed, feedResults, now);
+      const { inserted } = await persistRun(getDb(), assessed, feedResults, now, geometryById);
       console.log(`db: wrote ${inserted} new event version(s)`);
     } catch (dbErr) {
       console.error(`db write failed (dashboard still served from last good state): ${String(dbErr)}`);

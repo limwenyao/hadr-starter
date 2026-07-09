@@ -1,13 +1,16 @@
 import type { PostgresJsDatabase } from "drizzle-orm/postgres-js";
 import type * as schema from "./schema.js";
 import type { SitrepModel, FeedResult } from "../types.js";
+import type { FeatureCollection } from "geojson";
 import { insertEventVersions, recordIngestRun } from "./writer.js";
 import { surfacedEventToRow } from "./mapping.js";
+import { footprintKey } from "../footprints/fill.js";
 
 type Db = PostgresJsDatabase<typeof schema>;
 
 export async function persistRun(
   db: Db, assessed: SitrepModel, feedResults: FeedResult[], now: Date,
+  geometryById: Record<string, FeatureCollection>,
 ): Promise<{ inserted: number; dbWriteOk: boolean }> {
   // Run metadata is shared by the success and failure records so a failed run
   // is still auditable (which feeds were up, how many events it tried to write).
@@ -19,7 +22,10 @@ export async function persistRun(
     surfacedCount: assessed.surfaced.length,
   };
   try {
-    const rows = assessed.surfaced.map((e) => surfacedEventToRow(e, now));
+    const rows = assessed.surfaced.map((e) => ({
+      ...surfacedEventToRow(e, now),
+      footprintGeometry: geometryById[footprintKey(e)] ?? null,
+    }));
     const inserted = await insertEventVersions(db, rows);
     await recordIngestRun(db, { ...runBase, dbWriteOk: true });
     return { inserted, dbWriteOk: true };
