@@ -37,6 +37,13 @@ Kept by the agent, reviewed by you. One entry per working block.
 <!-- Anything built that departs from the PRD or CLAUDE.md is recorded here,
      with the reason. An undocumented deviation is a bug. -->
 
+- **2026-07-09 — Platform migration (ADR 0011), Slice 1.** Introduced a hosted Postgres
+  (Neon) + Drizzle and a Next.js app on Vercel, superseding the static/no-DB v1 design
+  (ADRs 0005/0006) and adding a build step (CLAUDE.md tooling note updated). Events are
+  stored bitemporally (one row per upstream version). JSON snapshots are dual-written as
+  a transitional audit net. Only USGS captures a real `source_updated_at` this slice;
+  GDACS/ReliefWeb fall back to `inferred` until Slice 2.
+
 - **2026-07-09 — Schema additions beyond the Slice 1 plan: `depth_km` column +
   CHECK constraints on `feed`/`tier`/`update_provenance` (ADR 0011 / Slice 1).**
   The Slice 1 plan's `event_versions` schema stored only `lon`/`lat` and left

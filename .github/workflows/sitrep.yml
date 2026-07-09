@@ -40,6 +40,7 @@ jobs:
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           FORCE: ${{ github.event_name == 'workflow_dispatch' }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}   # Neon (ADR 0011 dual-write)
         run: npm run sitrep
 
       - name: Commit dashboard + snapshot to main (ADR 0006)
