@@ -1,5 +1,5 @@
 {
-  "id": "4a562321-dee2-4842-b155-f3ac36ce62aa",
+  "id": "3a901c90-5cab-4a9d-b2ff-e3de928c3092",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -70,6 +70,12 @@
         },
         "lat": {
           "name": "lat",
+          "type": "double precision",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "depth_km": {
+          "name": "depth_km",
           "type": "double precision",
           "primaryKey": false,
           "notNull": false
@@ -184,7 +190,20 @@
         }
       },
       "policies": {},
-      "checkConstraints": {},
+      "checkConstraints": {
+        "event_versions_feed_valid": {
+          "name": "event_versions_feed_valid",
+          "value": "\"event_versions\".\"feed\" in ('USGS','GDACS','ReliefWeb')"
+        },
+        "event_versions_tier_valid": {
+          "name": "event_versions_tier_valid",
+          "value": "\"event_versions\".\"tier\" in ('CRITICAL','HIGH','MODERATE')"
+        },
+        "event_versions_provenance_valid": {
+          "name": "event_versions_provenance_valid",
+          "value": "\"event_versions\".\"update_provenance\" in ('source','inferred')"
+        }
+      },
       "isRLSEnabled": false
     },
     "public.ingest_runs": {

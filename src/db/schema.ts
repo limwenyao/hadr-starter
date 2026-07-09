@@ -1,7 +1,8 @@
 import {
   pgTable, bigserial, text, timestamp, doublePrecision, jsonb,
-  boolean, integer, unique, index,
+  boolean, integer, unique, index, check,
 } from "drizzle-orm/pg-core";
+import { sql } from "drizzle-orm";
 
 export const eventVersions = pgTable(
   "event_versions",
@@ -17,6 +18,7 @@ export const eventVersions = pgTable(
     locationName: text("location_name").notNull(),
     lon: doublePrecision("lon"),
     lat: doublePrecision("lat"),
+    depthKm: doublePrecision("depth_km"),
     metrics: jsonb("metrics").notNull(),
     hazardType: text("hazard_type").notNull(),
     assessment: text("assessment"),
@@ -29,6 +31,9 @@ export const eventVersions = pgTable(
     byEvent: index("idx_by_event").on(t.feed, t.feedEventId, t.sourceUpdatedAt.desc()),
     byEventTime: index("idx_event_time").on(t.eventTime),
     bySourceUpdated: index("idx_source_updated").on(t.sourceUpdatedAt),
+    feedValid: check("event_versions_feed_valid", sql`${t.feed} in ('USGS','GDACS','ReliefWeb')`),
+    tierValid: check("event_versions_tier_valid", sql`${t.tier} in ('CRITICAL','HIGH','MODERATE')`),
+    provenanceValid: check("event_versions_provenance_valid", sql`${t.updateProvenance} in ('source','inferred')`),
   }),
 );
 

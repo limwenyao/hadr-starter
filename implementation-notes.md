@@ -37,6 +37,24 @@ Kept by the agent, reviewed by you. One entry per working block.
 <!-- Anything built that departs from the PRD or CLAUDE.md is recorded here,
      with the reason. An undocumented deviation is a bug. -->
 
+- **2026-07-09 — Schema additions beyond the Slice 1 plan: `depth_km` column +
+  CHECK constraints on `feed`/`tier`/`update_provenance` (ADR 0011 / Slice 1).**
+  The Slice 1 plan's `event_versions` schema stored only `lon`/`lat` and left
+  `feed`/`tier`/`update_provenance` as unconstrained `text`. Two Important findings
+  from the final code review were adopted before the (never-yet-applied) Drizzle
+  migration was regenerated, so no alter-migration debt was incurred: (a)
+  `coordinates.depthKm` was silently dropped on every Postgres round-trip —
+  an unrecoverable data gap for earthquake depth once events age out of the
+  live feed; added a nullable `depth_km` column plus mapping in both
+  directions. (b) an unknown `tier` value written to the DB would be silently
+  excluded from every tier group on read (the `as Tier` cast in
+  `rowToSurfacedEvent` trusts the column), violating the cardinal "never miss
+  a major event" rule; added Postgres CHECK constraints on `feed`, `tier`, and
+  `update_provenance` so bad values are rejected at write time instead of
+  degrading the read path. CHECK (not `pgEnum`) was chosen because feed
+  sources are expected to grow over time and CHECK constraints are easier to
+  evolve without an enum migration.
+
 - **2026-07-08 — PAGER-critical events bypass the magnitude noise floor.**
   ADR 0004 literally reads "noise floor: USGS M ≥ 4.5" and separately "CRITICAL:
   PAGER orange/red". A PAGER-red M4.2 quake would satisfy the tier rule but fail

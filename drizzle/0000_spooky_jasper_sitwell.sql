@@ -10,13 +10,17 @@ CREATE TABLE "event_versions" (
 	"location_name" text NOT NULL,
 	"lon" double precision,
 	"lat" double precision,
+	"depth_km" double precision,
 	"metrics" jsonb NOT NULL,
 	"hazard_type" text NOT NULL,
 	"assessment" text,
 	"footprint" jsonb,
 	"source_url" text,
 	"ingested_at" timestamp with time zone NOT NULL,
-	CONSTRAINT "uniq_source_version" UNIQUE("feed","feed_event_id","source_updated_at")
+	CONSTRAINT "uniq_source_version" UNIQUE("feed","feed_event_id","source_updated_at"),
+	CONSTRAINT "event_versions_feed_valid" CHECK ("event_versions"."feed" in ('USGS','GDACS','ReliefWeb')),
+	CONSTRAINT "event_versions_tier_valid" CHECK ("event_versions"."tier" in ('CRITICAL','HIGH','MODERATE')),
+	CONSTRAINT "event_versions_provenance_valid" CHECK ("event_versions"."update_provenance" in ('source','inferred'))
 );
 --> statement-breakpoint
 CREATE TABLE "ingest_runs" (

@@ -17,7 +17,7 @@ describe("surfacedEventToRow", () => {
     expect(row).toMatchObject({
       feed: "USGS", feedEventId: "us1", tier: "CRITICAL", hazardType: "EQ",
       title: "M 6.0 - somewhere", locationName: "somewhere",
-      lon: 10, lat: -5, assessment: "Prose.", sourceUrl: "https://usgs.gov/x",
+      lon: 10, lat: -5, depthKm: 12, assessment: "Prose.", sourceUrl: "https://usgs.gov/x",
       updateProvenance: "source",
     });
     expect(row.eventTime).toEqual(new Date(Date.UTC(2026, 6, 9, 3, 0)));
@@ -33,20 +33,30 @@ describe("surfacedEventToRow", () => {
     expect(row.updateProvenance).toBe("inferred");
   });
 
-  it("null lon/lat for events without coordinates (ReliefWeb list-only)", () => {
+  it("null lon/lat/depth for events without coordinates (ReliefWeb list-only)", () => {
     const { coordinates, ...rest } = base;
     const row = surfacedEventToRow(rest as SurfacedEvent, new Date(0));
     expect(row.lon).toBeNull();
     expect(row.lat).toBeNull();
+    expect(row.depthKm).toBeNull();
   });
 
-  it("round-trips through rowToSurfacedEvent", () => {
+  it("round-trips through rowToSurfacedEvent, depth preserved", () => {
     const row = surfacedEventToRow(base, new Date(Date.UTC(2026, 6, 9, 5, 0)));
     const back = rowToSurfacedEvent({ ...row, id: 1 });
     expect(back.feedEventId).toBe("us1");
-    expect(back.coordinates).toEqual({ lon: 10, lat: -5 });
+    expect(back.coordinates).toEqual({ lon: 10, lat: -5, depthKm: 12 });
     expect(back.time).toBe(Date.UTC(2026, 6, 9, 3, 0));
     expect(back.sourceUpdatedAt).toBe(Date.UTC(2026, 6, 9, 4, 0));
     expect(back.tier).toBe("CRITICAL");
+  });
+
+  it("round-trips coordinates without depth to { lon, lat } (no depthKm key)", () => {
+    const noDepth: SurfacedEvent = { ...base, coordinates: { lon: 10, lat: -5 } };
+    const row = surfacedEventToRow(noDepth, new Date(Date.UTC(2026, 6, 9, 5, 0)));
+    expect(row.depthKm).toBeNull();
+    const back = rowToSurfacedEvent({ ...row, id: 1 });
+    expect(back.coordinates).toEqual({ lon: 10, lat: -5 });
+    expect(back.coordinates).not.toHaveProperty("depthKm");
   });
 });

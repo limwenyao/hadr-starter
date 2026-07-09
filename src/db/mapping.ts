@@ -16,6 +16,7 @@ export function surfacedEventToRow(event: SurfacedEvent, ingestedAt: Date): Even
     locationName: event.locationName,
     lon: event.coordinates?.lon ?? null,
     lat: event.coordinates?.lat ?? null,
+    depthKm: event.coordinates?.depthKm ?? null,
     metrics: event.metrics,
     hazardType: event.hazardType,
     assessment: event.assessment ?? null,
@@ -29,13 +30,19 @@ export function surfacedEventToRow(event: SurfacedEvent, ingestedAt: Date): Even
 export function rowToSurfacedEvent(row: EventVersionRow & { id?: number }): SurfacedEvent {
   const lon = row.lon;
   const lat = row.lat;
+  const coordinates =
+    lon != null && lat != null
+      ? row.depthKm != null
+        ? { lon, lat, depthKm: row.depthKm }
+        : { lon, lat }
+      : undefined;
   return {
     feed: row.feed as FeedName,
     feedEventId: row.feedEventId,
     hazardType: row.hazardType,
     title: row.title,
     locationName: row.locationName,
-    coordinates: lon != null && lat != null ? { lon, lat } : undefined,
+    coordinates,
     time: new Date(row.eventTime).getTime(),
     sourceUpdatedAt: new Date(row.sourceUpdatedAt).getTime(),
     updateProvenance: row.updateProvenance as "source" | "inferred",
