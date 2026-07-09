@@ -48,7 +48,7 @@ export const CLIENT_SCRIPT = String.raw`
   function footprintText(fp) {
     if (!fp) return null;
     var t = fp.label;
-    if (typeof fp.maxMmi === "number") {
+    if (typeof fp.maxMmi === "number" && isFinite(fp.maxMmi)) {
       var n = Math.max(0, Math.min(10, Math.round(fp.maxMmi)));
       t += " · reached MMI " + (ROMAN[n] || n);
     } else if (typeof fp.radiusKm === "number") {

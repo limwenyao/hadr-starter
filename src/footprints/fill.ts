@@ -1,5 +1,6 @@
 import type { FeatureCollection } from "geojson";
 import type { FootprintResult, SitrepModel, SurfacedEvent } from "../types.js";
+import { FOOTPRINT_FETCH_CONCURRENCY } from "../thresholds.js";
 
 /** Networked footprint fetch, injected so the seam stays testable (no network in tests). */
 export interface FootprintSource {
@@ -24,16 +25,14 @@ export async function fillFootprints(
   if (model.surfaced.length === 0) return { model: { ...model }, geometryById: {} };
 
   const geometryById: Record<string, FeatureCollection> = {};
-  const surfaced = await Promise.all(
-    model.surfaced.map(async (e) => {
-      let result: FootprintResult | undefined;
-      try {
-        result = await source.forEvent(e);
-      } catch (err) {
-        console.error(`footprint fetch failed for ${footprintKey(e)}: ${String(err)}`);
-      }
-      if (!result) return { ...e };
-      if (result.geometry) {
+
+  async function processOne(e: SurfacedEvent): Promise<SurfacedEvent> {
+    let result: FootprintResult | undefined;
+    try {
+      result = await source.forEvent(e);
+      // Malformed geometry from a FootprintSource degrades this one event to
+      // no zone rather than rejecting the whole batch (CLAUDE.md #4).
+      if (result?.geometry && Array.isArray(result.geometry.features)) {
         const key = footprintKey(e);
         // Stamp the key onto every feature so the client can filter by eventId.
         geometryById[key] = {
@@ -44,8 +43,23 @@ export async function fillFootprints(
           })),
         };
       }
-      return { ...e, footprint: result.summary };
-    }),
-  );
+    } catch (err) {
+      console.error(`footprint fetch failed for ${footprintKey(e)}: ${String(err)}`);
+      result = undefined;
+    }
+    if (!result) return { ...e };
+    return { ...e, footprint: result.summary };
+  }
+
+  // Process in sequential batches so we never burst more than
+  // FOOTPRINT_FETCH_CONCURRENCY concurrent requests at a feed (poll politely,
+  // ADR 0008). Batches run in order and are concatenated in order, so the
+  // output array's order always matches model.surfaced.
+  const surfaced: SurfacedEvent[] = [];
+  for (let i = 0; i < model.surfaced.length; i += FOOTPRINT_FETCH_CONCURRENCY) {
+    const batch = model.surfaced.slice(i, i + FOOTPRINT_FETCH_CONCURRENCY);
+    surfaced.push(...(await Promise.all(batch.map(processOne))));
+  }
+
   return { model: { ...model, surfaced }, geometryById };
 }

@@ -175,6 +175,33 @@ describe("impact zones (impact-zones slice)", () => {
     expect(m).not.toBeNull();
     expect(JSON.parse(m![1])).toEqual(geom);
   });
+  it("keeps hostile geometry properties from breaking out of the geometry script block", () => {
+    const hostile = "</script><script>alert(1)</script>";
+    const geom = {
+      "USGS h": {
+        type: "FeatureCollection",
+        features: [
+          {
+            type: "Feature",
+            geometry: { type: "Polygon", coordinates: [[[0, 0], [1, 0], [1, 1], [0, 0]]] },
+            properties: { eventId: hostile, provenance: "estimated", isEstimate: true, color: hostile },
+          },
+        ],
+      },
+    };
+    const html = renderDashboard(model({ surfaced: [surfaced({ feedEventId: "h" })] }), geom as any);
+    // Exactly four legitimate script opens: payload, geometry, maplibre CDN, client.
+    expect(html.match(/<script/g)).toHaveLength(4);
+    // The hostile string's "<" is embedded in escaped form, not as a literal tag...
+    expect(html).toContain("\\u003c/script>");
+    // ...and round-trips intact out of the #sitrep-geometry block.
+    const m = /<script id="sitrep-geometry" type="application\/json">([\s\S]*?)<\/script>/.exec(html);
+    expect(m).not.toBeNull();
+    const parsedGeom = JSON.parse(m![1]);
+    expect(parsedGeom).toEqual(geom);
+    expect(parsedGeom["USGS h"].features[0].properties.eventId).toBe(hostile);
+    expect(parsedGeom["USGS h"].features[0].properties.color).toBe(hostile);
+  });
   it("renders the in-panel toggle defaulting to off, above the event groups", () => {
     const html = renderDashboard(model({}));
     expect(html).toContain('id="impact-toggle"');
