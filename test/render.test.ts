@@ -61,8 +61,8 @@ describe("renderDashboard (map-first shell — ADR 0005)", () => {
     const html = renderDashboard(
       model({ surfaced: [surfaced({ title: hostile, locationName: hostile })] }),
     );
-    // Exactly the three legitimate script opens: payload, maplibre CDN, client.
-    expect(html.match(/<script/g)).toHaveLength(3);
+    // Exactly four legitimate script opens: payload, geometry, maplibre CDN, client.
+    expect(html.match(/<script/g)).toHaveLength(4);
     // The "<" characters are embedded in escaped form...
     expect(html).toContain("\\u003c/script>");
     // ...and the hostile string survives the round-trip intact for the client.
@@ -162,5 +162,28 @@ describe("theme/marker colour drift guard", () => {
     expect(clientColour("CRITICAL")).toBe(cssVar("critical"));
     expect(clientColour("HIGH")).toBe(cssVar("high"));
     expect(clientColour("MODERATE")).toBe(cssVar("moderate"));
+  });
+});
+
+describe("impact zones (impact-zones slice)", () => {
+  it("embeds footprint geometry in a second JSON block, `<` escaped, round-tripping", () => {
+    const geom = { "USGS h": { type: "FeatureCollection", features: [
+      { type: "Feature", geometry: { type: "Polygon", coordinates: [[[0, 0], [1, 0], [1, 1], [0, 0]]] },
+        properties: { eventId: "USGS h", provenance: "estimated", isEstimate: true, color: "#7d95b5" } }] } };
+    const html = renderDashboard(model({ surfaced: [surfaced({ feedEventId: "h" })] }), geom as any);
+    const m = /<script id="sitrep-geometry" type="application\/json">([\s\S]*?)<\/script>/.exec(html);
+    expect(m).not.toBeNull();
+    expect(JSON.parse(m![1])).toEqual(geom);
+  });
+  it("renders the in-panel toggle defaulting to off, above the event groups", () => {
+    const html = renderDashboard(model({}));
+    expect(html).toContain('id="impact-toggle"');
+    expect(html).toMatch(/id="impact-toggle"[^>]*aria-pressed="false"/);
+    // Toggle wrapper sits before #groups in source order.
+    expect(html.indexOf('id="impact-controls"')).toBeLessThan(html.indexOf('id="groups"'));
+    expect(html.indexOf('id="impact-controls"')).toBeGreaterThan(html.indexOf('id="notices"'));
+  });
+  it("always shows the not-an-evacuation-boundary caption", () => {
+    expect(renderDashboard(model({}))).toContain("not official evacuation boundaries");
   });
 });
