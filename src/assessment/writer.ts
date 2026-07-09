@@ -43,7 +43,7 @@ export function buildAssessmentPrompt(events: SurfacedEvent[]): string {
       alertLevel: e.metrics.alertLevel,
       sig: e.metrics.sig,
       likelyDuplicateOf: e.duplicateOf
-        ? `${e.duplicateOf.feed} — ${e.duplicateOf.title}`
+        ? `${e.duplicateOf.feed} — ${neutralizeText(e.duplicateOf.title)}`
         : undefined,
       // Deterministic revision note (ADR 0009) — the narrative may mention it.
       changeSinceYesterday: e.change?.note,
