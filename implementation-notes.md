@@ -37,6 +37,14 @@ Kept by the agent, reviewed by you. One entry per working block.
 <!-- Anything built that departs from the PRD or CLAUDE.md is recorded here,
      with the reason. An undocumented deviation is a bug. -->
 
+- **2026-07-09 — Vitest file parallelism disabled (`vitest.config.ts`, ADR 0011).**
+  The two DB integration test files (`db-integration`, `db-persist`) share one Postgres
+  and `TRUNCATE` it between cases; Vitest's default parallel file execution let them wipe
+  each other's rows mid-test, an intermittent failure caught locally before CI. Set
+  `fileParallelism: false` so files run serially. The whole suite is ~2s, so the cost is
+  negligible; a per-worker database would be the heavier alternative if parallelism is
+  ever needed back. Not in the Slice 1 plan, which omitted cross-file DB test isolation.
+
 - **2026-07-09 — Platform migration (ADR 0011), Slice 1.** Introduced a hosted Postgres
   (Neon) + Drizzle and a Next.js app on Vercel, superseding the static/no-DB v1 design
   (ADRs 0005/0006) and adding a build step (CLAUDE.md tooling note updated). Events are
