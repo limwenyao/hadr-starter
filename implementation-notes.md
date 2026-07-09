@@ -139,6 +139,20 @@ Kept by the agent, reviewed by you. One entry per working block.
   GLIDE). `feedEventId` is the `<link>` (stable per-disaster URL); `hazardType` is
   the GLIDE prefix when present, else `"unknown"`.
 
+- **2026-07-09 — Estimate ring uses a calibrated IPE, not the exact AWW-2012 table.**
+  The impact-zones spec named Allen-Wald-Worden (2012) as the depth-aware IPE for the
+  estimated felt-radius ring. The paper's coefficient table could not be verified in
+  this build, so `estimateFeltRadiusKm` uses the standard active-crustal form
+  `MMI = IPE_C0 + IPE_C1*M + IPE_C2*log10(R_hyp)` with coefficients CALIBRATED to
+  physically-sane felt radii (shallow M5 ~70 km, M6.5 ~300 km), constants in
+  `thresholds.ts`. The ring is always rendered as an ESTIMATE (dashed, captioned "not
+  an evacuation boundary"), so fidelity is bounded and honest. Swapping in published
+  coefficients is a one-line change to `IPE_C0/C1/C2`. Tracked.
+
+- **2026-07-09 — GDACS footprint radiusKm is a rough bbox radius.** `summariseGdacsGeometry`
+  reports half the bbox diagonal, not a hazard-specific affected radius. Panel text only;
+  the drawn polygon is the authoritative extent.
+
 - **Scheduled quiet-gate is single-process, not two workflow steps.** The
   `sitrep.yml.disabled` comment sketched a separate `scripts/` change-check feeding
   a guarded report step. Implemented instead as a deterministic branch inside
