@@ -123,3 +123,13 @@ Kept by the agent, reviewed by you. One entry per working block.
   matches it (ADR 0007). GLIDE-based correlation is deferred (USGS/GDACS expose no
   GLIDE). `feedEventId` is the `<link>` (stable per-disaster URL); `hazardType` is
   the GLIDE prefix when present, else `"unknown"`.
+
+- **Scheduled quiet-gate is single-process, not two workflow steps.** The
+  `sitrep.yml.disabled` comment sketched a separate `scripts/` change-check feeding
+  a guarded report step. Implemented instead as a deterministic branch inside
+  `run.ts` (`shouldAssess` → `fillAssessments` or `carryForwardAssessments`), because
+  the change verdict only exists after `buildSitrep`, and a separate check would
+  fetch the live feeds twice and could disagree with the report. The protected
+  invariant (deterministic gate, model only on change, model never decides to wake)
+  is preserved. No `/sitrep` skill is introduced; the workflow runs `npm run sitrep`.
+  (Spec: docs/superpowers/specs/2026-07-09-scheduled-workflow-slice-design.md.)

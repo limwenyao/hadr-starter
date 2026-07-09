@@ -5,6 +5,7 @@ import { reliefWebSource } from "./feeds/reliefweb.js";
 import { readPriorSnapshot, writeSnapshot } from "./snapshots.js";
 import { buildSitrep } from "./core/buildSitrep.js";
 import { claudeCliWriter, fillAssessments } from "./assessment/writer.js";
+import { shouldAssess, carryForwardAssessments } from "./assessment/gate.js";
 import { renderDashboard } from "./render/dashboard.js";
 
 /**
@@ -39,7 +40,19 @@ try {
       changes,
   );
 
-  const assessed = await fillAssessments(model, claudeCliWriter);
+  // Deterministic quiet-gate (ADR 0010): call the model only when something
+  // changed (or on a forced/first run). On a quiet day, reuse prior prose —
+  // the model never decides whether the run wakes up (CLAUDE.md #2).
+  const force = process.env.FORCE === "true";
+  const assess = shouldAssess(model.changeSummary, force);
+  console.log(
+    assess
+      ? "writing assessments (change detected, first run, or forced)"
+      : "quiet run — carrying forward prior assessments (no model call)",
+  );
+  const assessed = assess
+    ? await fillAssessments(model, claudeCliWriter)
+    : carryForwardAssessments(model, prior);
   writeFileSync("dashboard.html", renderDashboard(assessed), "utf8");
   // Persist the assessed model: the snapshot records what the brief actually
   // said (audit trail — ADR 0006). Committing is the caller's job.
