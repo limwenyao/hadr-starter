@@ -31,3 +31,7 @@ data/*.tmp-*
 .superpowers/
 .claude/settings.local.json
 skills-lock.json
+
+# Vercel CLI local link + build state (ADR 0011). Env files are already handled
+# by the .env / .env.* block above (keeps .env.local out, .env.example in).
+.vercel
