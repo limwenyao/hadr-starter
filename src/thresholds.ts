@@ -45,3 +45,11 @@ export const MAG_REVISION_MIN = 0.1;
  * (USGS all_day spans 24 h; GDACS current-events treated the same).
  */
 export const FEED_WINDOW_MS = 24 * 60 * 60_000;
+
+/**
+ * Prompt-injection hardening (debt #11). Untrusted feed free-text (event title,
+ * location name) is neutralized before it enters the assessment prompt: control
+ * characters stripped, length capped. Feed titles/place names are short; longer
+ * is almost certainly a payload.
+ */
+export const MAX_FIELD_CHARS = 200;
