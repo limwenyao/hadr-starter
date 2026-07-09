@@ -12,11 +12,16 @@
     "typecheck": "tsc --noEmit",
     "sitrep": "tsx src/run.ts",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate"
+    "db:migrate": "drizzle-kit migrate",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "devDependencies": {
     "@types/geojson": "^7946.0.16",
     "@types/node": "^26.1.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
     "drizzle-kit": "^0.31.10",
     "tsx": "^4.23.0",
     "typescript": "^6.0.3",
@@ -25,6 +30,9 @@
   "dependencies": {
     "drizzle-orm": "^0.45.2",
     "fast-xml-parser": "^5.9.3",
-    "postgres": "^3.4.9"
+    "next": "^16.2.10",
+    "postgres": "^3.4.9",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
   }
 }
