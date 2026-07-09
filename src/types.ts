@@ -1,5 +1,7 @@
 /** Domain shapes — vocabulary per CONTEXT.md, seam contract per docs/PRD.md. */
 
+import type { FeatureCollection } from "geojson";
+
 export type Tier = "CRITICAL" | "HIGH" | "MODERATE";
 
 export type FeedName = "USGS" | "GDACS" | "ReliefWeb";
@@ -30,6 +32,12 @@ export interface Event {
     alertLevel?: GdacsAlertLevel;
   };
   sourceUrl?: string;
+  /**
+   * Feed-supplied URL from which this event's impact footprint can be fetched
+   * (USGS detail GeoJSON; GDACS getgeometry). Absent when the feed exposes none
+   * or the event has no coordinates. Consumed only by the footprint enrichment.
+   */
+  footprintRef?: string;
 }
 
 /** An event that passed the noise floor and carries its priority tier. */
@@ -49,6 +57,12 @@ export interface SurfacedEvent extends Event {
    * unchanged or when no prior snapshot existed.
    */
   change?: { kind: "new" | "revised"; note?: string };
+  /**
+   * Compact provenance summary of this event's impact area (impact-zones slice).
+   * Part of the snapshot (audit) and the panel text. The raw geometry is NOT
+   * stored here — it travels separately to the renderer. Absent when no zone.
+   */
+  footprint?: FootprintSummary;
 }
 
 /** Raw result of one feed fetch — failures are data, not exceptions (ADR 0008). */
@@ -72,4 +86,31 @@ export interface SitrepModel {
    * snapshot existed (first run). The scheduled quiet-gate's input (ADR 0010).
    */
   changeSummary: { new: number; revised: number; withdrawn: number } | null;
+}
+
+/** How much to trust an impact area — drives its visual + caption. */
+export type FootprintProvenance = "shakemap" | "gdacs" | "estimated";
+
+/** Compact, snapshot-safe description of one event's impact area. */
+export interface FootprintSummary {
+  provenance: FootprintProvenance;
+  /** e.g. "Modeled shaking (USGS ShakeMap)". */
+  label: string;
+  /** True for the magnitude/depth estimate ring — drives dashed style + caption. */
+  isEstimate: boolean;
+  /** ShakeMap only: peak modeled intensity across contours. */
+  maxMmi?: number;
+  /** Estimate ring radius, or a modeled polygon's rough bbox radius. */
+  radiusKm?: number;
+}
+
+/**
+ * A summariser's output: the compact summary plus the normalized geometry
+ * (FeatureCollection whose every feature.properties matches the normalized
+ * shape in the plan's Global Constraints, minus eventId which fillFootprints
+ * stamps). geometry is absent when there is nothing drawable.
+ */
+export interface FootprintResult {
+  summary: FootprintSummary;
+  geometry?: FeatureCollection;
 }

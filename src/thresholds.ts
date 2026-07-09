@@ -63,3 +63,28 @@ export const MAX_FIELD_CHARS = 200;
  * concurrency: cancel-in-progress: false).
  */
 export const CLAUDE_CLI_TIMEOUT_MS = 180_000;
+
+/**
+ * ── Impact zones (impact-zones slice) ────────────────────────────────────
+ * Estimated felt-radius model. A documented depth-aware intensity prediction
+ * equation of the standard active-crustal form
+ *     MMI = IPE_C0 + IPE_C1 * M + IPE_C2 * log10(R_hyp_km)
+ * solved for the hypocentral distance at which MMI == FELT_MMI_THRESHOLD, then
+ * projected to a surface (epicentral) radius. Coefficients are CALIBRATED so
+ * outputs are physically sane (shallow M5 ~70 km, M6.5 ~300 km felt radius) —
+ * they are NOT the exact Allen-Wald-Worden (2012) table (unverifiable in this
+ * build). This is the single tuning point; swap in published coefficients here.
+ * The ring is always rendered as an ESTIMATE (dashed, captioned).
+ */
+export const FELT_MMI_THRESHOLD = 3.5;
+export const IPE_C0 = 2.5;
+export const IPE_C1 = 1.5;
+export const IPE_C2 = -3.5;
+/** Cap so a great-quake estimate ring cannot become absurdly large. */
+export const EST_MAX_RADIUS_KM = 1000;
+/** Vertices used to approximate the estimate ring circle. */
+export const EST_RING_POINTS = 64;
+/** Ramer-Douglas-Peucker tolerance (degrees) for embedded footprint geometry. */
+export const GEOMETRY_SIMPLIFY_TOLERANCE_DEG = 0.01;
+/** Per-event footprint fetch timeout (matches the feed-adapter convention). */
+export const FOOTPRINT_FETCH_TIMEOUT_MS = 30_000;
