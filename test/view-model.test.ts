@@ -195,4 +195,37 @@ describe("buildViewModel (all render logic lives here — client stays dumb)", (
     const vm = buildViewModel(model({ surfaced: [surfaced({})] }));
     expect(vm.tiers[0].events[0].footprint).toBeNull();
   });
+
+  it("computes source-updated fields and a stale hint past the threshold", () => {
+    const gen = Date.UTC(2026, 6, 9, 12, 0);
+    const vm = buildViewModel(model({
+      generatedAt: gen,
+      surfaced: [surfaced({ sourceUpdatedAt: gen - 2 * 3600_000, updateProvenance: "source" })],
+    }));
+    const card = vm.tiers[0].events[0];
+    expect(card.sourceUpdatedUtc).toBe("2026-07-09T10:00:00.000Z");
+    expect(card.sourceUpdatedAgeLabel).toBe("~2h ago");
+    expect(card.updateProvenance).toBe("source");
+    expect(card.stalenessHint).toBe(false);
+  });
+
+  it("flags stalenessHint when the source update is older than STALE_AFTER_MS", () => {
+    const gen = Date.UTC(2026, 6, 9, 12, 0);
+    const vm = buildViewModel(model({
+      generatedAt: gen,
+      surfaced: [surfaced({ sourceUpdatedAt: gen - 48 * 3600_000, updateProvenance: "source" })],
+    }));
+    expect(vm.tiers[0].events[0].stalenessHint).toBe(true);
+  });
+
+  it("falls back to event time + 'inferred' when no source update time", () => {
+    const gen = Date.UTC(2026, 6, 9, 12, 0);
+    const vm = buildViewModel(model({
+      generatedAt: gen,
+      surfaced: [surfaced({ time: gen - 3600_000, sourceUpdatedAt: undefined, updateProvenance: undefined })],
+    }));
+    const card = vm.tiers[0].events[0];
+    expect(card.updateProvenance).toBe("inferred");
+    expect(card.sourceUpdatedUtc).toBe("2026-07-09T11:00:00.000Z");
+  });
 });
