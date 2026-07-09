@@ -32,6 +32,27 @@ Kept by the agent, reviewed by you. One entry per working block.
   prompt frames event data as untrusted / to be ignored if it contains instructions.
   Rules still decide inclusion/tier (ADR 0003/0004). Residuals accepted below.
 
+- **2026-07-10 — Deferred hardening from the Slice 1 review (opencode/GLM-5.2).**
+  An adversarial review of `platform-migration-slice1` found no Critical/High-severity
+  bugs beyond the three already fixed (snapshot-commit-on-DB-failure `if: always()`;
+  `db_write_ok=false` failure audit; 503 no longer leaks DB error text). The remaining
+  Low-severity items are accepted for now and tracked here:
+  - **#4 `app/` is not typechecked by `npm run typecheck`.** `tsconfig.include` is
+    `src`/`test`; CI runs `tsc` but not `next build`, so Next route-handler type errors
+    surface only at deploy time. Fix later: add `"app"` to include, or run `next build`
+    in CI.
+  - **#5 `/api/events` has no error handling.** A DB outage throws an unstructured 500,
+    inconsistent with the root route's 503. Fix later: try/catch → `Response.json({...},
+    { status: 503 })`.
+  - **#6 `/api/events` returns `sourceUrl` unsanitized.** The HTML path sanitizes URLs;
+    the JSON API does not. Latent only — nothing but our sanitized dashboard consumes the
+    API in Slice 1. Sanitize at the read seam when a second consumer appears (Slice 4).
+  - **#7 `String(dbErr)` in `run.ts` may log connection details to CI logs.** Low
+    exposure (CI logs are private). Fix later: log `err.message` only.
+  - **#8 `persistRun` is not transactional.** The event insert and the `ingest_runs`
+    insert are separate statements; a mid-failure can leave them disagreeing. Wrap in
+    `db.transaction(...)` when it matters.
+
 ## Deviations
 
 <!-- Anything built that departs from the PRD or CLAUDE.md is recorded here,
