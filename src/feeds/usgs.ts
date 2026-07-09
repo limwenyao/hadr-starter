@@ -19,6 +19,7 @@ interface UsgsFeature {
     sig?: unknown;
     title?: unknown;
     url?: unknown;
+    detail?: unknown;
   } | null;
   geometry?: { coordinates?: unknown } | null;
 }
@@ -71,6 +72,7 @@ function parseFeature(feature: UsgsFeature | null): Event | undefined {
         : undefined,
     },
     sourceUrl: typeof props.url === "string" ? props.url : undefined,
+    footprintRef: typeof props.detail === "string" ? props.detail : undefined,
   };
 }
 

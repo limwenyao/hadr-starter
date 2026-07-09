@@ -98,4 +98,17 @@ describe("parseGdacs", () => {
     expect(parseGdacs(null)).toEqual([]);
     expect(parseGdacs("not json-shaped")).toEqual([]);
   });
+
+  it("captures url.geometry as footprintRef", () => {
+    const payload = { features: [{
+      properties: {
+        eventtype: "TC", eventid: 1001279, fromdate: "2026-07-09T00:00:00",
+        country: "China", name: "TC BAVI", alertlevel: "Red",
+        url: { geometry: "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001279&episodeid=33",
+               report: "https://www.gdacs.org/report.aspx?eventid=1001279" },
+      }, geometry: { coordinates: [129.9, 18.3] },
+    }] };
+    expect(parseGdacs(payload)[0].footprintRef)
+      .toContain("getgeometry?eventtype=TC&eventid=1001279");
+  });
 });
