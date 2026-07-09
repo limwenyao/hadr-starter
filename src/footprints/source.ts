@@ -7,7 +7,37 @@ import { FOOTPRINT_FETCH_TIMEOUT_MS } from "../thresholds.js";
 
 const UA = { "user-agent": "hadr-monitor (workshop build)" };
 
+/**
+ * Hosts (and their subdomains) the footprint fetcher may reach. Both the
+ * per-event `footprintRef` and the second-order ShakeMap `contUrl` come from
+ * untrusted feed payloads, so we restrict fetches to the known feed origins —
+ * an https + allowed-host check that closes an SSRF vector (cloud metadata at
+ * 169.254.169.254, localhost admin endpoints, etc.). This is stricter than
+ * the `sourceUrl` sanitization in render/viewModel.ts (which allows any
+ * http(s) host): footprint URLs must be https AND on a known feed host.
+ */
+const ALLOWED_FOOTPRINT_HOST_SUFFIXES = ["usgs.gov", "gdacs.org"] as const;
+
+/** True only for an https URL whose host is (a subdomain of) an allowed feed host. Pure. */
+export function isAllowedFootprintUrl(url: string): boolean {
+  let u: URL;
+  try {
+    u = new URL(url);
+  } catch {
+    return false;
+  }
+  if (u.protocol !== "https:") return false;
+  const host = u.hostname.toLowerCase();
+  return ALLOWED_FOOTPRINT_HOST_SUFFIXES.some(
+    (s) => host === s || host.endsWith(`.${s}`),
+  );
+}
+
 async function getJson(url: string): Promise<unknown> {
+  // Never fetch a feed-supplied URL that isn't an allowed feed origin (SSRF guard).
+  if (!isAllowedFootprintUrl(url)) {
+    throw new Error(`disallowed footprint URL (not an https feed host): ${url}`);
+  }
   const res = await fetch(url, { headers: UA, signal: AbortSignal.timeout(FOOTPRINT_FETCH_TIMEOUT_MS) });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.json();

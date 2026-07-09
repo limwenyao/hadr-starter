@@ -52,9 +52,9 @@ export async function fillFootprints(
   }
 
   // Process in sequential batches so we never burst more than
-  // FOOTPRINT_FETCH_CONCURRENCY concurrent requests at a feed (poll politely,
-  // ADR 0008). Batches run in order and are concatenated in order, so the
-  // output array's order always matches model.surfaced.
+  // FOOTPRINT_FETCH_CONCURRENCY concurrent requests across all feeds (poll
+  // politely, ADR 0008). Batches run in order and are concatenated in order,
+  // so the output array's order always matches model.surfaced.
   const surfaced: SurfacedEvent[] = [];
   for (let i = 0; i < model.surfaced.length; i += FOOTPRINT_FETCH_CONCURRENCY) {
     const batch = model.surfaced.slice(i, i + FOOTPRINT_FETCH_CONCURRENCY);
