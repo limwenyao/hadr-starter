@@ -1,7 +1,7 @@
 import { spawn } from "node:child_process";
 import type { SitrepModel, SurfacedEvent } from "../types.js";
 import { formatUtc } from "../time.js";
-import { MAX_FIELD_CHARS } from "../thresholds.js";
+import { MAX_FIELD_CHARS, CLAUDE_CLI_TIMEOUT_MS } from "../thresholds.js";
 
 /**
  * The LLM step (ADR 0003): writes the assessment narrative for surfaced
@@ -22,7 +22,11 @@ export const FALLBACK_ASSESSMENT =
  */
 export function neutralizeText(raw: string, max: number = MAX_FIELD_CHARS): string {
   const stripped = raw.replace(/[\u0000-\u001F\u007F-\u009F]+/g, " ").trim();
-  return stripped.length > max ? stripped.slice(0, max - 1) + "…" : stripped;
+  // Truncate by code point, not UTF-16 code unit — slice() can cut an astral
+  // character's surrogate pair in half, leaving a lone surrogate in the output.
+  return stripped.length > max
+    ? Array.from(stripped).slice(0, max - 1).join("") + "…"
+    : stripped;
 }
 
 /** Pure. One batched prompt for all surfaced events (keeps token use modest). */
@@ -34,7 +38,7 @@ export function buildAssessmentPrompt(events: SurfacedEvent[]): string {
       id: e.feedEventId,
       feed: e.feed,
       tier: e.tier,
-      hazardType: e.hazardType,
+      hazardType: neutralizeText(e.hazardType),
       title: neutralizeText(e.title),
       location: neutralizeText(e.locationName),
       timeUtc: formatUtc(e.time),
@@ -140,7 +144,18 @@ export const claudeCliWriter: AssessmentWriter = (events) =>
     child.stdout.on("data", (chunk) => (stdout += chunk));
     child.on("error", reject);
     child.stdin.on("error", reject);
+
+    // A hung `claude -p` must not block the run forever — kill it and reject
+    // so fillAssessments' try/catch degrades to FALLBACK_ASSESSMENT instead of
+    // the run stalling (and, with cancel-in-progress: false, queuing the next
+    // scheduled run behind it).
+    const timer = setTimeout(() => {
+      child.kill();
+      reject(new Error(`claude -p timed out after ${CLAUDE_CLI_TIMEOUT_MS}ms`));
+    }, CLAUDE_CLI_TIMEOUT_MS);
+
     child.on("close", (code) => {
+      clearTimeout(timer);
       if (code !== 0) return reject(new Error(`claude -p exited with ${code}`));
       resolve(parseAssessmentResponse(stdout));
     });

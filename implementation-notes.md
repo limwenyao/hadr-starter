@@ -24,14 +24,13 @@ Kept by the agent, reviewed by you. One entry per working block.
 
 ## Open questions
 
-- **Prompt injection via feed text (accepted v1 risk; revisit before multi-feed).**
-  Feed-supplied `title` / `locationName` are interpolated into the `claude -p`
-  prompt in `buildAssessmentPrompt`. A hostile feed string could attempt to steer
-  the assessment narrative. Accepted for v1 (USGS only, a reputable source).
-  Before GDACS/ReliefWeb land (less-curated text), decide on a mitigation —
-  delimiting/escaping feed text in the prompt, or instructing the model to treat
-  the event block as untrusted data. Note: rules already decide inclusion/tier
-  (ADR 0003/0004), so injection cannot change *what* surfaces — only the prose.
+- **Prompt injection via feed text — RESOLVED (2026-07-09, scheduled-workflow slice).**
+  Was: feed-supplied text interpolated into the `claude -p` prompt could steer the
+  narrative. Mitigated at "Standard" scope in `buildAssessmentPrompt`: untrusted
+  free-text (`title`, `locationName`, `duplicateOf.title`, `hazardType`) is passed
+  through `neutralizeText` (strip control chars, cap `MAX_FIELD_CHARS`), and the
+  prompt frames event data as untrusted / to be ignored if it contains instructions.
+  Rules still decide inclusion/tier (ADR 0003/0004). Residuals accepted below.
 
 ## Deviations
 
@@ -64,11 +63,27 @@ Kept by the agent, reviewed by you. One entry per working block.
   already-severity-sorted list; later members carry `duplicateOf`. Both remain in
   `surfaced` — flagged, never merged or dropped (CLAUDE.md #5).
 
-- **2026-07-08 — Prompt-injection remains an accepted v1 risk (now live).** Feed
-  text (`title`, `locationName`/`country`) flows into the `claude -p` assessment
-  prompt. With GDACS added, a second feed now contributes untrusted text. Left
-  unhardened for v1 per the standing decision; to be addressed with the model-call
-  gating in the scheduled-workflow slice (ADR 0010).
+- **2026-07-08 → RESOLVED 2026-07-09 — Prompt-injection hardening.** Feed text
+  flowing into the `claude -p` prompt was left unhardened through the multi-feed
+  slices, then closed in the scheduled-workflow slice: `neutralizeText` on untrusted
+  free-text + untrusted-data prompt framing (see Open questions above). Two accepted
+  residuals recorded below.
+
+- **2026-07-09 — Feed fetches do not retry/back off (ADR 0008 partial).** CLAUDE.md
+  #4 and ADR 0008 say "poll politely; back off on errors", but `fetchUsgs/fetchGdacs`
+  and the ReliefWeb fetch each make a single request (30s timeout) and, on failure,
+  return an `unavailable` FeedResult — the run degrades gracefully rather than
+  retrying. Accepted for the daily cadence (a transient blip self-heals next run);
+  bounded retry-with-backoff is a tracked enhancement, deferred rather than added as
+  untested network code under the review time-box.
+
+- **2026-07-09 — `fillAssessments` keys assessments by `feedEventId` alone.** The
+  core identity is `(feed, feedEventId)` (see `changes.ts`/`gate.ts`), but the LLM
+  assessment round-trip keys by bare `feedEventId` (the prompt's `id` field the model
+  echoes back). A cross-feed `feedEventId` collision would swap two narratives.
+  Accepted residual: the feeds' id formats are disjoint (USGS `us…`, GDACS numeric,
+  ReliefWeb URL), so a collision is implausible; fixing it would change the prompt's
+  id scheme and the parse contract. Tracked; not fixed in the review pass.
 
 - **2026-07-08 — fast-xml-parser is the repo's first runtime dependency.** CLAUDE.md
   asks to keep dependencies few; ReliefWeb is RSS/XML (CDATA, entity-encoded bodies),

@@ -143,3 +143,24 @@ describe("renderDashboard (map-first shell — ADR 0005)", () => {
     expect(occurrences).toBe(1); // once, inside the payload only
   });
 });
+
+describe("theme/marker colour drift guard", () => {
+  // The client script's marker palette (TIER_COLOURS) and the tier CSS custom
+  // properties are two hand-maintained copies of the same colours; a review
+  // found they can silently desync (map markers vs chips/legend). Lock them.
+  it("client TIER_COLOURS hex values match the tier CSS vars", () => {
+    const html = renderDashboard(model({}));
+    const cssVar = (name: string) =>
+      html.match(new RegExp("--" + name + ":\\s*(#[0-9a-fA-F]{6})"))?.[1];
+    const clientColour = (tier: string) =>
+      html.match(new RegExp(tier + ':\\s*"(#[0-9a-fA-F]{6})"'))?.[1];
+
+    // Regexes must actually find something (guard against a vacuous pass).
+    expect(cssVar("critical")).toMatch(/^#[0-9a-fA-F]{6}$/);
+    expect(clientColour("CRITICAL")).toMatch(/^#[0-9a-fA-F]{6}$/);
+
+    expect(clientColour("CRITICAL")).toBe(cssVar("critical"));
+    expect(clientColour("HIGH")).toBe(cssVar("high"));
+    expect(clientColour("MODERATE")).toBe(cssVar("moderate"));
+  });
+});

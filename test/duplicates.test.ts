@@ -84,6 +84,42 @@ describe("flagDuplicates (ADR 0007 — flag, never merge)", () => {
     expect(flagDuplicates(surfaced).every((e) => !e.duplicateOf)).toBe(true);
   });
 
+  it("does not attribute a later event to an intermediate duplicate (dead-guard regression)", () => {
+    // A (USGS, primary, most severe) — B (GDACS, dup of A, same place/time) —
+    // C (USGS, same place/time as A and B). C can never match A directly (same
+    // feed — cross-feed only), so its only geometric candidate is B. But B is
+    // itself already flagged as a duplicate of A: with the guard dead (reading
+    // the never-mutated input array instead of the accumulated result), C would
+    // wrongly be attributed to B, an intermediate duplicate rather than the
+    // cluster head. Fixed, C must not chain onto B.
+    const A = ev({ feedEventId: "a", feed: "USGS", tier: "CRITICAL", metrics: { mag: 7.0 } });
+    const B = ev({ feedEventId: "b", feed: "GDACS", tier: "HIGH", metrics: { mag: 6.0 } });
+    const C = ev({ feedEventId: "c", feed: "USGS", tier: "MODERATE", metrics: { mag: 5.0 } });
+    const surfaced = [A, B, C];
+    const out = flagDuplicates(surfaced);
+    const b = out.find((e) => e.feedEventId === "b")!;
+    const c = out.find((e) => e.feedEventId === "c")!;
+    expect(b.duplicateOf).toEqual({ feed: "USGS", feedEventId: "a", title: A.title });
+    // C matches B geometrically, but B is itself a duplicate — no chains: C's
+    // duplicateOf must not point at B (an event that itself has duplicateOf set).
+    expect(c.duplicateOf?.feedEventId).not.toBe("b");
+  });
+
+  it("never produces a chain-of-chains: no duplicateOf points at an already-flagged duplicate", () => {
+    const surfaced = [
+      ev({ feedEventId: "usgs-1", feed: "USGS" }),
+      ev({ feedEventId: "gdacs-1", feed: "GDACS" }),
+      ev({ feedEventId: "usgs-2", feed: "USGS" }),
+    ];
+    const out = flagDuplicates(surfaced);
+    const byKey = new Map(out.map((e) => [`${e.feed} ${e.feedEventId}`, e]));
+    for (const e of out) {
+      if (!e.duplicateOf) continue;
+      const primary = byKey.get(`${e.duplicateOf.feed} ${e.duplicateOf.feedEventId}`);
+      expect(primary?.duplicateOf).toBeUndefined();
+    }
+  });
+
   it("does not mutate the input events", () => {
     const surfaced = [
       ev({ feedEventId: "usgs-1", feed: "USGS" }),

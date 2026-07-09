@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
-import { mkdtempSync, rmSync, writeFileSync, readFileSync, existsSync } from "node:fs";
+import { mkdtempSync, rmSync, writeFileSync, readFileSync, existsSync, readdirSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { readPriorSnapshot, writeSnapshot, snapshotPath } from "../src/snapshots.js";
@@ -56,6 +56,17 @@ describe("writeSnapshot", () => {
     writeSnapshot(dir, NOW, model({ generatedAt: 2 }));
     expect(JSON.parse(readFileSync(join(dir, "2026-07-08.json"), "utf8")).generatedAt).toBe(2);
   });
+
+  it("writes atomically — no leftover temp file, final file is valid parseable JSON", () => {
+    const m = model({ degradation: [{ feed: "GDACS", reason: "timeout" }] });
+    writeSnapshot(dir, NOW, m);
+    const names = readdirSync(dir);
+    expect(names).toEqual(["2026-07-08.json"]); // no *.tmp* leftover
+    const raw = readFileSync(join(dir, "2026-07-08.json"), "utf8");
+    expect(raw).toContain("\n  "); // still pretty-printed
+    expect(raw.endsWith("\n")).toBe(true); // still trailing newline
+    expect(JSON.parse(raw)).toEqual(m);
+  });
 });
 
 describe("readPriorSnapshot", () => {
@@ -84,5 +95,24 @@ describe("readPriorSnapshot", () => {
   it("returns null (never throws) on a corrupt snapshot file", () => {
     writeFileSync(join(dir, "2026-07-07.json"), "{not json");
     expect(readPriorSnapshot(dir, NOW)).toBeNull();
+  });
+
+  it("returns null (never throws) when the prior file is valid JSON but the wrong shape", () => {
+    writeFileSync(join(dir, "2026-07-07.json"), JSON.stringify({ foo: 1 }));
+    expect(readPriorSnapshot(dir, NOW)).toBeNull();
+  });
+
+  it("returns null (never throws) when `surfaced` is present but not an array", () => {
+    writeFileSync(
+      join(dir, "2026-07-07.json"),
+      JSON.stringify({ ...model({ generatedAt: 7 }), surfaced: "not-an-array" }),
+    );
+    expect(readPriorSnapshot(dir, NOW)).toBeNull();
+  });
+
+  it("still reads back a well-formed prior SitrepModel (existing behavior preserved)", () => {
+    const m = model({ generatedAt: 7, surfaced: [], changeSummary: { new: 0, revised: 0, withdrawn: 0 } });
+    writeFileSync(join(dir, "2026-07-07.json"), JSON.stringify(m));
+    expect(readPriorSnapshot(dir, NOW)).toEqual(m);
   });
 });
