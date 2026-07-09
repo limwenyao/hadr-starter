@@ -9,8 +9,9 @@ this is the first post-v1 feature slice.
 
 For each surfaced, coordinate-bearing event, optionally show a **modeled or
 estimated impact area** on the map — the geographic extent over which the hazard
-is felt/affects people. Zones are drawn **only for the event the user selects**
-(card or marker click), never all at once. Every zone is labeled by its data
+is felt/affects people. **The app starts with all zones hidden** (low clutter);
+zones are then revealed either by **selecting** a single event (card or marker
+click) or by flipping a **show-all toggle**. Every zone is labeled by its data
 **provenance** so the map itself communicates how much to trust it.
 
 ## The cardinal constraint
@@ -149,25 +150,38 @@ interface FootprintSummary {
 - Git growth is bounded by (a) surfaced-events-only, (b) RDP geometry
   simplification before embedding.
 
-## Rendering — selection-driven zones
+## Rendering — a show/hide-all toggle over selection-driven zones
 
-- **Default:** no impact overlays drawn. Uncluttered map.
-- **Selection shows one zone:** clicking an event's **map marker** *or* its
-  **card in the panel** makes it the single "active" event → its footprint (and
-  estimate ring if that is its tier) is drawn and the map flies to fit it.
-  Selecting another event swaps the overlay; deselecting/closing the panel clears
-  it. **At most one event's zone is shown at a time.**
-- **Mechanism:** all surfaced events' geometry is embedded in the payload; the
-  client uses **one reusable MapLibre GeoJSON source** whose data is swapped to
-  the active event — not N always-on layers. Two layers on that source: a `fill`
-  and a `line`. Solid line + filled for modeled (MMI colour ramp for ShakeMap,
-  hazard colour for GDACS); **dashed** line + low-opacity fill for estimate.
-- **Legend:** the permanent caption plus a small provenance key
-  (modeled-solid / estimate-dashed). No visibility toggle — display is already
-  on-demand.
+Two visibility modes, governed by a single **"Impact areas" toggle**. The toggle
+lives **inside the events panel**, positioned **between the panel header block
+(`#meta` / `#notices`) and the start of the event list (`#groups`)** — so it sits
+with the events it governs, not on the map (and it stays reachable in the
+no-WebGL fallback, where the panel is the whole UI).
+
+- **Hide-all (DEFAULT — the app starts here):** no zones drawn until the user
+  **selects** an event (map marker *or* panel card). Only the selected event's
+  footprint (plus its estimate ring, if that is its tier) is drawn, and the map
+  flies to fit it. Selecting another event swaps which single zone shows;
+  deselecting / closing the panel clears it. This is the low-clutter default.
+- **Show-all:** flipping the toggle draws **every** surfaced event's zone at
+  once. Selecting an event still highlights it and flies to it, but the others
+  stay visible. Flipping back returns to selection-driven display.
+
+- **Mechanism:** all surfaced events' geometry is embedded in **one MapLibre
+  GeoJSON source**, each feature tagged with its event id and `isEstimate` /
+  provenance. Two layers (`fill` + `line`) use **data-driven paint** (solid line +
+  MMI/hazard-colour fill for modeled; **dashed** line + low-opacity fill for
+  estimate). Visibility is a single `setFilter` driven by `(mode, activeEventId)`:
+  show-all → all features; hide-all → only features whose event id equals the
+  active selection (empty filter when nothing is selected). No source-data
+  swapping and no N always-on layers.
+- **Legend:** the permanent "not an evacuation boundary" caption and a small
+  provenance key (modeled = solid, estimate = dashed). The toggle is in the panel
+  (above), not the legend.
 - **All tiers embedded:** Critical/High/Moderate surfaced events all get their
-  geometry embedded (only one draws at a time, so no clutter cost). Revisit only
-  if HTML size proves a problem.
+  geometry embedded. In hide-all mode only the selected one draws; in show-all
+  mode the user has explicitly opted into the density. Revisit only if HTML size
+  proves a problem.
 
 ## No-WebGL fallback
 
@@ -209,7 +223,9 @@ feature degrades to useful prose, never a blank.
   attaches to the model, geometry lands in the side map keyed by composite id,
   and a failing source degrades to no-zone without throwing.
 - Render test — embedded geometry round-trips; the "not an evacuation boundary"
-  caption is always present; estimate zones carry `isEstimate` styling hooks.
+  caption is always present; estimate zones carry `isEstimate` styling hooks; the
+  "Impact areas" toggle is present and the initial filter state is **hide-all**
+  (no zone visible without a selection).
 
 ## Out of scope (this slice)
 
