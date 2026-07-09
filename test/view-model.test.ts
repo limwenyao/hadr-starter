@@ -126,7 +126,7 @@ describe("buildViewModel (all render logic lives here — client stays dumb)", (
     expect(vm.tiers[0].events[0].assessment).toBe("");
   });
 
-  it("passes change flags through: isNew, changeNote", () => {
+  it("passes change flags through: isNew, isUpdated, changeNote", () => {
     const vm = buildViewModel(
       model({
         surfaced: [
@@ -140,12 +140,13 @@ describe("buildViewModel (all render logic lives here — client stays dumb)", (
       }),
     );
     const byId = new Map(vm.tiers[0].events.map((e) => [e.id, e]));
-    expect(byId.get("n")).toMatchObject({ isNew: true, changeNote: null });
+    expect(byId.get("n")).toMatchObject({ isNew: true, isUpdated: false, changeNote: null });
     expect(byId.get("r")).toMatchObject({
       isNew: false,
+      isUpdated: true,
       changeNote: "revised since yesterday: M 5.8 → M 5.1",
     });
-    expect(byId.get("u")).toMatchObject({ isNew: false, changeNote: null });
+    expect(byId.get("u")).toMatchObject({ isNew: false, isUpdated: false, changeNote: null });
   });
 
   it("builds the changes line from the summary, null on first runs", () => {

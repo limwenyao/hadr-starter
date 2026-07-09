@@ -24,6 +24,7 @@ const THEME_CSS = `
     --bg: #0a1628; --surface: #0f2137; --panel: rgba(13, 27, 48, 0.92);
     --border: #1e3a5c; --text: #dbe7f3; --muted: #7d95b5; --accent: #38bdf8;
     --critical: #ef4444; --high: #f59e0b; --moderate: #eab308;
+    --updated: #10b981;
     --rail-w: 56px; --panel-w: 380px;
   }
   * { box-sizing: border-box; }
@@ -125,6 +126,7 @@ const THEME_CSS = `
   .chip.tier { background: rgba(255, 255, 255, 0.06); }
   .chip.listonly { color: var(--muted); }
   .chip.new { color: var(--accent); background: rgba(56, 189, 248, 0.12); }
+  .chip.updated { color: var(--updated); background: rgba(16, 185, 129, 0.12); }
   .chg { color: var(--moderate); font-size: 0.74rem; font-style: italic; margin: 0.2rem 0 0; }
   #changes { padding: 0 1.25rem; }
   .changes-title {
