@@ -67,6 +67,7 @@ export const CLIENT_SCRIPT = String.raw`
     chips.appendChild(el("span", "chip feed", ev.feed));
     chips.appendChild(el("span", "chip tier t-" + ev.tier, ev.tier));
     if (ev.isNew) chips.appendChild(el("span", "chip new", "NEW"));
+    if (ev.isUpdated) chips.appendChild(el("span", "chip updated", "UPDATED"));
     card.appendChild(chips);
     card.appendChild(el("h3", "card-title", ev.title));
     var meta = el("p", "card-meta", ev.location + " · " + ev.timeUtc);
@@ -157,6 +158,7 @@ export const CLIENT_SCRIPT = String.raw`
       chips.appendChild(el("span", "chip tier t-" + ev.tier, ev.tier));
       chips.appendChild(el("span", "chip feed", ev.feed));
       if (ev.isNew) chips.appendChild(el("span", "chip new", "NEW"));
+      if (ev.isUpdated) chips.appendChild(el("span", "chip updated", "UPDATED"));
       if (!ev.coordinates) chips.appendChild(el("span", "chip listonly", "list-only"));
       row.appendChild(chips);
       row.appendChild(el("div", "row-title", ev.title));

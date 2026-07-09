@@ -24,6 +24,8 @@ export interface EventCardVM {
   duplicateNote: string | null;
   /** New since the prior snapshot (ADR 0009). */
   isNew: boolean;
+  /** Materially revised since the prior snapshot (ADR 0009). */
+  isUpdated: boolean;
   /** Deterministic revision note, or null when unchanged (ADR 0009). */
   changeNote: string | null;
   assessment: string;
@@ -69,6 +71,7 @@ function cardFor(event: SurfacedEvent): EventCardVM {
       ? `Likely the same event as ${event.duplicateOf.feed} — ${event.duplicateOf.title}`
       : null,
     isNew: event.change?.kind === "new",
+    isUpdated: event.change?.kind === "revised",
     changeNote: event.change?.note ?? null,
     assessment: event.assessment ?? "",
     // Entity-escaping alone does not stop javascript:-scheme injection into href.
