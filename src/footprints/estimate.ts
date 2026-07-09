@@ -34,8 +34,11 @@ export function circlePolygon(
   lon: number, lat: number, radiusKm: number, points: number,
 ): Polygon {
   const latRad = (lat * Math.PI) / 180;
-  // Clamp cos(lat) away from 0 so a near-polar epicentre cannot blow the
-  // longitude offset up to Infinity and embed a malformed coordinate.
+  // Clamp cos(lat) away from 0 so a near-polar epicentre cannot grow the
+  // longitude offset to an absurd magnitude (cos never rounds to exactly 0
+  // for a real latitude, but ~1e-17 near the poles would still produce a
+  // wildly out-of-range longitude). Earthquakes don't occur at the poles;
+  // this is defense-in-depth against a malformed embedded coordinate.
   const cosLat = Math.max(Math.abs(Math.cos(latRad)), 1e-6);
   const ring: [number, number][] = [];
   for (let i = 0; i <= points; i++) {

@@ -33,12 +33,17 @@ describe("circlePolygon", () => {
     expect(north).toBeCloseTo(1, 1);
   });
 
-  it("emits only finite coordinates at a near-polar latitude (cos(lat)→0 guard)", () => {
-    const poly = circlePolygon(0, 89.999, 100, EST_RING_POINTS);
-    const allFinite = poly.coordinates[0].every(
-      (p) => Number.isFinite(p[0]) && Number.isFinite(p[1]),
-    );
-    expect(allFinite).toBe(true);
+  it("bounds the longitude excursion at the pole (cos(lat)→~0 clamp engages)", () => {
+    // At lat 90, Math.cos ≈ 6.1e-17 (< the 1e-6 clamp floor), so the clamp
+    // engages. Without it the longitude offset would be ~1e16°; with it the
+    // offset is bounded to ~9e5°. Assert finiteness AND that the clamp bit —
+    // a threshold the pre-fix code would blow past (making this a real
+    // regression test, not one that passes either way).
+    const poly = circlePolygon(0, 90, 100, EST_RING_POINTS);
+    const ring = poly.coordinates[0];
+    expect(ring.every((p) => Number.isFinite(p[0]) && Number.isFinite(p[1]))).toBe(true);
+    const maxAbsLon = Math.max(...ring.map((p) => Math.abs(p[0])));
+    expect(maxAbsLon).toBeLessThan(1e7);
   });
 });
 

@@ -12,8 +12,9 @@ const UA = { "user-agent": "hadr-monitor (workshop build)" };
  * per-event `footprintRef` and the second-order ShakeMap `contUrl` come from
  * untrusted feed payloads, so we restrict fetches to the known feed origins —
  * an https + allowed-host check that closes an SSRF vector (cloud metadata at
- * 169.254.169.254, localhost admin endpoints, etc.) and mirrors the
- * `sourceUrl` sanitization in render/viewModel.ts.
+ * 169.254.169.254, localhost admin endpoints, etc.). This is stricter than
+ * the `sourceUrl` sanitization in render/viewModel.ts (which allows any
+ * http(s) host): footprint URLs must be https AND on a known feed host.
  */
 const ALLOWED_FOOTPRINT_HOST_SUFFIXES = ["usgs.gov", "gdacs.org"] as const;
 
