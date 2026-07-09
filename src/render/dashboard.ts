@@ -26,6 +26,7 @@ const THEME_CSS = `
     --border: #1e3a5c; --text: #dbe7f3; --muted: #7d95b5; --accent: #38bdf8;
     --critical: #ef4444; --high: #f59e0b; --moderate: #eab308;
     --updated: #10b981;
+    --fresh: #22c55e; --recent: #fde047;
     --rail-w: 56px; --panel-w: 380px;
   }
   * { box-sizing: border-box; }
@@ -128,8 +129,13 @@ const THEME_CSS = `
   .chip.listonly { color: var(--muted); }
   .chip.new { color: var(--accent); background: rgba(56, 189, 248, 0.12); }
   .chip.updated { color: var(--updated); background: rgba(16, 185, 129, 0.12); }
-  .chip.stale { color: var(--high); background: rgba(245, 158, 11, 0.12); }
-  .card-updated, .row-updated { color: var(--muted); font-size: 0.72rem; margin: 0.15rem 0 0; }
+  .card-updated, .row-updated { font-size: 0.72rem; margin: 0.15rem 0 0; }
+  /* Colour-coded update recency (ADR 0011): green <60m, yellow <24h, orange beyond. */
+  .recency-fresh { color: var(--fresh); }
+  .recency-recent { color: var(--recent); }
+  .recency-stale { color: var(--high); }
+  /* Subtle marker for inferred (approximate) update times — never overstate freshness. */
+  .approx { color: var(--muted); }
   .chg { color: var(--moderate); font-size: 0.74rem; font-style: italic; margin: 0.2rem 0 0; }
   #changes { padding: 0 1.25rem; }
   .changes-title {

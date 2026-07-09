@@ -196,36 +196,41 @@ describe("buildViewModel (all render logic lives here — client stays dumb)", (
     expect(vm.tiers[0].events[0].footprint).toBeNull();
   });
 
-  it("computes source-updated fields and a stale hint past the threshold", () => {
+  const recencyOf = (ageMs: number) => {
     const gen = Date.UTC(2026, 6, 9, 12, 0);
     const vm = buildViewModel(model({
+      generatedAt: gen,
+      surfaced: [surfaced({ sourceUpdatedAt: gen - ageMs, updateProvenance: "source" })],
+    }));
+    return vm.tiers[0].events[0].updatedRecency;
+  };
+
+  it("computes source-updated fields with a colour-coded recency bucket", () => {
+    const gen = Date.UTC(2026, 6, 9, 12, 0);
+    const card = buildViewModel(model({
       generatedAt: gen,
       surfaced: [surfaced({ sourceUpdatedAt: gen - 2 * 3600_000, updateProvenance: "source" })],
-    }));
-    const card = vm.tiers[0].events[0];
-    expect(card.sourceUpdatedUtc).toBe("2026-07-09T10:00:00.000Z");
+    })).tiers[0].events[0];
     expect(card.sourceUpdatedAgeLabel).toBe("~2h ago");
     expect(card.updateProvenance).toBe("source");
-    expect(card.stalenessHint).toBe(false);
+    expect(card.updatedRecency).toBe("recent");
   });
 
-  it("flags stalenessHint when the source update is older than STALE_AFTER_MS", () => {
-    const gen = Date.UTC(2026, 6, 9, 12, 0);
-    const vm = buildViewModel(model({
-      generatedAt: gen,
-      surfaced: [surfaced({ sourceUpdatedAt: gen - 48 * 3600_000, updateProvenance: "source" })],
-    }));
-    expect(vm.tiers[0].events[0].stalenessHint).toBe(true);
+  it("buckets updatedRecency: fresh <60m, recent <24h, stale beyond", () => {
+    expect(recencyOf(30 * 60_000)).toBe("fresh");   // 30 min
+    expect(recencyOf(60 * 60_000)).toBe("recent");  // exactly 60 min → not fresh
+    expect(recencyOf(2 * 3600_000)).toBe("recent"); // 2 h
+    expect(recencyOf(24 * 3600_000)).toBe("stale");  // exactly 24 h → not recent
+    expect(recencyOf(48 * 3600_000)).toBe("stale");  // 2 d
   });
 
   it("falls back to event time + 'inferred' when no source update time", () => {
     const gen = Date.UTC(2026, 6, 9, 12, 0);
-    const vm = buildViewModel(model({
+    const card = buildViewModel(model({
       generatedAt: gen,
       surfaced: [surfaced({ time: gen - 3600_000, sourceUpdatedAt: undefined, updateProvenance: undefined })],
-    }));
-    const card = vm.tiers[0].events[0];
+    })).tiers[0].events[0];
     expect(card.updateProvenance).toBe("inferred");
-    expect(card.sourceUpdatedUtc).toBe("2026-07-09T11:00:00.000Z");
+    expect(card.updatedRecency).toBe("recent");
   });
 });

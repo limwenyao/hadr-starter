@@ -106,13 +106,12 @@ export const CLIENT_SCRIPT = String.raw`
     if (ev.isUpdated) chips.appendChild(el("span", "chip updated", "UPDATED"));
     card.appendChild(chips);
     card.appendChild(el("h3", "card-title", ev.title));
-    var meta = el("p", "card-meta", ev.location + " · " + ev.timeUtc);
+    var meta = el("p", "card-meta", ev.location);
     card.appendChild(meta);
-    var upd = el("p", "card-updated",
-      "Source updated " + ev.sourceUpdatedUtc + " (" + ev.sourceUpdatedAgeLabel + ")" +
-      (ev.updateProvenance === "inferred" ? " · approximate" : ""));
+    var upd = el("p", "card-updated recency-" + ev.updatedRecency, "Updated: " + ev.sourceUpdatedAgeLabel);
+    // Subtle marker for feeds whose update time we infer (never overstate freshness).
+    if (ev.updateProvenance === "inferred") upd.appendChild(el("span", "approx", " (approx)"));
     card.appendChild(upd);
-    if (ev.stalenessHint) chips.appendChild(el("span", "chip stale", "POSSIBLY STALE"));
     if (ev.changeNote) card.appendChild(el("p", "chg", "△ " + ev.changeNote));
     if (ev.badges.length) {
       var badges = el("div", "badges");
@@ -205,12 +204,12 @@ export const CLIENT_SCRIPT = String.raw`
       if (ev.isNew) chips.appendChild(el("span", "chip new", "NEW"));
       if (ev.isUpdated) chips.appendChild(el("span", "chip updated", "UPDATED"));
       if (!ev.coordinates) chips.appendChild(el("span", "chip listonly", "list-only"));
-      if (ev.stalenessHint) chips.appendChild(el("span", "chip stale", "STALE?"));
       row.appendChild(chips);
       row.appendChild(el("div", "row-title", ev.title));
-      row.appendChild(el("div", "row-meta", ev.location + " · " + ev.timeUtc));
-      row.appendChild(el("div", "row-updated",
-        "upd " + ev.sourceUpdatedAgeLabel + (ev.updateProvenance === "inferred" ? " (approx)" : "")));
+      row.appendChild(el("div", "row-meta", ev.location));
+      var rowUpd = el("div", "row-updated recency-" + ev.updatedRecency, "Updated: " + ev.sourceUpdatedAgeLabel);
+      if (ev.updateProvenance === "inferred") rowUpd.appendChild(el("span", "approx", " (approx)"));
+      row.appendChild(rowUpd);
       if (ev.changeNote) row.appendChild(el("div", "chg", "△ " + ev.changeNote));
       var rowFp = footprintText(ev.footprint);
       if (rowFp) row.appendChild(el("div", "footprint", rowFp));

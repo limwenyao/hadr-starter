@@ -1,6 +1,6 @@
 import type { FeedName, FootprintSummary, SitrepModel, SurfacedEvent, Tier } from "../types.js";
 import { formatUtc } from "../time.js";
-import { STALE_AFTER_MS } from "../thresholds.js";
+import { RECENCY_FRESH_MS, STALE_AFTER_MS } from "../thresholds.js";
 
 /**
  * View-model for the map dashboard (ADR 0005). ALL render logic lives here,
@@ -42,8 +42,8 @@ export interface EventCardVM {
   sourceUpdatedUtc: string;
   /** Human relative age of the source update, e.g. "~2h ago". */
   sourceUpdatedAgeLabel: string;
-  /** Source update older than STALE_AFTER_MS — soft hint only. */
-  stalenessHint: boolean;
+  /** Recency band for colour-coding the age: fresh <60m, recent <24h, else stale. */
+  updatedRecency: "fresh" | "recent" | "stale";
   /** Whether the update time came from the source or was inferred from event time. */
   updateProvenance: "source" | "inferred";
 }
@@ -80,6 +80,13 @@ function ageLabel(ms: number): string {
   return `~${Math.round(hrs / 24)}d ago`;
 }
 
+/** Colour band for the update age (ADR 0011): fresh <60m, recent <24h, else stale. */
+function recencyOf(ms: number): "fresh" | "recent" | "stale" {
+  if (ms < RECENCY_FRESH_MS) return "fresh";
+  if (ms < STALE_AFTER_MS) return "recent";
+  return "stale";
+}
+
 function cardFor(event: SurfacedEvent, generatedAt: number): EventCardVM {
   return {
     id: event.feedEventId,
@@ -108,7 +115,7 @@ function cardFor(event: SurfacedEvent, generatedAt: number): EventCardVM {
     footprint: event.footprint ?? null,
     sourceUpdatedUtc: formatUtc(event.sourceUpdatedAt ?? event.time),
     sourceUpdatedAgeLabel: ageLabel(generatedAt - (event.sourceUpdatedAt ?? event.time)),
-    stalenessHint: generatedAt - (event.sourceUpdatedAt ?? event.time) > STALE_AFTER_MS,
+    updatedRecency: recencyOf(generatedAt - (event.sourceUpdatedAt ?? event.time)),
     updateProvenance: event.updateProvenance ?? "inferred",
   };
 }
