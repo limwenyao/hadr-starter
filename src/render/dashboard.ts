@@ -128,6 +128,8 @@ const THEME_CSS = `
   .chip.listonly { color: var(--muted); }
   .chip.new { color: var(--accent); background: rgba(56, 189, 248, 0.12); }
   .chip.updated { color: var(--updated); background: rgba(16, 185, 129, 0.12); }
+  .chip.stale { color: var(--high); background: rgba(245, 158, 11, 0.12); }
+  .card-updated, .row-updated { color: var(--muted); font-size: 0.72rem; margin: 0.15rem 0 0; }
   .chg { color: var(--moderate); font-size: 0.74rem; font-style: italic; margin: 0.2rem 0 0; }
   #changes { padding: 0 1.25rem; }
   .changes-title {
