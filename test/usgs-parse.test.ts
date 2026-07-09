@@ -85,4 +85,23 @@ describe("parseUsgs", () => {
     expect(events).toHaveLength(1);
     expect(events[0].feedEventId).toBe("us-test");
   });
+
+  it("captures the detail URL as footprintRef", () => {
+    const payload = { features: [{
+      id: "uw123", properties: {
+        mag: 5.1, place: "x", time: Date.UTC(2026, 6, 9),
+        detail: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/uw123.geojson",
+      }, geometry: { coordinates: [1, 2, 10] },
+    }] };
+    expect(parseUsgs(payload)[0].footprintRef)
+      .toBe("https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/uw123.geojson");
+  });
+
+  it("leaves footprintRef undefined when detail is missing or non-string", () => {
+    const payload = { features: [{
+      id: "uw123", properties: { mag: 5.1, place: "x", time: Date.UTC(2026, 6, 9), detail: 42 },
+      geometry: { coordinates: [1, 2] },
+    }] };
+    expect(parseUsgs(payload)[0].footprintRef).toBeUndefined();
+  });
 });

@@ -1,6 +1,7 @@
 import type { SitrepModel } from "../types.js";
 import { buildViewModel } from "./viewModel.js";
 import { CLIENT_SCRIPT } from "./client.js";
+import type { FeatureCollection } from "geojson";
 
 /**
  * Map-first dashboard (ADR 0005): full-screen keyless MapLibre map, right icon
@@ -165,12 +166,31 @@ const THEME_CSS = `
   .card .assessment { font-size: 0.82rem; margin: 0.45rem 0 0; line-height: 1.45; }
   .card .src { margin: 0.45rem 0 0; }
   .card a { color: var(--accent); }
+  #impact-controls { padding: 0.5rem 1.25rem 0; }
+  #impact-toggle {
+    width: 100%; text-align: left; background: var(--surface); color: var(--text);
+    border: 1px solid var(--border); border-radius: 8px; padding: 0.45rem 0.7rem;
+    font-size: 0.8rem; cursor: pointer;
+  }
+  #impact-toggle[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+  #impact-legend { display: flex; gap: 0.75rem; margin: 0.4rem 0 0; font-size: 0.7rem; color: var(--muted); }
+  #impact-legend .key::before {
+    content: ""; display: inline-block; width: 14px; height: 0; vertical-align: middle;
+    margin-right: 0.3rem; border-top: 2px solid var(--muted);
+  }
+  #impact-legend .key.estimate::before { border-top-style: dashed; }
+  .impact-caption { margin: 0.35rem 0 0; font-size: 0.68rem; color: var(--muted); font-style: italic; }
+  .row .footprint, .card .footprint { color: var(--muted); font-size: 0.74rem; margin: 0.3rem 0 0; }
 `;
 
-export function renderDashboard(model: SitrepModel): string {
+export function renderDashboard(
+  model: SitrepModel,
+  geometryById: Record<string, FeatureCollection> = {},
+): string {
   // Escape every "<" in the JSON (to the \\u003c sequence) so feed text can
   // never close the script block (e.g. a hostile "</script>" in a title).
   const payload = JSON.stringify(buildViewModel(model)).replace(/</g, "\\u003c");
+  const geomPayload = JSON.stringify(geometryById).replace(/</g, "\\u003c");
 
   return `<!doctype html>
 <html lang="en">
@@ -200,6 +220,14 @@ export function renderDashboard(model: SitrepModel): string {
   </header>
   <div id="notices"></div>
   <div id="changes"></div>
+  <div id="impact-controls">
+    <button id="impact-toggle" type="button" aria-pressed="false">Impact areas: off</button>
+    <div id="impact-legend">
+      <span class="key modeled">modeled</span>
+      <span class="key estimate">estimate</span>
+    </div>
+    <p class="impact-caption">Modeled or estimated extents — not official evacuation boundaries.</p>
+  </div>
   <div id="groups"></div>
 </aside>
 <noscript>
@@ -208,6 +236,7 @@ export function renderDashboard(model: SitrepModel): string {
   </p>
 </noscript>
 <script id="sitrep-data" type="application/json">${payload}</script>
+<script id="sitrep-geometry" type="application/json">${geomPayload}</script>
 <script src="${MAPLIBRE_JS}"></script>
 <script>${CLIENT_SCRIPT}</script>
 </body>

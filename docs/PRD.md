@@ -347,6 +347,10 @@ Per ADR 0010, explicitly **not** in v1:
 - The supervisor report hand-off (a duty-officer workflow that lives outside the
   system in v1).
 
+**Post-v1:** confidence-tiered impact zones (modeled/estimated footprint rings on
+the map, per-event) shipped as a post-v1 slice — spec at
+`docs/superpowers/specs/2026-07-09-impact-zones-design.md`.
+
 ## Further Notes
 
 - **Cardinal trust rule (ADR 0004):** never miss a major event — false negatives

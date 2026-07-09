@@ -21,6 +21,16 @@ export const CLIENT_SCRIPT = String.raw`
     return showFallback("Could not read the embedded sitrep data.");
   }
 
+  var geometry = {};
+  try {
+    var geomNode = document.getElementById("sitrep-geometry");
+    if (geomNode) geometry = JSON.parse(geomNode.textContent);
+  } catch (e) { geometry = {}; }
+
+  var impactMode = "hide";   // "hide" (selection-driven, default) | "show"
+  var activeKey = null;      // footprint key of the selected event, or null
+  var NONE_KEY = " none";
+
   var TIER_COLOURS = { CRITICAL: "#ef4444", HIGH: "#f59e0b", MODERATE: "#eab308" };
   var STYLE_URL = "https://tiles.openfreemap.org/styles/fiord";
   var openPopup = null;
@@ -32,6 +42,20 @@ export const CLIENT_SCRIPT = String.raw`
     if (cls) node.className = cls;
     if (text !== undefined && text !== null) node.textContent = text;
     return node;
+  }
+
+  var ROMAN = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
+  function footprintText(fp) {
+    if (!fp) return null;
+    var t = fp.label;
+    if (typeof fp.maxMmi === "number" && isFinite(fp.maxMmi)) {
+      var n = Math.max(0, Math.min(10, Math.round(fp.maxMmi)));
+      t += " · reached MMI " + (ROMAN[n] || n);
+    } else if (typeof fp.radiusKm === "number") {
+      t += " · ~" + fp.radiusKm + " km";
+    }
+    if (fp.isEstimate) t += " · estimate, not an evacuation boundary";
+    return t;
   }
 
   // Map failure (no WebGL, blocked CDN, bad payload) is announced with a
@@ -60,6 +84,18 @@ export const CLIENT_SCRIPT = String.raw`
     document.body.classList.toggle("panel-open");
   }
 
+  function refreshImpact() {
+    if (!map || !map.getLayer || !map.getLayer("impact-fill")) return;
+    var visFilter = impactMode === "show"
+      ? null
+      : ["==", ["get", "eventId"], activeKey || NONE_KEY];
+    var polyFilter = impactMode === "show"
+      ? ["==", "$type", "Polygon"]
+      : ["all", ["==", "$type", "Polygon"], ["==", ["get", "eventId"], activeKey || NONE_KEY]];
+    map.setFilter("impact-line", visFilter);
+    map.setFilter("impact-fill", polyFilter);
+  }
+
   // --- detail card (shared by marker click and list click) ---
   function buildCard(ev) {
     var card = el("div", "card");
@@ -82,6 +118,8 @@ export const CLIENT_SCRIPT = String.raw`
     }
     if (ev.duplicateNote) card.appendChild(el("p", "dup", "⚠ " + ev.duplicateNote));
     if (ev.assessment) card.appendChild(el("p", "assessment", ev.assessment));
+    var fpText = footprintText(ev.footprint);
+    if (fpText) card.appendChild(el("p", "footprint", fpText));
     if (ev.sourceUrl) {
       var p = el("p", "src");
       var a = el("a", null, "source");
@@ -107,6 +145,8 @@ export const CLIENT_SCRIPT = String.raw`
   }
 
   function flyToEvent(ev) {
+    activeKey = ev.key;
+    refreshImpact();
     if (!map || !ev.coordinates) return;
     map.flyTo({ center: [ev.coordinates.lon, ev.coordinates.lat], zoom: 5 });
     openCard(ev);
@@ -164,6 +204,8 @@ export const CLIENT_SCRIPT = String.raw`
       row.appendChild(el("div", "row-title", ev.title));
       row.appendChild(el("div", "row-meta", ev.location + " · " + ev.timeUtc));
       if (ev.changeNote) row.appendChild(el("div", "chg", "△ " + ev.changeNote));
+      var rowFp = footprintText(ev.footprint);
+      if (rowFp) row.appendChild(el("div", "footprint", rowFp));
       if (ev.coordinates) {
         row.addEventListener("click", function () { flyToEvent(ev); });
       }
@@ -178,6 +220,17 @@ export const CLIENT_SCRIPT = String.raw`
   document.getElementById("banner-close").addEventListener("click", function () {
     document.getElementById("fallback-banner").hidden = true;
   });
+
+  var impactBtn = document.getElementById("impact-toggle");
+  if (impactBtn) {
+    impactBtn.addEventListener("click", function () {
+      impactMode = impactMode === "show" ? "hide" : "show";
+      var on = impactMode === "show";
+      impactBtn.setAttribute("aria-pressed", on ? "true" : "false");
+      impactBtn.textContent = "Impact areas: " + (on ? "on" : "off");
+      refreshImpact();
+    });
+  }
 
   // --- map ---
   var withCoords = [];
@@ -201,6 +254,8 @@ export const CLIENT_SCRIPT = String.raw`
       dot.style.setProperty("--mk", TIER_COLOURS[ev.tier] || "#38bdf8");
       dot.addEventListener("click", function (e) {
         e.stopPropagation();
+        activeKey = ev.key;
+        refreshImpact();
         openCard(ev);
       });
       new maplibregl.Marker({ element: dot })
@@ -212,6 +267,27 @@ export const CLIENT_SCRIPT = String.raw`
     // synchronously after construction can be dropped on slow style loads,
     // leaving every marker off-screen.
     map.on("load", function () {
+      var allFeatures = [];
+      Object.keys(geometry).forEach(function (k) {
+        var fc = geometry[k];
+        if (fc && fc.features) allFeatures = allFeatures.concat(fc.features);
+      });
+      map.addSource("impact", { type: "geojson", data: { type: "FeatureCollection", features: allFeatures } });
+      map.addLayer({
+        id: "impact-fill", type: "fill", source: "impact",
+        filter: ["==", "$type", "Polygon"],
+        paint: { "fill-color": ["get", "color"], "fill-opacity": ["case", ["get", "isEstimate"], 0.08, 0.18] },
+      });
+      map.addLayer({
+        id: "impact-line", type: "line", source: "impact",
+        paint: {
+          "line-color": ["get", "color"],
+          "line-width": 2,
+          "line-dasharray": ["case", ["get", "isEstimate"], ["literal", [2, 2]], ["literal", [1, 0]]],
+        },
+      });
+      refreshImpact();
+
       if (withCoords.length === 1) {
         map.setCenter([withCoords[0].coordinates.lon, withCoords[0].coordinates.lat]);
         map.setZoom(4);

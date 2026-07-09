@@ -7,6 +7,8 @@ import { buildSitrep } from "./core/buildSitrep.js";
 import { claudeCliWriter, fillAssessments } from "./assessment/writer.js";
 import { shouldAssess, carryForwardAssessments } from "./assessment/gate.js";
 import { renderDashboard } from "./render/dashboard.js";
+import { fillFootprints } from "./footprints/fill.js";
+import { httpFootprintSource } from "./footprints/source.js";
 
 /**
  * One run of the agent (v1 slice): pull → filter → assess → render.
@@ -50,12 +52,16 @@ try {
       ? "writing assessments (change detected, first run, or forced)"
       : "quiet run — carrying forward prior assessments (no model call)",
   );
+  // Footprints are deterministic I/O, not the LLM — fetched every run,
+  // independent of the quiet-gate (CLAUDE.md #2). Failures degrade to no zone.
+  const { model: withFootprints, geometryById } = await fillFootprints(model, httpFootprintSource);
+
   const assessed = assess
-    ? await fillAssessments(model, claudeCliWriter)
-    : carryForwardAssessments(model, prior);
-  writeFileSync("dashboard.html", renderDashboard(assessed), "utf8");
+    ? await fillAssessments(withFootprints, claudeCliWriter)
+    : carryForwardAssessments(withFootprints, prior);
+  writeFileSync("dashboard.html", renderDashboard(assessed, geometryById), "utf8");
   // Persist the assessed model: the snapshot records what the brief actually
-  // said (audit trail — ADR 0006). Committing is the caller's job.
+  // said (audit trail — ADR 0006). Geometry is not persisted (summary-only).
   writeSnapshot("data", now, assessed);
   console.log("wrote dashboard.html and data snapshot");
 } catch (err) {

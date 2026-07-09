@@ -23,7 +23,7 @@ interface GdacsFeature {
     alertlevel?: unknown;
     country?: unknown;
     fromdate?: unknown;
-    url?: { report?: unknown } | null;
+    url?: { report?: unknown; geometry?: unknown } | null;
   } | null;
   geometry?: { coordinates?: unknown } | null;
 }
@@ -74,6 +74,7 @@ function parseFeature(feature: GdacsFeature | null): Event | undefined {
   const alertKey =
     typeof props.alertlevel === "string" ? props.alertlevel.toLowerCase() : "";
   const report = props.url?.report;
+  const geometryRef = props.url?.geometry;
 
   return {
     feed: "GDACS",
@@ -90,6 +91,7 @@ function parseFeature(feature: GdacsFeature | null): Event | undefined {
       alertLevel: ALERT_LEVELS[alertKey],
     },
     sourceUrl: typeof report === "string" ? report : undefined,
+    footprintRef: typeof geometryRef === "string" ? geometryRef : undefined,
   };
 }
 

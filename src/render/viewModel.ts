@@ -1,4 +1,4 @@
-import type { FeedName, SitrepModel, SurfacedEvent, Tier } from "../types.js";
+import type { FeedName, FootprintSummary, SitrepModel, SurfacedEvent, Tier } from "../types.js";
 import { formatUtc } from "../time.js";
 
 /**
@@ -13,6 +13,8 @@ const TIERS: readonly Tier[] = ["CRITICAL", "HIGH", "MODERATE"];
 
 export interface EventCardVM {
   id: string;
+  /** Composite identity `${feed} ${feedEventId}` — used to look up embedded geometry. */
+  key: string;
   feed: FeedName;
   tier: Tier;
   title: string;
@@ -33,6 +35,8 @@ export interface EventCardVM {
   sourceUrl: string | null;
   /** null for feeds without coordinates (ReliefWeb) — list-only, never pinned. */
   coordinates: { lon: number; lat: number } | null;
+  /** Impact-area summary (impact-zones slice), or null when the event has no zone. */
+  footprint: FootprintSummary | null;
 }
 
 export interface DashboardVM {
@@ -61,6 +65,7 @@ function badgesFor(event: SurfacedEvent): string[] {
 function cardFor(event: SurfacedEvent): EventCardVM {
   return {
     id: event.feedEventId,
+    key: `${event.feed} ${event.feedEventId}`,
     feed: event.feed,
     tier: event.tier,
     title: event.title,
@@ -82,6 +87,7 @@ function cardFor(event: SurfacedEvent): EventCardVM {
     coordinates: event.coordinates
       ? { lon: event.coordinates.lon, lat: event.coordinates.lat }
       : null,
+    footprint: event.footprint ?? null,
   };
 }
 
