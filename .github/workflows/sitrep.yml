@@ -1,0 +1,61 @@
+# Morning sitrep — the agent's unattended daily run (ADR 0002/0010).
+# A deterministic gate inside `npm run sitrep` (run.ts → shouldAssess) decides
+# whether the model is called; the model never decides whether the run wakes up.
+name: Morning sitrep
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "30 0 * * *"   # 00:30 UTC = 08:30 Asia/Singapore (UTC+8)
+
+permissions:
+  contents: write   # commit dashboard.html + data snapshot back to main (ADR 0006)
+  pages: write      # GitHub Pages deploy
+  id-token: write   # Pages OIDC
+
+concurrency:
+  group: sitrep
+  cancel-in-progress: false
+
+jobs:
+  sitrep:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install Claude CLI
+        run: npm i -g @anthropic-ai/claude-code
+
+      - name: Run sitrep (deterministic gate decides if the model is called)
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' }}
+        run: npm run sitrep
+
+      - name: Commit dashboard + snapshot to main (ADR 0006)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dashboard.html data/
+          git diff --staged --quiet || git commit -m "chore: morning sitrep $(date -u +%F)"
+          git push
+
+      - name: Stage Pages artifact
+        run: |
+          mkdir -p _site
+          cp dashboard.html _site/index.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - uses: actions/deploy-pages@v4
