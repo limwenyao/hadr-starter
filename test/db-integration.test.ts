@@ -13,7 +13,7 @@ const ev = (over: Partial<SurfacedEvent> = {}): SurfacedEvent => ({
   sourceUpdatedAt: Date.UTC(2026, 6, 9, 1, 0), updateProvenance: "source", ...over,
 });
 
-describe("db writer + reader", () => {
+describe.skipIf(!process.env.DATABASE_URL)("db writer + reader", () => {
   beforeAll(async () => { await resetDb(); });
   afterEach(async () => { await resetDb(); });
   afterAll(async () => { await closeDb(); });
@@ -63,7 +63,7 @@ const fc = (lon: number): FeatureCollection => ({
   }],
 });
 
-describe("latestGeometryById", () => {
+describe.skipIf(!process.env.DATABASE_URL)("latestGeometryById", () => {
   beforeAll(async () => { await resetDb(); });
   afterEach(async () => { await resetDb(); });
   afterAll(async () => { await closeDb(); });

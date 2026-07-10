@@ -11,7 +11,7 @@ const model = (surfaced: SitrepModel["surfaced"]): SitrepModel => ({
 });
 const okFeeds: FeedResult[] = [{ feed: "USGS", status: "ok", rawPayload: {} }];
 
-describe("persistRun", () => {
+describe.skipIf(!process.env.DATABASE_URL)("persistRun", () => {
   beforeAll(async () => { await resetDb(); });
   afterEach(async () => { await resetDb(); });
   afterAll(async () => { await closeDb(); });
