@@ -3,7 +3,7 @@ import type { PostgresJsDatabase } from "drizzle-orm/postgres-js";
 import type * as schema from "./schema.js";
 import type { EventVersionRow } from "./schema.js";
 import { rowToSurfacedEvent } from "./mapping.js";
-import type { SurfacedEvent } from "../types.js";
+import type { SurfacedEvent, FetchStatus } from "../types.js";
 import type { FeatureCollection } from "geojson";
 
 type Db = PostgresJsDatabase<typeof schema>;
@@ -44,4 +44,31 @@ export async function latestGeometryById(db: Db): Promise<Record<string, Feature
     out[`${r.feed as string} ${r.feed_event_id as string}`] = r.footprint_geometry as FeatureCollection;
   }
   return out;
+}
+
+/**
+ * Per-feed last-successful-fetch facts for the Data Sources tab, derived from
+ * ingest_runs. Thin: epoch-ms numbers + names only; the view-model formats.
+ */
+export async function lastFetchByFeed(db: Db): Promise<FetchStatus> {
+  const latest = await db.execute(sql`
+    SELECT run_at, feeds_ok FROM ingest_runs ORDER BY run_at DESC LIMIT 1
+  `);
+  const latestRow = (latest as unknown as Record<string, unknown>[])[0];
+
+  const perFeed = await db.execute(sql`
+    SELECT f AS feed, MAX(run_at) AS last_ok
+    FROM ingest_runs, unnest(feeds_ok) AS f
+    GROUP BY f
+  `);
+  const lastOkByFeed: Record<string, number> = {};
+  for (const r of perFeed as unknown as Record<string, unknown>[]) {
+    lastOkByFeed[r.feed as string] = new Date(r.last_ok as string | Date).getTime();
+  }
+
+  return {
+    latestRunAt: latestRow ? new Date(latestRow.run_at as string | Date).getTime() : null,
+    latestFeedsOk: latestRow ? (latestRow.feeds_ok as string[]) : [],
+    lastOkByFeed,
+  };
 }
