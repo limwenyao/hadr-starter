@@ -259,7 +259,7 @@ describe("buildViewModel — data sources", () => {
     const [u, g, r] = vm.dataSources;
     expect([u.recency, g.recency, r.recency]).toEqual(["fresh", "recent", "stale"]);
     expect(u.updatedAgeLabel).toBe("~10m ago");
-    expect(r.updatedAgeLabel).toBe("~1d ago");
+    expect(r.updatedAgeLabel).toBe("~30h ago");
   });
 
   it("never-fetched feed -> null age/recency, everFetched false", () => {

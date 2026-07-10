@@ -98,17 +98,12 @@ function badgesFor(event: SurfacedEvent): string[] {
   return badges;
 }
 
-/**
- * Day-format cutover is 24h to match STALE_AFTER_MS/recencyOf's "stale" band —
- * once an age is bucketed "stale" it is also shown in whole days (see Deviations,
- * Task 3: Data Sources view-model, for why this moved from a 48h cutover).
- */
 function ageLabel(ms: number): string {
   if (ms < 0) ms = 0;
   const mins = Math.round(ms / 60_000);
   if (mins < 60) return `~${mins}m ago`;
   const hrs = Math.round(mins / 60);
-  if (hrs < 24) return `~${hrs}h ago`;
+  if (hrs < 48) return `~${hrs}h ago`;
   return `~${Math.round(hrs / 24)}d ago`;
 }
 
