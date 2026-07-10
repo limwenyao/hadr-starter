@@ -1,6 +1,8 @@
 import type { FeedName, FootprintSummary, SitrepModel, SurfacedEvent, Tier } from "../types.js";
 import { formatUtc } from "../time.js";
 import { RECENCY_FRESH_MS, STALE_AFTER_MS } from "../thresholds.js";
+import { FEED_SOURCES } from "../feeds/sources.js";
+import type { FetchStatus } from "../types.js";
 
 /**
  * View-model for the map dashboard (ADR 0005). ALL render logic lives here,
@@ -48,6 +50,25 @@ export interface EventCardVM {
   updateProvenance: "source" | "inferred";
 }
 
+export interface DataSourceVM {
+  feed: FeedName;
+  description: string;
+  /** Sanitized http(s) only, else null. */
+  homeUrl: string | null;
+  homeLabel: string;
+  /** Sanitized http(s) only, else null. */
+  feedUrl: string | null;
+  everFetched: boolean;
+  /** Formatted UTC of the last successful fetch, or null if never. */
+  updatedUtc: string | null;
+  /** Relative age of the last successful fetch, e.g. "~7m ago", or null. */
+  updatedAgeLabel: string | null;
+  /** Recency band of the fetch age, or null if never fetched. */
+  recency: "fresh" | "recent" | "stale" | null;
+  /** "Failed to fetch updates at <utc>" when the latest run failed, else null. */
+  failureNote: string | null;
+}
+
 export interface DashboardVM {
   generatedUtc: string;
   feedsLine: string;
@@ -59,6 +80,12 @@ export interface DashboardVM {
   withdrawn: string[];
   /** One-line change summary vs the prior snapshot, or null on first runs. */
   changesLine: string | null;
+  /** Feed source rows for the Data Sources tab. */
+  dataSources: DataSourceVM[];
+  /** When the cron last ran (latest ingest run), formatted UTC, or null. */
+  lastFetchAttemptUtc: string | null;
+  /** False when the fetch-status read failed (client shows "unavailable"). */
+  dataSourcesStatusAvailable: boolean;
 }
 
 function badgesFor(event: SurfacedEvent): string[] {
@@ -71,12 +98,17 @@ function badgesFor(event: SurfacedEvent): string[] {
   return badges;
 }
 
+/**
+ * Day-format cutover is 24h to match STALE_AFTER_MS/recencyOf's "stale" band —
+ * once an age is bucketed "stale" it is also shown in whole days (see Deviations,
+ * Task 3: Data Sources view-model, for why this moved from a 48h cutover).
+ */
 function ageLabel(ms: number): string {
   if (ms < 0) ms = 0;
   const mins = Math.round(ms / 60_000);
   if (mins < 60) return `~${mins}m ago`;
   const hrs = Math.round(mins / 60);
-  if (hrs < 48) return `~${hrs}h ago`;
+  if (hrs < 24) return `~${hrs}h ago`;
   return `~${Math.round(hrs / 24)}d ago`;
 }
 
@@ -120,7 +152,40 @@ function cardFor(event: SurfacedEvent, generatedAt: number): EventCardVM {
   };
 }
 
-export function buildViewModel(model: SitrepModel): DashboardVM {
+/** http(s)-only guard (mirrors the event sourceUrl sanitization). */
+function httpUrl(url: string | null | undefined): string | null {
+  return url && /^https?:\/\//i.test(url) ? url : null;
+}
+
+function buildDataSources(fetchStatus: FetchStatus | null, now: number): DataSourceVM[] {
+  return FEED_SOURCES.map((s) => {
+    const lastFetchAt = fetchStatus ? fetchStatus.lastOkByFeed[s.feed] ?? null : null;
+    const failed =
+      fetchStatus != null &&
+      fetchStatus.latestRunAt != null &&
+      !fetchStatus.latestFeedsOk.includes(s.feed);
+    return {
+      feed: s.feed,
+      description: s.description,
+      homeUrl: httpUrl(s.homeUrl),
+      homeLabel: s.homeLabel,
+      feedUrl: httpUrl(s.feedUrl),
+      everFetched: lastFetchAt != null,
+      updatedUtc: lastFetchAt != null ? formatUtc(lastFetchAt) : null,
+      updatedAgeLabel: lastFetchAt != null ? ageLabel(now - lastFetchAt) : null,
+      recency: lastFetchAt != null ? recencyOf(now - lastFetchAt) : null,
+      failureNote:
+        failed && fetchStatus!.latestRunAt != null
+          ? "Failed to fetch updates at " + formatUtc(fetchStatus!.latestRunAt)
+          : null,
+    };
+  });
+}
+
+export function buildViewModel(
+  model: SitrepModel,
+  fetchStatus: FetchStatus | null = null,
+): DashboardVM {
   const tiers = TIERS.map((tier) => {
     const events = model.surfaced
       .filter((e) => e.tier === tier)
@@ -139,5 +204,9 @@ export function buildViewModel(model: SitrepModel): DashboardVM {
     changesLine: s
       ? `since yesterday: ${s.new} new · ${s.revised} revised · ${s.withdrawn} possibly withdrawn`
       : null,
+    dataSources: buildDataSources(fetchStatus, model.generatedAt),
+    lastFetchAttemptUtc:
+      fetchStatus && fetchStatus.latestRunAt != null ? formatUtc(fetchStatus.latestRunAt) : null,
+    dataSourcesStatusAvailable: fetchStatus != null,
   };
 }

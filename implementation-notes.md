@@ -58,6 +58,19 @@ Kept by the agent, reviewed by you. One entry per working block.
 <!-- Anything built that departs from the PRD or CLAUDE.md is recorded here,
      with the reason. An undocumented deviation is a bug. -->
 
+- **2026-07-11 — `ageLabel`'s day-format cutover moved from 48h to 24h (Data
+  Sources view-model, Task 3).** The shared `ageLabel` helper in
+  `src/render/viewModel.ts` (used by both `EventCardVM.sourceUpdatedAgeLabel`
+  and the new `DataSourceVM.updatedAgeLabel`) switched from hours to
+  "~Nd ago" at 48h. The task's spec'd test expects a feed last fetched 30h ago
+  (already in the "stale" `recencyOf` band, which starts at `STALE_AFTER_MS` =
+  24h) to read "~1d ago", not "~30h ago". Moved the cutover to 24h so the
+  day-format switch lines up with the existing "stale" band everywhere the
+  helper is used, rather than adding a second, parallel formatter just for
+  Data Sources. No test asserted the old 24–48h boundary text, so this is
+  additive risk-wise; flagged here because it changes shared, already-shipped
+  event-card display text, not just new code.
+
 - **2026-07-11 — "Last successful fetch" is run-level, not per-feed (Data Sources
   tab).** `ingest_runs.run_at` is shared by all feeds in a run, so `lastFetchByFeed`
   reports the last run in which a feed was in `feeds_ok`, not a true per-feed fetch
