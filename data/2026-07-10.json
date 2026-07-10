@@ -1,0 +1,663 @@
+{
+  "generatedAt": 1783658064924,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001279",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone BAVI-26",
+      "locationName": "Guam, Northern Mariana Islands, Japan, Taiwan, China",
+      "coordinates": {
+        "lon": 127.3,
+        "lat": 20.8
+      },
+      "time": 1782864000000,
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001279&episodeid=37&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001279&episodeid=37",
+      "tier": "CRITICAL",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 2956
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000106-geo",
+      "hazardType": "FL",
+      "title": "Georgia: Floods - Jun 2026",
+      "locationName": "Georgia",
+      "time": 1782518400000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000106-geo",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ep-2026-000107-caf",
+      "hazardType": "EP",
+      "title": "Central African Republic: Cholera Outbreak - Jun 2026",
+      "locationName": "Central African Republic",
+      "time": 1782432000000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ep-2026-000107-caf",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/eq-2026-000093-ven",
+      "hazardType": "EQ",
+      "title": "Venezuela: Earthquakes - Jun 2026",
+      "locationName": "Venezuela (Bolivarian Republic of)",
+      "time": 1782259200000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/eq-2026-000093-ven",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/eq-2026-000083-phl",
+      "hazardType": "EQ",
+      "title": "Philippines: Earthquake and Tsunami - Jun 2026",
+      "locationName": "Philippines",
+      "time": 1780876800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/eq-2026-000083-phl",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/st-2026-000086-arm",
+      "hazardType": "ST",
+      "title": "Armenia: Hailstorm - Jun 2026",
+      "locationName": "Armenia",
+      "time": 1780704000000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/st-2026-000086-arm",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000080-syr",
+      "hazardType": "FL",
+      "title": "Syria: Floods - May 2026",
+      "locationName": "Syrian Arab Republic",
+      "time": 1779235200000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000080-syr",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ep-2026-000071-cod",
+      "hazardType": "EP",
+      "title": "DR Congo/Uganda: Ebola Outbreak - May 2026",
+      "locationName": "DR Congo/Uganda",
+      "time": 1777939200000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ep-2026-000071-cod",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ep-2026-000085-lka",
+      "hazardType": "EP",
+      "title": "Sri Lanka: Dengue Outbreak - May 2026",
+      "locationName": "Sri Lanka",
+      "time": 1777593600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ep-2026-000085-lka",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/tc-2026-000050-fsm",
+      "hazardType": "TC",
+      "title": "Typhoon Sinlaku - Apr 2026",
+      "locationName": "Typhoon Sinlaku - Apr 2026",
+      "time": 1775692800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/tc-2026-000050-fsm",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000087-dom",
+      "hazardType": "FL",
+      "title": "Dominican Republic: Floods - Apr 2026",
+      "locationName": "Dominican Republic",
+      "time": 1775520000000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000087-dom",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/tc-2026-000053-fji",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone Vaianu - Apr 2026",
+      "locationName": "Fiji",
+      "time": 1775433600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/tc-2026-000053-fji",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/tc-2026-000051-slb",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone Maila - Apr 2026",
+      "locationName": "Tropical Cyclone Maila - Apr 2026",
+      "time": 1775433600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/tc-2026-000051-slb",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000044-yem",
+      "hazardType": "FL",
+      "title": "Yemen: Floods - Mar 2026",
+      "locationName": "Yemen",
+      "time": 1774569600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000044-yem",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000063-tza",
+      "hazardType": "FL",
+      "title": "Tanzania: Floods and Landslides - Mar 2026",
+      "locationName": "United Republic of Tanzania",
+      "time": 1774396800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000063-tza",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ff-2026-000043-afg",
+      "hazardType": "FF",
+      "title": "Afghanistan: Floods - Mar 2026",
+      "locationName": "Afghanistan",
+      "time": 1774396800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ff-2026-000043-afg",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fr-2026-000055-gnb",
+      "hazardType": "FR",
+      "title": "Guinea-Bissau: Fire - Mar 2026",
+      "locationName": "Guinea-Bissau",
+      "time": 1774310400000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fr-2026-000055-gnb",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/vw-2026-000054-lbr",
+      "hazardType": "VW",
+      "title": "Liberia: Windstorms - Mar 2026",
+      "locationName": "Liberia",
+      "time": 1774310400000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/vw-2026-000054-lbr",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fr-2026-000052-lbr",
+      "hazardType": "FR",
+      "title": "Liberia: Fires - Mar 2026",
+      "locationName": "Liberia",
+      "time": 1774310400000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fr-2026-000052-lbr",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ep-2026-000048-bgd",
+      "hazardType": "EP",
+      "title": "Bangladesh: Measles Outbreak - Mar 2026",
+      "locationName": "Bangladesh",
+      "time": 1773532800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ep-2026-000048-bgd",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000046-bwa",
+      "hazardType": "FL",
+      "title": "Botswana: Floods - Mar 2026",
+      "locationName": "Botswana",
+      "time": 1773532800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000046-bwa",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000sz7n",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 50 km SW of Shirahama, Japan",
+      "locationName": "50 km SW of Shirahama, Japan",
+      "coordinates": {
+        "lon": 134.9851,
+        "lat": 33.3425,
+        "depthKm": 10
+      },
+      "time": 1783601937039,
+      "sourceUpdatedAt": 1783642600550,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 401
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz7n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000sz7n.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000sz7m",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 59 km NNE of Port-Olry, Vanuatu",
+      "locationName": "59 km NNE of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 167.3264,
+        "lat": -14.5687,
+        "depthKm": 160.242
+      },
+      "time": 1783601576872,
+      "sourceUpdatedAt": 1783631675103,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz7m",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000sz7m.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000sz8l",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 19 km ENE of Abuyog, Philippines",
+      "locationName": "19 km ENE of Abuyog, Philippines",
+      "coordinates": {
+        "lon": 125.179,
+        "lat": 10.8094,
+        "depthKm": 103.893
+      },
+      "time": 1783615609469,
+      "sourceUpdatedAt": 1783631572328,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz8l",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000sz8l.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szbn",
+      "hazardType": "EQ",
+      "title": "M 4.9 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -25.0419,
+        "lat": -58.5995,
+        "depthKm": 31.461
+      },
+      "time": 1783639876860,
+      "sourceUpdatedAt": 1783644908040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szbn",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szbn.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 57
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szcw",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 256 km E of Tadine, New Caledonia",
+      "locationName": "256 km E of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 170.3195,
+        "lat": -21.9506,
+        "depthKm": 10
+      },
+      "time": 1783651316494,
+      "sourceUpdatedAt": 1783657418040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szcw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szcw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000sz8f",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 70 km NNW of Hirara, Japan",
+      "locationName": "70 km NNW of Hirara, Japan",
+      "coordinates": {
+        "lon": 125.0105,
+        "lat": 25.3774,
+        "depthKm": 104.146
+      },
+      "time": 1783614104279,
+      "sourceUpdatedAt": 1783618559040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz8f",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000sz8f.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szbp",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 52 km WSW of Playas, Ecuador",
+      "locationName": "52 km WSW of Playas, Ecuador",
+      "coordinates": {
+        "lon": -80.8473,
+        "lat": -2.7476,
+        "depthKm": 39.776
+      },
+      "time": 1783640579793,
+      "sourceUpdatedAt": 1783646515040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szbp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szbp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 28
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szb1",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 74 km S of Panguna, Papua New Guinea",
+      "locationName": "74 km S of Panguna, Papua New Guinea",
+      "coordinates": {
+        "lon": 155.5289,
+        "lat": -6.9931,
+        "depthKm": 78.861
+      },
+      "time": 1783635067021,
+      "sourceUpdatedAt": 1783642161040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szb1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szb1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000sz8b",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 131 km NE of Tadine, New Caledonia",
+      "locationName": "131 km NE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.6269,
+        "lat": -20.5901,
+        "depthKm": 10
+      },
+      "time": 1783612880156,
+      "sourceUpdatedAt": 1783615742040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz8b",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000sz8b.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000sz66",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 87 km S of Kuril’sk, Russia",
+      "locationName": "87 km S of Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 147.8872,
+        "lat": 44.4413,
+        "depthKm": 110.674
+      },
+      "time": 1783598319525,
+      "sourceUpdatedAt": 1783599801040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz66",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000sz66.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szcl",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 241 km ESE of Tadine, New Caledonia",
+      "locationName": "241 km ESE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 170.0576,
+        "lat": -22.3465,
+        "depthKm": 10
+      },
+      "time": 1783650894493,
+      "sourceUpdatedAt": 1783653472040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szcl",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szcl.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szaw",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 145 km NNW of Ternate, Indonesia",
+      "locationName": "145 km NNW of Ternate, Indonesia",
+      "coordinates": {
+        "lon": 126.7066,
+        "lat": 1.9145,
+        "depthKm": 22.683
+      },
+      "time": 1783634149769,
+      "sourceUpdatedAt": 1783636853040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szaw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szaw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 38
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000sz8z",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 59 km WSW of Balangonan, Philippines",
+      "locationName": "59 km WSW of Balangonan, Philippines",
+      "coordinates": {
+        "lon": 124.9069,
+        "lat": 5.2785,
+        "depthKm": 10
+      },
+      "time": 1783619413161,
+      "sourceUpdatedAt": 1783624995040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz8z",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000sz8z.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 13,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
