@@ -90,7 +90,6 @@ const THEME_CSS = `
   body.panel-open #panel { transform: translateX(0); }
   #panel header { padding: 1rem 1.25rem 0.5rem; border-bottom: 1px solid var(--border); }
   #panel h1 { margin: 0; font-size: 1rem; letter-spacing: 0.04em; }
-  #panel h1 span { color: var(--accent); }
   #meta { margin: 0.3rem 0 0.75rem; color: var(--muted); font-size: 0.78rem; }
   #notices { padding: 0 1.25rem; }
   #notices .notice {

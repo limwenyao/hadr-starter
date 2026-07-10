@@ -71,7 +71,6 @@ export interface DataSourceVM {
 
 export interface DashboardVM {
   generatedUtc: string;
-  feedsLine: string;
   totalCount: number;
   /** Severity order, empty tiers omitted. */
   tiers: { tier: Tier; count: number; events: EventCardVM[] }[];
@@ -191,7 +190,6 @@ export function buildViewModel(
   const s = model.changeSummary;
   return {
     generatedUtc: formatUtc(model.generatedAt),
-    feedsLine: "USGS, GDACS, ReliefWeb",
     totalCount: model.surfaced.length,
     tiers,
     degradation: model.degradation.map((d) => ({ feed: d.feed, reason: d.reason })),

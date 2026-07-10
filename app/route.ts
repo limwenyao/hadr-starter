@@ -1,5 +1,5 @@
 import { getDb } from "../src/db/client.js";
-import { latestSurfacedEvents, latestGeometryById } from "../src/db/reader.js";
+import { latestSurfacedEvents, latestGeometryById, lastFetchByFeed } from "../src/db/reader.js";
 import { buildDbSitrepModel } from "../src/render/fromDb.js";
 import { renderDashboard } from "../src/render/dashboard.js";
 
@@ -8,14 +8,17 @@ export const dynamic = "force-dynamic"; // always read current DB state
 export async function GET() {
   try {
     const db = getDb();
-    const [events, geometryById] = await Promise.all([
+    const [events, geometryById, fetchStatus] = await Promise.all([
       latestSurfacedEvents(db),
       // Geometry is best-effort: no polygons beats a 503 if only the geometry
       // read fails (the essential events read is still guarded by the catch).
       latestGeometryById(db).catch(() => ({})),
+      // Best-effort: a failed status read degrades the tab to "unavailable",
+      // it never 503s the page (mirrors the geometry read).
+      lastFetchByFeed(db).catch(() => null),
     ]);
     const model = buildDbSitrepModel(events, new Date());
-    const html = renderDashboard(model, geometryById);
+    const html = renderDashboard(model, geometryById, fetchStatus);
     return new Response(html, { headers: { "content-type": "text/html; charset=utf-8" } });
   } catch (err) {
     // Log the real error server-side for operators; never reflect DB internals

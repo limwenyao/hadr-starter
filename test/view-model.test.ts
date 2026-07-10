@@ -31,10 +31,9 @@ function model(over: Partial<SitrepModel>): SitrepModel {
 }
 
 describe("buildViewModel (all render logic lives here — client stays dumb)", () => {
-  it("stamps run metadata: generated time, feeds line, total count", () => {
+  it("stamps run metadata: generated time, total count", () => {
     const vm = buildViewModel(model({ surfaced: [surfaced({})] }));
     expect(vm.generatedUtc).toBe("2026-07-08T00:30:00.000Z");
-    expect(vm.feedsLine).toBe("USGS, GDACS, ReliefWeb");
     expect(vm.totalCount).toBe(1);
   });
 
