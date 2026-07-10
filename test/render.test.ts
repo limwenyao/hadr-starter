@@ -260,4 +260,17 @@ describe("renderDashboard — Data Sources tab", () => {
     const html = renderDashboard(model({}), {}, status);
     expect(html).toContain("<h1>HADR MONITOR — Situation Report</h1>");
   });
+
+  it("default (no fetchStatus arg) degrades the panel to 'unavailable', never lying", () => {
+    const html = renderDashboard(model({}));
+    const payload = extractPayload(html) as {
+      dataSourcesStatusAvailable: boolean;
+      dataSourcesSubtext: string;
+      dataSources: { recency: string | null }[];
+    };
+    expect(payload.dataSourcesStatusAvailable).toBe(false);
+    expect(payload.dataSourcesSubtext).toBe("Fetch status unavailable");
+    expect(payload.dataSources).toHaveLength(3);
+    expect(payload.dataSources.every((s) => s.recency === null)).toBe(true);
+  });
 });

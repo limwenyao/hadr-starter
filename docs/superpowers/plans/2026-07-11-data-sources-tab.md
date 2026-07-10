@@ -670,6 +670,8 @@ Populates the panel from the view-model, wires the mutually-exclusive rail toggl
 - Modify: `src/render/viewModel.ts` (remove `feedsLine`)
 - Modify: `test/view-model.test.ts` (update the metadata test)
 - Modify: `app/route.ts`
+- Modify: `src/run.ts` (missed call site, fixed in a later review pass — also calls
+  `renderDashboard` for the GitHub Pages static path; now threads `fetchStatus`)
 
 **Interfaces:**
 - Consumes: `vm.dataSources`, `vm.lastFetchAttemptUtc`, `vm.dataSourcesStatusAvailable` (Task 3); DOM ids from Task 4; `lastFetchByFeed` (Task 1); `renderDashboard(model, geometryById, fetchStatus)` (Task 4).

@@ -294,4 +294,22 @@ describe("buildViewModel — data sources", () => {
     expect(vm.dataSources).toHaveLength(3);
     expect(vm.dataSources.every((s) => s.recency === null)).toBe(true);
   });
+
+  it("dataSourcesSubtext: null fetchStatus -> 'Fetch status unavailable'", () => {
+    const vm = buildViewModel(model({}), null);
+    expect(vm.dataSourcesSubtext).toBe("Fetch status unavailable");
+  });
+
+  it("dataSourcesSubtext: fetchStatus with latestRunAt null -> 'No runs recorded yet'", () => {
+    const vm = buildViewModel(
+      model({}),
+      { latestRunAt: null, latestFeedsOk: [], lastOkByFeed: {} },
+    );
+    expect(vm.dataSourcesSubtext).toBe("No runs recorded yet");
+  });
+
+  it("dataSourcesSubtext: fetchStatus with latestRunAt set -> 'Last fetch attempt: ' + formatUtc", () => {
+    const vm = buildViewModel(model({}), fetchStatus({ latestRunAt: Date.UTC(2026, 6, 8, 6, 0) }));
+    expect(vm.dataSourcesSubtext).toBe("Last fetch attempt: 2026-07-08T06:00:00.000Z");
+  });
 });

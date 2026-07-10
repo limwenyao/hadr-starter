@@ -203,23 +203,23 @@ const THEME_CSS = `
   #sources-panel h1 { margin: 0; font-size: 1rem; letter-spacing: 0.04em; }
   #sources-sub { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.78rem; }
   #sources-list { overflow-y: auto; padding: 0.5rem 1.25rem 1.5rem; flex: 1; }
-  .src { padding: 0.7rem 0; border-bottom: 1px solid var(--border); }
-  .src:last-child { border-bottom: none; }
-  .src .nm { display: flex; align-items: center; font-size: 0.9rem; font-weight: 700; }
-  .src .light {
+  #sources-panel .src { padding: 0.7rem 0; border-bottom: 1px solid var(--border); }
+  #sources-panel .src:last-child { border-bottom: none; }
+  #sources-panel .src .nm { display: flex; align-items: center; font-size: 0.9rem; font-weight: 700; }
+  #sources-panel .src .light {
     margin-left: auto; width: 11px; height: 11px; border-radius: 50%;
     background: var(--muted); box-shadow: 0 0 6px 1px var(--muted);
   }
-  .src .light.recency-fresh { background: var(--fresh); box-shadow: 0 0 6px 1px var(--fresh); }
-  .src .light.recency-recent { background: var(--recent); box-shadow: 0 0 6px 1px var(--recent); }
-  .src .light.recency-stale { background: var(--high); box-shadow: 0 0 6px 1px var(--high); }
-  .src .ds { color: var(--muted); font-size: 0.78rem; margin: 0.3rem 0 0.4rem; line-height: 1.4; }
-  .src .links { font-size: 0.76rem; margin-bottom: 0.4rem; }
-  .src .links a { color: var(--accent); text-decoration: none; }
-  .src .links a.feed { color: var(--muted); }
-  .src .links .sep { color: var(--border); margin: 0 0.45rem; }
-  .src .updated { font-size: 0.76rem; }
-  .src .failnote { font-size: 0.74rem; color: var(--muted); margin-top: 0.3rem; }
+  #sources-panel .src .light.recency-fresh { background: var(--fresh); box-shadow: 0 0 6px 1px var(--fresh); }
+  #sources-panel .src .light.recency-recent { background: var(--recent); box-shadow: 0 0 6px 1px var(--recent); }
+  #sources-panel .src .light.recency-stale { background: var(--high); box-shadow: 0 0 6px 1px var(--high); }
+  #sources-panel .src .ds { color: var(--muted); font-size: 0.78rem; margin: 0.3rem 0 0.4rem; line-height: 1.4; }
+  #sources-panel .src .links { font-size: 0.76rem; margin-bottom: 0.4rem; }
+  #sources-panel .src .links a { color: var(--accent); text-decoration: none; }
+  #sources-panel .src .links a.feed { color: var(--muted); }
+  #sources-panel .src .links .sep { color: var(--border); margin: 0 0.45rem; }
+  #sources-panel .src .updated { font-size: 0.76rem; }
+  #sources-panel .src .failnote { font-size: 0.74rem; color: var(--muted); margin-top: 0.3rem; }
 `;
 
 export function renderDashboard(

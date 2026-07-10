@@ -170,9 +170,7 @@ export const CLIENT_SCRIPT = String.raw`
   // --- data sources panel ---
   (function buildSources() {
     var sub = document.getElementById("sources-sub");
-    sub.textContent = vm.lastFetchAttemptUtc
-      ? "Last fetch attempt: " + vm.lastFetchAttemptUtc
-      : "No runs recorded yet";
+    sub.textContent = vm.dataSourcesSubtext;
 
     var list = document.getElementById("sources-list");
     vm.dataSources.forEach(function (s) {

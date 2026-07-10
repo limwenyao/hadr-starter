@@ -257,6 +257,13 @@ buildViewModel(model: SitrepModel, fetchStatus: FetchStatus | null = null): Dash
   `Promise.all` (same best-effort pattern already used for `latestGeometryById`),
   and pass the result as the third `renderDashboard` argument. A failed status read
   therefore degrades to "Fetch status unavailable" rather than 503-ing the page.
+- **`src/run.ts` is ALSO a `renderDashboard` caller** (the GitHub Pages /
+  `npm run sitrep` static path, invoked daily by `.github/workflows/sitrep.yml`)
+  and was missed in the initial pass — it must pass `fetchStatus` too, read from
+  the DB via `lastFetchByFeed` after `persistRun`, with a fallback synthesized
+  from the run's own `feedResults` when `DATABASE_URL` is unset or the DB write
+  fails (so the panel never falsely reports "unavailable" right after a
+  successful fetch).
 
 ## 9. Decisions & deviations (to record in `implementation-notes.md` at build time)
 
@@ -304,6 +311,7 @@ buildViewModel(model: SitrepModel, fetchStatus: FetchStatus | null = null): Dash
 | `src/render/dashboard.ts` | rail button, `#sources-panel` markup + CSS, monochrome headers, `renderDashboard` param |
 | `src/render/client.ts` | `buildSources`, panel toggling, drop `feeds:` from meta |
 | `app/route.ts` | best-effort `lastFetchByFeed` read, thread into `renderDashboard` |
+| `src/run.ts` | **ALSO a `renderDashboard` caller** (GitHub Pages / `npm run sitrep` static path) — missed initially; threads `fetchStatus` too, DB-read with a feed-results fallback |
 | `test/viewModel.test.ts` | `dataSources` unit tests |
 | `test/db-fetch-status.test.ts` | **new** gated reader integration tests |
 

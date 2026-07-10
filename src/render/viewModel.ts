@@ -85,6 +85,10 @@ export interface DashboardVM {
   lastFetchAttemptUtc: string | null;
   /** False when the fetch-status read failed (client shows "unavailable"). */
   dataSourcesStatusAvailable: boolean;
+  /** Data Sources panel subheader — precomputed here so the client stays dumb
+   *  and the null/no-runs/has-runs cases can never desync from the per-feed
+   *  rows (ADR 0011 — never overstate freshness, CLAUDE.md #5). */
+  dataSourcesSubtext: string;
 }
 
 function badgesFor(event: SurfacedEvent): string[] {
@@ -201,5 +205,11 @@ export function buildViewModel(
     lastFetchAttemptUtc:
       fetchStatus && fetchStatus.latestRunAt != null ? formatUtc(fetchStatus.latestRunAt) : null,
     dataSourcesStatusAvailable: fetchStatus != null,
+    dataSourcesSubtext:
+      fetchStatus == null
+        ? "Fetch status unavailable"
+        : fetchStatus.latestRunAt == null
+          ? "No runs recorded yet"
+          : "Last fetch attempt: " + formatUtc(fetchStatus.latestRunAt),
   };
 }
