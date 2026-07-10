@@ -7,6 +7,7 @@ import {
 } from "../src/render/dashboard.js";
 import { buildViewModel } from "../src/render/viewModel.js";
 import type { SitrepModel, SurfacedEvent } from "../src/types.js";
+import type { FetchStatus } from "../src/types.js";
 
 function surfaced(over: Partial<SurfacedEvent>): SurfacedEvent {
   return {
@@ -221,5 +222,42 @@ describe("impact zones (impact-zones slice)", () => {
     expect(html).toContain('["get", "eventId"]');        // selection filter expression
     expect(html).toContain('["get", "color"]');          // data-driven colour
     expect(html).toContain("impact-toggle");             // toggle wired
+  });
+});
+
+describe("renderDashboard — Data Sources tab", () => {
+  const status: FetchStatus = {
+    latestRunAt: Date.UTC(2026, 6, 8, 0, 0),
+    latestFeedsOk: ["USGS", "GDACS", "ReliefWeb"],
+    lastOkByFeed: {
+      USGS: Date.UTC(2026, 6, 8, 0, 0),
+      GDACS: Date.UTC(2026, 6, 8, 0, 0),
+      ReliefWeb: Date.UTC(2026, 6, 7, 0, 0),
+    },
+  };
+
+  it("renders the rail button and sources panel scaffold", () => {
+    const html = renderDashboard(model({}), {}, status);
+    expect(html).toContain('id="btn-sources"');
+    expect(html).toContain('id="sources-panel"');
+    expect(html).toContain('id="sources-list"');
+    expect(html).toContain(">DATA SOURCES<");
+  });
+
+  it("embeds the dataSources payload and attempt time", () => {
+    const html = renderDashboard(model({}), {}, status);
+    const payload = extractPayload(html) as {
+      dataSources: { feed: string }[];
+      lastFetchAttemptUtc: string;
+      dataSourcesStatusAvailable: boolean;
+    };
+    expect(payload.dataSources.map((s) => s.feed)).toEqual(["USGS", "GDACS", "ReliefWeb"]);
+    expect(payload.lastFetchAttemptUtc).toBe("2026-07-08T00:00:00.000Z");
+    expect(payload.dataSourcesStatusAvailable).toBe(true);
+  });
+
+  it("event panel header is single-colour (no accent span)", () => {
+    const html = renderDashboard(model({}), {}, status);
+    expect(html).toContain("<h1>HADR MONITOR — Situation Report</h1>");
   });
 });
