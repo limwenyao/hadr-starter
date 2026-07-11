@@ -58,6 +58,13 @@ Kept by the agent, reviewed by you. One entry per working block.
 <!-- Anything built that departs from the PRD or CLAUDE.md is recorded here,
      with the reason. An undocumented deviation is a bug. -->
 
+- **2026-07-11 — Decoupled cron cadence (Slice 2).** `sitrep.yml` now runs hourly
+  (`30 1-23`, `SITREP_MODE=refresh` — DB only, Vercel live-fresh) and daily
+  (`30 0`, `SITREP_MODE=full` — assess + commit dashboard/snapshot + deploy Pages).
+  The commit + Pages steps are gated to the daily run / manual dispatch, so `main`
+  gets ~1 commit/day while the live app refreshes hourly. Supersedes the single
+  daily schedule.
+
 - **2026-07-11 — `run.ts` split into `full` and `refresh` modes; event-driven
   hourly assessment (Slice 2).** `SITREP_MODE=refresh` (hourly) reads prior state
   from the DB (the previous run), runs `buildSitrep` + the existing `shouldAssess`
