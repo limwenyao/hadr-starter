@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1783741928926,
+  "generatedAt": 1783748030550,
   "surfaced": [
     {
       "feed": "GDACS",
@@ -12,6 +12,8 @@
         "lat": 25
       },
       "time": 1782864000000,
+      "sourceUpdatedAt": 1783747816000,
+      "updateProvenance": "source",
       "metrics": {
         "alertLevel": "red"
       },
@@ -224,11 +226,11 @@
         "depthKm": 39.34
       },
       "time": 1783664245310,
-      "sourceUpdatedAt": 1783737741370,
+      "sourceUpdatedAt": 1783746375625,
       "updateProvenance": "source",
       "metrics": {
         "mag": 4.53,
-        "sig": 415,
+        "sig": 416,
         "pagerAlert": "green"
       },
       "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/hv75000056",
