@@ -6,7 +6,8 @@ name: Morning sitrep
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "30 0 * * *"   # 00:30 UTC = 08:30 Asia/Singapore (UTC+8)
+    - cron: "30 1-23 * * *"   # hourly (01–23 UTC) — DB refresh only (Vercel live-fresh)
+    - cron: "30 0 * * *"      # daily 00:30 UTC = 08:30 SGT — full: assess + commit + Pages
 
 permissions:
   contents: write   # commit dashboard.html + data snapshot back to main (ADR 0006)
@@ -41,6 +42,7 @@ jobs:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           FORCE: ${{ github.event_name == 'workflow_dispatch' }}
           DATABASE_URL: ${{ secrets.DATABASE_URL }}   # Neon (ADR 0011 dual-write)
+          SITREP_MODE: ${{ (github.event_name == 'workflow_dispatch' || github.event.schedule == '30 0 * * *') && 'full' || 'refresh' }}
         run: npm run sitrep
 
       - name: Commit dashboard + snapshot to main (ADR 0006)
@@ -49,7 +51,7 @@ jobs:
         # writes the snapshot to disk *before* the DB write and a DB blip must
         # not lose the audit net (spec design.md:150; run.ts flags the failure
         # via exit code, it does not discard the run). No-op when nothing staged.
-        if: always()
+        if: ${{ always() && (github.event_name == 'workflow_dispatch' || github.event.schedule == '30 0 * * *') }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -58,12 +60,15 @@ jobs:
           git push
 
       - name: Stage Pages artifact
+        if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '30 0 * * *' }}
         run: |
           mkdir -p _site
           cp dashboard.html _site/index.html
 
       - uses: actions/upload-pages-artifact@v3
+        if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '30 0 * * *' }}
         with:
           path: _site
 
       - uses: actions/deploy-pages@v4
+        if: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '30 0 * * *' }}

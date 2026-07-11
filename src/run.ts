@@ -9,32 +9,27 @@ import { shouldAssess, carryForwardAssessments } from "./assessment/gate.js";
 import { renderDashboard } from "./render/dashboard.js";
 import { fillFootprints } from "./footprints/fill.js";
 import { httpFootprintSource } from "./footprints/source.js";
-import type { FetchStatus } from "./types.js";
+import type { FeedResult, FetchStatus, SitrepModel } from "./types.js";
 
 /**
- * One run of the agent (v1 slice): pull → filter → assess → render.
- * Snapshots and scheduling land in later slices (ADR 0010).
+ * One run of the agent (ADR 0010/0011). Two modes (Slice 2):
+ *  - full    (default; daily 00:30 cron + manual): assess (gated vs yesterday's
+ *            JSON snapshot) → DB + JSON snapshot + dashboard.html + (workflow
+ *            commits & deploys Pages). Today's behavior.
+ *  - refresh (hourly cron): read prior state from the DB (the previous run),
+ *            assess event-driven (only when something changed since then), write
+ *            the DB only. The live Vercel app renders fresh from the DB — no
+ *            snapshot/dashboard/commit needed.
  *
- * Top-level guard: the core and adapters are built not to throw, but an
- * unforeseen error here must exit non-zero (so the scheduler notices) rather
- * than crash unhandled — never fail silently (CLAUDE.md #4).
+ * Top-level guard: the core and adapters are built not to throw; an unforeseen
+ * error here exits non-zero (so the scheduler notices) — never crash unhandled
+ * or fail silently (CLAUDE.md #4).
  */
-try {
-  // Feeds are independent — poll them concurrently; each returns a FeedResult
-  // (never throws), so one feed being down never sinks the others (ADR 0008).
-  const feedResults = await Promise.all([
-    fetchUsgs(),
-    fetchGdacs(),
-    reliefWebSource.fetch(),
-  ]);
 
-  const now = new Date();
-  const prior = readPriorSnapshot("data", now);
-  const model = buildSitrep(feedResults, prior, now);
-
+function logSurfaced(model: SitrepModel): void {
   const changes = model.changeSummary
     ? `; changes vs prior: ${model.changeSummary.new} new, ${model.changeSummary.revised} revised, ${model.changeSummary.withdrawn} possibly withdrawn`
-    : "; no prior snapshot (first run — no change notes)";
+    : "; no prior (first run — no change notes)";
   console.log(
     `surfaced ${model.surfaced.length} event(s)` +
       (model.degradation.length
@@ -42,10 +37,14 @@ try {
         : "") +
       changes,
   );
+}
 
-  // Deterministic quiet-gate (ADR 0010): call the model only when something
-  // changed (or on a forced/first run). On a quiet day, reuse prior prose —
-  // the model never decides whether the run wakes up (CLAUDE.md #2).
+/** Daily / manual: JSON prior, gated assess, snapshot + dashboard + (Pages via workflow). */
+async function fullRun(feedResults: FeedResult[], now: Date): Promise<void> {
+  const prior = readPriorSnapshot("data", now);
+  const model = buildSitrep(feedResults, prior, now);
+  logSurfaced(model);
+
   const force = process.env.FORCE === "true";
   const assess = shouldAssess(model.changeSummary, force);
   console.log(
@@ -53,24 +52,18 @@ try {
       ? "writing assessments (change detected, first run, or forced)"
       : "quiet run — carrying forward prior assessments (no model call)",
   );
-  // Footprints are deterministic I/O, not the LLM — fetched every run,
-  // independent of the quiet-gate (CLAUDE.md #2). Failures degrade to no zone.
-  const { model: withFootprints, geometryById } = await fillFootprints(model, httpFootprintSource);
 
+  const { model: withFootprints, geometryById } = await fillFootprints(model, httpFootprintSource);
   const assessed = assess
     ? await fillAssessments(withFootprints, claudeCliWriter)
     : carryForwardAssessments(withFootprints, prior);
+
   // Snapshot FIRST — the JSON audit net (ADR 0006) must survive even if the DB
-  // write below fails (sitrep.yml commits it with `if: always()`). Geometry is
-  // not persisted (summary-only).
+  // write below fails (sitrep.yml commits it with `if: always()`).
   writeSnapshot("data", now, assessed);
 
-  // Per-feed fetch status for the dashboard's Data Sources panel. Prefer the DB
-  // (identical to the Vercel route in app/route.ts — includes the run just
-  // persisted); fall back to this run's own results so the panel never falsely
-  // claims "Fetch status unavailable" right after a successful fetch.
-  // Transitional dual-write (ADR 0011): a DB failure must not crash the run or
-  // lose the snapshot — log it, flag it, exit non-zero (CLAUDE.md #4).
+  // Per-feed fetch status for the dashboard's Data Sources panel: prefer the DB
+  // (matches the Vercel route), fall back to this run's own results.
   let fetchStatus: FetchStatus | null = null;
   if (process.env.DATABASE_URL) {
     try {
@@ -101,10 +94,76 @@ try {
   }
 
   // Render LAST, with the resolved status — always runs (the DB error above is
-  // caught, not rethrown), so a DB blip degrades the panel to this run's own
-  // results rather than losing the dashboard.
+  // caught, not rethrown), so a DB blip degrades the panel rather than losing
+  // the dashboard.
   writeFileSync("dashboard.html", renderDashboard(assessed, geometryById, fetchStatus), "utf8");
   console.log("wrote dashboard.html and data snapshot");
+}
+
+/** Hourly: DB prior (previous run), event-driven assess, DB write only. */
+async function refreshRun(feedResults: FeedResult[], now: Date): Promise<void> {
+  if (!process.env.DATABASE_URL) {
+    console.error("SITREP_MODE=refresh requires DATABASE_URL — nothing to refresh; exiting non-zero.");
+    process.exitCode = 1;
+    return;
+  }
+  const { getDb, closeDb } = await import("./db/client.js");
+  const { persistRun } = await import("./db/persist.js");
+  const { latestSurfacedEvents } = await import("./db/reader.js");
+  try {
+    // Read the current DB latest BEFORE writing — that IS the previous run's state.
+    const dbPrior = await latestSurfacedEvents(getDb());
+    const priorModel: SitrepModel = {
+      generatedAt: now.getTime(),
+      surfaced: dbPrior,
+      degradation: [],
+      withdrawn: [],
+      changeSummary: null,
+    };
+
+    const model = buildSitrep(feedResults, priorModel, now);
+    logSurfaced(model);
+
+    // Event-driven gate: assess only when something changed since the last run.
+    // FORCE is ignored here — the hourly path is never a manual dispatch.
+    const assess = shouldAssess(model.changeSummary, false);
+    console.log(
+      assess
+        ? "refresh: change since last run — writing assessments"
+        : "refresh: no change since last run — carrying forward (no model call)",
+    );
+
+    const { model: withFootprints, geometryById } = await fillFootprints(model, httpFootprintSource);
+    // The change annotations here are computed vs the PREVIOUS RUN (the DB prior),
+    // and revisionNote hardcodes "since yesterday" wording — temporally wrong an
+    // hour later. The DB comparison is the assess-gate ONLY (spec: never rendered),
+    // so strip `change` before the prompt sees it. The daily `fullRun` keeps its
+    // (correct) "since yesterday" notes.
+    const assessed = assess
+      ? await fillAssessments(
+          { ...withFootprints, surfaced: withFootprints.surfaced.map(({ change, ...e }) => e) },
+          claudeCliWriter,
+        )
+      : carryForwardAssessments(withFootprints, priorModel);
+
+    const { inserted } = await persistRun(getDb(), assessed, feedResults, now, geometryById);
+    console.log(`refresh: db wrote ${inserted} new event version(s)`);
+  } finally {
+    await closeDb();
+  }
+}
+
+try {
+  // Feeds are independent — poll concurrently; each returns a FeedResult (never
+  // throws), so one feed being down never sinks the others (ADR 0008).
+  const feedResults = await Promise.all([fetchUsgs(), fetchGdacs(), reliefWebSource.fetch()]);
+  const now = new Date();
+
+  if (process.env.SITREP_MODE === "refresh") {
+    await refreshRun(feedResults, now);
+  } else {
+    await fullRun(feedResults, now);
+  }
 } catch (err) {
   console.error(`run failed: ${err instanceof Error ? err.stack : String(err)}`);
   process.exitCode = 1;

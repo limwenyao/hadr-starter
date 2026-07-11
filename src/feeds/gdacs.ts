@@ -23,13 +23,14 @@ interface GdacsFeature {
     alertlevel?: unknown;
     country?: unknown;
     fromdate?: unknown;
+    datemodified?: unknown;
     url?: { report?: unknown; geometry?: unknown } | null;
   } | null;
   geometry?: { coordinates?: unknown } | null;
 }
 
 /**
- * Parse a GDACS `fromdate` as UTC epoch ms. GDACS timestamps carry no offset
+ * Parse a GDACS timestamp (`fromdate` or `datemodified`) as UTC epoch ms. GDACS timestamps carry no offset
  * (e.g. "2026-07-06T11:29:36"); JS would read an offset-less date-time as *local*
  * time, misplacing every event by the host timezone — so append `Z` when absent.
  * Returns undefined for anything unparseable or out of Date range (never throws).
@@ -64,6 +65,13 @@ function parseFeature(feature: GdacsFeature | null): Event | undefined {
   const time = parseGdacsDate(props.fromdate);
   if (time === undefined) return undefined;
 
+  // GDACS `datemodified` is the real last-updated stamp (distinct from `fromdate`,
+  // the event start). Use it as the source update time when present; else fall
+  // back to the event time (inferred) — mirrors the USGS `updated` pattern.
+  const modified = parseGdacsDate(props.datemodified);
+  const sourceUpdatedAt = modified ?? time;
+  const updateProvenance = modified !== undefined ? ("source" as const) : ("inferred" as const);
+
   const country = typeof props.country === "string" && props.country.length > 0
     ? props.country
     : "location unknown";
@@ -87,6 +95,8 @@ function parseFeature(feature: GdacsFeature | null): Event | undefined {
         ? { lon: coords[0], lat: coords[1] }
         : undefined,
     time,
+    sourceUpdatedAt,
+    updateProvenance,
     metrics: {
       alertLevel: ALERT_LEVELS[alertKey],
     },

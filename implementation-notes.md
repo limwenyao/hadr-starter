@@ -58,6 +58,31 @@ Kept by the agent, reviewed by you. One entry per working block.
 <!-- Anything built that departs from the PRD or CLAUDE.md is recorded here,
      with the reason. An undocumented deviation is a bug. -->
 
+- **2026-07-11 — Decoupled cron cadence (Slice 2).** `sitrep.yml` now runs hourly
+  (`30 1-23`, `SITREP_MODE=refresh` — DB only, Vercel live-fresh) and daily
+  (`30 0`, `SITREP_MODE=full` — assess + commit dashboard/snapshot + deploy Pages).
+  The commit + Pages steps are gated to the daily run / manual dispatch, so `main`
+  gets ~1 commit/day while the live app refreshes hourly. Supersedes the single
+  daily schedule.
+
+- **2026-07-11 — `run.ts` split into `full` and `refresh` modes; event-driven
+  hourly assessment (Slice 2).** `SITREP_MODE=refresh` (hourly) reads prior state
+  from the DB (the previous run), runs `buildSitrep` + the existing `shouldAssess`
+  gate, assesses only on genuine change since the last run, and writes the DB only
+  (no snapshot/dashboard/commit). `full` (default; daily/manual) is unchanged —
+  JSON prior, `since yesterday` digest, snapshot + dashboard + Pages. The DB-derived
+  change verdict is used only as the internal gate, never as user-facing notes.
+  Concretely, `refreshRun` strips each surfaced event's `change` annotation before
+  it reaches `fillAssessments`, so the "since yesterday" wording (correct only in
+  `full`'s JSON-vs-yesterday comparison) never leaks into an hourly assessment prompt.
+
+- **2026-07-11 — GDACS `datemodified` captured as a real source update time
+  (Slice 2).** GDACS `Event`s now set `sourceUpdatedAt` from the payload's
+  `datemodified` (provenance `source`), falling back to the event time (`inferred`)
+  when absent — closing the earlier "GDACS source-update-time is inferred" gap.
+  ReliefWeb stays `inferred` (RSS exposes only `pubDate`; the real fix is the
+  approved-API swap, ADR 0008).
+
 - **2026-07-11 — "Last successful fetch" is run-level, not per-feed (Data Sources
   tab).** `ingest_runs.run_at` is shared by all feeds in a run, so `lastFetchByFeed`
   reports the last run in which a feed was in `feeds_ok`, not a true per-feed fetch

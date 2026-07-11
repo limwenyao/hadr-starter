@@ -112,3 +112,31 @@ describe("parseGdacs", () => {
       .toContain("getgeometry?eventtype=TC&eventid=1001279");
   });
 });
+
+describe("GDACS datemodified → source update time", () => {
+  const feature = (extra: Record<string, unknown>) => ({
+    properties: {
+      eventtype: "EQ", eventid: 1, name: "t", country: "X",
+      fromdate: "2026-07-06T09:00:00", alertlevel: "Orange", ...extra,
+    },
+    geometry: { coordinates: [1, 2] },
+  });
+
+  it("uses datemodified as sourceUpdatedAt with provenance 'source'", () => {
+    const [e] = parseGdacs({ features: [feature({ datemodified: "2026-07-06T12:09:48" })] });
+    expect(e.updateProvenance).toBe("source");
+    expect(e.sourceUpdatedAt).toBe(Date.UTC(2026, 6, 6, 12, 9, 48));
+  });
+
+  it("falls back to event time (inferred) when datemodified is absent", () => {
+    const [e] = parseGdacs({ features: [feature({})] });
+    expect(e.updateProvenance).toBe("inferred");
+    expect(e.sourceUpdatedAt).toBe(Date.UTC(2026, 6, 6, 9, 0, 0)); // = fromdate/time
+  });
+
+  it("falls back to inferred when datemodified is unparseable", () => {
+    const [e] = parseGdacs({ features: [feature({ datemodified: "not-a-date" })] });
+    expect(e.updateProvenance).toBe("inferred");
+    expect(e.sourceUpdatedAt).toBe(Date.UTC(2026, 6, 6, 9, 0, 0));
+  });
+});
