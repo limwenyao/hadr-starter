@@ -58,6 +58,14 @@ Kept by the agent, reviewed by you. One entry per working block.
 <!-- Anything built that departs from the PRD or CLAUDE.md is recorded here,
      with the reason. An undocumented deviation is a bug. -->
 
+- **2026-07-11 — `run.ts` split into `full` and `refresh` modes; event-driven
+  hourly assessment (Slice 2).** `SITREP_MODE=refresh` (hourly) reads prior state
+  from the DB (the previous run), runs `buildSitrep` + the existing `shouldAssess`
+  gate, assesses only on genuine change since the last run, and writes the DB only
+  (no snapshot/dashboard/commit). `full` (default; daily/manual) is unchanged —
+  JSON prior, `since yesterday` digest, snapshot + dashboard + Pages. The DB-derived
+  change verdict is used only as the internal gate, never as user-facing notes.
+
 - **2026-07-11 — GDACS `datemodified` captured as a real source update time
   (Slice 2).** GDACS `Event`s now set `sourceUpdatedAt` from the payload's
   `datemodified` (provenance `source`), falling back to the event time (`inferred`)
