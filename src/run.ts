@@ -134,8 +134,16 @@ async function refreshRun(feedResults: FeedResult[], now: Date): Promise<void> {
     );
 
     const { model: withFootprints, geometryById } = await fillFootprints(model, httpFootprintSource);
+    // The change annotations here are computed vs the PREVIOUS RUN (the DB prior),
+    // and revisionNote hardcodes "since yesterday" wording — temporally wrong an
+    // hour later. The DB comparison is the assess-gate ONLY (spec: never rendered),
+    // so strip `change` before the prompt sees it. The daily `fullRun` keeps its
+    // (correct) "since yesterday" notes.
     const assessed = assess
-      ? await fillAssessments(withFootprints, claudeCliWriter)
+      ? await fillAssessments(
+          { ...withFootprints, surfaced: withFootprints.surfaced.map(({ change, ...e }) => e) },
+          claudeCliWriter,
+        )
       : carryForwardAssessments(withFootprints, priorModel);
 
     const { inserted } = await persistRun(getDb(), assessed, feedResults, now, geometryById);

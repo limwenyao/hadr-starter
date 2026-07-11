@@ -30,7 +30,7 @@ interface GdacsFeature {
 }
 
 /**
- * Parse a GDACS `fromdate` as UTC epoch ms. GDACS timestamps carry no offset
+ * Parse a GDACS timestamp (`fromdate` or `datemodified`) as UTC epoch ms. GDACS timestamps carry no offset
  * (e.g. "2026-07-06T11:29:36"); JS would read an offset-less date-time as *local*
  * time, misplacing every event by the host timezone — so append `Z` when absent.
  * Returns undefined for anything unparseable or out of Date range (never throws).

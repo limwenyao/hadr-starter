@@ -72,6 +72,9 @@ Kept by the agent, reviewed by you. One entry per working block.
   (no snapshot/dashboard/commit). `full` (default; daily/manual) is unchanged —
   JSON prior, `since yesterday` digest, snapshot + dashboard + Pages. The DB-derived
   change verdict is used only as the internal gate, never as user-facing notes.
+  Concretely, `refreshRun` strips each surfaced event's `change` annotation before
+  it reaches `fillAssessments`, so the "since yesterday" wording (correct only in
+  `full`'s JSON-vs-yesterday comparison) never leaks into an hourly assessment prompt.
 
 - **2026-07-11 — GDACS `datemodified` captured as a real source update time
   (Slice 2).** GDACS `Event`s now set `sourceUpdatedAt` from the payload's
