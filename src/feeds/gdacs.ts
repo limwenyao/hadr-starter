@@ -23,6 +23,7 @@ interface GdacsFeature {
     alertlevel?: unknown;
     country?: unknown;
     fromdate?: unknown;
+    datemodified?: unknown;
     url?: { report?: unknown; geometry?: unknown } | null;
   } | null;
   geometry?: { coordinates?: unknown } | null;
@@ -64,6 +65,13 @@ function parseFeature(feature: GdacsFeature | null): Event | undefined {
   const time = parseGdacsDate(props.fromdate);
   if (time === undefined) return undefined;
 
+  // GDACS `datemodified` is the real last-updated stamp (distinct from `fromdate`,
+  // the event start). Use it as the source update time when present; else fall
+  // back to the event time (inferred) — mirrors the USGS `updated` pattern.
+  const modified = parseGdacsDate(props.datemodified);
+  const sourceUpdatedAt = modified ?? time;
+  const updateProvenance = modified !== undefined ? ("source" as const) : ("inferred" as const);
+
   const country = typeof props.country === "string" && props.country.length > 0
     ? props.country
     : "location unknown";
@@ -87,6 +95,8 @@ function parseFeature(feature: GdacsFeature | null): Event | undefined {
         ? { lon: coords[0], lat: coords[1] }
         : undefined,
     time,
+    sourceUpdatedAt,
+    updateProvenance,
     metrics: {
       alertLevel: ALERT_LEVELS[alertKey],
     },

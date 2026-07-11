@@ -58,6 +58,13 @@ Kept by the agent, reviewed by you. One entry per working block.
 <!-- Anything built that departs from the PRD or CLAUDE.md is recorded here,
      with the reason. An undocumented deviation is a bug. -->
 
+- **2026-07-11 — GDACS `datemodified` captured as a real source update time
+  (Slice 2).** GDACS `Event`s now set `sourceUpdatedAt` from the payload's
+  `datemodified` (provenance `source`), falling back to the event time (`inferred`)
+  when absent — closing the earlier "GDACS source-update-time is inferred" gap.
+  ReliefWeb stays `inferred` (RSS exposes only `pubDate`; the real fix is the
+  approved-API swap, ADR 0008).
+
 - **2026-07-11 — "Last successful fetch" is run-level, not per-feed (Data Sources
   tab).** `ingest_runs.run_at` is shared by all feeds in a run, so `lastFetchByFeed`
   reports the last run in which a feed was in `feeds_ok`, not a true per-feed fetch
