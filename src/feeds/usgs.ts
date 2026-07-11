@@ -83,7 +83,7 @@ function parseFeature(feature: UsgsFeature | null): Event | undefined {
   };
 }
 
-const USGS_ALL_DAY_URL =
+export const USGS_ALL_DAY_URL =
   "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson";
 
 /**

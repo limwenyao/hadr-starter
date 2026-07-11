@@ -1,6 +1,8 @@
 import type { FeedName, FootprintSummary, SitrepModel, SurfacedEvent, Tier } from "../types.js";
 import { formatUtc } from "../time.js";
 import { RECENCY_FRESH_MS, STALE_AFTER_MS } from "../thresholds.js";
+import { FEED_SOURCES } from "../feeds/sources.js";
+import type { FetchStatus } from "../types.js";
 
 /**
  * View-model for the map dashboard (ADR 0005). ALL render logic lives here,
@@ -48,9 +50,27 @@ export interface EventCardVM {
   updateProvenance: "source" | "inferred";
 }
 
+export interface DataSourceVM {
+  feed: FeedName;
+  description: string;
+  /** Sanitized http(s) only, else null. */
+  homeUrl: string | null;
+  homeLabel: string;
+  /** Sanitized http(s) only, else null. */
+  feedUrl: string | null;
+  everFetched: boolean;
+  /** Formatted UTC of the last successful fetch, or null if never. */
+  updatedUtc: string | null;
+  /** Relative age of the last successful fetch, e.g. "~7m ago", or null. */
+  updatedAgeLabel: string | null;
+  /** Recency band of the fetch age, or null if never fetched. */
+  recency: "fresh" | "recent" | "stale" | null;
+  /** "Failed to fetch updates at <utc>" when the latest run failed, else null. */
+  failureNote: string | null;
+}
+
 export interface DashboardVM {
   generatedUtc: string;
-  feedsLine: string;
   totalCount: number;
   /** Severity order, empty tiers omitted. */
   tiers: { tier: Tier; count: number; events: EventCardVM[] }[];
@@ -59,6 +79,16 @@ export interface DashboardVM {
   withdrawn: string[];
   /** One-line change summary vs the prior snapshot, or null on first runs. */
   changesLine: string | null;
+  /** Feed source rows for the Data Sources tab. */
+  dataSources: DataSourceVM[];
+  /** When the cron last ran (latest ingest run), formatted UTC, or null. */
+  lastFetchAttemptUtc: string | null;
+  /** False when the fetch-status read failed (client shows "unavailable"). */
+  dataSourcesStatusAvailable: boolean;
+  /** Data Sources panel subheader — precomputed here so the client stays dumb
+   *  and the null/no-runs/has-runs cases can never desync from the per-feed
+   *  rows (ADR 0011 — never overstate freshness, CLAUDE.md #5). */
+  dataSourcesSubtext: string;
 }
 
 function badgesFor(event: SurfacedEvent): string[] {
@@ -120,7 +150,40 @@ function cardFor(event: SurfacedEvent, generatedAt: number): EventCardVM {
   };
 }
 
-export function buildViewModel(model: SitrepModel): DashboardVM {
+/** http(s)-only guard (mirrors the event sourceUrl sanitization). */
+function httpUrl(url: string | null | undefined): string | null {
+  return url && /^https?:\/\//i.test(url) ? url : null;
+}
+
+function buildDataSources(fetchStatus: FetchStatus | null, now: number): DataSourceVM[] {
+  return FEED_SOURCES.map((s) => {
+    const lastFetchAt = fetchStatus ? fetchStatus.lastOkByFeed[s.feed] ?? null : null;
+    const failed =
+      fetchStatus != null &&
+      fetchStatus.latestRunAt != null &&
+      !fetchStatus.latestFeedsOk.includes(s.feed);
+    return {
+      feed: s.feed,
+      description: s.description,
+      homeUrl: httpUrl(s.homeUrl),
+      homeLabel: s.homeLabel,
+      feedUrl: httpUrl(s.feedUrl),
+      everFetched: lastFetchAt != null,
+      updatedUtc: lastFetchAt != null ? formatUtc(lastFetchAt) : null,
+      updatedAgeLabel: lastFetchAt != null ? ageLabel(now - lastFetchAt) : null,
+      recency: lastFetchAt != null ? recencyOf(now - lastFetchAt) : null,
+      failureNote:
+        failed && fetchStatus!.latestRunAt != null
+          ? "Failed to fetch updates at " + formatUtc(fetchStatus!.latestRunAt)
+          : null,
+    };
+  });
+}
+
+export function buildViewModel(
+  model: SitrepModel,
+  fetchStatus: FetchStatus | null = null,
+): DashboardVM {
   const tiers = TIERS.map((tier) => {
     const events = model.surfaced
       .filter((e) => e.tier === tier)
@@ -131,7 +194,6 @@ export function buildViewModel(model: SitrepModel): DashboardVM {
   const s = model.changeSummary;
   return {
     generatedUtc: formatUtc(model.generatedAt),
-    feedsLine: "USGS, GDACS, ReliefWeb",
     totalCount: model.surfaced.length,
     tiers,
     degradation: model.degradation.map((d) => ({ feed: d.feed, reason: d.reason })),
@@ -139,5 +201,15 @@ export function buildViewModel(model: SitrepModel): DashboardVM {
     changesLine: s
       ? `since yesterday: ${s.new} new · ${s.revised} revised · ${s.withdrawn} possibly withdrawn`
       : null,
+    dataSources: buildDataSources(fetchStatus, model.generatedAt),
+    lastFetchAttemptUtc:
+      fetchStatus && fetchStatus.latestRunAt != null ? formatUtc(fetchStatus.latestRunAt) : null,
+    dataSourcesStatusAvailable: fetchStatus != null,
+    dataSourcesSubtext:
+      fetchStatus == null
+        ? "Fetch status unavailable"
+        : fetchStatus.latestRunAt == null
+          ? "No runs recorded yet"
+          : "Last fetch attempt: " + formatUtc(fetchStatus.latestRunAt),
   };
 }

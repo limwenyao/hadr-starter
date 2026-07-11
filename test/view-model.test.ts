@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { buildViewModel } from "../src/render/viewModel.js";
 import type { SitrepModel, SurfacedEvent } from "../src/types.js";
+import type { FetchStatus } from "../src/types.js";
 
 function surfaced(over: Partial<SurfacedEvent>): SurfacedEvent {
   return {
@@ -30,10 +31,9 @@ function model(over: Partial<SitrepModel>): SitrepModel {
 }
 
 describe("buildViewModel (all render logic lives here — client stays dumb)", () => {
-  it("stamps run metadata: generated time, feeds line, total count", () => {
+  it("stamps run metadata: generated time, total count", () => {
     const vm = buildViewModel(model({ surfaced: [surfaced({})] }));
     expect(vm.generatedUtc).toBe("2026-07-08T00:30:00.000Z");
-    expect(vm.feedsLine).toBe("USGS, GDACS, ReliefWeb");
     expect(vm.totalCount).toBe(1);
   });
 
@@ -232,5 +232,84 @@ describe("buildViewModel (all render logic lives here — client stays dumb)", (
     })).tiers[0].events[0];
     expect(card.updateProvenance).toBe("inferred");
     expect(card.updatedRecency).toBe("recent");
+  });
+});
+
+const GEN = Date.UTC(2026, 6, 8, 0, 30); // matches model() generatedAt
+
+function fetchStatus(over: Partial<FetchStatus> = {}): FetchStatus {
+  return { latestRunAt: GEN, latestFeedsOk: ["USGS", "GDACS", "ReliefWeb"], lastOkByFeed: {}, ...over };
+}
+
+describe("buildViewModel — data sources", () => {
+  it("lists the three feeds in registry order", () => {
+    const vm = buildViewModel(model({}), fetchStatus());
+    expect(vm.dataSources.map((s) => s.feed)).toEqual(["USGS", "GDACS", "ReliefWeb"]);
+  });
+
+  it("bands the last-successful-fetch age: fresh <60m, recent <24h, stale >=24h", () => {
+    const vm = buildViewModel(model({}), fetchStatus({
+      lastOkByFeed: {
+        USGS: GEN - 10 * 60_000,        // 10m -> fresh
+        GDACS: GEN - 5 * 60 * 60_000,   // 5h  -> recent
+        ReliefWeb: GEN - 30 * 60 * 60_000, // 30h -> stale
+      },
+    }));
+    const [u, g, r] = vm.dataSources;
+    expect([u.recency, g.recency, r.recency]).toEqual(["fresh", "recent", "stale"]);
+    expect(u.updatedAgeLabel).toBe("~10m ago");
+    expect(r.updatedAgeLabel).toBe("~30h ago");
+  });
+
+  it("never-fetched feed -> null age/recency, everFetched false", () => {
+    const vm = buildViewModel(model({}), fetchStatus({ lastOkByFeed: { USGS: GEN } }));
+    const g = vm.dataSources.find((s) => s.feed === "GDACS")!;
+    expect(g.everFetched).toBe(false);
+    expect(g.updatedAgeLabel).toBeNull();
+    expect(g.recency).toBeNull();
+    expect(g.updatedUtc).toBeNull();
+  });
+
+  it("failed-latest-run feed gets a failure note with the run time; ok feeds do not", () => {
+    const vm = buildViewModel(model({}), fetchStatus({
+      latestFeedsOk: ["USGS", "GDACS"],
+      lastOkByFeed: { USGS: GEN, GDACS: GEN, ReliefWeb: GEN - 24 * 60 * 60_000 },
+    }));
+    const r = vm.dataSources.find((s) => s.feed === "ReliefWeb")!;
+    const u = vm.dataSources.find((s) => s.feed === "USGS")!;
+    expect(r.failureNote).toBe("Failed to fetch updates at 2026-07-08T00:30:00.000Z");
+    expect(u.failureNote).toBeNull();
+  });
+
+  it("exposes the latest run time as lastFetchAttemptUtc", () => {
+    const vm = buildViewModel(model({}), fetchStatus({ latestRunAt: Date.UTC(2026, 6, 8, 6, 0) }));
+    expect(vm.lastFetchAttemptUtc).toBe("2026-07-08T06:00:00.000Z");
+    expect(vm.dataSourcesStatusAvailable).toBe(true);
+  });
+
+  it("null fetch status -> status unavailable, no attempt time, null recency", () => {
+    const vm = buildViewModel(model({}), null);
+    expect(vm.dataSourcesStatusAvailable).toBe(false);
+    expect(vm.lastFetchAttemptUtc).toBeNull();
+    expect(vm.dataSources).toHaveLength(3);
+    expect(vm.dataSources.every((s) => s.recency === null)).toBe(true);
+  });
+
+  it("dataSourcesSubtext: null fetchStatus -> 'Fetch status unavailable'", () => {
+    const vm = buildViewModel(model({}), null);
+    expect(vm.dataSourcesSubtext).toBe("Fetch status unavailable");
+  });
+
+  it("dataSourcesSubtext: fetchStatus with latestRunAt null -> 'No runs recorded yet'", () => {
+    const vm = buildViewModel(
+      model({}),
+      { latestRunAt: null, latestFeedsOk: [], lastOkByFeed: {} },
+    );
+    expect(vm.dataSourcesSubtext).toBe("No runs recorded yet");
+  });
+
+  it("dataSourcesSubtext: fetchStatus with latestRunAt set -> 'Last fetch attempt: ' + formatUtc", () => {
+    const vm = buildViewModel(model({}), fetchStatus({ latestRunAt: Date.UTC(2026, 6, 8, 6, 0) }));
+    expect(vm.dataSourcesSubtext).toBe("Last fetch attempt: 2026-07-08T06:00:00.000Z");
   });
 });

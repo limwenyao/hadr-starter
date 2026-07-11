@@ -121,3 +121,17 @@ export interface FootprintResult {
   summary: FootprintSummary;
   geometry?: FeatureCollection;
 }
+
+/**
+ * Per-feed fetch health derived from ingest_runs (Data Sources tab). run_at is
+ * shared by all feeds in a run, so "last successful fetch" means the last run in
+ * which the feed was in feeds_ok — not a per-feed fetch instant (see deviation).
+ */
+export interface FetchStatus {
+  /** Epoch ms of the newest ingest run, or null when no runs recorded. */
+  latestRunAt: number | null;
+  /** feeds_ok of that newest run. */
+  latestFeedsOk: string[];
+  /** feed -> epoch ms of its most recent successful (feeds_ok) run. */
+  lastOkByFeed: Record<string, number>;
+}

@@ -9,6 +9,7 @@ import { shouldAssess, carryForwardAssessments } from "./assessment/gate.js";
 import { renderDashboard } from "./render/dashboard.js";
 import { fillFootprints } from "./footprints/fill.js";
 import { httpFootprintSource } from "./footprints/source.js";
+import type { FetchStatus } from "./types.js";
 
 /**
  * One run of the agent (v1 slice): pull → filter → assess → render.
@@ -59,30 +60,51 @@ try {
   const assessed = assess
     ? await fillAssessments(withFootprints, claudeCliWriter)
     : carryForwardAssessments(withFootprints, prior);
-  writeFileSync("dashboard.html", renderDashboard(assessed, geometryById), "utf8");
-  // Persist the assessed model: the snapshot records what the brief actually
-  // said (audit trail — ADR 0006). Geometry is not persisted (summary-only).
+  // Snapshot FIRST — the JSON audit net (ADR 0006) must survive even if the DB
+  // write below fails (sitrep.yml commits it with `if: always()`). Geometry is
+  // not persisted (summary-only).
   writeSnapshot("data", now, assessed);
-  console.log("wrote dashboard.html and data snapshot");
 
-  // Transitional dual-write (ADR 0011): the DB is the new source of truth; the
-  // JSON snapshot above stays as the git audit net. A DB failure must not crash
-  // the run or lose the snapshot — log it, flag it, exit non-zero (CLAUDE.md #4).
+  // Per-feed fetch status for the dashboard's Data Sources panel. Prefer the DB
+  // (identical to the Vercel route in app/route.ts — includes the run just
+  // persisted); fall back to this run's own results so the panel never falsely
+  // claims "Fetch status unavailable" right after a successful fetch.
+  // Transitional dual-write (ADR 0011): a DB failure must not crash the run or
+  // lose the snapshot — log it, flag it, exit non-zero (CLAUDE.md #4).
+  let fetchStatus: FetchStatus | null = null;
   if (process.env.DATABASE_URL) {
-    const { getDb, closeDb } = await import("./db/client.js");
-    const { persistRun } = await import("./db/persist.js");
     try {
-      const { inserted } = await persistRun(getDb(), assessed, feedResults, now, geometryById);
-      console.log(`db: wrote ${inserted} new event version(s)`);
+      const { getDb, closeDb } = await import("./db/client.js");
+      const { persistRun } = await import("./db/persist.js");
+      const { lastFetchByFeed } = await import("./db/reader.js");
+      try {
+        const { inserted } = await persistRun(getDb(), assessed, feedResults, now, geometryById);
+        console.log(`db: wrote ${inserted} new event version(s)`);
+        fetchStatus = await lastFetchByFeed(getDb());
+      } finally {
+        await closeDb();
+      }
     } catch (dbErr) {
-      console.error(`db write failed (dashboard still served from last good state): ${String(dbErr)}`);
+      console.error(`db write failed (dashboard rendered from this run's results): ${String(dbErr)}`);
       process.exitCode = 1;
-    } finally {
-      await closeDb();
     }
   } else {
     console.log("db: DATABASE_URL unset — skipped DB write (snapshot-only run)");
   }
+  if (!fetchStatus) {
+    const okFeeds = feedResults.filter((f) => f.status === "ok").map((f) => f.feed);
+    fetchStatus = {
+      latestRunAt: now.getTime(),
+      latestFeedsOk: okFeeds,
+      lastOkByFeed: Object.fromEntries(okFeeds.map((f) => [f, now.getTime()])),
+    };
+  }
+
+  // Render LAST, with the resolved status — always runs (the DB error above is
+  // caught, not rethrown), so a DB blip degrades the panel to this run's own
+  // results rather than losing the dashboard.
+  writeFileSync("dashboard.html", renderDashboard(assessed, geometryById, fetchStatus), "utf8");
+  console.log("wrote dashboard.html and data snapshot");
 } catch (err) {
   console.error(`run failed: ${err instanceof Error ? err.stack : String(err)}`);
   process.exitCode = 1;

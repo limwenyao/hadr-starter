@@ -58,6 +58,12 @@ Kept by the agent, reviewed by you. One entry per working block.
 <!-- Anything built that departs from the PRD or CLAUDE.md is recorded here,
      with the reason. An undocumented deviation is a bug. -->
 
+- **2026-07-11 — "Last successful fetch" is run-level, not per-feed (Data Sources
+  tab).** `ingest_runs.run_at` is shared by all feeds in a run, so `lastFetchByFeed`
+  reports the last run in which a feed was in `feeds_ok`, not a true per-feed fetch
+  instant. True per-feed timestamps would need a schema change; deferred. Accurate
+  enough for the tab's "Updated: ~x ago".
+
 - **2026-07-10 — Footprint geometry persisted (Slice 1.5, ADR 0011).** Added a
   nullable `footprint_geometry` jsonb column to `event_versions`, versioned per
   source-update, storing the simplified GeoJSON FeatureCollection verbatim. A

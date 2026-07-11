@@ -95,7 +95,7 @@ function parseFeature(feature: GdacsFeature | null): Event | undefined {
   };
 }
 
-const GDACS_EVENTS_URL =
+export const GDACS_EVENTS_URL =
   "https://www.gdacs.org/gdacsapi/api/events/geteventlist/EVENTS4APP";
 
 /**

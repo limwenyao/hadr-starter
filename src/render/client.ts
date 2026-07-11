@@ -78,10 +78,17 @@ export const CLIENT_SCRIPT = String.raw`
 
   function openPanel() {
     document.body.classList.add("panel-open");
+    document.body.classList.remove("sources-open");
   }
 
   function togglePanel() {
+    document.body.classList.remove("sources-open");
     document.body.classList.toggle("panel-open");
+  }
+
+  function toggleSources() {
+    document.body.classList.remove("panel-open");
+    document.body.classList.toggle("sources-open");
   }
 
   function refreshImpact() {
@@ -158,8 +165,49 @@ export const CLIENT_SCRIPT = String.raw`
 
   // --- panel: meta line, degradation notices, tier groups ---
   document.getElementById("meta").textContent =
-    "Generated " + vm.generatedUtc + " · feeds: " + vm.feedsLine +
-    (vm.changesLine ? " · " + vm.changesLine : "");
+    "Generated " + vm.generatedUtc + (vm.changesLine ? " · " + vm.changesLine : "");
+
+  // --- data sources panel ---
+  (function buildSources() {
+    var sub = document.getElementById("sources-sub");
+    sub.textContent = vm.dataSourcesSubtext;
+
+    var list = document.getElementById("sources-list");
+    vm.dataSources.forEach(function (s) {
+      var row = el("div", "src");
+
+      var nm = el("div", "nm", s.feed);
+      nm.appendChild(el("span", "light" + (s.recency ? " recency-" + s.recency : "")));
+      row.appendChild(nm);
+
+      row.appendChild(el("div", "ds", s.description));
+
+      var links = el("div", "links");
+      if (s.homeUrl) {
+        var home = el("a", null, s.homeLabel + " ↗");
+        home.href = s.homeUrl; home.target = "_blank"; home.rel = "noopener noreferrer";
+        links.appendChild(home);
+      }
+      if (s.feedUrl) {
+        if (links.childNodes.length) links.appendChild(el("span", "sep", "·"));
+        var feed = el("a", "feed", "feed ↗");
+        feed.href = s.feedUrl; feed.target = "_blank"; feed.rel = "noopener noreferrer";
+        links.appendChild(feed);
+      }
+      row.appendChild(links);
+
+      var updatedText = !vm.dataSourcesStatusAvailable
+        ? "Fetch status unavailable"
+        : (s.updatedAgeLabel ? "Updated: " + s.updatedAgeLabel : "No successful fetch yet");
+      row.appendChild(el("div", "updated" + (s.recency ? " recency-" + s.recency : ""), updatedText));
+
+      if (s.failureNote) {
+        row.appendChild(el("div", "failnote", "⚠ " + s.failureNote));
+      }
+
+      list.appendChild(row);
+    });
+  })();
 
   var badge = document.getElementById("count-badge");
   badge.textContent = String(vm.totalCount);
@@ -224,6 +272,7 @@ export const CLIENT_SCRIPT = String.raw`
   // --- rail buttons + banner dismiss ---
   document.getElementById("btn-events").addEventListener("click", togglePanel);
   document.getElementById("btn-status").addEventListener("click", openPanel);
+  document.getElementById("btn-sources").addEventListener("click", toggleSources);
   document.getElementById("banner-close").addEventListener("click", function () {
     document.getElementById("fallback-banner").hidden = true;
   });

@@ -20,7 +20,7 @@ export interface ReliefWebSource {
   parse(rawPayload: unknown): Event[];
 }
 
-const RELIEFWEB_RSS_URL = "https://reliefweb.int/disasters/rss.xml";
+export const RELIEFWEB_RSS_URL = "https://reliefweb.int/disasters/rss.xml";
 
 // Always treat <item> as an array — a single-item channel would otherwise parse
 // to a bare object. Entities in text nodes are decoded by default.

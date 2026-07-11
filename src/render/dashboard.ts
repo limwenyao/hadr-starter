@@ -2,6 +2,7 @@ import type { SitrepModel } from "../types.js";
 import { buildViewModel } from "./viewModel.js";
 import { CLIENT_SCRIPT } from "./client.js";
 import type { FeatureCollection } from "geojson";
+import type { FetchStatus } from "../types.js";
 
 /**
  * Map-first dashboard (ADR 0005): full-screen keyless MapLibre map, right icon
@@ -89,7 +90,6 @@ const THEME_CSS = `
   body.panel-open #panel { transform: translateX(0); }
   #panel header { padding: 1rem 1.25rem 0.5rem; border-bottom: 1px solid var(--border); }
   #panel h1 { margin: 0; font-size: 1rem; letter-spacing: 0.04em; }
-  #panel h1 span { color: var(--accent); }
   #meta { margin: 0.3rem 0 0.75rem; color: var(--muted); font-size: 0.78rem; }
   #notices { padding: 0 1.25rem; }
   #notices .notice {
@@ -189,15 +189,47 @@ const THEME_CSS = `
   #impact-legend .key.estimate::before { border-top-style: dashed; }
   .impact-caption { margin: 0.35rem 0 0; font-size: 0.68rem; color: var(--muted); font-style: italic; }
   .row .footprint, .card .footprint { color: var(--muted); font-size: 0.74rem; margin: 0.3rem 0 0; }
+
+  /* --- data sources panel (mirrors #panel) --- */
+  #sources-panel {
+    position: absolute; top: 0; right: var(--rail-w); bottom: 0; width: var(--panel-w);
+    max-width: calc(100vw - var(--rail-w)); background: var(--panel);
+    backdrop-filter: blur(6px); border-left: 1px solid var(--border);
+    transform: translateX(110%); transition: transform 0.22s ease; z-index: 20;
+    display: flex; flex-direction: column;
+  }
+  body.sources-open #sources-panel { transform: translateX(0); }
+  #sources-panel header { padding: 1rem 1.25rem 0.6rem; border-bottom: 1px solid var(--border); }
+  #sources-panel h1 { margin: 0; font-size: 1rem; letter-spacing: 0.04em; }
+  #sources-sub { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.78rem; }
+  #sources-list { overflow-y: auto; padding: 0.5rem 1.25rem 1.5rem; flex: 1; }
+  #sources-panel .src { padding: 0.7rem 0; border-bottom: 1px solid var(--border); }
+  #sources-panel .src:last-child { border-bottom: none; }
+  #sources-panel .src .nm { display: flex; align-items: center; font-size: 0.9rem; font-weight: 700; }
+  #sources-panel .src .light {
+    margin-left: auto; width: 11px; height: 11px; border-radius: 50%;
+    background: var(--muted); box-shadow: 0 0 6px 1px var(--muted);
+  }
+  #sources-panel .src .light.recency-fresh { background: var(--fresh); box-shadow: 0 0 6px 1px var(--fresh); }
+  #sources-panel .src .light.recency-recent { background: var(--recent); box-shadow: 0 0 6px 1px var(--recent); }
+  #sources-panel .src .light.recency-stale { background: var(--high); box-shadow: 0 0 6px 1px var(--high); }
+  #sources-panel .src .ds { color: var(--muted); font-size: 0.78rem; margin: 0.3rem 0 0.4rem; line-height: 1.4; }
+  #sources-panel .src .links { font-size: 0.76rem; margin-bottom: 0.4rem; }
+  #sources-panel .src .links a { color: var(--accent); text-decoration: none; }
+  #sources-panel .src .links a.feed { color: var(--muted); }
+  #sources-panel .src .links .sep { color: var(--border); margin: 0 0.45rem; }
+  #sources-panel .src .updated { font-size: 0.76rem; }
+  #sources-panel .src .failnote { font-size: 0.74rem; color: var(--muted); margin-top: 0.3rem; }
 `;
 
 export function renderDashboard(
   model: SitrepModel,
   geometryById: Record<string, FeatureCollection> = {},
+  fetchStatus: FetchStatus | null = null,
 ): string {
   // Escape every "<" in the JSON (to the \\u003c sequence) so feed text can
   // never close the script block (e.g. a hostile "</script>" in a title).
-  const payload = JSON.stringify(buildViewModel(model)).replace(/</g, "\\u003c");
+  const payload = JSON.stringify(buildViewModel(model, fetchStatus)).replace(/</g, "\\u003c");
   const geomPayload = JSON.stringify(geometryById).replace(/</g, "\\u003c");
 
   return `<!doctype html>
@@ -220,10 +252,11 @@ export function renderDashboard(
   <div class="mark" title="HADR Monitor">HM</div>
   <button id="btn-events" title="Toggle event list" aria-label="Toggle event list">▤<span id="count-badge"></span></button>
   <button id="btn-status" hidden title="Feed status notices" aria-label="Feed status notices">⚠</button>
+  <button id="btn-sources" title="Data sources" aria-label="Data sources">⛁</button>
 </nav>
 <aside id="panel" aria-label="Surfaced events">
   <header>
-    <h1>HADR <span>MONITOR</span> — Situation Report</h1>
+    <h1>HADR MONITOR — Situation Report</h1>
     <p id="meta"></p>
   </header>
   <div id="notices"></div>
@@ -237,6 +270,13 @@ export function renderDashboard(
     <p class="impact-caption">Modeled or estimated extents — not official evacuation boundaries.</p>
   </div>
   <div id="groups"></div>
+</aside>
+<aside id="sources-panel" aria-label="Data sources">
+  <header>
+    <h1>DATA SOURCES</h1>
+    <p id="sources-sub"></p>
+  </header>
+  <div id="sources-list"></div>
 </aside>
 <noscript>
   <p style="position:absolute;z-index:99;background:#0f2137;color:#dbe7f3;padding:1rem;margin:1rem;border-radius:8px;">
