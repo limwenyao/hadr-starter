@@ -1,0 +1,346 @@
+{
+  "generatedAt": 1783741928926,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001279",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone BAVI-26",
+      "locationName": "Guam, Northern Mariana Islands, Japan, Taiwan, China",
+      "coordinates": {
+        "lon": 124.6,
+        "lat": 25
+      },
+      "time": 1782864000000,
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001279&episodeid=41&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001279&episodeid=41",
+      "tier": "CRITICAL",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 2973
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szmb",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 299 km W of Neiafu, Tonga",
+      "locationName": "299 km W of Neiafu, Tonga",
+      "coordinates": {
+        "lon": -176.783,
+        "lat": -18.2136,
+        "depthKm": 367.793
+      },
+      "time": 1783739695443,
+      "sourceUpdatedAt": 1783740640040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szmb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szmb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szim",
+      "hazardType": "EQ",
+      "title": "M 5.0 - west of Macquarie Island",
+      "locationName": "west of Macquarie Island",
+      "coordinates": {
+        "lon": 140.3613,
+        "lat": -53.1692,
+        "depthKm": 10
+      },
+      "time": 1783708004453,
+      "sourceUpdatedAt": 1783709189040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szim",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szim.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szm5",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 54 km NNW of Masohi, Indonesia",
+      "locationName": "54 km NNW of Masohi, Indonesia",
+      "coordinates": {
+        "lon": 128.7635,
+        "lat": -2.8499,
+        "depthKm": 10
+      },
+      "time": 1783736931877,
+      "sourceUpdatedAt": 1783738138040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szm5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szm5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000sze4",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 96 km SW of Abepura, Indonesia",
+      "locationName": "96 km SW of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 139.9122,
+        "lat": -3.0909,
+        "depthKm": 37.818
+      },
+      "time": 1783672383043,
+      "sourceUpdatedAt": 1783673409040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sze4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000sze4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szhy",
+      "hazardType": "EQ",
+      "title": "M 4.8 - central Mid-Atlantic Ridge",
+      "locationName": "central Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -30.6181,
+        "lat": 1.8034,
+        "depthKm": 10
+      },
+      "time": 1783697815499,
+      "sourceUpdatedAt": 1783702408040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szhy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szhy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szla",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 98 km WSW of Labuan, Indonesia",
+      "locationName": "98 km WSW of Labuan, Indonesia",
+      "coordinates": {
+        "lon": 105.0425,
+        "lat": -6.8003,
+        "depthKm": 31.047
+      },
+      "time": 1783724374691,
+      "sourceUpdatedAt": 1783726305040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szla",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szla.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 44
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "hv75000056",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 57 km WSW of Captain Cook, Hawaii",
+      "locationName": "57 km WSW of Captain Cook, Hawaii",
+      "coordinates": {
+        "lon": -156.385833333333,
+        "lat": 19.2218333333333,
+        "depthKm": 39.34
+      },
+      "time": 1783664245310,
+      "sourceUpdatedAt": 1783737741370,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.53,
+        "sig": 415,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/hv75000056",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/hv75000056.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szm1",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 211 km NE of Santa Cruz das Flores, Portugal",
+      "locationName": "211 km NE of Santa Cruz das Flores, Portugal",
+      "coordinates": {
+        "lon": -29.5643,
+        "lat": 40.941,
+        "depthKm": 10
+      },
+      "time": 1783733597926,
+      "sourceUpdatedAt": 1783735069040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szm1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szm1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szg8",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 123 km SSW of Isangel, Vanuatu",
+      "locationName": "123 km SSW of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 168.8263,
+        "lat": -20.5669,
+        "depthKm": 10
+      },
+      "time": 1783691733378,
+      "sourceUpdatedAt": 1783693218040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szg8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szg8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szfz",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 7 km SE of Sarangani, Philippines",
+      "locationName": "7 km SE of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.5148,
+        "lat": 5.3629,
+        "depthKm": 50.997
+      },
+      "time": 1783687352882,
+      "sourceUpdatedAt": 1783692972040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szfz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szfz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 10,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
