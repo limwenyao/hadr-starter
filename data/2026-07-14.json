@@ -1,0 +1,850 @@
+{
+  "generatedAt": 1784000682826,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szzy",
+      "hazardType": "EQ",
+      "title": "M 6.4 - 191 km SE of Lorengau, Papua New Guinea",
+      "locationName": "191 km SE of Lorengau, Papua New Guinea",
+      "coordinates": {
+        "lon": 148.5218,
+        "lat": -3.2207,
+        "depthKm": 10
+      },
+      "time": 1783932807913,
+      "sourceUpdatedAt": 1783945721040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.4,
+        "sig": 630,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szzy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szzy.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 7.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t01n",
+      "hazardType": "EQ",
+      "title": "M 6.3 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.5199,
+        "lat": -22.7889,
+        "depthKm": 10
+      },
+      "time": 1783953949203,
+      "sourceUpdatedAt": 1783961694389,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.3,
+        "sig": 611,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t01n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t01n.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000106-geo",
+      "hazardType": "FL",
+      "title": "Georgia: Floods - Jun 2026",
+      "locationName": "Georgia",
+      "time": 1782518400000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000106-geo",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ep-2026-000107-caf",
+      "hazardType": "EP",
+      "title": "Central African Republic: Cholera Outbreak - Jun 2026",
+      "locationName": "Central African Republic",
+      "time": 1782432000000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ep-2026-000107-caf",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/eq-2026-000093-ven",
+      "hazardType": "EQ",
+      "title": "Venezuela: Earthquakes - Jun 2026",
+      "locationName": "Venezuela (Bolivarian Republic of)",
+      "time": 1782259200000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/eq-2026-000093-ven",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/eq-2026-000083-phl",
+      "hazardType": "EQ",
+      "title": "Philippines: Earthquake and Tsunami - Jun 2026",
+      "locationName": "Philippines",
+      "time": 1780876800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/eq-2026-000083-phl",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/st-2026-000086-arm",
+      "hazardType": "ST",
+      "title": "Armenia: Hailstorm - Jun 2026",
+      "locationName": "Armenia",
+      "time": 1780704000000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/st-2026-000086-arm",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000080-syr",
+      "hazardType": "FL",
+      "title": "Syria: Floods - May 2026",
+      "locationName": "Syrian Arab Republic",
+      "time": 1779235200000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000080-syr",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ep-2026-000071-cod",
+      "hazardType": "EP",
+      "title": "DR Congo/Uganda: Ebola Outbreak - May 2026",
+      "locationName": "DR Congo/Uganda",
+      "time": 1777939200000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ep-2026-000071-cod",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ep-2026-000085-lka",
+      "hazardType": "EP",
+      "title": "Sri Lanka: Dengue Outbreak - May 2026",
+      "locationName": "Sri Lanka",
+      "time": 1777593600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ep-2026-000085-lka",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/tc-2026-000050-fsm",
+      "hazardType": "TC",
+      "title": "Typhoon Sinlaku - Apr 2026",
+      "locationName": "Typhoon Sinlaku - Apr 2026",
+      "time": 1775692800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/tc-2026-000050-fsm",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000087-dom",
+      "hazardType": "FL",
+      "title": "Dominican Republic: Floods - Apr 2026",
+      "locationName": "Dominican Republic",
+      "time": 1775520000000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000087-dom",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/tc-2026-000053-fji",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone Vaianu - Apr 2026",
+      "locationName": "Fiji",
+      "time": 1775433600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/tc-2026-000053-fji",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/tc-2026-000051-slb",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone Maila - Apr 2026",
+      "locationName": "Tropical Cyclone Maila - Apr 2026",
+      "time": 1775433600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/tc-2026-000051-slb",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000044-yem",
+      "hazardType": "FL",
+      "title": "Yemen: Floods - Mar 2026",
+      "locationName": "Yemen",
+      "time": 1774569600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000044-yem",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000063-tza",
+      "hazardType": "FL",
+      "title": "Tanzania: Floods and Landslides - Mar 2026",
+      "locationName": "United Republic of Tanzania",
+      "time": 1774396800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000063-tza",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ff-2026-000043-afg",
+      "hazardType": "FF",
+      "title": "Afghanistan: Floods - Mar 2026",
+      "locationName": "Afghanistan",
+      "time": 1774396800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ff-2026-000043-afg",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fr-2026-000055-gnb",
+      "hazardType": "FR",
+      "title": "Guinea-Bissau: Fire - Mar 2026",
+      "locationName": "Guinea-Bissau",
+      "time": 1774310400000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fr-2026-000055-gnb",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/vw-2026-000054-lbr",
+      "hazardType": "VW",
+      "title": "Liberia: Windstorms - Mar 2026",
+      "locationName": "Liberia",
+      "time": 1774310400000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/vw-2026-000054-lbr",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fr-2026-000052-lbr",
+      "hazardType": "FR",
+      "title": "Liberia: Fires - Mar 2026",
+      "locationName": "Liberia",
+      "time": 1774310400000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fr-2026-000052-lbr",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ep-2026-000048-bgd",
+      "hazardType": "EP",
+      "title": "Bangladesh: Measles Outbreak - Mar 2026",
+      "locationName": "Bangladesh",
+      "time": 1773532800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ep-2026-000048-bgd",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000046-bwa",
+      "hazardType": "FL",
+      "title": "Botswana: Floods - Mar 2026",
+      "locationName": "Botswana",
+      "time": 1773532800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000046-bwa",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t02f",
+      "hazardType": "EQ",
+      "title": "M 5.1 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.3991,
+        "lat": -22.8289,
+        "depthKm": 10
+      },
+      "time": 1783960290321,
+      "sourceUpdatedAt": 1783963684040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t02f",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t02f.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t07s",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 2 km WSW of Congregación Reforma, Mexico",
+      "locationName": "2 km WSW of Congregación Reforma, Mexico",
+      "coordinates": {
+        "lon": -92.3316,
+        "lat": 14.7717,
+        "depthKm": 80.448
+      },
+      "time": 1783991999535,
+      "sourceUpdatedAt": 1783996722891,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 387
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t07s",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t07s.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t06d",
+      "hazardType": "EQ",
+      "title": "M 5.0 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.5098,
+        "lat": -22.9464,
+        "depthKm": 10
+      },
+      "time": 1783976617178,
+      "sourceUpdatedAt": 1783977686040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t06d",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t06d.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t048",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 5 km SE of Butulan, Philippines",
+      "locationName": "5 km SE of Butulan, Philippines",
+      "coordinates": {
+        "lon": 125.4626,
+        "lat": 5.577,
+        "depthKm": 20.408
+      },
+      "time": 1783964669061,
+      "sourceUpdatedAt": 1783965561040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t048",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t048.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 69
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szzl",
+      "hazardType": "EQ",
+      "title": "M 5.0 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.5471,
+        "lat": -22.8646,
+        "depthKm": 10
+      },
+      "time": 1783925131999,
+      "sourceUpdatedAt": 1783927202040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szzl",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szzl.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t083",
+      "hazardType": "EQ",
+      "title": "M 4.9 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.4439,
+        "lat": -22.7425,
+        "depthKm": 10
+      },
+      "time": 1783992450487,
+      "sourceUpdatedAt": 1783994816040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t083",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t083.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t04b",
+      "hazardType": "EQ",
+      "title": "M 4.9 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -25.0342,
+        "lat": -58.601,
+        "depthKm": 35
+      },
+      "time": 1783964719903,
+      "sourceUpdatedAt": 1783965902040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t04b",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t04b.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 55
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000szzw",
+      "hazardType": "EQ",
+      "title": "M 4.9 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.5681,
+        "lat": -22.7911,
+        "depthKm": 10
+      },
+      "time": 1783929575728,
+      "sourceUpdatedAt": 1783930676040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szzw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szzw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t05y",
+      "hazardType": "EQ",
+      "title": "M 4.8 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.5441,
+        "lat": -23.0777,
+        "depthKm": 10
+      },
+      "time": 1783972112876,
+      "sourceUpdatedAt": 1783973401040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t05y",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t05y.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t014",
+      "hazardType": "EQ",
+      "title": "M 4.8 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -176.3145,
+        "lat": -24.1915,
+        "depthKm": 10
+      },
+      "time": 1783945198505,
+      "sourceUpdatedAt": 1783948014040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t014",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t014.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t042",
+      "hazardType": "EQ",
+      "title": "M 4.7 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.5924,
+        "lat": -22.8424,
+        "depthKm": 10
+      },
+      "time": 1783963259816,
+      "sourceUpdatedAt": 1783964274040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t042",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t042.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t01w",
+      "hazardType": "EQ",
+      "title": "M 4.7 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.5407,
+        "lat": -22.8636,
+        "depthKm": 10
+      },
+      "time": 1783955674815,
+      "sourceUpdatedAt": 1783959638040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t01w",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t01w.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t085",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 34 km SE of Sarangani, Philippines",
+      "locationName": "34 km SE of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.6791,
+        "lat": 5.1842,
+        "depthKm": 66.185
+      },
+      "time": 1783993104646,
+      "sourceUpdatedAt": 1783994022040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t085",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t085.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t07r",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 6 km NW of San Rafael, Philippines",
+      "locationName": "6 km NW of San Rafael, Philippines",
+      "coordinates": {
+        "lon": 122.9157,
+        "lat": 13.1309,
+        "depthKm": 10
+      },
+      "time": 1783990995881,
+      "sourceUpdatedAt": 1783993337040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t07r",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t07r.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t06f",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 145 km NNE of Sorong, Indonesia",
+      "locationName": "145 km NNE of Sorong, Indonesia",
+      "coordinates": {
+        "lon": 131.6675,
+        "lat": 0.3702,
+        "depthKm": 10
+      },
+      "time": 1783976767520,
+      "sourceUpdatedAt": 1783982452040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t06f",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t06f.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t044",
+      "hazardType": "EQ",
+      "title": "M 4.5 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.5971,
+        "lat": -22.8062,
+        "depthKm": 10
+      },
+      "time": 1783963451392,
+      "sourceUpdatedAt": 1783964865040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t044",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t044.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t046",
+      "hazardType": "EQ",
+      "title": "M 4.5 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.5259,
+        "lat": -22.8403,
+        "depthKm": 10
+      },
+      "time": 1783962934252,
+      "sourceUpdatedAt": 1783964599040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t046",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t046.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 19,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
