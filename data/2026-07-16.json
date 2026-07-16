@@ -1,0 +1,364 @@
+{
+  "generatedAt": 1784173671274,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0u6",
+      "hazardType": "EQ",
+      "title": "M 5.8 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -178.6944,
+        "lat": -26.366,
+        "depthKm": 340.334
+      },
+      "time": 1784156231162,
+      "sourceUpdatedAt": 1784163907941,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.8,
+        "sig": 518,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0u6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0u6.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 2
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0ng",
+      "hazardType": "EQ",
+      "title": "M 5.7 - east of the South Sandwich Islands",
+      "locationName": "east of the South Sandwich Islands",
+      "coordinates": {
+        "lon": -19.003,
+        "lat": -59.9671,
+        "depthKm": 13.061
+      },
+      "time": 1784127097824,
+      "sourceUpdatedAt": 1784134851254,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.7,
+        "sig": 500,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0ng",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0ng.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1103933",
+      "hazardType": "FL",
+      "title": "Flood in China",
+      "locationName": "China",
+      "coordinates": {
+        "lon": 118.3665,
+        "lat": 40.2429
+      },
+      "time": 1780707600000,
+      "sourceUpdatedAt": 1784033350000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1103933&episodeid=24&eventtype=FL",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=FL&eventid=1103933&episodeid=24",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · flood)",
+        "isEstimate": false,
+        "radiusKm": 2320
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1029489",
+      "hazardType": "WF",
+      "title": "Forest fires in France",
+      "locationName": "France",
+      "coordinates": {
+        "lon": 2.5494,
+        "lat": 48.375
+      },
+      "time": 1783814400000,
+      "sourceUpdatedAt": 1784170907000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1029489&episodeid=3&eventtype=WF",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=WF&eventid=1029489&episodeid=3",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · wildfire)",
+        "isEstimate": false,
+        "radiusKm": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "aka2026nyeobt",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 106 km NNW of Aleknagik, Alaska",
+      "locationName": "106 km NNW of Aleknagik, Alaska",
+      "coordinates": {
+        "lon": -159.627,
+        "lat": 60.083,
+        "depthKm": 3.2
+      },
+      "time": 1784167658535,
+      "sourceUpdatedAt": 1784172269536,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 374
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026nyeobt",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026nyeobt.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0uy",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 110 km SW of Basco, Philippines",
+      "locationName": "110 km SW of Basco, Philippines",
+      "coordinates": {
+        "lon": 121.3792,
+        "lat": 19.6199,
+        "depthKm": 10
+      },
+      "time": 1784164527584,
+      "sourceUpdatedAt": 1784170064040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0uy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0uy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0nx",
+      "hazardType": "EQ",
+      "title": "M 4.8 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -26.3364,
+        "lat": -59.4525,
+        "depthKm": 135.602
+      },
+      "time": 1784129766155,
+      "sourceUpdatedAt": 1784133578040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0nx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0nx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0uf",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 1 km WNW of Sōsa, Japan",
+      "locationName": "1 km WNW of Sōsa, Japan",
+      "coordinates": {
+        "lon": 140.5349,
+        "lat": 35.7203,
+        "depthKm": 59.688
+      },
+      "time": 1784160068955,
+      "sourceUpdatedAt": 1784169635054,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0uf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0uf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0tp",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 101 km SW of Basco, Philippines",
+      "locationName": "101 km SW of Basco, Philippines",
+      "coordinates": {
+        "lon": 121.3591,
+        "lat": 19.7348,
+        "depthKm": 35
+      },
+      "time": 1784151218685,
+      "sourceUpdatedAt": 1784152262040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0tp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0tp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 40
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "aka2026nxnvtv",
+      "hazardType": "EQ",
+      "title": "M 4.7 - south of Alaska",
+      "locationName": "south of Alaska",
+      "coordinates": {
+        "lon": -153.278,
+        "lat": 54.233,
+        "depthKm": 44.8
+      },
+      "time": 1784137579458,
+      "sourceUpdatedAt": 1784152134648,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026nxnvtv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026nxnvtv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0mp",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 47 km ENE of Noda, Japan",
+      "locationName": "47 km ENE of Noda, Japan",
+      "coordinates": {
+        "lon": 142.3054,
+        "lat": 40.3221,
+        "depthKm": 63.294
+      },
+      "time": 1784118580381,
+      "sourceUpdatedAt": 1784120112040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0mp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0mp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0tz",
+      "hazardType": "EQ",
+      "title": "M 4.5 - Fiji region",
+      "locationName": "Fiji region",
+      "coordinates": {
+        "lon": -179.0061,
+        "lat": -21.2742,
+        "depthKm": 625.595
+      },
+      "time": 1784152730337,
+      "sourceUpdatedAt": 1784155027040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0tz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0tz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 10,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
