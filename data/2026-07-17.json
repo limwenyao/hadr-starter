@@ -1,0 +1,885 @@
+{
+  "generatedAt": 1784260025546,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0xb",
+      "hazardType": "EQ",
+      "title": "M 5.9 - 42 km NNW of Te Anau, New Zealand",
+      "locationName": "42 km NNW of Te Anau, New Zealand",
+      "coordinates": {
+        "lon": 167.6107,
+        "lat": -45.0434,
+        "depthKm": 76.397
+      },
+      "time": 1784193294293,
+      "sourceUpdatedAt": 1784233067514,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.9,
+        "sig": 548,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0xb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0xb.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0x0",
+      "hazardType": "EQ",
+      "title": "M 5.5 - Volcano Islands, Japan region",
+      "locationName": "Volcano Islands, Japan region",
+      "coordinates": {
+        "lon": 144.3909,
+        "lat": 22.8589,
+        "depthKm": 12.806
+      },
+      "time": 1784188149543,
+      "sourceUpdatedAt": 1784212253040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 465,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0x0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0x0.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027450",
+      "hazardType": "DR",
+      "title": "Drought in Ethiopia, Kenya, Somalia",
+      "locationName": "Ethiopia, Kenya, Somalia",
+      "coordinates": {
+        "lon": 44.618,
+        "lat": 6.545
+      },
+      "time": 1776729600000,
+      "sourceUpdatedAt": 1784199708000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027450&episodeid=3&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027450&episodeid=3",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 667
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1018431",
+      "hazardType": "DR",
+      "title": "Drought in Madagascar",
+      "locationName": "Madagascar",
+      "coordinates": {
+        "lon": 47.723,
+        "lat": -17.44
+      },
+      "time": 1763683200000,
+      "sourceUpdatedAt": 1784197055000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1018431&episodeid=9&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1018431&episodeid=9",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 607
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1018332",
+      "hazardType": "DR",
+      "title": "Drought in Albania, Austria, Bosnia  and  Herzegovina, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Italy, Liechtenstein, Monaco, Montenegro, The Republic of North Macedonia, Poland, Romania, Serbia, Russia, Sweden, Slovakia, San Marino, Ukraine, , ",
+      "locationName": "Albania, Austria, Bosnia & Herzegovina, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Italy, Liechtenstein, Monaco, Montenegro, The Republic of North Macedonia, Poland, Romania, Serbia, Russia, Sweden, Slovakia, San Marino, Ukraine, , ",
+      "coordinates": {
+        "lon": 13.109,
+        "lat": 47.877
+      },
+      "time": 1765411200000,
+      "sourceUpdatedAt": 1784199707000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1018332&episodeid=16&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1018332&episodeid=16",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 1780
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1000144",
+      "hazardType": "VO",
+      "title": "Eruption  Mayon",
+      "locationName": "Philippines",
+      "coordinates": {
+        "lon": 123.685,
+        "lat": 13.257
+      },
+      "time": 1784167140000,
+      "sourceUpdatedAt": 1784188881000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1000144&episodeid=1&eventtype=VO",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=VO&eventid=1000144&episodeid=1",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · volcano)",
+        "isEstimate": false,
+        "radiusKm": 42
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1103933",
+      "hazardType": "FL",
+      "title": "Flood in China",
+      "locationName": "China",
+      "coordinates": {
+        "lon": 103.2791,
+        "lat": 35.7003
+      },
+      "time": 1780707600000,
+      "sourceUpdatedAt": 1784204339000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1103933&episodeid=18&eventtype=FL",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=FL&eventid=1103933&episodeid=18",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · flood)",
+        "isEstimate": false,
+        "radiusKm": 2320
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t14v",
+      "hazardType": "EQ",
+      "title": "M 5.3 - southern Mid-Atlantic Ridge",
+      "locationName": "southern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -14.7175,
+        "lat": -12.6871,
+        "depthKm": 10
+      },
+      "time": 1784233312035,
+      "sourceUpdatedAt": 1784234506040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t14v",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t14v.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t173",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 42 km NE of Shwebo, Burma (Myanmar)",
+      "locationName": "42 km NE of Shwebo, Burma (Myanmar)",
+      "coordinates": {
+        "lon": 95.9644,
+        "lat": 22.8587,
+        "depthKm": 10
+      },
+      "time": 1784251566555,
+      "sourceUpdatedAt": 1784252398040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t173",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t173.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t15t",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 48 km E of Nishinoomote, Japan",
+      "locationName": "48 km E of Nishinoomote, Japan",
+      "coordinates": {
+        "lon": 131.5099,
+        "lat": 30.7625,
+        "depthKm": 35
+      },
+      "time": 1784238582977,
+      "sourceUpdatedAt": 1784242934096,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t15t",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t15t.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 80
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "aka2026nyxoap",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 122 km SE of McCarthy, Alaska",
+      "locationName": "122 km SE of McCarthy, Alaska",
+      "coordinates": {
+        "lon": -141.508,
+        "lat": 60.569,
+        "depthKm": 8.5
+      },
+      "time": 1784201841034,
+      "sourceUpdatedAt": 1784245645865,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 421
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026nyxoap",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026nyxoap.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t15z",
+      "hazardType": "EQ",
+      "title": "M 5.0 - southern Mid-Atlantic Ridge",
+      "locationName": "southern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -15.0898,
+        "lat": -12.7868,
+        "depthKm": 10
+      },
+      "time": 1784238838953,
+      "sourceUpdatedAt": 1784240501040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t15z",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t15z.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t15b",
+      "hazardType": "EQ",
+      "title": "M 5.0 - southern Mid-Atlantic Ridge",
+      "locationName": "southern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -14.8449,
+        "lat": -12.6241,
+        "depthKm": 10
+      },
+      "time": 1784236593262,
+      "sourceUpdatedAt": 1784237783040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t15b",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t15b.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t14m",
+      "hazardType": "EQ",
+      "title": "M 5.0 - southern Mid-Atlantic Ridge",
+      "locationName": "southern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -14.3805,
+        "lat": -12.6918,
+        "depthKm": 11.86
+      },
+      "time": 1784231732193,
+      "sourceUpdatedAt": 1784233841040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t14m",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t14m.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t14l",
+      "hazardType": "EQ",
+      "title": "M 5.0 - southern Mid-Atlantic Ridge",
+      "locationName": "southern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -14.3837,
+        "lat": -12.6935,
+        "depthKm": 10
+      },
+      "time": 1784231094568,
+      "sourceUpdatedAt": 1784232985040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t14l",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t14l.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0x8",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 141 km ENE of Hicks Bay, New Zealand",
+      "locationName": "141 km ENE of Hicks Bay, New Zealand",
+      "coordinates": {
+        "lon": 179.8608,
+        "lat": -37.3276,
+        "depthKm": 10
+      },
+      "time": 1784192278825,
+      "sourceUpdatedAt": 1784196182040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0x8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0x8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t14r",
+      "hazardType": "EQ",
+      "title": "M 4.9 - southern Mid-Atlantic Ridge",
+      "locationName": "southern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -14.7608,
+        "lat": -12.5741,
+        "depthKm": 10
+      },
+      "time": 1784232180391,
+      "sourceUpdatedAt": 1784234255040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t14r",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t14r.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t17h",
+      "hazardType": "EQ",
+      "title": "M 4.8 - southern Mid-Atlantic Ridge",
+      "locationName": "southern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -14.6767,
+        "lat": -12.791,
+        "depthKm": 10
+      },
+      "time": 1784255475467,
+      "sourceUpdatedAt": 1784257116040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t17h",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t17h.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t171",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 262 km SSE of Dunhuang, China",
+      "locationName": "262 km SSE of Dunhuang, China",
+      "coordinates": {
+        "lon": 95.4284,
+        "lat": 37.8746,
+        "depthKm": 10
+      },
+      "time": 1784250491331,
+      "sourceUpdatedAt": 1784251642040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t171",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t171.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t141",
+      "hazardType": "EQ",
+      "title": "M 4.8 - southern Mid-Atlantic Ridge",
+      "locationName": "southern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -14.7673,
+        "lat": -12.6148,
+        "depthKm": 10
+      },
+      "time": 1784229858908,
+      "sourceUpdatedAt": 1784232310040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t141",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t141.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0xw",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 27 km S of Coquimbo, Chile",
+      "locationName": "27 km S of Coquimbo, Chile",
+      "coordinates": {
+        "lon": -71.3658,
+        "lat": -30.1982,
+        "depthKm": 54.089
+      },
+      "time": 1784198288761,
+      "sourceUpdatedAt": 1784242193719,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 355
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0xw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0xw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 24
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0x1",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 87 km SW of Altata, Mexico",
+      "locationName": "87 km SW of Altata, Mexico",
+      "coordinates": {
+        "lon": -108.4497,
+        "lat": 24.0014,
+        "depthKm": 10
+      },
+      "time": 1784186939217,
+      "sourceUpdatedAt": 1784195435040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0x1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0x1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t15s",
+      "hazardType": "EQ",
+      "title": "M 4.7 - southern Mid-Atlantic Ridge",
+      "locationName": "southern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -14.851,
+        "lat": -12.8026,
+        "depthKm": 10
+      },
+      "time": 1784237380802,
+      "sourceUpdatedAt": 1784244176040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t15s",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t15s.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0wh",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 86 km SSW of Sarangani, Philippines",
+      "locationName": "86 km SSW of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.1513,
+        "lat": 4.6883,
+        "depthKm": 47.888
+      },
+      "time": 1784181344809,
+      "sourceUpdatedAt": 1784193979040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0wh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0wh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 24
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t12v",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 109 km ESE of Kokopo, Papua New Guinea",
+      "locationName": "109 km ESE of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 153.1761,
+        "lat": -4.7306,
+        "depthKm": 88.702
+      },
+      "time": 1784224004073,
+      "sourceUpdatedAt": 1784225248040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t12v",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t12v.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t119",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 140 km SE of Katsuura, Japan",
+      "locationName": "140 km SE of Katsuura, Japan",
+      "coordinates": {
+        "lon": 141.422,
+        "lat": 34.2723,
+        "depthKm": 10
+      },
+      "time": 1784217870970,
+      "sourceUpdatedAt": 1784234930040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t119",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t119.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t17e",
+      "hazardType": "EQ",
+      "title": "M 4.5 - Owen Fracture Zone region",
+      "locationName": "Owen Fracture Zone region",
+      "coordinates": {
+        "lon": 58.3408,
+        "lat": 13.7409,
+        "depthKm": 10
+      },
+      "time": 1784253844364,
+      "sourceUpdatedAt": 1784254908040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t17e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t17e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t0yi",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 189 km W of Neiafu, Tonga",
+      "locationName": "189 km W of Neiafu, Tonga",
+      "coordinates": {
+        "lon": -175.7486,
+        "lat": -18.3644,
+        "depthKm": 285.161
+      },
+      "time": 1784210179246,
+      "sourceUpdatedAt": 1784211160040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0yi",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0yi.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 27,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
