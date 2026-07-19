@@ -1,0 +1,853 @@
+{
+  "generatedAt": 1784433822773,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1n5",
+      "hazardType": "EQ",
+      "title": "M 5.7 - 72 km SW of Puerto Madero, Mexico",
+      "locationName": "72 km SW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -92.8805,
+        "lat": 14.2392,
+        "depthKm": 10
+      },
+      "time": 1784395585879,
+      "sourceUpdatedAt": 1784403164296,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.7,
+        "sig": 500,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1n5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1n5.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1q7",
+      "hazardType": "EQ",
+      "title": "M 5.5 - 2 km WSW of Sicaya, Peru",
+      "locationName": "2 km WSW of Sicaya, Peru",
+      "coordinates": {
+        "lon": -75.3013,
+        "lat": -12.0429,
+        "depthKm": 10
+      },
+      "time": 1784427876324,
+      "sourceUpdatedAt": 1784432061204,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 652,
+        "pagerAlert": "yellow"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1q7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1q7.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1ng",
+      "hazardType": "EQ",
+      "title": "M 5.5 - Scotia Sea",
+      "locationName": "Scotia Sea",
+      "coordinates": {
+        "lon": -51.0559,
+        "lat": -60.7066,
+        "depthKm": 10
+      },
+      "time": 1784404237215,
+      "sourceUpdatedAt": 1784411755760,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 465,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1ng",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1ng.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1552752",
+      "hazardType": "EQ",
+      "title": "Earthquake in Peru",
+      "locationName": "Peru",
+      "coordinates": {
+        "lon": -75.3013,
+        "lat": -12.0429
+      },
+      "time": 1784427876000,
+      "sourceUpdatedAt": 1784429655000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1552752&episodeid=1719206&eventtype=EQ",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=EQ&eventid=1552752&episodeid=1719206",
+      "tier": "HIGH",
+      "duplicateOf": {
+        "feed": "USGS",
+        "feedEventId": "us7000t1q7",
+        "title": "M 5.5 - 2 km WSW of Sicaya, Peru"
+      },
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · earthquake)",
+        "isEstimate": false,
+        "radiusKm": 282
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1000144",
+      "hazardType": "VO",
+      "title": "Eruption  Mayon",
+      "locationName": "Philippines",
+      "coordinates": {
+        "lon": 123.685,
+        "lat": 13.257
+      },
+      "time": 1784167140000,
+      "sourceUpdatedAt": 1784188881000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1000144&episodeid=1&eventtype=VO",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=VO&eventid=1000144&episodeid=1",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · volcano)",
+        "isEstimate": false,
+        "radiusKm": 42
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1q6",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 59 km SW of Puerto Madero, Mexico",
+      "locationName": "59 km SW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -92.7591,
+        "lat": 14.292,
+        "depthKm": 19.593
+      },
+      "time": 1784427534767,
+      "sourceUpdatedAt": 1784428544040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1q6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1q6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 95
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1q3",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 85 km SW of Puerto Madero, Mexico",
+      "locationName": "85 km SW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -92.9167,
+        "lat": 14.1155,
+        "depthKm": 10
+      },
+      "time": 1784425644332,
+      "sourceUpdatedAt": 1784426774040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1q3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1q3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1py",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 190 km SSE of Vilyuchinsk, Russia",
+      "locationName": "190 km SSE of Vilyuchinsk, Russia",
+      "coordinates": {
+        "lon": 159.6116,
+        "lat": 51.3859,
+        "depthKm": 10
+      },
+      "time": 1784421579917,
+      "sourceUpdatedAt": 1784422600040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1py",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1py.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1jy",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 87 km WSW of Puerto Madero, Mexico",
+      "locationName": "87 km WSW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -93.1511,
+        "lat": 14.3804,
+        "depthKm": 35
+      },
+      "time": 1784357510543,
+      "sourceUpdatedAt": 1784358533040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1jy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1jy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 90
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1l4",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 69 km SW of Puerto Madero, Mexico",
+      "locationName": "69 km SW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -92.9174,
+        "lat": 14.3207,
+        "depthKm": 44.887
+      },
+      "time": 1784368762033,
+      "sourceUpdatedAt": 1784370392040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1l4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1l4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 75
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1jp",
+      "hazardType": "EQ",
+      "title": "M 5.2 - south of the Kermadec Islands",
+      "locationName": "south of the Kermadec Islands",
+      "coordinates": {
+        "lon": -178.1149,
+        "lat": -32.8189,
+        "depthKm": 10
+      },
+      "time": 1784353607673,
+      "sourceUpdatedAt": 1784354744040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1jp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1jp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1mu",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 149 km S of George Town, Cayman Islands",
+      "locationName": "149 km S of George Town, Cayman Islands",
+      "coordinates": {
+        "lon": -81.5431,
+        "lat": 17.9439,
+        "depthKm": 10
+      },
+      "time": 1784390924116,
+      "sourceUpdatedAt": 1784396591171,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 401
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1mu",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1mu.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1q8",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 40 km ENE of Shahrak-e Kūlūrī, Iran",
+      "locationName": "40 km ENE of Shahrak-e Kūlūrī, Iran",
+      "coordinates": {
+        "lon": 48.8375,
+        "lat": 32.5523,
+        "depthKm": 10
+      },
+      "time": 1784427920255,
+      "sourceUpdatedAt": 1784429474040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1q8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1q8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1ld",
+      "hazardType": "EQ",
+      "title": "M 4.9 - southern East Pacific Rise",
+      "locationName": "southern East Pacific Rise",
+      "coordinates": {
+        "lon": -116.1102,
+        "lat": -24.3838,
+        "depthKm": 10
+      },
+      "time": 1784373177724,
+      "sourceUpdatedAt": 1784374536040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1ld",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1ld.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1kf",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 208 km SW of Bandar Lampung, Indonesia",
+      "locationName": "208 km SW of Bandar Lampung, Indonesia",
+      "coordinates": {
+        "lon": 103.7876,
+        "lat": -6.6034,
+        "depthKm": 23.732
+      },
+      "time": 1784362902737,
+      "sourceUpdatedAt": 1784363855040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1kf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1kf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 61
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1jb",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 71 km WSW of Puerto Madero, Mexico",
+      "locationName": "71 km WSW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -93.0737,
+        "lat": 14.5811,
+        "depthKm": 35
+      },
+      "time": 1784348932579,
+      "sourceUpdatedAt": 1784349767040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1jb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1jb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 55
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1q4",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 127 km NNE of Tobelo, Indonesia",
+      "locationName": "127 km NNE of Tobelo, Indonesia",
+      "coordinates": {
+        "lon": 128.5538,
+        "lat": 2.7477,
+        "depthKm": 223.042
+      },
+      "time": 1784426276503,
+      "sourceUpdatedAt": 1784427568040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1q4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1q4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1n0",
+      "hazardType": "EQ",
+      "title": "M 4.8 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -26.2427,
+        "lat": -59.4387,
+        "depthKm": 122.006
+      },
+      "time": 1784393854133,
+      "sourceUpdatedAt": 1784397416040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1n0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1n0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1l8",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 109 km ENE of Khorugh, Tajikistan",
+      "locationName": "109 km ENE of Khorugh, Tajikistan",
+      "coordinates": {
+        "lon": 72.6745,
+        "lat": 37.9146,
+        "depthKm": 136.85
+      },
+      "time": 1784370979521,
+      "sourceUpdatedAt": 1784371605040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1l8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1l8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1j4",
+      "hazardType": "EQ",
+      "title": "M 4.8 - Ascension Island region",
+      "locationName": "Ascension Island region",
+      "coordinates": {
+        "lon": -13.8232,
+        "lat": -11.6863,
+        "depthKm": 10
+      },
+      "time": 1784347631863,
+      "sourceUpdatedAt": 1784348572040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1j4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1j4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1ph",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 80 km SW of Masachapa, Nicaragua",
+      "locationName": "80 km SW of Masachapa, Nicaragua",
+      "coordinates": {
+        "lon": -87.1133,
+        "lat": 11.3596,
+        "depthKm": 25.777
+      },
+      "time": 1784417480036,
+      "sourceUpdatedAt": 1784431930040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1ph",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1ph.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1kh",
+      "hazardType": "EQ",
+      "title": "M 4.7 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -179.7416,
+        "lat": -23.5937,
+        "depthKm": 529.091
+      },
+      "time": 1784363323339,
+      "sourceUpdatedAt": 1784364409040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1kh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1kh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1jq",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 116 km ENE of Murghob, Tajikistan",
+      "locationName": "116 km ENE of Murghob, Tajikistan",
+      "coordinates": {
+        "lon": 75.1665,
+        "lat": 38.6227,
+        "depthKm": 10
+      },
+      "time": 1784353642550,
+      "sourceUpdatedAt": 1784355219040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1jq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1jq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1p8",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 118 km WSW of Puerto Madero, Mexico",
+      "locationName": "118 km WSW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -93.4181,
+        "lat": 14.2711,
+        "depthKm": 10
+      },
+      "time": 1784414964101,
+      "sourceUpdatedAt": 1784421512040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1p8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1p8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1jt",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 73 km SW of Puerto Madero, Mexico",
+      "locationName": "73 km SW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -92.9244,
+        "lat": 14.2694,
+        "depthKm": 35
+      },
+      "time": 1784355019000,
+      "sourceUpdatedAt": 1784356099040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1jt",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1jt.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 34
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1pk",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 39 km WSW of Brisas Barra de Suchiate, Mexico",
+      "locationName": "39 km WSW of Brisas Barra de Suchiate, Mexico",
+      "coordinates": {
+        "lon": -92.5399,
+        "lat": 14.3539,
+        "depthKm": 35
+      },
+      "time": 1784417881171,
+      "sourceUpdatedAt": 1784428555040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1pk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1pk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 27
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1jw",
+      "hazardType": "EQ",
+      "title": "M 4.5 - central Mid-Atlantic Ridge",
+      "locationName": "central Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -21.4952,
+        "lat": -0.9196,
+        "depthKm": 10
+      },
+      "time": 1784355968899,
+      "sourceUpdatedAt": 1784357032040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1jw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1jw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 26,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
