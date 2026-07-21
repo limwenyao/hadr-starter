@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Calendar Art — pixel art in Google Calendar</title>
+<style>
+  :root{
+    --gc-line:#e0e0e0;
+    --gc-text:#3c4043;
+    --gc-muted:#70757a;
+    --gc-blue:#1a73e8;
+    --gc-red:#ea4335;
+    --gap:1px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:"Google Sans",Roboto,Arial,"Helvetica Neue",sans-serif;
+    color:var(--gc-text);
+    background:#f1f3f4;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---- control panel (not part of the calendar chrome) ---- */
+  .panel{
+    max-width:1100px;margin:14px auto 8px;padding:12px 16px;
+    background:#fff;border:1px solid var(--gc-line);border-radius:12px;
+    display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;
+    box-shadow:0 1px 3px rgba(60,64,67,.15);
+  }
+  .panel h1{font-size:15px;margin:0 12px 0 0;font-weight:600;white-space:nowrap;}
+  .panel .grp{display:flex;gap:6px;align-items:center;}
+  .panel label{font-size:12px;color:var(--gc-muted);}
+  .panel input[type=text]{
+    font:inherit;font-size:13px;padding:5px 8px;border:1px solid var(--gc-line);
+    border-radius:6px;width:120px;
+  }
+  .panel input#emoji{width:52px;text-align:center;font-size:18px;}
+  .panel button,.seg{
+    font:inherit;font-size:12px;font-weight:500;cursor:pointer;
+    padding:6px 12px;border-radius:16px;border:1px solid var(--gc-line);
+    background:#fff;color:var(--gc-text);
+  }
+  .panel button.primary{background:var(--gc-blue);color:#fff;border-color:var(--gc-blue);}
+  .seg-wrap{display:inline-flex;border:1px solid var(--gc-line);border-radius:16px;overflow:hidden;}
+  .seg{border:0;border-radius:0;padding:6px 14px;}
+  .seg.on{background:var(--gc-blue);color:#fff;}
+  .panel input[type=range]{vertical-align:middle;}
+  .hint{font-size:11px;color:var(--gc-muted);flex-basis:100%;margin-top:-2px;}
+
+  /* ---- google-calendar-like frame ---- */
+  .cal{
+    max-width:1100px;margin:0 auto 40px;background:#fff;
+    border:1px solid var(--gc-line);border-radius:12px;overflow:hidden;
+    box-shadow:0 1px 3px rgba(60,64,67,.15);
+  }
+  .topbar{
+    display:flex;align-items:center;gap:14px;height:56px;padding:0 16px;
+    border-bottom:1px solid var(--gc-line);
+  }
+  .topbar .hamburger{font-size:20px;color:#5f6368;cursor:default;}
+  .topbar .logo{
+    width:26px;height:26px;border-radius:5px;position:relative;flex:0 0 auto;
+    background:#fff;border:1px solid #dadce0;display:grid;place-items:center;
+    font-weight:700;font-size:12px;color:var(--gc-blue);
+  }
+  .topbar .logo::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;
+    background:var(--gc-blue);border-radius:5px 5px 0 0;}
+  .topbar .logo span{margin-top:5px;}
+  .topbar .brand{font-size:21px;color:#5f6368;font-weight:400;letter-spacing:.2px;}
+  .topbar .today{font-size:13px;font-weight:500;padding:7px 14px;border:1px solid #dadce0;
+    border-radius:18px;color:var(--gc-text);}
+  .topbar .nav{color:#5f6368;font-size:18px;letter-spacing:6px;}
+  .topbar .month{font-size:20px;color:var(--gc-text);font-weight:400;}
+  .topbar .spacer{flex:1;}
+  .topbar .weekbtn{font-size:13px;color:var(--gc-text);border:1px solid #dadce0;
+    border-radius:8px;padding:7px 12px;}
+  .topbar .avatar{width:30px;height:30px;border-radius:50%;background:#1e8e3e;color:#fff;
+    display:grid;place-items:center;font-size:14px;font-weight:600;}
+
+  /* day header */
+  .head{display:flex;border-bottom:1px solid var(--gc-line);}
+  .head .gutter{width:52px;flex:0 0 52px;font-size:10px;color:var(--gc-muted);
+    display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;}
+  .head .dcol{flex:1;text-align:center;padding:8px 0 6px;border-left:1px solid var(--gc-line);}
+  .head .dcol .dow{font-size:11px;letter-spacing:.8px;color:var(--gc-muted);text-transform:uppercase;}
+  .head .dcol .num{font-size:24px;font-weight:400;color:var(--gc-text);margin-top:2px;line-height:1;}
+  .head .dcol.today .dow{color:var(--gc-blue);}
+  .head .dcol.today .num{background:var(--gc-blue);color:#fff;border-radius:50%;
+    width:38px;height:38px;line-height:38px;display:inline-block;margin-top:0;font-size:20px;}
+
+  /* grid */
+  .grid{display:flex;position:relative;}
+  .grid .gutter{width:52px;flex:0 0 52px;position:relative;}
+  .grid .gutter .hr{position:absolute;right:6px;font-size:10px;color:var(--gc-muted);
+    transform:translateY(-6px);}
+  .days{flex:1;display:flex;position:relative;}
+  .days .hlines{position:absolute;inset:0;pointer-events:none;}
+  .days .hlines .hl{position:absolute;left:0;right:0;border-top:1px solid #eceff1;}
+  .day{flex:1;display:flex;border-left:1px solid var(--gc-line);position:relative;}
+  .subcol{flex:1;display:flex;flex-direction:column;}
+  .ev{
+    flex-basis:0;margin:var(--gap);border-radius:3px;overflow:hidden;
+    padding:1px 2px;font-size:8px;line-height:1.05;color:#fff;
+    font-weight:500;white-space:nowrap;letter-spacing:-.2px;
+    display:flex;flex-direction:column;justify-content:flex-start;min-height:0;
+  }
+  .ev .t2{font-size:7px;opacity:.85;font-weight:400;}
+  .ev.dark{color:#3c4043;}
+
+  /* now indicator on the "today" column */
+  .nowline{position:absolute;height:2px;background:var(--gc-red);left:0;right:0;z-index:5;}
+  .nowdot{position:absolute;width:11px;height:11px;border-radius:50%;background:var(--gc-red);
+    left:-6px;top:-4.5px;}
+
+  /* compact mode hides text so the picture reads */
+  .cal.compact .ev{font-size:0;padding:0;}
+  .cal.compact .ev .t2{display:none;}
+</style>
+</head>
+<body>
+  <div class="panel">
+    <h1>🗓️ Calendar&nbsp;Art</h1>
+
+    <div class="seg-wrap" id="modes">
+      <button class="seg on" data-mode="emoji">Emoji</button>
+      <button class="seg" data-mode="text">Text</button>
+      <button class="seg" data-mode="image">Image</button>
+    </div>
+
+    <div class="grp" data-for="emoji">
+      <label>Emoji</label>
+      <input type="text" id="emoji" value="🐠" maxlength="4" />
+    </div>
+
+    <div class="grp" data-for="text" hidden>
+      <label>Text</label>
+      <input type="text" id="text" value="BUSY" maxlength="10" />
+    </div>
+
+    <div class="grp" data-for="image" hidden>
+      <label>File</label>
+      <input type="file" id="file" accept="image/*" />
+    </div>
+
+    <div class="grp">
+      <label>Zoom</label>
+      <input type="range" id="zoom" min="6" max="18" value="13" />
+    </div>
+
+    <button class="seg" id="compact">Zoom out</button>
+    <button class="primary" id="shuffle">Reshuffle titles</button>
+
+    <div class="hint">
+      Each day is a column, each 15-min slot a pixel. Empty slots become a green sea of fake
+      meetings; your image is painted with Google Calendar’s event colors. Try an emoji (🐟 🍕 🦆 ❤️),
+      type a word, or drop in a small image.
+    </div>
+  </div>
+
+  <div class="cal" id="cal">
+    <div class="topbar">
+      <span class="hamburger">☰</span>
+      <span class="logo"><span>20</span></span>
+      <span class="brand">Calendar</span>
+      <span class="today">Today</span>
+      <span class="nav">‹&nbsp;›</span>
+      <span class="month">July 2026</span>
+      <span class="spacer"></span>
+      <span class="weekbtn">Week ▾</span>
+      <span class="avatar">J</span>
+    </div>
+    <div class="head" id="head"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+
+<script>
+/* ---------------------------------------------------------------------------
+   Calendar Art — renders an image / emoji / text as pixel art inside a
+   Google-Calendar-style week view. Pure client side, no network, no keys.
+--------------------------------------------------------------------------- */
+
+// Google Calendar's 11 event colours.
+const PALETTE = [
+  {name:"Lavender",  hex:"#7986cb"},
+  {name:"Sage",      hex:"#33b679"},
+  {name:"Grape",     hex:"#8e24aa"},
+  {name:"Flamingo",  hex:"#e67c73"},
+  {name:"Banana",    hex:"#f6bf26"},
+  {name:"Tangerine", hex:"#f4511e"},
+  {name:"Peacock",   hex:"#039be5"},
+  {name:"Graphite",  hex:"#616161"},
+  {name:"Blueberry", hex:"#3f51b5"},
+  {name:"Basil",     hex:"#0b8043"},
+  {name:"Tomato",    hex:"#d50000"},
+];
+// The "empty schedule" sea — a mix of greens so the background looks textured.
+const GREENS = ["#0b8043","#33b679","#188748","#2a9d5a","#0e7a41"];
+
+const TITLES = ["Sync","Standup","1:1","Lunch","Q3 Planning","All Hands","Design Rev",
+  "Focus Time","Retro","Interview","Review","Sprint","Demo","Check-in","Coffee",
+  "Planning","Sync","1:1","Catch-up","Weekly"];
+
+// Grid geometry.
+const DAYS = 7, SUBCOLS = 6, START_HOUR = 8, END_HOUR = 18, SLOT_MIN = 15;
+const ROWS = (END_HOUR - START_HOUR) * 60 / SLOT_MIN;   // 40
+const COLS = DAYS * SUBCOLS;                            // 42
+const DATES = [19,20,21,22,23,24,25];
+const DOW = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
+const TODAY_IDX = 1;                                    // Mon 20 highlighted, like the clip
+
+// ---- tiny seeded PRNG so a given image always packs the same way ----
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);
+  t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+let seed = 1337;
+let rnd = mulberry32(seed);
+
+const hexToRgb = h => [parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)];
+const PAL_RGB = PALETTE.map(p=>hexToRgb(p.hex));
+function nearest(r,g,b){
+  let best=0,bd=1e12;
+  for(let i=0;i<PAL_RGB.length;i++){
+    const [pr,pg,pb]=PAL_RGB[i];
+    const d=(r-pr)**2+(g-pg)**2+(b-pb)**2;
+    if(d<bd){bd=d;best=i;}
+  }
+  return PALETTE[best].hex;
+}
+function luminance(hex){const [r,g,b]=hexToRgb(hex);return (0.299*r+0.587*g+0.114*b)/255;}
+
+// ---- draw the chosen source into a W×H grid of hex colours (or null=empty) ----
+function buildGrid(mode){
+  const c = document.createElement("canvas");
+  c.width = COLS; c.height = ROWS;
+  const ctx = c.getContext("2d");
+  ctx.clearRect(0,0,COLS,ROWS);
+
+  const finish = () => {
+    const {data} = ctx.getImageData(0,0,COLS,ROWS);
+    const g = [];
+    for(let y=0;y<ROWS;y++){
+      const row=[];
+      for(let x=0;x<COLS;x++){
+        const i=(y*COLS+x)*4;
+        const a=data[i+3];
+        if(a<110){row.push(null);continue;}          // transparent -> empty (green sea)
+        row.push(nearest(data[i],data[i+1],data[i+2]));
+      }
+      g.push(row);
+    }
+    return g;
+  };
+
+  if(mode==="text"){
+    const txt=(document.getElementById("text").value||"").toUpperCase().trim()||"HI";
+    // draw big on an offscreen hi-res canvas, then downscale for crisp letters
+    const big=document.createElement("canvas"); big.width=COLS*10; big.height=ROWS*10;
+    const bx=big.getContext("2d");
+    bx.clearRect(0,0,big.width,big.height);
+    bx.fillStyle="#3f51b5";                            // Blueberry letters
+    bx.textAlign="center"; bx.textBaseline="middle";
+    let fs=big.height*0.8;
+    bx.font=`700 ${fs}px Arial`;
+    while(bx.measureText(txt).width>big.width*0.92 && fs>8){fs-=4;bx.font=`700 ${fs}px Arial`;}
+    bx.fillText(txt,big.width/2,big.height/2);
+    ctx.drawImage(big,0,0,COLS,ROWS);
+    return Promise.resolve(finish());
+  }
+
+  if(mode==="image" && window.__imgBitmap){
+    drawContain(ctx,window.__imgBitmap);
+    return Promise.resolve(finish());
+  }
+
+  // default: emoji
+  const emoji=(document.getElementById("emoji").value||"🐠").trim()||"🐠";
+  const big=document.createElement("canvas"); big.width=COLS*10; big.height=ROWS*10;
+  const bx=big.getContext("2d");
+  bx.textAlign="center"; bx.textBaseline="middle";
+  const fs=Math.min(big.width,big.height)*0.9;
+  bx.font=`${fs}px "Apple Color Emoji","Noto Color Emoji","Segoe UI Emoji",sans-serif`;
+  bx.fillText(emoji,big.width/2,big.height/2);
+  ctx.drawImage(big,0,0,COLS,ROWS);
+  return Promise.resolve(finish());
+}
+
+function drawContain(ctx,img){
+  const iw=img.width,ih=img.height;
+  const scale=Math.min(COLS/iw,ROWS/ih);
+  const w=iw*scale,h=ih*scale;
+  ctx.drawImage(img,(COLS-w)/2,(ROWS-h)/2,w,h);
+}
+
+// ---- turn the colour grid into DOM events ----
+function render(grid){
+  const head=document.getElementById("head");
+  const grid$=document.getElementById("grid");
+  head.innerHTML=""; grid$.innerHTML="";
+
+  // header
+  const hg=document.createElement("div"); hg.className="gutter"; hg.textContent="GMT-04";
+  head.appendChild(hg);
+  for(let d=0;d<DAYS;d++){
+    const el=document.createElement("div");
+    el.className="dcol"+(d===TODAY_IDX?" today":"");
+    el.innerHTML=`<div class="dow">${DOW[d]}</div><div class="num">${DATES[d]}</div>`;
+    head.appendChild(el);
+  }
+
+  // left time gutter
+  const gutter=document.createElement("div"); gutter.className="gutter";
+  const px=parseInt(document.getElementById("zoom").value,10);
+  const gridH=ROWS*px;
+  for(let h=0;h<=(END_HOUR-START_HOUR);h++){
+    const lab=document.createElement("div"); lab.className="hr";
+    lab.style.top=(h/(END_HOUR-START_HOUR)*gridH)+"px";
+    const hour=START_HOUR+h;
+    lab.textContent = hour===12?"12 PM":hour<12?hour+" AM":(hour-12)+" PM";
+    gutter.appendChild(lab);
+  }
+  grid$.appendChild(gutter);
+
+  const days=document.createElement("div"); days.className="days";
+  days.style.height=gridH+"px";
+  // hour lines
+  const hlines=document.createElement("div"); hlines.className="hlines";
+  for(let h=0;h<=(END_HOUR-START_HOUR);h++){
+    const l=document.createElement("div"); l.className="hl";
+    l.style.top=(h/(END_HOUR-START_HOUR)*100)+"%"; hlines.appendChild(l);
+  }
+  days.appendChild(hlines);
+
+  for(let d=0;d<DAYS;d++){
+    const dayEl=document.createElement("div"); dayEl.className="day";
+    for(let s=0;s<SUBCOLS;s++){
+      const col=document.createElement("div"); col.className="subcol";
+      const x=d*SUBCOLS+s;
+      // merge vertically-adjacent same-colour cells into one event block
+      let y=0;
+      while(y<ROWS){
+        let color=grid[y][x];
+        let span=1;
+        while(y+span<ROWS && grid[y+span][x]===color) span++;
+        col.appendChild(makeEvent(color,span,y));
+        y+=span;
+      }
+      dayEl.appendChild(col);
+    }
+    days.appendChild(dayEl);
+
+    if(d===TODAY_IDX){
+      const now=document.createElement("div"); now.className="nowline";
+      now.style.top=((11.4-START_HOUR)/(END_HOUR-START_HOUR)*100)+"%";  // ~11:24
+      now.innerHTML='<div class="nowdot"></div>';
+      dayEl.appendChild(now);
+    }
+  }
+  grid$.appendChild(days);
+}
+
+function makeEvent(color,span,startRow){
+  const ev=document.createElement("div");
+  ev.className="ev";
+  ev.style.flexGrow=span;
+  const bg = color || GREENS[Math.floor(rnd()*GREENS.length)];
+  ev.style.background=bg;
+  if(luminance(bg)>0.62) ev.classList.add("dark");
+  // title + time (only tall-enough blocks get a time line)
+  const title=TITLES[Math.floor(rnd()*TITLES.length)];
+  const mins=START_HOUR*60+startRow*SLOT_MIN;
+  const hh=Math.floor(mins/60), mm=mins%60;
+  const tstr=(hh===12?12:hh%12||12)+(mm?":"+String(mm).padStart(2,"0"):"")+(hh<12?" AM":" PM");
+  ev.innerHTML = `<span>${title}</span>`+(span>=3?`<span class="t2">${tstr}</span>`:"");
+  return ev;
+}
+
+// ---- wire up controls ----
+let mode="emoji";
+async function regen(reseed){
+  if(reseed){seed=(seed*1103515245+12345)&0x7fffffff; rnd=mulberry32(seed);}
+  else rnd=mulberry32(seed);
+  const grid=await buildGrid(mode);
+  render(grid);
+}
+
+document.getElementById("modes").addEventListener("click",e=>{
+  const b=e.target.closest("[data-mode]"); if(!b)return;
+  mode=b.dataset.mode;
+  document.querySelectorAll("#modes .seg").forEach(s=>s.classList.toggle("on",s===b));
+  document.querySelectorAll("[data-for]").forEach(g=>g.hidden=(g.dataset.for!==mode));
+  regen(false);
+});
+document.getElementById("emoji").addEventListener("input",()=>regen(false));
+document.getElementById("text").addEventListener("input",()=>regen(false));
+document.getElementById("zoom").addEventListener("input",()=>regen(false));
+document.getElementById("shuffle").addEventListener("click",()=>regen(true));
+document.getElementById("compact").addEventListener("click",e=>{
+  document.getElementById("cal").classList.toggle("compact");
+  e.target.classList.toggle("on");
+});
+document.getElementById("file").addEventListener("change",async e=>{
+  const f=e.target.files[0]; if(!f)return;
+  const url=URL.createObjectURL(f);
+  const img=new Image();
+  img.onload=()=>{window.__imgBitmap=img;regen(false);URL.revokeObjectURL(url);};
+  img.src=url;
+});
+
+// optional URL presets for sharing: #text  #compact  #emoji=🐟  #text=HELLO
+(function initFromHash(){
+  const h=decodeURIComponent(location.hash.slice(1));
+  if(!h) return;
+  h.split(/[&,]/).forEach(part=>{
+    const [k,v]=part.split("=");
+    if(k==="compact"){document.getElementById("cal").classList.add("compact");
+      document.getElementById("compact").classList.add("on");}
+    else if(k==="text"){mode="text"; if(v)document.getElementById("text").value=v;}
+    else if(k==="emoji"){mode="emoji"; if(v)document.getElementById("emoji").value=v;}
+  });
+  document.querySelectorAll("#modes .seg").forEach(s=>s.classList.toggle("on",s.dataset.mode===mode));
+  document.querySelectorAll("[data-for]").forEach(g=>g.hidden=(g.dataset.for!==mode));
+})();
+
+regen(false);
+</script>
+</body>
+</html>
