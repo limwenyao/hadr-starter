@@ -1,0 +1,572 @@
+{
+  "generatedAt": 1784606188465,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t21z",
+      "hazardType": "EQ",
+      "title": "M 5.6 - northern Mid-Atlantic Ridge",
+      "locationName": "northern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -45.1002,
+        "lat": 14.5216,
+        "depthKm": 10
+      },
+      "time": 1784582910326,
+      "sourceUpdatedAt": 1784590511718,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 482,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t21z",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t21z.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1w2",
+      "hazardType": "EQ",
+      "title": "M 5.6 - 208 km SW of Port McNeill, Canada",
+      "locationName": "208 km SW of Port McNeill, Canada",
+      "coordinates": {
+        "lon": -129.342,
+        "lat": 49.4076,
+        "depthKm": 10
+      },
+      "time": 1784529690614,
+      "sourceUpdatedAt": 1784592098987,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 490,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1w2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1w2.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t213",
+      "hazardType": "EQ",
+      "title": "M 5.5 - Pacific-Antarctic Ridge",
+      "locationName": "Pacific-Antarctic Ridge",
+      "coordinates": {
+        "lon": -141.7631,
+        "lat": -57.2663,
+        "depthKm": 10
+      },
+      "time": 1784525936465,
+      "sourceUpdatedAt": 1784581437472,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 465,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t213",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t213.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t23e",
+      "hazardType": "EQ",
+      "title": "M 5.2 - northern Mid-Atlantic Ridge",
+      "locationName": "northern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -45.0893,
+        "lat": 25.9041,
+        "depthKm": 10
+      },
+      "time": 1784595814930,
+      "sourceUpdatedAt": 1784596796040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t23e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t23e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1wn",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 22 km NNW of Scarborough, Trinidad and Tobago",
+      "locationName": "22 km NNW of Scarborough, Trinidad and Tobago",
+      "coordinates": {
+        "lon": -60.8041,
+        "lat": 11.3742,
+        "depthKm": 83.51
+      },
+      "time": 1784540710282,
+      "sourceUpdatedAt": 1784588860595,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 422
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1wn",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1wn.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 27
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1wm",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 83 km W of Tobelo, Indonesia",
+      "locationName": "83 km W of Tobelo, Indonesia",
+      "coordinates": {
+        "lon": 127.2659,
+        "lat": 1.6021,
+        "depthKm": 69.965
+      },
+      "time": 1784540443255,
+      "sourceUpdatedAt": 1784541874818,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1wm",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1wm.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 38
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t23v",
+      "hazardType": "EQ",
+      "title": "M 5.0 - Mid-Indian Ridge",
+      "locationName": "Mid-Indian Ridge",
+      "coordinates": {
+        "lon": 73.8261,
+        "lat": -27.6011,
+        "depthKm": 10
+      },
+      "time": 1784603829781,
+      "sourceUpdatedAt": 1784604757040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t23v",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t23v.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t232",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 141 km SSW of Gataivai, Samoa",
+      "locationName": "141 km SSW of Gataivai, Samoa",
+      "coordinates": {
+        "lon": -172.8619,
+        "lat": -14.9677,
+        "depthKm": 10
+      },
+      "time": 1784590677854,
+      "sourceUpdatedAt": 1784592147040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t232",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t232.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t21e",
+      "hazardType": "EQ",
+      "title": "M 5.0 - south of the Kermadec Islands",
+      "locationName": "south of the Kermadec Islands",
+      "coordinates": {
+        "lon": -178.0878,
+        "lat": -32.759,
+        "depthKm": 10
+      },
+      "time": 1784580259902,
+      "sourceUpdatedAt": 1784581524040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t21e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t21e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t21n",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 62 km WNW of Pangai, Tonga",
+      "locationName": "62 km WNW of Pangai, Tonga",
+      "coordinates": {
+        "lon": -174.9257,
+        "lat": -19.6625,
+        "depthKm": 57.486
+      },
+      "time": 1784581890035,
+      "sourceUpdatedAt": 1784586744040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t21n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t21n.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 31
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t20d",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 193 km ENE of Saipan, Northern Mariana Islands",
+      "locationName": "193 km ENE of Saipan, Northern Mariana Islands",
+      "coordinates": {
+        "lon": 147.4393,
+        "lat": 15.8467,
+        "depthKm": 10
+      },
+      "time": 1784574844693,
+      "sourceUpdatedAt": 1784576188040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t20d",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t20d.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1x3",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 48 km WSW of Brisas Barra de Suchiate, Mexico",
+      "locationName": "48 km WSW of Brisas Barra de Suchiate, Mexico",
+      "coordinates": {
+        "lon": -92.6156,
+        "lat": 14.3235,
+        "depthKm": 39.894
+      },
+      "time": 1784544830628,
+      "sourceUpdatedAt": 1784547404488,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 370
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1x3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1x3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 52
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1xp",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 51 km NNE of Port-Olry, Vanuatu",
+      "locationName": "51 km NNE of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 167.2998,
+        "lat": -14.6352,
+        "depthKm": 172.259
+      },
+      "time": 1784552030831,
+      "sourceUpdatedAt": 1784553038040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1xp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1xp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1x5",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 14 km NE of Güiria, Venezuela",
+      "locationName": "14 km NE of Güiria, Venezuela",
+      "coordinates": {
+        "lon": -62.2023,
+        "lat": 10.6707,
+        "depthKm": 66.041
+      },
+      "time": 1784544900820,
+      "sourceUpdatedAt": 1784580039721,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 356
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1x5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1x5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t235",
+      "hazardType": "EQ",
+      "title": "M 4.6 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -177.3268,
+        "lat": -23.6436,
+        "depthKm": 204.561
+      },
+      "time": 1784593529643,
+      "sourceUpdatedAt": 1784595534040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t235",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t235.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t20c",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 188 km W of Abepura, Indonesia",
+      "locationName": "188 km W of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 138.9388,
+        "lat": -2.5277,
+        "depthKm": 28.446
+      },
+      "time": 1784574437579,
+      "sourceUpdatedAt": 1784577808040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t20c",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t20c.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 39
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t21u",
+      "hazardType": "EQ",
+      "title": "M 4.5 - Banda Sea",
+      "locationName": "Banda Sea",
+      "coordinates": {
+        "lon": 130.1029,
+        "lat": -6.9496,
+        "depthKm": 92.137
+      },
+      "time": 1784582809445,
+      "sourceUpdatedAt": 1784586605040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t21u",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t21u.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t1x8",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 70 km SW of Puerto Madero, Mexico",
+      "locationName": "70 km SW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -92.8306,
+        "lat": 14.2217,
+        "depthKm": 35
+      },
+      "time": 1784545848518,
+      "sourceUpdatedAt": 1784546743040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1x8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1x8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 27
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [
+    {
+      "feed": "GDACS",
+      "reason": "HTTP 500"
+    }
+  ],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 18,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
