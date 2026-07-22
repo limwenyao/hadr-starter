@@ -1,0 +1,596 @@
+{
+  "generatedAt": 1784692662893,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t25y",
+      "hazardType": "EQ",
+      "title": "M 5.6 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": -176.9951,
+        "lat": -29.5116,
+        "depthKm": 10
+      },
+      "time": 1784636073338,
+      "sourceUpdatedAt": 1784643688949,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 482,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t25y",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t25y.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1552752",
+      "hazardType": "EQ",
+      "title": "Earthquake in Peru",
+      "locationName": "Peru",
+      "coordinates": {
+        "lon": -75.3034,
+        "lat": -12.1036
+      },
+      "time": 1784427875000,
+      "sourceUpdatedAt": 1784685984000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1552752&episodeid=1719805&eventtype=EQ",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=EQ&eventid=1552752&episodeid=1719805",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · earthquake)",
+        "isEstimate": false,
+        "radiusKm": 280
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027450",
+      "hazardType": "DR",
+      "title": "Drought in Ethiopia, Kenya, Somalia",
+      "locationName": "Ethiopia, Kenya, Somalia",
+      "coordinates": {
+        "lon": 44.618,
+        "lat": 6.545
+      },
+      "time": 1776729600000,
+      "sourceUpdatedAt": 1784613442000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027450&episodeid=3&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027450&episodeid=3",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 667
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1018332",
+      "hazardType": "DR",
+      "title": "Drought in Albania, Austria, Bosnia  and  Herzegovina, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Italy, Liechtenstein, Monaco, Montenegro, The Republic of North Macedonia, Poland, Romania, Serbia, Russia, Sweden, Slovakia, San Marino, Ukraine, , ",
+      "locationName": "Albania, Austria, Bosnia & Herzegovina, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Italy, Liechtenstein, Monaco, Montenegro, The Republic of North Macedonia, Poland, Romania, Serbia, Russia, Sweden, Slovakia, San Marino, Ukraine, , ",
+      "coordinates": {
+        "lon": 13.109,
+        "lat": 47.877
+      },
+      "time": 1765411200000,
+      "sourceUpdatedAt": 1784613426000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1018332&episodeid=16&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1018332&episodeid=16",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 1780
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1018431",
+      "hazardType": "DR",
+      "title": "Drought in Madagascar",
+      "locationName": "Madagascar",
+      "coordinates": {
+        "lon": 47.723,
+        "lat": -17.44
+      },
+      "time": 1763683200000,
+      "sourceUpdatedAt": 1784613429000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1018431&episodeid=9&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1018431&episodeid=9",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 607
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t26b",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 132 km ENE of Santa Cruz das Flores, Portugal",
+      "locationName": "132 km ENE of Santa Cruz das Flores, Portugal",
+      "coordinates": {
+        "lon": -29.7175,
+        "lat": 39.9371,
+        "depthKm": 6.736
+      },
+      "time": 1784639591261,
+      "sourceUpdatedAt": 1784647258448,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t26b",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t26b.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t2a7",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 7 km WNW of Kalbay, Philippines",
+      "locationName": "7 km WNW of Kalbay, Philippines",
+      "coordinates": {
+        "lon": 125.4295,
+        "lat": 5.739,
+        "depthKm": 68.769
+      },
+      "time": 1784658807762,
+      "sourceUpdatedAt": 1784659945040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t2a7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t2a7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 40
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t25j",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 58 km SSW of Merizo Village, Guam",
+      "locationName": "58 km SSW of Merizo Village, Guam",
+      "coordinates": {
+        "lon": 144.3814,
+        "lat": 12.8216,
+        "depthKm": 12.164
+      },
+      "time": 1784632185478,
+      "sourceUpdatedAt": 1784675990986,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 386
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t25j",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t25j.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t25s",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 78 km NE of Simao, China",
+      "locationName": "78 km NE of Simao, China",
+      "coordinates": {
+        "lon": 101.5395,
+        "lat": 23.2707,
+        "depthKm": 10
+      },
+      "time": 1784634188411,
+      "sourceUpdatedAt": 1784635973040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t25s",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t25s.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t2c9",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 41 km SE of Port-Vila, Vanuatu",
+      "locationName": "41 km SE of Port-Vila, Vanuatu",
+      "coordinates": {
+        "lon": 168.6204,
+        "lat": -17.9675,
+        "depthKm": 146.721
+      },
+      "time": 1784673181323,
+      "sourceUpdatedAt": 1784674200040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t2c9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t2c9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t2az",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 107 km SW of Isangel, Vanuatu",
+      "locationName": "107 km SW of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 168.5976,
+        "lat": -20.2649,
+        "depthKm": 10
+      },
+      "time": 1784662158670,
+      "sourceUpdatedAt": 1784665767040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t2az",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t2az.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t29r",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 281 km SSE of Ushuaia, Argentina",
+      "locationName": "281 km SSE of Ushuaia, Argentina",
+      "coordinates": {
+        "lon": -66.6861,
+        "lat": -57.1718,
+        "depthKm": 10
+      },
+      "time": 1784654466859,
+      "sourceUpdatedAt": 1784661291040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t29r",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t29r.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t2dg",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 12 km SE of Cuya, Chile",
+      "locationName": "12 km SE of Cuya, Chile",
+      "coordinates": {
+        "lon": -70.1036,
+        "lat": -19.2494,
+        "depthKm": 60.814
+      },
+      "time": 1784685830385,
+      "sourceUpdatedAt": 1784691179087,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 346
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t2dg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t2dg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t29t",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 139 km W of Puerto Santa, Peru",
+      "locationName": "139 km W of Puerto Santa, Peru",
+      "coordinates": {
+        "lon": -79.9136,
+        "lat": -9.0849,
+        "depthKm": 35
+      },
+      "time": 1784655781447,
+      "sourceUpdatedAt": 1784662362040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t29t",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t29t.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 40
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t26j",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 195 km W of Abepura, Indonesia",
+      "locationName": "195 km W of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 138.8732,
+        "lat": -2.5778,
+        "depthKm": 7.875
+      },
+      "time": 1784641632433,
+      "sourceUpdatedAt": 1784644247040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t26j",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t26j.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t2a5",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 214 km W of Bandon, Oregon",
+      "locationName": "214 km W of Bandon, Oregon",
+      "coordinates": {
+        "lon": -127.0338,
+        "lat": 43.3469,
+        "depthKm": 17.396
+      },
+      "time": 1784658776368,
+      "sourceUpdatedAt": 1784681099322,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t2a5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t2a5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 45
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t26k",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 18 km SSE of Talisay, Philippines",
+      "locationName": "18 km SSE of Talisay, Philippines",
+      "coordinates": {
+        "lon": 122.6735,
+        "lat": 13.0193,
+        "depthKm": 10
+      },
+      "time": 1784641686868,
+      "sourceUpdatedAt": 1784645335040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t26k",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t26k.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t24u",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 84 km SW of Puerto Madero, Mexico",
+      "locationName": "84 km SW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -93.0019,
+        "lat": 14.2069,
+        "depthKm": 35
+      },
+      "time": 1784616195703,
+      "sourceUpdatedAt": 1784617169040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t24u",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t24u.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 34
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t25t",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 137 km NNE of Maumere, Indonesia",
+      "locationName": "137 km NNE of Maumere, Indonesia",
+      "coordinates": {
+        "lon": 122.8227,
+        "lat": -7.5366,
+        "depthKm": 550.12
+      },
+      "time": 1784634435816,
+      "sourceUpdatedAt": 1784637832040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t25t",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t25t.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 19,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
