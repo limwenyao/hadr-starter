@@ -1,0 +1,614 @@
+{
+  "generatedAt": 1784951335663,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t37a",
+      "hazardType": "EQ",
+      "title": "M 6.0 - 82 km W of Sola, Vanuatu",
+      "locationName": "82 km W of Sola, Vanuatu",
+      "coordinates": {
+        "lon": 166.8006,
+        "lat": -14.0205,
+        "depthKm": 44.637
+      },
+      "time": 1784929076459,
+      "sourceUpdatedAt": 1784945797435,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6,
+        "sig": 555,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t37a",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t37a.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t387",
+      "hazardType": "EQ",
+      "title": "M 5.7 - 292 km SSE of Ushuaia, Argentina",
+      "locationName": "292 km SSE of Ushuaia, Argentina",
+      "coordinates": {
+        "lon": -66.8383,
+        "lat": -57.3066,
+        "depthKm": 10
+      },
+      "time": 1784934629856,
+      "sourceUpdatedAt": 1784942247543,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.7,
+        "sig": 500,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t387",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t387.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t34g",
+      "hazardType": "EQ",
+      "title": "M 5.7 - 49 km W of Turangi, New Zealand",
+      "locationName": "49 km W of Turangi, New Zealand",
+      "coordinates": {
+        "lon": 175.2332,
+        "lat": -38.9621,
+        "depthKm": 10
+      },
+      "time": 1784911897514,
+      "sourceUpdatedAt": 1784938600347,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.7,
+        "sig": 540,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t34g",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t34g.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001294",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone NOUL-26",
+      "locationName": "China, Philippines",
+      "coordinates": {
+        "lon": 118.3,
+        "lat": 20.8
+      },
+      "time": 1784786400000,
+      "sourceUpdatedAt": 1784948916000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001294&episodeid=8&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001294&episodeid=8",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 1077
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t30r",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 202 km W of Abepura, Indonesia",
+      "locationName": "202 km W of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 138.8159,
+        "lat": -2.5572,
+        "depthKm": 10
+      },
+      "time": 1784895268267,
+      "sourceUpdatedAt": 1784903006609,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t30r",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t30r.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t36n",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 39 km NW of San Antonio de los Cobres, Argentina",
+      "locationName": "39 km NW of San Antonio de los Cobres, Argentina",
+      "coordinates": {
+        "lon": -66.6072,
+        "lat": -23.9755,
+        "depthKm": 193.727
+      },
+      "time": 1784921922356,
+      "sourceUpdatedAt": 1784929554080,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t36n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t36n.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t309",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 197 km W of Abepura, Indonesia",
+      "locationName": "197 km W of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 138.8612,
+        "lat": -2.5436,
+        "depthKm": 10
+      },
+      "time": 1784891494234,
+      "sourceUpdatedAt": 1784892744040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t309",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t309.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t376",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 75 km WSW of Sola, Vanuatu",
+      "locationName": "75 km WSW of Sola, Vanuatu",
+      "coordinates": {
+        "lon": 166.8778,
+        "lat": -14.0586,
+        "depthKm": 16.7
+      },
+      "time": 1784927984549,
+      "sourceUpdatedAt": 1784930035434,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t376",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t376.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 78
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t34c",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 115 km ENE of Ozernovskiy, Russia",
+      "locationName": "115 km ENE of Ozernovskiy, Russia",
+      "coordinates": {
+        "lon": 158.127,
+        "lat": 51.7216,
+        "depthKm": 69.804
+      },
+      "time": 1784910799808,
+      "sourceUpdatedAt": 1784911997040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t34c",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t34c.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 38
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t30v",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 194 km W of Abepura, Indonesia",
+      "locationName": "194 km W of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 138.8797,
+        "lat": -2.6055,
+        "depthKm": 10
+      },
+      "time": 1784896022974,
+      "sourceUpdatedAt": 1784897093040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t30v",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t30v.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t38a",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 96 km NNW of Port-Olry, Vanuatu",
+      "locationName": "96 km NNW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 166.7272,
+        "lat": -14.2346,
+        "depthKm": 10
+      },
+      "time": 1784936650140,
+      "sourceUpdatedAt": 1784938688040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t38a",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t38a.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t382",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 4 km WNW of Sola, Vanuatu",
+      "locationName": "4 km WNW of Sola, Vanuatu",
+      "coordinates": {
+        "lon": 167.5081,
+        "lat": -13.8673,
+        "depthKm": 10
+      },
+      "time": 1784932759684,
+      "sourceUpdatedAt": 1784934253040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t382",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t382.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t36g",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 54 km S of Sarangani, Philippines",
+      "locationName": "54 km S of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.4751,
+        "lat": 4.9092,
+        "depthKm": 10
+      },
+      "time": 1784919987517,
+      "sourceUpdatedAt": 1784926078040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t36g",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t36g.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t35r",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 133 km SW of Kotabumi, Indonesia",
+      "locationName": "133 km SW of Kotabumi, Indonesia",
+      "coordinates": {
+        "lon": 103.9042,
+        "lat": -5.5376,
+        "depthKm": 58.802
+      },
+      "time": 1784914085655,
+      "sourceUpdatedAt": 1784916475040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t35r",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t35r.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 28
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t35n",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 71 km SW of Pangai, Tonga",
+      "locationName": "71 km SW of Pangai, Tonga",
+      "coordinates": {
+        "lon": -174.7728,
+        "lat": -20.3259,
+        "depthKm": 50.677
+      },
+      "time": 1784913295479,
+      "sourceUpdatedAt": 1784914410040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t35n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t35n.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 41
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t33w",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 50 km NNW of Fiambalá, Argentina",
+      "locationName": "50 km NNW of Fiambalá, Argentina",
+      "coordinates": {
+        "lon": -67.8335,
+        "lat": -27.2556,
+        "depthKm": 10
+      },
+      "time": 1784907272283,
+      "sourceUpdatedAt": 1784909065040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t33w",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t33w.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t2ye",
+      "hazardType": "EQ",
+      "title": "M 4.8 - Mid-Indian Ridge",
+      "locationName": "Mid-Indian Ridge",
+      "coordinates": {
+        "lon": 68.9337,
+        "lat": -23.0953,
+        "depthKm": 10
+      },
+      "time": 1784880078375,
+      "sourceUpdatedAt": 1784881306040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t2ye",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t2ye.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t36e",
+      "hazardType": "EQ",
+      "title": "M 4.5 - Izu Islands, Japan region",
+      "locationName": "Izu Islands, Japan region",
+      "coordinates": {
+        "lon": 141.3858,
+        "lat": 31.4494,
+        "depthKm": 35
+      },
+      "time": 1784918584208,
+      "sourceUpdatedAt": 1784920457040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t36e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t36e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 27
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t35u",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 7 km SSE of Francisco Rueda, Mexico",
+      "locationName": "7 km SSE of Francisco Rueda, Mexico",
+      "coordinates": {
+        "lon": -93.9139,
+        "lat": 17.7658,
+        "depthKm": 201.907
+      },
+      "time": 1784914416568,
+      "sourceUpdatedAt": 1784916894040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t35u",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t35u.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 18,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
