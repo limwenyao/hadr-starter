@@ -1,0 +1,283 @@
+{
+  "generatedAt": 1785038785184,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001294",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone NOUL-26",
+      "locationName": "China, Philippines",
+      "coordinates": {
+        "lon": 114.5,
+        "lat": 22.9
+      },
+      "time": 1784786400000,
+      "sourceUpdatedAt": 1785037019000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001294&episodeid=13&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001294&episodeid=13",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 1107
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3e7",
+      "hazardType": "EQ",
+      "title": "M 5.1 - Tristan da Cunha region",
+      "locationName": "Tristan da Cunha region",
+      "coordinates": {
+        "lon": -14.543,
+        "lat": -34.0707,
+        "depthKm": 10
+      },
+      "time": 1785029564077,
+      "sourceUpdatedAt": 1785030590040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3e7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3e7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3a0",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 43 km SW of Puerto Madero, Mexico",
+      "locationName": "43 km SW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -92.7508,
+        "lat": 14.4952,
+        "depthKm": 35
+      },
+      "time": 1784957193842,
+      "sourceUpdatedAt": 1784981440146,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 402
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3a0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3a0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3cv",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 91 km SE of Atka, Alaska",
+      "locationName": "91 km SE of Atka, Alaska",
+      "coordinates": {
+        "lon": -173.2803,
+        "lat": 51.6063,
+        "depthKm": 40.779
+      },
+      "time": 1785013397610,
+      "sourceUpdatedAt": 1785014553040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3cv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3cv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3a4",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 57 km S of Sarangani, Philippines",
+      "locationName": "57 km S of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.4791,
+        "lat": 4.8793,
+        "depthKm": 52.163
+      },
+      "time": 1784961966097,
+      "sourceUpdatedAt": 1784963094040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3a4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3a4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 50
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3d9",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Kermadec Islands, New Zealand",
+      "locationName": "Kermadec Islands, New Zealand",
+      "coordinates": {
+        "lon": -177.5595,
+        "lat": -29.4861,
+        "depthKm": 55.602
+      },
+      "time": 1785015541620,
+      "sourceUpdatedAt": 1785016876040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3d9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3d9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 34
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3eb",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 18 km ESE of Monterrey, Colombia",
+      "locationName": "18 km ESE of Monterrey, Colombia",
+      "coordinates": {
+        "lon": -72.7547,
+        "lat": 4.7907,
+        "depthKm": 12.362
+      },
+      "time": 1785032026744,
+      "sourceUpdatedAt": 1785033211040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3eb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3eb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 52
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3dp",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 72 km SE of Severo-Kuril’sk, Russia",
+      "locationName": "72 km SE of Severo-Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 156.8988,
+        "lat": 50.2541,
+        "depthKm": 50.022
+      },
+      "time": 1785022848247,
+      "sourceUpdatedAt": 1785030608040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3dp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3dp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3di",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 56 km SE of Tuensang, India",
+      "locationName": "56 km SE of Tuensang, India",
+      "coordinates": {
+        "lon": 95.294,
+        "lat": 25.9804,
+        "depthKm": 92.961
+      },
+      "time": 1785020969078,
+      "sourceUpdatedAt": 1785024946040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3di",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3di.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 8,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
