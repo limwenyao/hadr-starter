@@ -1,0 +1,554 @@
+{
+  "generatedAt": 1785210403837,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tga6",
+      "hazardType": "EQ",
+      "title": "M 5.8 - 190 km NW of Oula Xiuma, China",
+      "locationName": "190 km NW of Oula Xiuma, China",
+      "coordinates": {
+        "lon": 99.5602,
+        "lat": 35.3745,
+        "depthKm": 10
+      },
+      "time": 1785208568940,
+      "sourceUpdatedAt": 1785209979155,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.8,
+        "sig": 650,
+        "pagerAlert": "yellow"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tga6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tga6.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3m7",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 82 km SSW of San Pedro de Atacama, Chile",
+      "locationName": "82 km SSW of San Pedro de Atacama, Chile",
+      "coordinates": {
+        "lon": -68.633,
+        "lat": -23.5454,
+        "depthKm": 106.991
+      },
+      "time": 1785142663758,
+      "sourceUpdatedAt": 1785154558319,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3m7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3m7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tg9n",
+      "hazardType": "EQ",
+      "title": "M 5.3 - southern Mid-Atlantic Ridge",
+      "locationName": "southern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -14.5098,
+        "lat": -12.7784,
+        "depthKm": 10
+      },
+      "time": 1785202071735,
+      "sourceUpdatedAt": 1785202838040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tg9n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tg9n.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tg94",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 23 km E of Kinablangan, Philippines",
+      "locationName": "23 km E of Kinablangan, Philippines",
+      "coordinates": {
+        "lon": 126.7653,
+        "lat": 7.6738,
+        "depthKm": 71.061
+      },
+      "time": 1785193594085,
+      "sourceUpdatedAt": 1785195619040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tg94",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tg94.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 66
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3m6",
+      "hazardType": "EQ",
+      "title": "M 5.2 - south of Tonga",
+      "locationName": "south of Tonga",
+      "coordinates": {
+        "lon": -175.3545,
+        "lat": -24.7345,
+        "depthKm": 10
+      },
+      "time": 1785142038681,
+      "sourceUpdatedAt": 1785144078040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3m6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3m6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3m5",
+      "hazardType": "EQ",
+      "title": "M 5.2 - south of Tonga",
+      "locationName": "south of Tonga",
+      "coordinates": {
+        "lon": -175.244,
+        "lat": -24.6958,
+        "depthKm": 10
+      },
+      "time": 1785141848090,
+      "sourceUpdatedAt": 1785143014040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3m5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3m5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tg95",
+      "hazardType": "EQ",
+      "title": "M 5.1 - south of Tonga",
+      "locationName": "south of Tonga",
+      "coordinates": {
+        "lon": -175.2557,
+        "lat": -24.7784,
+        "depthKm": 10
+      },
+      "time": 1785193932908,
+      "sourceUpdatedAt": 1785196020040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tg95",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tg95.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3p2",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 147 km E of Kimbe, Papua New Guinea",
+      "locationName": "147 km E of Kimbe, Papua New Guinea",
+      "coordinates": {
+        "lon": 151.462,
+        "lat": -5.4518,
+        "depthKm": 91.011
+      },
+      "time": 1785162816219,
+      "sourceUpdatedAt": 1785163997040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3p2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3p2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tg8z",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 112 km ENE of Georgetown, Saint Helena",
+      "locationName": "112 km ENE of Georgetown, Saint Helena",
+      "coordinates": {
+        "lon": -13.4844,
+        "lat": -7.5058,
+        "depthKm": 10
+      },
+      "time": 1785191522648,
+      "sourceUpdatedAt": 1785193530040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tg8z",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tg8z.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tg75",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 88 km SE of Sola, Vanuatu",
+      "locationName": "88 km SE of Sola, Vanuatu",
+      "coordinates": {
+        "lon": 168.0332,
+        "lat": -14.5194,
+        "depthKm": 10
+      },
+      "time": 1785183001634,
+      "sourceUpdatedAt": 1785184172040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tg75",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tg75.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tg2t",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 206 km W of Abepura, Indonesia",
+      "locationName": "206 km W of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 138.7744,
+        "lat": -2.5548,
+        "depthKm": 10
+      },
+      "time": 1785167493601,
+      "sourceUpdatedAt": 1785169388040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tg2t",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tg2t.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3mw",
+      "hazardType": "EQ",
+      "title": "M 4.9 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.3405,
+        "lat": -22.1762,
+        "depthKm": 116.876
+      },
+      "time": 1785149214790,
+      "sourceUpdatedAt": 1785152889040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3mw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3mw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3ll",
+      "hazardType": "EQ",
+      "title": "M 4.8 - south of Tonga",
+      "locationName": "south of Tonga",
+      "coordinates": {
+        "lon": -175.1045,
+        "lat": -24.5457,
+        "depthKm": 10
+      },
+      "time": 1785131711467,
+      "sourceUpdatedAt": 1785133549040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3ll",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3ll.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tg9q",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 38 km S of Mendoza, Argentina",
+      "locationName": "38 km S of Mendoza, Argentina",
+      "coordinates": {
+        "lon": -68.8772,
+        "lat": -33.2379,
+        "depthKm": 36.491
+      },
+      "time": 1785202662798,
+      "sourceUpdatedAt": 1785208108961,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 330
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tg9q",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tg9q.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 32
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3ng",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 120 km E of Kokopo, Papua New Guinea",
+      "locationName": "120 km E of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 153.3412,
+        "lat": -4.4854,
+        "depthKm": 114.648
+      },
+      "time": 1785153587014,
+      "sourceUpdatedAt": 1785154599040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3ng",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3ng.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000t3mh",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 61 km E of La Tirana, Chile",
+      "locationName": "61 km E of La Tirana, Chile",
+      "coordinates": {
+        "lon": -69.0772,
+        "lat": -20.2441,
+        "depthKm": 105.235
+      },
+      "time": 1785147893249,
+      "sourceUpdatedAt": 1785206449333,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 330
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t3mh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t3mh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tg6e",
+      "hazardType": "EQ",
+      "title": "M 4.5 - Bonin Islands, Japan region",
+      "locationName": "Bonin Islands, Japan region",
+      "coordinates": {
+        "lon": 139.8936,
+        "lat": 28.1222,
+        "depthKm": 426.772
+      },
+      "time": 1785179018391,
+      "sourceUpdatedAt": 1785181465040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tg6e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tg6e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tg5f",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 9 km SSE of Ashkāsham, Afghanistan",
+      "locationName": "9 km SSE of Ashkāsham, Afghanistan",
+      "coordinates": {
+        "lon": 71.5913,
+        "lat": 36.6101,
+        "depthKm": 116.626
+      },
+      "time": 1785174421325,
+      "sourceUpdatedAt": 1785176249040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tg5f",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tg5f.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 18,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
