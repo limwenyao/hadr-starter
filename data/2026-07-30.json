@@ -1,0 +1,740 @@
+{
+  "generatedAt": 1785382884020,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tguf",
+      "hazardType": "EQ",
+      "title": "M 5.9 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": -176.5171,
+        "lat": -28.4982,
+        "depthKm": 10
+      },
+      "time": 1785364077690,
+      "sourceUpdatedAt": 1785371646141,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.9,
+        "sig": 536,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tguf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tguf.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgud",
+      "hazardType": "EQ",
+      "title": "M 5.6 - Pacific-Antarctic Ridge",
+      "locationName": "Pacific-Antarctic Ridge",
+      "coordinates": {
+        "lon": -179.1239,
+        "lat": -65.0558,
+        "depthKm": 10
+      },
+      "time": 1785362887628,
+      "sourceUpdatedAt": 1785370545237,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 482,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgud",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgud.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027450",
+      "hazardType": "DR",
+      "title": "Drought in Ethiopia, Kenya, Somalia",
+      "locationName": "Ethiopia, Kenya, Somalia",
+      "coordinates": {
+        "lon": 44.618,
+        "lat": 6.545
+      },
+      "time": 1776729600000,
+      "sourceUpdatedAt": 1785329262000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027450&episodeid=4&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027450&episodeid=4",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 667
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1018431",
+      "hazardType": "DR",
+      "title": "Drought in Madagascar",
+      "locationName": "Madagascar",
+      "coordinates": {
+        "lon": 47.604,
+        "lat": -17.289
+      },
+      "time": 1763683200000,
+      "sourceUpdatedAt": 1785329259000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1018431&episodeid=10&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1018431&episodeid=10",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 607
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1018332",
+      "hazardType": "DR",
+      "title": "Drought in Albania, Austria, Bosnia  and  Herzegovina, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Italy, Liechtenstein, Monaco, Montenegro, The Republic of North Macedonia, Poland, Romania, Serbia, Russia, Sweden, Slovakia, San Marino, Ukraine, , ",
+      "locationName": "Albania, Austria, Bosnia & Herzegovina, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Italy, Liechtenstein, Monaco, Montenegro, The Republic of North Macedonia, Poland, Romania, Serbia, Russia, Sweden, Slovakia, San Marino, Ukraine, , ",
+      "coordinates": {
+        "lon": 12.774,
+        "lat": 47.568
+      },
+      "time": 1765411200000,
+      "sourceUpdatedAt": 1785329254000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1018332&episodeid=17&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1018332&episodeid=17",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 1706
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgpr",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 53 km E of Rapu-Rapu, Philippines",
+      "locationName": "53 km E of Rapu-Rapu, Philippines",
+      "coordinates": {
+        "lon": 124.6138,
+        "lat": 13.1384,
+        "depthKm": 46.281
+      },
+      "time": 1785337802995,
+      "sourceUpdatedAt": 1785345386468,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgpr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgpr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgmx",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 11 km N of Tsunagi, Japan",
+      "locationName": "11 km N of Tsunagi, Japan",
+      "coordinates": {
+        "lon": 130.4881,
+        "lat": 32.34,
+        "depthKm": 10
+      },
+      "time": 1785331176661,
+      "sourceUpdatedAt": 1785369677489,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 451,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgmx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgmx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgva",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 217 km SE of Kokopo, Papua New Guinea",
+      "locationName": "217 km SE of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 153.5797,
+        "lat": -5.8112,
+        "depthKm": 10
+      },
+      "time": 1785379584341,
+      "sourceUpdatedAt": 1785380686040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgva",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgva.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tguj",
+      "hazardType": "EQ",
+      "title": "M 5.2 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": -176.6372,
+        "lat": -28.5591,
+        "depthKm": 10
+      },
+      "time": 1785364945141,
+      "sourceUpdatedAt": 1785366340040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tguj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tguj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgtc",
+      "hazardType": "EQ",
+      "title": "M 5.1 - south of Tonga",
+      "locationName": "south of Tonga",
+      "coordinates": {
+        "lon": -175.2721,
+        "lat": -24.6282,
+        "depthKm": 10
+      },
+      "time": 1785358330337,
+      "sourceUpdatedAt": 1785360037040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgtc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgtc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgnu",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 79 km NE of Casuguran, Philippines",
+      "locationName": "79 km NE of Casuguran, Philippines",
+      "coordinates": {
+        "lon": 122.8525,
+        "lat": 15.2694,
+        "depthKm": 10
+      },
+      "time": 1785334263513,
+      "sourceUpdatedAt": 1785378998607,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 405
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgnu",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgnu.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgrk",
+      "hazardType": "EQ",
+      "title": "M 5.0 - south of Tonga",
+      "locationName": "south of Tonga",
+      "coordinates": {
+        "lon": -175.2899,
+        "lat": -24.6958,
+        "depthKm": 10
+      },
+      "time": 1785344855465,
+      "sourceUpdatedAt": 1785346060040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgrk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgrk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgn0",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 48 km SW of Balangonan, Philippines",
+      "locationName": "48 km SW of Balangonan, Philippines",
+      "coordinates": {
+        "lon": 124.9945,
+        "lat": 5.3176,
+        "depthKm": 63.992
+      },
+      "time": 1785331436014,
+      "sourceUpdatedAt": 1785368262232,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 387
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgn0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgn0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 33
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgmy",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 4 km NNE of Balangonan, Philippines",
+      "locationName": "4 km NNE of Balangonan, Philippines",
+      "coordinates": {
+        "lon": 125.3648,
+        "lat": 5.6157,
+        "depthKm": 54.238
+      },
+      "time": 1785331019109,
+      "sourceUpdatedAt": 1785368490853,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 389
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgmy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgmy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgm6",
+      "hazardType": "EQ",
+      "title": "M 5.0 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -27.3636,
+        "lat": -55.8769,
+        "depthKm": 60.675
+      },
+      "time": 1785321059826,
+      "sourceUpdatedAt": 1785322106040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgm6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgm6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 39
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgkd",
+      "hazardType": "EQ",
+      "title": "M 5.0 - south of Tonga",
+      "locationName": "south of Tonga",
+      "coordinates": {
+        "lon": -174.924,
+        "lat": -24.6364,
+        "depthKm": 10
+      },
+      "time": 1785297142131,
+      "sourceUpdatedAt": 1785298421040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgkd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgkd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgs2",
+      "hazardType": "EQ",
+      "title": "M 4.9 - northern Mid-Atlantic Ridge",
+      "locationName": "northern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -45.9007,
+        "lat": 15.2857,
+        "depthKm": 10
+      },
+      "time": 1785348586411,
+      "sourceUpdatedAt": 1785349844040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgs2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgs2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgkg",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 209 km ENE of Levuka, Fiji",
+      "locationName": "209 km ENE of Levuka, Fiji",
+      "coordinates": {
+        "lon": -178.7538,
+        "lat": -17.6572,
+        "depthKm": 524.64
+      },
+      "time": 1785298042786,
+      "sourceUpdatedAt": 1785298940040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgkg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgkg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgvc",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 206 km SE of Kokopo, Papua New Guinea",
+      "locationName": "206 km SE of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 153.6032,
+        "lat": -5.6505,
+        "depthKm": 10
+      },
+      "time": 1785379532308,
+      "sourceUpdatedAt": 1785381320040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgvc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgvc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgt4",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 7 km W of Honmachi, Japan",
+      "locationName": "7 km W of Honmachi, Japan",
+      "coordinates": {
+        "lon": 130.5159,
+        "lat": 32.4953,
+        "depthKm": 11.68
+      },
+      "time": 1785356195520,
+      "sourceUpdatedAt": 1785362419040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgt4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgt4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgn1",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 10 km W of Honmachi, Japan",
+      "locationName": "10 km W of Honmachi, Japan",
+      "coordinates": {
+        "lon": 130.4901,
+        "lat": 32.5115,
+        "depthKm": 10
+      },
+      "time": 1785333754716,
+      "sourceUpdatedAt": 1785339508040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgn1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgn1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgla",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 102 km WNW of Aykol, China",
+      "locationName": "102 km WNW of Aykol, China",
+      "coordinates": {
+        "lon": 78.9587,
+        "lat": 41.1814,
+        "depthKm": 10
+      },
+      "time": 1785305397133,
+      "sourceUpdatedAt": 1785306594040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgla",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgla.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgup",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 72 km WSW of Aquiles Serdán, Mexico",
+      "locationName": "72 km WSW of Aquiles Serdán, Mexico",
+      "coordinates": {
+        "lon": -93.1002,
+        "lat": 14.6253,
+        "depthKm": 35
+      },
+      "time": 1785367059950,
+      "sourceUpdatedAt": 1785367847040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgup",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgup.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 27
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 23,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
