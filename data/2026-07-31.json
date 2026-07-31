@@ -1,0 +1,632 @@
+{
+  "generatedAt": 1785470467118,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th1h",
+      "hazardType": "EQ",
+      "title": "M 5.9 - 247 km NNE of Colonia, Micronesia",
+      "locationName": "247 km NNE of Colonia, Micronesia",
+      "coordinates": {
+        "lon": 138.9989,
+        "lat": 11.5807,
+        "depthKm": 34.505
+      },
+      "time": 1785434159690,
+      "sourceUpdatedAt": 1785441723817,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.9,
+        "sig": 536,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th1h",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th1h.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgvz",
+      "hazardType": "EQ",
+      "title": "M 5.8 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": -176.5759,
+        "lat": -28.6242,
+        "depthKm": 10
+      },
+      "time": 1785388111888,
+      "sourceUpdatedAt": 1785395683204,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.8,
+        "sig": 518,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgvz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgvz.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th4k",
+      "hazardType": "EQ",
+      "title": "M 5.6 - 13 km ENE of San Fernando, Peru",
+      "locationName": "13 km ENE of San Fernando, Peru",
+      "coordinates": {
+        "lon": -74.4353,
+        "lat": -8.3349,
+        "depthKm": 154.355
+      },
+      "time": 1785459524364,
+      "sourceUpdatedAt": 1785467020528,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 484,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th4k",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th4k.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgvu",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 201 km W of Abepura, Indonesia",
+      "locationName": "201 km W of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 138.8205,
+        "lat": -2.6018,
+        "depthKm": 35
+      },
+      "time": 1785386532667,
+      "sourceUpdatedAt": 1785394089722,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgvu",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgvu.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th1b",
+      "hazardType": "EQ",
+      "title": "M 5.2 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": -177.9701,
+        "lat": -31.3231,
+        "depthKm": 46.02
+      },
+      "time": 1785433695234,
+      "sourceUpdatedAt": 1785438632040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th1b",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th1b.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 75
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th3m",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 67 km E of Petropavlovsk-Kamchatsky, Russia",
+      "locationName": "67 km E of Petropavlovsk-Kamchatsky, Russia",
+      "coordinates": {
+        "lon": 159.6405,
+        "lat": 53.0742,
+        "depthKm": 63.921
+      },
+      "time": 1785448406269,
+      "sourceUpdatedAt": 1785449380040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th3m",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th3m.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th30",
+      "hazardType": "EQ",
+      "title": "M 5.0 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": -176.5707,
+        "lat": -28.5478,
+        "depthKm": 35
+      },
+      "time": 1785443196299,
+      "sourceUpdatedAt": 1785444491040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th30",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th30.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 63
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgy8",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 2 km WNW of Uto, Japan",
+      "locationName": "2 km WNW of Uto, Japan",
+      "coordinates": {
+        "lon": 130.642,
+        "lat": 32.6877,
+        "depthKm": 10
+      },
+      "time": 1785419258996,
+      "sourceUpdatedAt": 1785454920870,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 386
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgy8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgy8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgwd",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 8 km WNW of La Democracia, Guatemala",
+      "locationName": "8 km WNW of La Democracia, Guatemala",
+      "coordinates": {
+        "lon": -91.0265,
+        "lat": 14.2453,
+        "depthKm": 97.012
+      },
+      "time": 1785394736166,
+      "sourceUpdatedAt": 1785469162838,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 407
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgwd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgwd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th1t",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 54 km SW of Puerto Madero, Mexico",
+      "locationName": "54 km SW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -92.8291,
+        "lat": 14.4337,
+        "depthKm": 31.03
+      },
+      "time": 1785435636265,
+      "sourceUpdatedAt": 1785438025040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th1t",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th1t.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 57
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgwu",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 68 km SW of Mago, Russia",
+      "locationName": "68 km SW of Mago, Russia",
+      "coordinates": {
+        "lon": 139.534,
+        "lat": 52.7865,
+        "depthKm": 13.668
+      },
+      "time": 1785398937512,
+      "sourceUpdatedAt": 1785399965040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgwu",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgwu.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 57
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgwt",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 24 km ESE of Qarnābād, Iran",
+      "locationName": "24 km ESE of Qarnābād, Iran",
+      "coordinates": {
+        "lon": 54.8451,
+        "lat": 36.735,
+        "depthKm": 10
+      },
+      "time": 1785398834482,
+      "sourceUpdatedAt": 1785408978988,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 355
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgwt",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgwt.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th43",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 77 km E of Petropavlovsk-Kamchatsky, Russia",
+      "locationName": "77 km E of Petropavlovsk-Kamchatsky, Russia",
+      "coordinates": {
+        "lon": 159.7845,
+        "lat": 53.0865,
+        "depthKm": 64.149
+      },
+      "time": 1785450287988,
+      "sourceUpdatedAt": 1785453133040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th43",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th43.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgw4",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 186 km W of Abepura, Indonesia",
+      "locationName": "186 km W of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 138.9512,
+        "lat": -2.5747,
+        "depthKm": 10
+      },
+      "time": 1785390954622,
+      "sourceUpdatedAt": 1785393737040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgw4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgw4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgw1",
+      "hazardType": "EQ",
+      "title": "M 4.7 - Southwest Indian Ridge",
+      "locationName": "Southwest Indian Ridge",
+      "coordinates": {
+        "lon": 52.0375,
+        "lat": -36.4669,
+        "depthKm": 10
+      },
+      "time": 1785390412042,
+      "sourceUpdatedAt": 1785392835040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgw1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgw1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th54",
+      "hazardType": "EQ",
+      "title": "M 4.6 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": -176.9647,
+        "lat": -28.5632,
+        "depthKm": 44.986
+      },
+      "time": 1785463676445,
+      "sourceUpdatedAt": 1785465296040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th54",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th54.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 18
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgw3",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 58 km ENE of La Tirana, Chile",
+      "locationName": "58 km ENE of La Tirana, Chile",
+      "coordinates": {
+        "lon": -69.1849,
+        "lat": -20.0489,
+        "depthKm": 97.83
+      },
+      "time": 1785391461241,
+      "sourceUpdatedAt": 1785418776426,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgw3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgw3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th1p",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 211 km SSE of Ambon, Indonesia",
+      "locationName": "211 km SSE of Ambon, Indonesia",
+      "coordinates": {
+        "lon": 129.0625,
+        "lat": -5.3977,
+        "depthKm": 256.241
+      },
+      "time": 1785435063520,
+      "sourceUpdatedAt": 1785439103040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th1p",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th1p.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th0z",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 98 km E of Yujing, Taiwan",
+      "locationName": "98 km E of Yujing, Taiwan",
+      "coordinates": {
+        "lon": 121.4235,
+        "lat": 23.0993,
+        "depthKm": 18.282
+      },
+      "time": 1785430715880,
+      "sourceUpdatedAt": 1785443550040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th0z",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th0z.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 40
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tgx1",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 51 km ESE of Murghob, Tajikistan",
+      "locationName": "51 km ESE of Murghob, Tajikistan",
+      "coordinates": {
+        "lon": 74.53,
+        "lat": 38.0465,
+        "depthKm": 10
+      },
+      "time": 1785403248309,
+      "sourceUpdatedAt": 1785415648040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgx1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tgx1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 20,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
