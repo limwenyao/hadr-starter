@@ -1,0 +1,705 @@
+{
+  "generatedAt": 1785556940491,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thdk",
+      "hazardType": "EQ",
+      "title": "M 5.5 - 57 km E of Mutsu, Japan",
+      "locationName": "57 km E of Mutsu, Japan",
+      "coordinates": {
+        "lon": 141.8958,
+        "lat": 41.352,
+        "depthKm": 82.29
+      },
+      "time": 1785552481570,
+      "sourceUpdatedAt": 1785555448285,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 467,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thdk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thdk.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thbq",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 141 km ENE of Masohi, Indonesia",
+      "locationName": "141 km ENE of Masohi, Indonesia",
+      "coordinates": {
+        "lon": 130.1548,
+        "lat": -2.8451,
+        "depthKm": 10
+      },
+      "time": 1785529166311,
+      "sourceUpdatedAt": 1785530319040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thbq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thbq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th8n",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 85 km SW of El Arenal, Mexico",
+      "locationName": "85 km SW of El Arenal, Mexico",
+      "coordinates": {
+        "lon": -93.2309,
+        "lat": 14.6031,
+        "depthKm": 10
+      },
+      "time": 1785514558641,
+      "sourceUpdatedAt": 1785515533040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th8n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th8n.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thcs",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 132 km ENE of Masohi, Indonesia",
+      "locationName": "132 km ENE of Masohi, Indonesia",
+      "coordinates": {
+        "lon": 130.1237,
+        "lat": -3.0027,
+        "depthKm": 10
+      },
+      "time": 1785539857106,
+      "sourceUpdatedAt": 1785541274040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thcs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thcs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thcq",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 153 km ENE of Masohi, Indonesia",
+      "locationName": "153 km ENE of Masohi, Indonesia",
+      "coordinates": {
+        "lon": 130.2942,
+        "lat": -2.8982,
+        "depthKm": 10
+      },
+      "time": 1785539749766,
+      "sourceUpdatedAt": 1785540805040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thcq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thcq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thb5",
+      "hazardType": "EQ",
+      "title": "M 5.1 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -25.3501,
+        "lat": -58.6947,
+        "depthKm": 70.706
+      },
+      "time": 1785524293113,
+      "sourceUpdatedAt": 1785534179040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thb5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thb5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 36
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th96",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 69 km W of Coquimbo, Chile",
+      "locationName": "69 km W of Coquimbo, Chile",
+      "coordinates": {
+        "lon": -72.0611,
+        "lat": -29.8946,
+        "depthKm": 21.344
+      },
+      "time": 1785520027000,
+      "sourceUpdatedAt": 1785521101040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th96",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th96.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 77
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th5s",
+      "hazardType": "EQ",
+      "title": "M 5.0 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": -176.5524,
+        "lat": -29.4109,
+        "depthKm": 37.846
+      },
+      "time": 1785479426157,
+      "sourceUpdatedAt": 1785480481040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th5s",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th5s.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 61
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th5f",
+      "hazardType": "EQ",
+      "title": "M 5.0 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": -176.7278,
+        "lat": -28.3933,
+        "depthKm": 35
+      },
+      "time": 1785470573372,
+      "sourceUpdatedAt": 1785471746040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th5f",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th5f.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 63
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th68",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 287 km SW of Banda Aceh, Indonesia",
+      "locationName": "287 km SW of Banda Aceh, Indonesia",
+      "coordinates": {
+        "lon": 93.1811,
+        "lat": 4.0899,
+        "depthKm": 10
+      },
+      "time": 1785486688631,
+      "sourceUpdatedAt": 1785487727040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th68",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th68.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000the7",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 44 km NW of Te Anau, New Zealand",
+      "locationName": "44 km NW of Te Anau, New Zealand",
+      "coordinates": {
+        "lon": 167.3746,
+        "lat": -45.0973,
+        "depthKm": 112.486
+      },
+      "time": 1785554635189,
+      "sourceUpdatedAt": 1785556633503,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 358
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000the7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000the7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thdc",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 206 km NW of Oula Xiuma, China",
+      "locationName": "206 km NW of Oula Xiuma, China",
+      "coordinates": {
+        "lon": 99.4261,
+        "lat": 35.4802,
+        "depthKm": 10
+      },
+      "time": 1785547776859,
+      "sourceUpdatedAt": 1785549057040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thdc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thdc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th8m",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 260 km NNW of Puerto Ayora, Ecuador",
+      "locationName": "260 km NNW of Puerto Ayora, Ecuador",
+      "coordinates": {
+        "lon": -90.9633,
+        "lat": 1.5255,
+        "depthKm": 10
+      },
+      "time": 1785513851680,
+      "sourceUpdatedAt": 1785517086040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th8m",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th8m.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thef",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 25 km S of Daliao, Philippines",
+      "locationName": "25 km S of Daliao, Philippines",
+      "coordinates": {
+        "lon": 124.9258,
+        "lat": 5.6352,
+        "depthKm": 35
+      },
+      "time": 1785555770806,
+      "sourceUpdatedAt": 1785556838040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thef",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thef.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 34
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thdb",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 163 km ENE of Tokār, Sudan",
+      "locationName": "163 km ENE of Tokār, Sudan",
+      "coordinates": {
+        "lon": 39.1998,
+        "lat": 18.877,
+        "depthKm": 10
+      },
+      "time": 1785547449262,
+      "sourceUpdatedAt": 1785548337040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thdb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thdb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th7y",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 95 km WNW of Amagi, Japan",
+      "locationName": "95 km WNW of Amagi, Japan",
+      "coordinates": {
+        "lon": 128.0296,
+        "lat": 28.2012,
+        "depthKm": 10
+      },
+      "time": 1785502720829,
+      "sourceUpdatedAt": 1785504329040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th7y",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th7y.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th6a",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 37 km WNW of Dāmghān, Iran",
+      "locationName": "37 km WNW of Dāmghān, Iran",
+      "coordinates": {
+        "lon": 53.9299,
+        "lat": 36.2353,
+        "depthKm": 10
+      },
+      "time": 1785488935647,
+      "sourceUpdatedAt": 1785493172040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th6a",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th6a.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thcu",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 40 km ESE of Sulangan, Philippines",
+      "locationName": "40 km ESE of Sulangan, Philippines",
+      "coordinates": {
+        "lon": 126.1452,
+        "lat": 10.7428,
+        "depthKm": 10.001
+      },
+      "time": 1785540963277,
+      "sourceUpdatedAt": 1785542887040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thcu",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thcu.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thc9",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 54 km NE of Simao, China",
+      "locationName": "54 km NE of Simao, China",
+      "coordinates": {
+        "lon": 101.2878,
+        "lat": 23.1907,
+        "depthKm": 10
+      },
+      "time": 1785533050934,
+      "sourceUpdatedAt": 1785539724040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thc9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thc9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th99",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 1 km N of Quarto, Italy",
+      "locationName": "1 km N of Quarto, Italy",
+      "coordinates": {
+        "lon": 14.1435,
+        "lat": 40.8911,
+        "depthKm": 5
+      },
+      "time": 1785520003779,
+      "sourceUpdatedAt": 1785540708903,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 318,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th99",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th99.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th7q",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 31 km WNW of Titahi Bay, New Zealand",
+      "locationName": "31 km WNW of Titahi Bay, New Zealand",
+      "coordinates": {
+        "lon": 174.4771,
+        "lat": -41.0049,
+        "depthKm": 55.622
+      },
+      "time": 1785496162344,
+      "sourceUpdatedAt": 1785500899824,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 313
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th7q",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th7q.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000th63",
+      "hazardType": "EQ",
+      "title": "M 4.5 - Fiji region",
+      "locationName": "Fiji region",
+      "coordinates": {
+        "lon": -177.4653,
+        "lat": -19.2671,
+        "depthKm": 581.048
+      },
+      "time": 1785483174950,
+      "sourceUpdatedAt": 1785484144040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000th63",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000th63.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [
+    {
+      "feed": "GDACS",
+      "reason": "TimeoutError: The operation was aborted due to timeout"
+    }
+  ],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 22,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
