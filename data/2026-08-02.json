@@ -1,0 +1,486 @@
+{
+  "generatedAt": 1785643488054,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thej",
+      "hazardType": "EQ",
+      "title": "M 5.6 - 200 km SW of Port McNeill, Canada",
+      "locationName": "200 km SW of Port McNeill, Canada",
+      "coordinates": {
+        "lon": -129.4251,
+        "lat": 49.6033,
+        "depthKm": 10
+      },
+      "time": 1785559741269,
+      "sourceUpdatedAt": 1785642731363,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 485,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thej",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thej.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thj5",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 112 km SW of Severo-Kuril’sk, Russia",
+      "locationName": "112 km SW of Severo-Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 155.1713,
+        "lat": 49.8672,
+        "depthKm": 80.691
+      },
+      "time": 1785629618325,
+      "sourceUpdatedAt": 1785630552040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thj5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thj5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 34
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thhr",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 160 km SSW of Severo-Kuril’sk, Russia",
+      "locationName": "160 km SSW of Severo-Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 155.327,
+        "lat": 49.3239,
+        "depthKm": 49.724
+      },
+      "time": 1785614566638,
+      "sourceUpdatedAt": 1785615742040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thhr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thhr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 72
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thhk",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 48 km ESE of Tsunō, Japan",
+      "locationName": "48 km ESE of Tsunō, Japan",
+      "coordinates": {
+        "lon": 131.9999,
+        "lat": 32.0078,
+        "depthKm": 26.229
+      },
+      "time": 1785611452622,
+      "sourceUpdatedAt": 1785612668040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thhk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thhk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 84
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thgx",
+      "hazardType": "EQ",
+      "title": "M 5.1 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -176.7959,
+        "lat": -24.3942,
+        "depthKm": 69.752
+      },
+      "time": 1785599471360,
+      "sourceUpdatedAt": 1785600625040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thgx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thgx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 38
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thg5",
+      "hazardType": "EQ",
+      "title": "M 5.1 - Tristan da Cunha region",
+      "locationName": "Tristan da Cunha region",
+      "coordinates": {
+        "lon": -15.9614,
+        "lat": -39.5342,
+        "depthKm": 10
+      },
+      "time": 1785582440537,
+      "sourceUpdatedAt": 1785583607040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thg5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thg5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thfp",
+      "hazardType": "EQ",
+      "title": "M 5.1 - Tristan da Cunha region",
+      "locationName": "Tristan da Cunha region",
+      "coordinates": {
+        "lon": -15.9764,
+        "lat": -39.6903,
+        "depthKm": 10
+      },
+      "time": 1785577833985,
+      "sourceUpdatedAt": 1785578936040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thfp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thfp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thf3",
+      "hazardType": "EQ",
+      "title": "M 5.1 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -179.1255,
+        "lat": -22.3815,
+        "depthKm": 544.366
+      },
+      "time": 1785570363634,
+      "sourceUpdatedAt": 1785571323040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thf3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thf3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thii",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 83 km SSE of Atka, Alaska",
+      "locationName": "83 km SSE of Atka, Alaska",
+      "coordinates": {
+        "lon": -173.5639,
+        "lat": 51.5554,
+        "depthKm": 35
+      },
+      "time": 1785625623666,
+      "sourceUpdatedAt": 1785627185040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thii",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thii.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thgg",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 3 km W of Matsubase, Japan",
+      "locationName": "3 km W of Matsubase, Japan",
+      "coordinates": {
+        "lon": 130.6285,
+        "lat": 32.6513,
+        "depthKm": 10
+      },
+      "time": 1785588443253,
+      "sourceUpdatedAt": 1785589356040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thgg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thgg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thjm",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 64 km ENE of Noda, Japan",
+      "locationName": "64 km ENE of Noda, Japan",
+      "coordinates": {
+        "lon": 142.5317,
+        "lat": 40.302,
+        "depthKm": 56.352
+      },
+      "time": 1785631540187,
+      "sourceUpdatedAt": 1785632921040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thjm",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thjm.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 18
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thgz",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 14 km WSW of Honmachi, Japan",
+      "locationName": "14 km WSW of Honmachi, Japan",
+      "coordinates": {
+        "lon": 130.4599,
+        "lat": 32.4488,
+        "depthKm": 10
+      },
+      "time": 1785600441753,
+      "sourceUpdatedAt": 1785622745681,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thgz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thgz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thk4",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 7 km SSW of Yumare, Venezuela",
+      "locationName": "7 km SSW of Yumare, Venezuela",
+      "coordinates": {
+        "lon": -68.6899,
+        "lat": 10.5328,
+        "depthKm": 10
+      },
+      "time": 1785640605100,
+      "sourceUpdatedAt": 1785642757693,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 316
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thk4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thk4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thi4",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 188 km W of Abepura, Indonesia",
+      "locationName": "188 km W of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 138.9386,
+        "lat": -2.6121,
+        "depthKm": 10
+      },
+      "time": 1785619567221,
+      "sourceUpdatedAt": 1785628195040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thi4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thi4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thel",
+      "hazardType": "EQ",
+      "title": "M 4.5 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -179.5569,
+        "lat": -23.7435,
+        "depthKm": 493.554
+      },
+      "time": 1785559812163,
+      "sourceUpdatedAt": 1785561321040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thel",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thel.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [
+    {
+      "feed": "GDACS",
+      "reason": "TimeoutError: The operation was aborted due to timeout"
+    }
+  ],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 15,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
