@@ -1,0 +1,358 @@
+{
+  "generatedAt": 1785815337547,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thvj",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 204 km SE of Severo-Kuril’sk, Russia",
+      "locationName": "204 km SE of Severo-Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 157.8994,
+        "lat": 49.2319,
+        "depthKm": 10
+      },
+      "time": 1785793333017,
+      "sourceUpdatedAt": 1785806170040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thvj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thvj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thre",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 85 km S of Severo-Kuril’sk, Russia",
+      "locationName": "85 km S of Severo-Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 155.9445,
+        "lat": 49.9188,
+        "depthKm": 57.695
+      },
+      "time": 1785756402305,
+      "sourceUpdatedAt": 1785757984040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thre",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thre.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 30
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thra",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Fiji region",
+      "locationName": "Fiji region",
+      "coordinates": {
+        "lon": -176.6766,
+        "lat": -17.1228,
+        "depthKm": 10
+      },
+      "time": 1785753923234,
+      "sourceUpdatedAt": 1785755423040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thra",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thra.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thqf",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 14 km ESE of Yibin, China",
+      "locationName": "14 km ESE of Yibin, China",
+      "coordinates": {
+        "lon": 104.7633,
+        "lat": 28.6876,
+        "depthKm": 10
+      },
+      "time": 1785733248666,
+      "sourceUpdatedAt": 1785739334040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thqf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thqf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thrs",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 106 km NW of Gizo, Solomon Islands",
+      "locationName": "106 km NW of Gizo, Solomon Islands",
+      "coordinates": {
+        "lon": 156.087,
+        "lat": -7.4962,
+        "depthKm": 35
+      },
+      "time": 1785762841939,
+      "sourceUpdatedAt": 1785764421040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thrs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thrs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 48
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thv7",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 64 km SSW of Midelt, Morocco",
+      "locationName": "64 km SSW of Midelt, Morocco",
+      "coordinates": {
+        "lon": -5.1249,
+        "lat": 32.2009,
+        "depthKm": 10
+      },
+      "time": 1785788085600,
+      "sourceUpdatedAt": 1785789099040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thv7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thv7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ths2",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 61 km S of Shikotan, Russia",
+      "locationName": "61 km S of Shikotan, Russia",
+      "coordinates": {
+        "lon": 146.8482,
+        "lat": 43.2547,
+        "depthKm": 35
+      },
+      "time": 1785767985353,
+      "sourceUpdatedAt": 1785769533040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ths2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ths2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 40
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thrb",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 88 km WSW of San Antonio de los Cobres, Argentina",
+      "locationName": "88 km WSW of San Antonio de los Cobres, Argentina",
+      "coordinates": {
+        "lon": -67.1352,
+        "lat": -24.4954,
+        "depthKm": 182.541
+      },
+      "time": 1785754535633,
+      "sourceUpdatedAt": 1785758840040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thrb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thrb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ths9",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 123 km E of Miyako, Japan",
+      "locationName": "123 km E of Miyako, Japan",
+      "coordinates": {
+        "lon": 143.3753,
+        "lat": 39.6999,
+        "depthKm": 35
+      },
+      "time": 1785772445781,
+      "sourceUpdatedAt": 1785774949040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ths9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ths9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 27
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thr2",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 149 km WSW of Puerto Madero, Mexico",
+      "locationName": "149 km WSW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -93.6006,
+        "lat": 14.0138,
+        "depthKm": 10
+      },
+      "time": 1785748749814,
+      "sourceUpdatedAt": 1785756180040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thr2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thr2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thqe",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 5 km NNW of Sánchez, Dominican Republic",
+      "locationName": "5 km NNW of Sánchez, Dominican Republic",
+      "coordinates": {
+        "lon": -69.627,
+        "lat": 19.2743,
+        "depthKm": 10
+      },
+      "time": 1785733280034,
+      "sourceUpdatedAt": 1785787393578,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 323
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thqe",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thqe.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 11,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
