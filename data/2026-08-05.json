@@ -1,0 +1,489 @@
+{
+  "generatedAt": 1785901455017,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti49",
+      "hazardType": "EQ",
+      "title": "M 5.7 - 127 km NW of Ternate, Indonesia",
+      "locationName": "127 km NW of Ternate, Indonesia",
+      "coordinates": {
+        "lon": 126.4856,
+        "lat": 1.5066,
+        "depthKm": 35
+      },
+      "time": 1785874597181,
+      "sourceUpdatedAt": 1785882555378,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.7,
+        "sig": 501,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti49",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti49.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001297",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone DOLPHIN-26",
+      "locationName": "Marshall Islands, Japan, China",
+      "coordinates": {
+        "lon": 138.3,
+        "lat": 25.4
+      },
+      "time": 1785110400000,
+      "sourceUpdatedAt": 1785901135000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001297&episodeid=37&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001297&episodeid=37",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 3303
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027450",
+      "hazardType": "DR",
+      "title": "Drought in Ethiopia, Kenya, Somalia",
+      "locationName": "Ethiopia, Kenya, Somalia",
+      "coordinates": {
+        "lon": 44.618,
+        "lat": 6.545
+      },
+      "time": 1776729600000,
+      "sourceUpdatedAt": 1785847669000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027450&episodeid=5&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027450&episodeid=5",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 864
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027465",
+      "hazardType": "DR",
+      "title": "Drought in Democratic Republic of Congo, Kenya, Tanzania, Uganda",
+      "locationName": "Democratic Republic of Congo, Kenya, Tanzania, Uganda",
+      "coordinates": {
+        "lon": 33.25,
+        "lat": 1.187
+      },
+      "time": 1779321600000,
+      "sourceUpdatedAt": 1785848564000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027465&episodeid=2&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027465&episodeid=2",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 400
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1018431",
+      "hazardType": "DR",
+      "title": "Drought in Madagascar",
+      "locationName": "Madagascar",
+      "coordinates": {
+        "lon": 47.606,
+        "lat": -17.932
+      },
+      "time": 1763683200000,
+      "sourceUpdatedAt": 1785847665000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1018431&episodeid=11&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1018431&episodeid=11",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 749
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1018332",
+      "hazardType": "DR",
+      "title": "Drought in Albania, Austria, Bosnia  and  Herzegovina, Belgium, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Italy, Liechtenstein, Luxembourg, Monaco, Montenegro, The Republic of North Macedonia, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, San Marino, Ukraine, , ",
+      "locationName": "Albania, Austria, Bosnia & Herzegovina, Belgium, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Italy, Liechtenstein, Luxembourg, Monaco, Montenegro, The Republic of North Macedonia, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, San Marino, Ukraine, , ",
+      "coordinates": {
+        "lon": 12.151,
+        "lat": 47.602
+      },
+      "time": 1765411200000,
+      "sourceUpdatedAt": 1785847659000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1018332&episodeid=18&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1018332&episodeid=18",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 1558
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1029987",
+      "hazardType": "WF",
+      "title": "Forest fires in Greece",
+      "locationName": "Greece",
+      "coordinates": {
+        "lon": 23.2591,
+        "lat": 38.122
+      },
+      "time": 1785456000000,
+      "sourceUpdatedAt": 1785899040000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1029987&episodeid=17&eventtype=WF",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=WF&eventid=1029987&episodeid=17",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · wildfire)",
+        "isEstimate": false,
+        "radiusKm": 17
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti0r",
+      "hazardType": "EQ",
+      "title": "M 5.1 - south of Tonga",
+      "locationName": "south of Tonga",
+      "coordinates": {
+        "lon": -175.2303,
+        "lat": -24.6061,
+        "depthKm": 10
+      },
+      "time": 1785855374381,
+      "sourceUpdatedAt": 1785856601040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti0r",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti0r.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti6f",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Banda Sea",
+      "locationName": "Banda Sea",
+      "coordinates": {
+        "lon": 128.9345,
+        "lat": -6.4991,
+        "depthKm": 234.999
+      },
+      "time": 1785899767150,
+      "sourceUpdatedAt": 1785900646040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti6f",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti6f.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti5u",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 55 km WSW of Monywa, Burma (Myanmar)",
+      "locationName": "55 km WSW of Monywa, Burma (Myanmar)",
+      "coordinates": {
+        "lon": 94.6478,
+        "lat": 21.9032,
+        "depthKm": 103.392
+      },
+      "time": 1785888717782,
+      "sourceUpdatedAt": 1785897210588,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 355
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti5u",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti5u.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti40",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 43 km ESE of Koseda, Japan",
+      "locationName": "43 km ESE of Koseda, Japan",
+      "coordinates": {
+        "lon": 131.0474,
+        "lat": 30.2082,
+        "depthKm": 44.967
+      },
+      "time": 1785873418739,
+      "sourceUpdatedAt": 1785884829371,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 355
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti40",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti40.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 38
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti4e",
+      "hazardType": "EQ",
+      "title": "M 4.7 - Fiji region",
+      "locationName": "Fiji region",
+      "coordinates": {
+        "lon": -179.3558,
+        "lat": -21.7953,
+        "depthKm": 603.036
+      },
+      "time": 1785875404431,
+      "sourceUpdatedAt": 1785880264040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti4e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti4e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti6d",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 36 km ESE of Severo-Kuril’sk, Russia",
+      "locationName": "36 km ESE of Severo-Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 156.568,
+        "lat": 50.4973,
+        "depthKm": 73.257
+      },
+      "time": 1785898015420,
+      "sourceUpdatedAt": 1785899254040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti6d",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti6d.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti5m",
+      "hazardType": "EQ",
+      "title": "M 4.6 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -26.7928,
+        "lat": -55.7454,
+        "depthKm": 10
+      },
+      "time": 1785884880747,
+      "sourceUpdatedAt": 1785895057040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti5m",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti5m.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti0a",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 79 km E of Onagawa Chō, Japan",
+      "locationName": "79 km E of Onagawa Chō, Japan",
+      "coordinates": {
+        "lon": 142.3433,
+        "lat": 38.3126,
+        "depthKm": 40.428
+      },
+      "time": 1785852026620,
+      "sourceUpdatedAt": 1785854334040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti0a",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti0a.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 27
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000thym",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 112 km WSW of Puerto Madero, Mexico",
+      "locationName": "112 km WSW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -93.3796,
+        "lat": 14.3215,
+        "depthKm": 10
+      },
+      "time": 1785827228745,
+      "sourceUpdatedAt": 1785828697040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thym",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000thym.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 16,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
