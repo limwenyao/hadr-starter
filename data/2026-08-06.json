@@ -1,0 +1,702 @@
+{
+  "generatedAt": 1785988195947,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti8i",
+      "hazardType": "EQ",
+      "title": "M 6.3 - south of the Kermadec Islands",
+      "locationName": "south of the Kermadec Islands",
+      "coordinates": {
+        "lon": 179.4727,
+        "lat": -33.8063,
+        "depthKm": 226.084
+      },
+      "time": 1785915807317,
+      "sourceUpdatedAt": 1785954140011,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.3,
+        "sig": 615,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti8i",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti8i.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti6x",
+      "hazardType": "EQ",
+      "title": "M 6.3 - 32 km SW of Sarangani, Philippines",
+      "locationName": "32 km SW of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.276,
+        "lat": 5.1812,
+        "depthKm": 10
+      },
+      "time": 1785903246625,
+      "sourceUpdatedAt": 1785988107125,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.3,
+        "sig": 651,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti6x",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti6x.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 7.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tif5",
+      "hazardType": "EQ",
+      "title": "M 5.6 - 40 km SW of Sarangani, Philippines",
+      "locationName": "40 km SW of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.227,
+        "lat": 5.1283,
+        "depthKm": 10
+      },
+      "time": 1785966087717,
+      "sourceUpdatedAt": 1785988040362,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 489,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tif5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tif5.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001297",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone DOLPHIN-26",
+      "locationName": "Marshall Islands, Japan, China",
+      "coordinates": {
+        "lon": 133.5,
+        "lat": 26.2
+      },
+      "time": 1785110400000,
+      "sourceUpdatedAt": 1785987505000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001297&episodeid=41&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001297&episodeid=41",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 3496
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tics",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 62 km W of Tobelo, Indonesia",
+      "locationName": "62 km W of Tobelo, Indonesia",
+      "coordinates": {
+        "lon": 127.454,
+        "lat": 1.7901,
+        "depthKm": 115.65
+      },
+      "time": 1785948618349,
+      "sourceUpdatedAt": 1785950182363,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tics",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tics.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tie5",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 31 km SSW of Ialibu, Papua New Guinea",
+      "locationName": "31 km SSW of Ialibu, Papua New Guinea",
+      "coordinates": {
+        "lon": 143.8444,
+        "lat": -6.5225,
+        "depthKm": 10.028
+      },
+      "time": 1785959186861,
+      "sourceUpdatedAt": 1785967528930,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tie5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tie5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti85",
+      "hazardType": "EQ",
+      "title": "M 5.2 - Auckland Islands, New Zealand region",
+      "locationName": "Auckland Islands, New Zealand region",
+      "coordinates": {
+        "lon": 164.0845,
+        "lat": -49.5336,
+        "depthKm": 21.906
+      },
+      "time": 1785912264701,
+      "sourceUpdatedAt": 1785913760040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti85",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti85.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 85
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti71",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 31 km S of Sarangani, Philippines",
+      "locationName": "31 km S of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.412,
+        "lat": 5.1275,
+        "depthKm": 35
+      },
+      "time": 1785903904586,
+      "sourceUpdatedAt": 1785938000157,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 419
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti71",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti71.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 80
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti80",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 46 km SSW of Sarangani, Philippines",
+      "locationName": "46 km SSW of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.3774,
+        "lat": 4.9959,
+        "depthKm": 29.831
+      },
+      "time": 1785909561637,
+      "sourceUpdatedAt": 1785914932648,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti80",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti80.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 74
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti6z",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 238 km SSW of Río Grande, Panama",
+      "locationName": "238 km SSW of Río Grande, Panama",
+      "coordinates": {
+        "lon": -82.4726,
+        "lat": 5.8882,
+        "depthKm": 10
+      },
+      "time": 1785903561769,
+      "sourceUpdatedAt": 1785936254560,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti6z",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti6z.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti9w",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 60 km NNE of Shi Yomi, India",
+      "locationName": "60 km NNE of Shi Yomi, India",
+      "coordinates": {
+        "lon": 94.681,
+        "lat": 29.0027,
+        "depthKm": 10
+      },
+      "time": 1785924369955,
+      "sourceUpdatedAt": 1785938361452,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti9w",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti9w.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tig8",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 15 km WSW of Honmachi, Japan",
+      "locationName": "15 km WSW of Honmachi, Japan",
+      "coordinates": {
+        "lon": 130.455,
+        "lat": 32.4463,
+        "depthKm": 10
+      },
+      "time": 1785970764692,
+      "sourceUpdatedAt": 1785984637354,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 372
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tig8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tig8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tifh",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 42 km SW of Sarangani, Philippines",
+      "locationName": "42 km SW of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.2468,
+        "lat": 5.0849,
+        "depthKm": 10
+      },
+      "time": 1785967904587,
+      "sourceUpdatedAt": 1785981595040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tifh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tifh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti7z",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 54 km ESE of Sarangani, Philippines",
+      "locationName": "54 km ESE of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.8812,
+        "lat": 5.1481,
+        "depthKm": 43.708
+      },
+      "time": 1785909422837,
+      "sourceUpdatedAt": 1785915257040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti7z",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti7z.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 48
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti7t",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 45 km SW of Sarangani, Philippines",
+      "locationName": "45 km SW of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.1979,
+        "lat": 5.0859,
+        "depthKm": 29.668
+      },
+      "time": 1785906784282,
+      "sourceUpdatedAt": 1785908417301,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 370
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti7t",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti7t.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tigl",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 62 km NNE of Shi Yomi, India",
+      "locationName": "62 km NNE of Shi Yomi, India",
+      "coordinates": {
+        "lon": 94.6765,
+        "lat": 29.0283,
+        "depthKm": 10
+      },
+      "time": 1785975317634,
+      "sourceUpdatedAt": 1785982166479,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 355
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tigl",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tigl.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti9k",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 45 km SSW of Sarangani, Philippines",
+      "locationName": "45 km SSW of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.2544,
+        "lat": 5.0507,
+        "depthKm": 35
+      },
+      "time": 1785921427881,
+      "sourceUpdatedAt": 1785923722447,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 355
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti9k",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti9k.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 48
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti7f",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 64 km SW of Sarangani, Philippines",
+      "locationName": "64 km SW of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.0047,
+        "lat": 5.0397,
+        "depthKm": 35
+      },
+      "time": 1785904451505,
+      "sourceUpdatedAt": 1785905292040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti7f",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti7f.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 48
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tial",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 127 km E of Bitung, Indonesia",
+      "locationName": "127 km E of Bitung, Indonesia",
+      "coordinates": {
+        "lon": 126.2646,
+        "lat": 1.2938,
+        "depthKm": 10
+      },
+      "time": 1785939410054,
+      "sourceUpdatedAt": 1785948965040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tial",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tial.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tihf",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 48 km WSW of Sarangani, Philippines",
+      "locationName": "48 km WSW of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.0756,
+        "lat": 5.2096,
+        "depthKm": 35
+      },
+      "time": 1785985931368,
+      "sourceUpdatedAt": 1785986853040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tihf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tihf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 34
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tiex",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 99 km WSW of Houma, Tonga",
+      "locationName": "99 km WSW of Houma, Tonga",
+      "coordinates": {
+        "lon": -176.1885,
+        "lat": -21.5171,
+        "depthKm": 137.247
+      },
+      "time": 1785963578899,
+      "sourceUpdatedAt": 1785967389040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tiex",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tiex.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ti7y",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 84 km ESE of Sarangani, Philippines",
+      "locationName": "84 km ESE of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 126.1378,
+        "lat": 5.0554,
+        "depthKm": 35
+      },
+      "time": 1785909234201,
+      "sourceUpdatedAt": 1785914519040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ti7y",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ti7y.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 34
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 21,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
