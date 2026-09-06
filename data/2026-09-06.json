@@ -1,0 +1,413 @@
+{
+  "generatedAt": 1788670653396,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000temi",
+      "hazardType": "EQ",
+      "title": "M 5.6 - 93 km SE of Kirakira, Solomon Islands",
+      "locationName": "93 km SE of Kirakira, Solomon Islands",
+      "coordinates": {
+        "lon": 162.519,
+        "lat": -11.0595,
+        "depthKm": 38.543
+      },
+      "time": 1788667530141,
+      "sourceUpdatedAt": 1788670005149,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 483,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000temi",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000temi.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tek0",
+      "hazardType": "EQ",
+      "title": "M 5.6 - 96 km ESE of Isangel, Vanuatu",
+      "locationName": "96 km ESE of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 170.1576,
+        "lat": -19.807,
+        "depthKm": 10
+      },
+      "time": 1788627731581,
+      "sourceUpdatedAt": 1788635337259,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 482,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tek0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tek0.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000teji",
+      "hazardType": "EQ",
+      "title": "M 5.5 - 157 km E of Kokopo, Papua New Guinea",
+      "locationName": "157 km E of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 153.6766,
+        "lat": -4.5469,
+        "depthKm": 114.364
+      },
+      "time": 1788617527727,
+      "sourceUpdatedAt": 1788635498290,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 466,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teji",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000teji.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tem2",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 108 km SW of Puerto Madero, Mexico",
+      "locationName": "108 km SW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -93.2487,
+        "lat": 14.1551,
+        "depthKm": 10
+      },
+      "time": 1788663392601,
+      "sourceUpdatedAt": 1788665140103,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tem2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tem2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tejg",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 77 km SSW of Sibolga, Indonesia",
+      "locationName": "77 km SSW of Sibolga, Indonesia",
+      "coordinates": {
+        "lon": 98.6095,
+        "lat": 1.0574,
+        "depthKm": 91.853
+      },
+      "time": 1788617167776,
+      "sourceUpdatedAt": 1788621559040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tejg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tejg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tej2",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 69 km E of Antofagasta de la Sierra, Argentina",
+      "locationName": "69 km E of Antofagasta de la Sierra, Argentina",
+      "coordinates": {
+        "lon": -66.7176,
+        "lat": -26.1078,
+        "depthKm": 10
+      },
+      "time": 1788608232553,
+      "sourceUpdatedAt": 1788662228864,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tej2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tej2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000teiy",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 70 km SW of Pagar Alam, Indonesia",
+      "locationName": "70 km SW of Pagar Alam, Indonesia",
+      "coordinates": {
+        "lon": 102.7513,
+        "lat": -4.4202,
+        "depthKm": 68.934
+      },
+      "time": 1788605955678,
+      "sourceUpdatedAt": 1788619141542,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teiy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000teiy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 21
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tehe",
+      "hazardType": "EQ",
+      "title": "M 5.0 - off the coast of Central America",
+      "locationName": "off the coast of Central America",
+      "coordinates": {
+        "lon": -83.151,
+        "lat": 3.5071,
+        "depthKm": 10
+      },
+      "time": 1788584406778,
+      "sourceUpdatedAt": 1788585746040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tehe",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tehe.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tek7",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 80 km SSW of Nikolski, Alaska",
+      "locationName": "80 km SSW of Nikolski, Alaska",
+      "coordinates": {
+        "lon": -169.329,
+        "lat": 52.2713,
+        "depthKm": 35
+      },
+      "time": 1788631209215,
+      "sourceUpdatedAt": 1788655117212,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tek7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tek7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tel1",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 95 km ESE of Isangel, Vanuatu",
+      "locationName": "95 km ESE of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 170.104,
+        "lat": -19.914,
+        "depthKm": 10
+      },
+      "time": 1788642361351,
+      "sourceUpdatedAt": 1788644342040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tel1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tel1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000telf",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 71 km N of Isangel, Vanuatu",
+      "locationName": "71 km N of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 169.2507,
+        "lat": -18.8949,
+        "depthKm": 240.38
+      },
+      "time": 1788651986056,
+      "sourceUpdatedAt": 1788653519040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000telf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000telf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000teim",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 87 km NNW of Sinabang, Indonesia",
+      "locationName": "87 km NNW of Sinabang, Indonesia",
+      "coordinates": {
+        "lon": 96.1107,
+        "lat": 3.2202,
+        "depthKm": 10
+      },
+      "time": 1788599655563,
+      "sourceUpdatedAt": 1788610489040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teim",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000teim.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tehs",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 76 km S of Gorontalo, Indonesia",
+      "locationName": "76 km S of Gorontalo, Indonesia",
+      "coordinates": {
+        "lon": 123.1527,
+        "lat": -0.1498,
+        "depthKm": 202.347
+      },
+      "time": 1788590095998,
+      "sourceUpdatedAt": 1788592677040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tehs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tehs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 13,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
