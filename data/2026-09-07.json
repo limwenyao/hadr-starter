@@ -1,0 +1,544 @@
+{
+  "generatedAt": 1788757471947,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1104081",
+      "hazardType": "FL",
+      "title": "Flood in China",
+      "locationName": "China",
+      "coordinates": {
+        "lon": 116,
+        "lat": 28
+      },
+      "time": 1785459600000,
+      "sourceUpdatedAt": 1788675832000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1104081&episodeid=17&eventtype=FL",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=FL&eventid=1104081&episodeid=17",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · flood)",
+        "isEstimate": false,
+        "radiusKm": 2657
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tesi",
+      "hazardType": "EQ",
+      "title": "M 5.3 - off the coast of Oregon",
+      "locationName": "off the coast of Oregon",
+      "coordinates": {
+        "lon": -128.2038,
+        "lat": 43.9019,
+        "depthKm": 10
+      },
+      "time": 1788744624930,
+      "sourceUpdatedAt": 1788755665475,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 433
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tesi",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tesi.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tepx",
+      "hazardType": "EQ",
+      "title": "M 5.2 - southern East Pacific Rise",
+      "locationName": "southern East Pacific Rise",
+      "coordinates": {
+        "lon": -115.8082,
+        "lat": -24.2436,
+        "depthKm": 10
+      },
+      "time": 1788696016067,
+      "sourceUpdatedAt": 1788697101040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tepx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tepx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tepa",
+      "hazardType": "EQ",
+      "title": "M 5.2 - southern East Pacific Rise",
+      "locationName": "southern East Pacific Rise",
+      "coordinates": {
+        "lon": -116.0305,
+        "lat": -24.5229,
+        "depthKm": 10
+      },
+      "time": 1788691098353,
+      "sourceUpdatedAt": 1788698056040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tepa",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tepa.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tep6",
+      "hazardType": "EQ",
+      "title": "M 5.2 - southern East Pacific Rise",
+      "locationName": "southern East Pacific Rise",
+      "coordinates": {
+        "lon": -115.6112,
+        "lat": -24.5304,
+        "depthKm": 10
+      },
+      "time": 1788690748227,
+      "sourceUpdatedAt": 1788692214040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tep6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tep6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000test",
+      "hazardType": "EQ",
+      "title": "M 5.0 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": 178.5443,
+        "lat": -30.9663,
+        "depthKm": 585.146
+      },
+      "time": 1788746808371,
+      "sourceUpdatedAt": 1788747844040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000test",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000test.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tesx",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": 178.6445,
+        "lat": -31.1216,
+        "depthKm": 585.921
+      },
+      "time": 1788747111997,
+      "sourceUpdatedAt": 1788748863040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tesx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tesx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000temw",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 118 km ENE of Kuji, Japan",
+      "locationName": "118 km ENE of Kuji, Japan",
+      "coordinates": {
+        "lon": 142.9698,
+        "lat": 40.7281,
+        "depthKm": 34.398
+      },
+      "time": 1788671745801,
+      "sourceUpdatedAt": 1788672851040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000temw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000temw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 55
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000terb",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 39 km SW of Copala, Mexico",
+      "locationName": "39 km SW of Copala, Mexico",
+      "coordinates": {
+        "lon": -99.242,
+        "lat": 16.3632,
+        "depthKm": 10
+      },
+      "time": 1788720378668,
+      "sourceUpdatedAt": 1788728436075,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 355
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000terb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000terb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tep0",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 33 km NE of Calama, Chile",
+      "locationName": "33 km NE of Calama, Chile",
+      "coordinates": {
+        "lon": -68.7038,
+        "lat": -22.2344,
+        "depthKm": 115.537
+      },
+      "time": 1788691172174,
+      "sourceUpdatedAt": 1788694086040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tep0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tep0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tet6",
+      "hazardType": "EQ",
+      "title": "M 4.7 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": 178.6194,
+        "lat": -31.2726,
+        "depthKm": 586.221
+      },
+      "time": 1788748221719,
+      "sourceUpdatedAt": 1788749836040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tet6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tet6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000teq9",
+      "hazardType": "EQ",
+      "title": "M 4.7 - Svalbard region",
+      "locationName": "Svalbard region",
+      "coordinates": {
+        "lon": 7.1688,
+        "lat": 76.1481,
+        "depthKm": 10
+      },
+      "time": 1788699034778,
+      "sourceUpdatedAt": 1788700228040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teq9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000teq9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000teq4",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 219 km SSE of Wada, Japan",
+      "locationName": "219 km SSE of Wada, Japan",
+      "coordinates": {
+        "lon": 140.9156,
+        "lat": 33.2038,
+        "depthKm": 35
+      },
+      "time": 1788697034956,
+      "sourceUpdatedAt": 1788701796040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teq4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000teq4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 34
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000teph",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 105 km NNW of Pante Makasar, Timor Leste",
+      "locationName": "105 km NNW of Pante Makasar, Timor Leste",
+      "coordinates": {
+        "lon": 123.9675,
+        "lat": -8.3411,
+        "depthKm": 150.632
+      },
+      "time": 1788693346043,
+      "sourceUpdatedAt": 1788700500040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teph",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000teph.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tena",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 91 km NE of Luwuk, Indonesia",
+      "locationName": "91 km NE of Luwuk, Indonesia",
+      "coordinates": {
+        "lon": 123.3003,
+        "lat": -0.3104,
+        "depthKm": 10
+      },
+      "time": 1788676881347,
+      "sourceUpdatedAt": 1788685024040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tena",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tena.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000teta",
+      "hazardType": "EQ",
+      "title": "M 4.5 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": 179.6916,
+        "lat": -24.8477,
+        "depthKm": 512.564
+      },
+      "time": 1788748181341,
+      "sourceUpdatedAt": 1788756485040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teta",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000teta.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tert",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 235 km E of Levuka, Fiji",
+      "locationName": "235 km E of Levuka, Fiji",
+      "coordinates": {
+        "lon": -178.4632,
+        "lat": -17.9205,
+        "depthKm": 608.631
+      },
+      "time": 1788728924127,
+      "sourceUpdatedAt": 1788736910040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tert",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tert.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000teqz",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 98 km ENE of Donggang, Taiwan",
+      "locationName": "98 km ENE of Donggang, Taiwan",
+      "coordinates": {
+        "lon": 121.3794,
+        "lat": 22.6827,
+        "depthKm": 33.178
+      },
+      "time": 1788712621719,
+      "sourceUpdatedAt": 1788725132040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teqz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000teqz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 29
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 18,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
