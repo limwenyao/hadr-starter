@@ -1,0 +1,214 @@
+{
+  "generatedAt": 1788843702620,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000teu1",
+      "hazardType": "EQ",
+      "title": "M 5.5 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.6769,
+        "lat": -23.4192,
+        "depthKm": 10
+      },
+      "time": 1788760244529,
+      "sourceUpdatedAt": 1788767819549,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 465,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teu1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000teu1.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1104081",
+      "hazardType": "FL",
+      "title": "Flood in China",
+      "locationName": "China",
+      "coordinates": {
+        "lon": 116,
+        "lat": 28
+      },
+      "time": 1785459600000,
+      "sourceUpdatedAt": 1788675832000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1104081&episodeid=17&eventtype=FL",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=FL&eventid=1104081&episodeid=17",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfr8",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 51 km NNE of Ruteng, Indonesia",
+      "locationName": "51 km NNE of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 120.5995,
+        "lat": -8.1646,
+        "depthKm": 10
+      },
+      "time": 1788842428046,
+      "sourceUpdatedAt": 1788843252040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfr8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfr8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfqf",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 92 km ESE of Isangel, Vanuatu",
+      "locationName": "92 km ESE of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 170.1194,
+        "lat": -19.8072,
+        "depthKm": 10
+      },
+      "time": 1788828722083,
+      "sourceUpdatedAt": 1788832087040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfqf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfqf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfqv",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 176 km SSE of Vilyuchinsk, Russia",
+      "locationName": "176 km SSE of Vilyuchinsk, Russia",
+      "coordinates": {
+        "lon": 159.7019,
+        "lat": 51.5605,
+        "depthKm": 24.871
+      },
+      "time": 1788834860009,
+      "sourceUpdatedAt": 1788840101040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfqv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfqv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 42
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfqi",
+      "hazardType": "EQ",
+      "title": "M 4.5 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -179.7628,
+        "lat": -22.3345,
+        "depthKm": 568.559
+      },
+      "time": 1788831575020,
+      "sourceUpdatedAt": 1788832894040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfqi",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfqi.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tez1",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 129 km ENE of Taltal, Chile",
+      "locationName": "129 km ENE of Taltal, Chile",
+      "coordinates": {
+        "lon": -69.2641,
+        "lat": -25.0539,
+        "depthKm": 90.724
+      },
+      "time": 1788818078748,
+      "sourceUpdatedAt": 1788822772040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tez1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tez1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 6,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
