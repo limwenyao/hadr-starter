@@ -1,0 +1,410 @@
+{
+  "generatedAt": 1788930057150,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tftd",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 26 km NW of Neiafu, Tonga",
+      "locationName": "26 km NW of Neiafu, Tonga",
+      "coordinates": {
+        "lon": -174.1551,
+        "lat": -18.4736,
+        "depthKm": 10
+      },
+      "time": 1788868269687,
+      "sourceUpdatedAt": 1788905991307,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 433
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tftd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tftd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfum",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 123 km NNE of Ruteng, Indonesia",
+      "locationName": "123 km NNE of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 121.0852,
+        "lat": -7.6774,
+        "depthKm": 10
+      },
+      "time": 1788881795020,
+      "sourceUpdatedAt": 1788883607573,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfum",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfum.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfs3",
+      "hazardType": "EQ",
+      "title": "M 5.1 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -26.2578,
+        "lat": -58.1213,
+        "depthKm": 128.647
+      },
+      "time": 1788850246470,
+      "sourceUpdatedAt": 1788851189040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfs3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfs3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfy8",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Mariana Islands region",
+      "locationName": "Mariana Islands region",
+      "coordinates": {
+        "lon": 148.4279,
+        "lat": 16.5996,
+        "depthKm": 10
+      },
+      "time": 1788909822291,
+      "sourceUpdatedAt": 1788919495040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfy8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfy8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfxg",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 211 km ENE of Neiafu, Tonga",
+      "locationName": "211 km ENE of Neiafu, Tonga",
+      "coordinates": {
+        "lon": -172.2335,
+        "lat": -17.7255,
+        "depthKm": 10
+      },
+      "time": 1788904653202,
+      "sourceUpdatedAt": 1788925812040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfxg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfxg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfur",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 97 km NNE of Chitre, Nepal",
+      "locationName": "97 km NNE of Chitre, Nepal",
+      "coordinates": {
+        "lon": 83.9779,
+        "lat": 29.2727,
+        "depthKm": 10
+      },
+      "time": 1788883714980,
+      "sourceUpdatedAt": 1788919723691,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 376
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfur",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfur.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfup",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 54 km E of Hihifo, Tonga",
+      "locationName": "54 km E of Hihifo, Tonga",
+      "coordinates": {
+        "lon": -173.298,
+        "lat": -16.0323,
+        "depthKm": 10
+      },
+      "time": 1788882237137,
+      "sourceUpdatedAt": 1788883580040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfup",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfup.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfty",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 62 km WSW of Ollagüe, Chile",
+      "locationName": "62 km WSW of Ollagüe, Chile",
+      "coordinates": {
+        "lon": -68.8236,
+        "lat": -21.4066,
+        "depthKm": 110.668
+      },
+      "time": 1788874928931,
+      "sourceUpdatedAt": 1788880072040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfty",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfty.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfs1",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 43 km NW of Aroa, Venezuela",
+      "locationName": "43 km NW of Aroa, Venezuela",
+      "coordinates": {
+        "lon": -69.1624,
+        "lat": 10.733,
+        "depthKm": 10
+      },
+      "time": 1788850188990,
+      "sourceUpdatedAt": 1788854146742,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfs1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfs1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfxd",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 54 km NNE of Ruteng, Indonesia",
+      "locationName": "54 km NNE of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 120.658,
+        "lat": -8.1535,
+        "depthKm": 17.467
+      },
+      "time": 1788903742442,
+      "sourceUpdatedAt": 1788924053172,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfxd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfxd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 45
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfsj",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 1 km NNW of Katochí, Greece",
+      "locationName": "1 km NNW of Katochí, Greece",
+      "coordinates": {
+        "lon": 21.2463,
+        "lat": 38.4261,
+        "depthKm": 10
+      },
+      "time": 1788853589636,
+      "sourceUpdatedAt": 1788867890343,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfsj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfsj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfyn",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 108 km SSW of Pagar Alam, Indonesia",
+      "locationName": "108 km SSW of Pagar Alam, Indonesia",
+      "coordinates": {
+        "lon": 102.8454,
+        "lat": -4.9167,
+        "depthKm": 39.565
+      },
+      "time": 1788913399728,
+      "sourceUpdatedAt": 1788921855040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfyn",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfyn.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 19
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tfu8",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 95 km SSW of Severo-Kuril’sk, Russia",
+      "locationName": "95 km SSW of Severo-Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 155.7106,
+        "lat": 49.8562,
+        "depthKm": 64.43
+      },
+      "time": 1788876789955,
+      "sourceUpdatedAt": 1788883276040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfu8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tfu8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 13,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
