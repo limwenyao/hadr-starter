@@ -1,0 +1,352 @@
+{
+  "generatedAt": 1789016626896,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg3x",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 76 km ESE of Isangel, Vanuatu",
+      "locationName": "76 km ESE of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 169.9486,
+        "lat": -19.8237,
+        "depthKm": 10
+      },
+      "time": 1788973312208,
+      "sourceUpdatedAt": 1788976310040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg3x",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg3x.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg43",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 81 km ESE of Isangel, Vanuatu",
+      "locationName": "81 km ESE of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 170.0391,
+        "lat": -19.7219,
+        "depthKm": 10
+      },
+      "time": 1788974325381,
+      "sourceUpdatedAt": 1788976822040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg43",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg43.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg12",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 53 km W of Cafayate, Argentina",
+      "locationName": "53 km W of Cafayate, Argentina",
+      "coordinates": {
+        "lon": -66.5049,
+        "lat": -26.1386,
+        "depthKm": 10
+      },
+      "time": 1788948417170,
+      "sourceUpdatedAt": 1788950305040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg12",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg12.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg06",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 154 km S of Sarangani, Philippines",
+      "locationName": "154 km S of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.3233,
+        "lat": 4.0172,
+        "depthKm": 10
+      },
+      "time": 1788937623319,
+      "sourceUpdatedAt": 1788938716040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg06",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg06.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg6g",
+      "hazardType": "EQ",
+      "title": "M 4.8 - Mid-Indian Ridge",
+      "locationName": "Mid-Indian Ridge",
+      "coordinates": {
+        "lon": 74.2522,
+        "lat": -28.5889,
+        "depthKm": 10
+      },
+      "time": 1788989394374,
+      "sourceUpdatedAt": 1789013171040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg6g",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg6g.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg51",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 86 km ESE of Isangel, Vanuatu",
+      "locationName": "86 km ESE of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 170.0709,
+        "lat": -19.7529,
+        "depthKm": 10
+      },
+      "time": 1788981311614,
+      "sourceUpdatedAt": 1788984170040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg51",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg51.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg5p",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 164 km SSE of Isangel, Vanuatu",
+      "locationName": "164 km SSE of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 169.6974,
+        "lat": -20.9734,
+        "depthKm": 104.703
+      },
+      "time": 1788985273645,
+      "sourceUpdatedAt": 1788988847040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg5p",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg5p.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg1q",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 139 km NNE of Hihifo, Tonga",
+      "locationName": "139 km NNE of Hihifo, Tonga",
+      "coordinates": {
+        "lon": -173.1193,
+        "lat": -14.8771,
+        "depthKm": 10
+      },
+      "time": 1788956294599,
+      "sourceUpdatedAt": 1788957690040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg1q",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg1q.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg5i",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 24 km E of Rasht, Tajikistan",
+      "locationName": "24 km E of Rasht, Tajikistan",
+      "coordinates": {
+        "lon": 70.6552,
+        "lat": 38.9879,
+        "depthKm": 29.594
+      },
+      "time": 1788985033749,
+      "sourceUpdatedAt": 1788990803040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg5i",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg5i.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 38
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg4e",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 295 km WNW of Houma, Tonga",
+      "locationName": "295 km WNW of Houma, Tonga",
+      "coordinates": {
+        "lon": -178.0932,
+        "lat": -20.6521,
+        "depthKm": 499.414
+      },
+      "time": 1788977942293,
+      "sourceUpdatedAt": 1788979062040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg4e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg4e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg1h",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 27 km WSW of Jiyuan, China",
+      "locationName": "27 km WSW of Jiyuan, China",
+      "coordinates": {
+        "lon": 112.3011,
+        "lat": 34.9849,
+        "depthKm": 10
+      },
+      "time": 1788951099229,
+      "sourceUpdatedAt": 1788960407040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg1h",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg1h.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 11,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
