@@ -1,0 +1,327 @@
+{
+  "generatedAt": 1789102843759,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgey",
+      "hazardType": "EQ",
+      "title": "M 5.4 - southern East Pacific Rise",
+      "locationName": "southern East Pacific Rise",
+      "coordinates": {
+        "lon": -109.1514,
+        "lat": -34.8341,
+        "depthKm": 10
+      },
+      "time": 1789064478934,
+      "sourceUpdatedAt": 1789072281259,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgey",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgey.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgf2",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 83 km E of Lospalos, Timor Leste",
+      "locationName": "83 km E of Lospalos, Timor Leste",
+      "coordinates": {
+        "lon": 127.7505,
+        "lat": -8.5914,
+        "depthKm": 10
+      },
+      "time": 1789065880243,
+      "sourceUpdatedAt": 1789067060040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgf2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgf2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg8v",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 126 km WSW of Alianza Cristiana, Peru",
+      "locationName": "126 km WSW of Alianza Cristiana, Peru",
+      "coordinates": {
+        "lon": -77.5027,
+        "lat": -3.873,
+        "depthKm": 10
+      },
+      "time": 1789022560393,
+      "sourceUpdatedAt": 1789037327922,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg8v",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg8v.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgb6",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 162 km SSW of Merizo Village, Guam",
+      "locationName": "162 km SSW of Merizo Village, Guam",
+      "coordinates": {
+        "lon": 143.8739,
+        "lat": 12.0265,
+        "depthKm": 10
+      },
+      "time": 1789046895798,
+      "sourceUpdatedAt": 1789090699139,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 401
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgb6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgb6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg98",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 45 km SSE of Quepos, Costa Rica",
+      "locationName": "45 km SSE of Quepos, Costa Rica",
+      "coordinates": {
+        "lon": -84.0624,
+        "lat": 9.0275,
+        "depthKm": 10
+      },
+      "time": 1789028813828,
+      "sourceUpdatedAt": 1789062287537,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 388
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg98",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg98.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgij",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 69 km N of Isangel, Vanuatu",
+      "locationName": "69 km N of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 169.3953,
+        "lat": -18.9259,
+        "depthKm": 18.748
+      },
+      "time": 1789093693071,
+      "sourceUpdatedAt": 1789094692040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgij",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgij.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 62
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tghk",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 65 km NNW of Sola, Vanuatu",
+      "locationName": "65 km NNW of Sola, Vanuatu",
+      "coordinates": {
+        "lon": 167.3321,
+        "lat": -13.3249,
+        "depthKm": 49.877
+      },
+      "time": 1789080854162,
+      "sourceUpdatedAt": 1789082319040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tghk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tghk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 42
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tga8",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 35 km SSE of Cliza, Bolivia",
+      "locationName": "35 km SSE of Cliza, Bolivia",
+      "coordinates": {
+        "lon": -65.8339,
+        "lat": -17.8933,
+        "depthKm": 372.617
+      },
+      "time": 1789041953736,
+      "sourceUpdatedAt": 1789042934040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tga8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tga8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tg9q",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 116 km WSW of Alianza Cristiana, Peru",
+      "locationName": "116 km WSW of Alianza Cristiana, Peru",
+      "coordinates": {
+        "lon": -77.3635,
+        "lat": -3.9669,
+        "depthKm": 22.065
+      },
+      "time": 1789036776283,
+      "sourceUpdatedAt": 1789038708486,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tg9q",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tg9q.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 49
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgb4",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 84 km SW of Puerto Madero, Mexico",
+      "locationName": "84 km SW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -92.8815,
+        "lat": 14.0976,
+        "depthKm": 10
+      },
+      "time": 1789046943015,
+      "sourceUpdatedAt": 1789049557040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgb4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgb4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 10,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
