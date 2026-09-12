@@ -1,0 +1,322 @@
+{
+  "generatedAt": 1789188749471,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgrk",
+      "hazardType": "EQ",
+      "title": "M 6.6 - 115 km NNE of Teluknaga, Indonesia",
+      "locationName": "115 km NNE of Teluknaga, Indonesia",
+      "coordinates": {
+        "lon": 106.903,
+        "lat": -5.0932,
+        "depthKm": 358.597
+      },
+      "time": 1789161835001,
+      "sourceUpdatedAt": 1789182958212,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.6,
+        "sig": 677,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgrk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgrk.geojson",
+      "tier": "CRITICAL",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgl2",
+      "hazardType": "EQ",
+      "title": "M 5.9 - 253 km ENE of Lospalos, Timor Leste",
+      "locationName": "253 km ENE of Lospalos, Timor Leste",
+      "coordinates": {
+        "lon": 128.9383,
+        "lat": -7.2863,
+        "depthKm": 111.763
+      },
+      "time": 1789127783115,
+      "sourceUpdatedAt": 1789155943758,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.9,
+        "sig": 538,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgl2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgl2.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgky",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 151 km WSW of Adak, Alaska",
+      "locationName": "151 km WSW of Adak, Alaska",
+      "coordinates": {
+        "lon": -178.5429,
+        "lat": 51.213,
+        "depthKm": 40.892
+      },
+      "time": 1789123632613,
+      "sourceUpdatedAt": 1789167436141,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgky",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgky.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgvr",
+      "hazardType": "EQ",
+      "title": "M 5.1 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -24.9274,
+        "lat": -59.1348,
+        "depthKm": 10
+      },
+      "time": 1789174508418,
+      "sourceUpdatedAt": 1789175671040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgvr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgvr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tguq",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 235 km W of Puerto Chacabuco, Chile",
+      "locationName": "235 km W of Puerto Chacabuco, Chile",
+      "coordinates": {
+        "lon": -75.8153,
+        "lat": -45.7183,
+        "depthKm": 10
+      },
+      "time": 1789165943645,
+      "sourceUpdatedAt": 1789177197040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tguq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tguq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgw1",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 2 km NE of Manaca Norte, Panama",
+      "locationName": "2 km NE of Manaca Norte, Panama",
+      "coordinates": {
+        "lon": -82.7898,
+        "lat": 8.3545,
+        "depthKm": 10
+      },
+      "time": 1789178390373,
+      "sourceUpdatedAt": 1789184924403,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 351
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgw1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgw1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgpu",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 33 km SW of Sipí, Colombia",
+      "locationName": "33 km SW of Sipí, Colombia",
+      "coordinates": {
+        "lon": -76.8325,
+        "lat": 4.4193,
+        "depthKm": 61.088
+      },
+      "time": 1789144950894,
+      "sourceUpdatedAt": 1789187876867,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 341
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgpu",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgpu.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgwe",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 45 km NNE of Ruteng, Indonesia",
+      "locationName": "45 km NNE of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 120.6778,
+        "lat": -8.2634,
+        "depthKm": 10
+      },
+      "time": 1789184097594,
+      "sourceUpdatedAt": 1789185015040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgwe",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgwe.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgvk",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 9 km WNW of Quicacha, Peru",
+      "locationName": "9 km WNW of Quicacha, Peru",
+      "coordinates": {
+        "lon": -73.8803,
+        "lat": -15.606,
+        "depthKm": 98.772
+      },
+      "time": 1789172339059,
+      "sourceUpdatedAt": 1789174538040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgvk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgvk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgk1",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 92 km S of False Pass, Alaska",
+      "locationName": "92 km S of False Pass, Alaska",
+      "coordinates": {
+        "lon": -163.1555,
+        "lat": 54.034,
+        "depthKm": 43.105
+      },
+      "time": 1789111905952,
+      "sourceUpdatedAt": 1789139468699,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgk1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgk1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 10,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
