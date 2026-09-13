@@ -1,0 +1,276 @@
+{
+  "generatedAt": 1789276317349,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000th1q",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 101 km S of Yudomari, Japan",
+      "locationName": "101 km S of Yudomari, Japan",
+      "coordinates": {
+        "lon": 130.3787,
+        "lat": 29.3244,
+        "depthKm": 45.513
+      },
+      "time": 1789245178910,
+      "sourceUpdatedAt": 1789248296469,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th1q",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000th1q.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 65
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000th3a",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Bonin Islands, Japan region",
+      "locationName": "Bonin Islands, Japan region",
+      "coordinates": {
+        "lon": 142.2525,
+        "lat": 26.3045,
+        "depthKm": 10
+      },
+      "time": 1789271432298,
+      "sourceUpdatedAt": 1789272535040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th3a",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000th3a.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgyw",
+      "hazardType": "EQ",
+      "title": "M 4.9 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -26.7513,
+        "lat": -56.3022,
+        "depthKm": 98.187
+      },
+      "time": 1789211146000,
+      "sourceUpdatedAt": 1789212190040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgyw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgyw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgyh",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 147 km WNW of Sola, Vanuatu",
+      "locationName": "147 km WNW of Sola, Vanuatu",
+      "coordinates": {
+        "lon": 166.3361,
+        "lat": -13.2829,
+        "depthKm": 16.926
+      },
+      "time": 1789205746724,
+      "sourceUpdatedAt": 1789206847040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgyh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgyh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 63
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000th16",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 17 km WSW of Lixoúri, Greece",
+      "locationName": "17 km WSW of Lixoúri, Greece",
+      "coordinates": {
+        "lon": 20.2555,
+        "lat": 38.1387,
+        "depthKm": 33.956
+      },
+      "time": 1789235505718,
+      "sourceUpdatedAt": 1789269477719,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 361
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th16",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000th16.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 48
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgxg",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 253 km WSW of Tual, Indonesia",
+      "locationName": "253 km WSW of Tual, Indonesia",
+      "coordinates": {
+        "lon": 130.5082,
+        "lat": -6.0912,
+        "depthKm": 134.354
+      },
+      "time": 1789193670594,
+      "sourceUpdatedAt": 1789194707040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgxg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgxg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000th0h",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 46 km NNE of Port-Olry, Vanuatu",
+      "locationName": "46 km NNE of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 167.2217,
+        "lat": -14.6467,
+        "depthKm": 188.104
+      },
+      "time": 1789228569138,
+      "sourceUpdatedAt": 1789229592040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th0h",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000th0h.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgyx",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 32 km SW of Sipí, Colombia",
+      "locationName": "32 km SW of Sipí, Colombia",
+      "coordinates": {
+        "lon": -76.809,
+        "lat": 4.4114,
+        "depthKm": 77.309
+      },
+      "time": 1789211772244,
+      "sourceUpdatedAt": 1789225258437,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgyx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgyx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tgy2",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 63 km WSW of Santiago, Peru",
+      "locationName": "63 km WSW of Santiago, Peru",
+      "coordinates": {
+        "lon": -76.2161,
+        "lat": -14.4855,
+        "depthKm": 24.123
+      },
+      "time": 1789202798186,
+      "sourceUpdatedAt": 1789206474066,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgy2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tgy2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 37
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 9,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
