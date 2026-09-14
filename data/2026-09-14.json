@@ -1,0 +1,315 @@
+{
+  "generatedAt": 1789363101887,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tha3",
+      "hazardType": "EQ",
+      "title": "M 5.4 - northern Mid-Atlantic Ridge",
+      "locationName": "northern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -45.3828,
+        "lat": 25.5449,
+        "depthKm": 10
+      },
+      "time": 1789354577419,
+      "sourceUpdatedAt": 1789362225198,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tha3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tha3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000th4y",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 43 km ESE of Port-Olry, Vanuatu",
+      "locationName": "43 km ESE of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 167.4363,
+        "lat": -15.2195,
+        "depthKm": 135.084
+      },
+      "time": 1789283961693,
+      "sourceUpdatedAt": 1789285000040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th4y",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000th4y.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000th8u",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 50 km N of Ruteng, Indonesia",
+      "locationName": "50 km N of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 120.3822,
+        "lat": -8.1597,
+        "depthKm": 10
+      },
+      "time": 1789339201303,
+      "sourceUpdatedAt": 1789341380040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th8u",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000th8u.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000th50",
+      "hazardType": "EQ",
+      "title": "M 5.0 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 171.3544,
+        "lat": -22.2281,
+        "depthKm": 98.813
+      },
+      "time": 1789284623024,
+      "sourceUpdatedAt": 1789285530040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th50",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000th50.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000th81",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 86 km SSW of Isangel, Vanuatu",
+      "locationName": "86 km SSW of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 168.8337,
+        "lat": -20.2006,
+        "depthKm": 10
+      },
+      "time": 1789328503663,
+      "sourceUpdatedAt": 1789329676040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th81",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000th81.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000th9m",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 119 km S of Dampit, Indonesia",
+      "locationName": "119 km S of Dampit, Indonesia",
+      "coordinates": {
+        "lon": 112.9014,
+        "lat": -9.2825,
+        "depthKm": 33.378
+      },
+      "time": 1789350128967,
+      "sourceUpdatedAt": 1789351429040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th9m",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000th9m.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 49
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000th7y",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 60 km W of Cafayate, Argentina",
+      "locationName": "60 km W of Cafayate, Argentina",
+      "coordinates": {
+        "lon": -66.5753,
+        "lat": -26.1559,
+        "depthKm": 10
+      },
+      "time": 1789328425248,
+      "sourceUpdatedAt": 1789330929040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th7y",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000th7y.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000th5d",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 25 km N of Mutsu, Japan",
+      "locationName": "25 km N of Mutsu, Japan",
+      "coordinates": {
+        "lon": 141.2715,
+        "lat": 41.5125,
+        "depthKm": 120.372
+      },
+      "time": 1789288275069,
+      "sourceUpdatedAt": 1789289467040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th5d",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000th5d.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000th9i",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 55 km NNW of Ruteng, Indonesia",
+      "locationName": "55 km NNW of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 120.3101,
+        "lat": -8.1301,
+        "depthKm": 10
+      },
+      "time": 1789347227610,
+      "sourceUpdatedAt": 1789351512040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th9i",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000th9i.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000th8v",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 120 km NE of Hengchun, Taiwan",
+      "locationName": "120 km NE of Hengchun, Taiwan",
+      "coordinates": {
+        "lon": 121.6019,
+        "lat": 22.7398,
+        "depthKm": 10
+      },
+      "time": 1789339481471,
+      "sourceUpdatedAt": 1789342014040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th8v",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000th8v.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 10,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
