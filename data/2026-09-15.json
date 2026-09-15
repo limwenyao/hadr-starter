@@ -1,0 +1,635 @@
+{
+  "generatedAt": 1789448972595,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thcs",
+      "hazardType": "EQ",
+      "title": "M 5.6 - 78 km NNE of Tobelo, Indonesia",
+      "locationName": "78 km NNE of Tobelo, Indonesia",
+      "coordinates": {
+        "lon": 128.1704,
+        "lat": 2.4223,
+        "depthKm": 162.179
+      },
+      "time": 1789383483047,
+      "sourceUpdatedAt": 1789391003784,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 483,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thcs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thcs.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thc6",
+      "hazardType": "EQ",
+      "title": "M 5.5 - 187 km SSW of Pelabuhanratu, Indonesia",
+      "locationName": "187 km SSW of Pelabuhanratu, Indonesia",
+      "coordinates": {
+        "lon": 105.8726,
+        "lat": -8.5419,
+        "depthKm": 10
+      },
+      "time": 1789378058536,
+      "sourceUpdatedAt": 1789385720944,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 466,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thc6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thc6.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1018431",
+      "hazardType": "DR",
+      "title": "Drought in Madagascar",
+      "locationName": "Madagascar",
+      "coordinates": {
+        "lon": 47.017,
+        "lat": -19.34
+      },
+      "time": 1763683200000,
+      "sourceUpdatedAt": 1789396712000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1018431&episodeid=14&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1018431&episodeid=14",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 698
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027449",
+      "hazardType": "DR",
+      "title": "Drought in The Bahamas, Belize, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador",
+      "locationName": "The Bahamas, Belize, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador",
+      "coordinates": {
+        "lon": -90.382,
+        "lat": 15.778
+      },
+      "time": 1776729600000,
+      "sourceUpdatedAt": 1789396709000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027449&episodeid=8&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027449&episodeid=8",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 2012
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027465",
+      "hazardType": "DR",
+      "title": "Drought in Democratic Republic of Congo, Kenya, Tanzania, Uganda",
+      "locationName": "Democratic Republic of Congo, Kenya, Tanzania, Uganda",
+      "coordinates": {
+        "lon": 33.813,
+        "lat": 0.938
+      },
+      "time": 1779321600000,
+      "sourceUpdatedAt": 1789396706000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027465&episodeid=5&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027465&episodeid=5",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 433
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027450",
+      "hazardType": "DR",
+      "title": "Drought in Eritrea, Ethiopia, Kenya, Somalia",
+      "locationName": "Eritrea, Ethiopia, Kenya, Somalia",
+      "coordinates": {
+        "lon": 39.528,
+        "lat": 11.015
+      },
+      "time": 1776729600000,
+      "sourceUpdatedAt": 1789396702000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027450&episodeid=8&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027450&episodeid=8",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 1016
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1018332",
+      "hazardType": "DR",
+      "title": "Drought in Austria, Bosnia  and  Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Netherlands, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, San Marino, Ukraine, , ",
+      "locationName": "Austria, Bosnia & Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Netherlands, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, San Marino, Ukraine, , ",
+      "coordinates": {
+        "lon": 10.879,
+        "lat": 48.009
+      },
+      "time": 1766275200000,
+      "sourceUpdatedAt": 1789417518000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1018332&episodeid=21&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1018332&episodeid=21",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 1716
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thgs",
+      "hazardType": "EQ",
+      "title": "M 5.3 - off the coast of Michoacan, Mexico",
+      "locationName": "off the coast of Michoacan, Mexico",
+      "coordinates": {
+        "lon": -104.4352,
+        "lat": 15.0879,
+        "depthKm": 10
+      },
+      "time": 1789418339760,
+      "sourceUpdatedAt": 1789419480040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thgs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thgs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thea",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 135 km SE of Gizo, Solomon Islands",
+      "locationName": "135 km SE of Gizo, Solomon Islands",
+      "coordinates": {
+        "lon": 157.7415,
+        "lat": -8.9454,
+        "depthKm": 10
+      },
+      "time": 1789402505947,
+      "sourceUpdatedAt": 1789403537040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thea",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thea.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thhd",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 69 km NW of Lae, Papua New Guinea",
+      "locationName": "69 km NW of Lae, Papua New Guinea",
+      "coordinates": {
+        "lon": 146.5257,
+        "lat": -6.3071,
+        "depthKm": 119.787
+      },
+      "time": 1789423613342,
+      "sourceUpdatedAt": 1789443992040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thhd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thhd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thhv",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 69 km SSW of Patea, New Zealand",
+      "locationName": "69 km SSW of Patea, New Zealand",
+      "coordinates": {
+        "lon": 174.1408,
+        "lat": -40.325,
+        "depthKm": 97.616
+      },
+      "time": 1789425887191,
+      "sourceUpdatedAt": 1789448422579,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 373,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thhv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thhv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thh2",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 28 km WSW of Sipí, Colombia",
+      "locationName": "28 km WSW of Sipí, Colombia",
+      "coordinates": {
+        "lon": -76.8814,
+        "lat": 4.5523,
+        "depthKm": 48.051
+      },
+      "time": 1789420396066,
+      "sourceUpdatedAt": 1789443019741,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 370
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thh2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thh2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 44
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thge",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 20 km SSW of Sipí, Colombia",
+      "locationName": "20 km SSW of Sipí, Colombia",
+      "coordinates": {
+        "lon": -76.7446,
+        "lat": 4.4944,
+        "depthKm": 59.835
+      },
+      "time": 1789416124355,
+      "sourceUpdatedAt": 1789437725784,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 372
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thge",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thge.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 26
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thg5",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 106 km WSW of Alianza Cristiana, Peru",
+      "locationName": "106 km WSW of Alianza Cristiana, Peru",
+      "coordinates": {
+        "lon": -77.3609,
+        "lat": -3.7302,
+        "depthKm": 106.2
+      },
+      "time": 1789413409927,
+      "sourceUpdatedAt": 1789414492040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thg5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thg5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thht",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 26 km SW of Sipí, Colombia",
+      "locationName": "26 km SW of Sipí, Colombia",
+      "coordinates": {
+        "lon": -76.8222,
+        "lat": 4.4893,
+        "depthKm": 67.09
+      },
+      "time": 1789425543763,
+      "sourceUpdatedAt": 1789445168040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thht",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thht.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thgj",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 26 km SSW of Sipí, Colombia",
+      "locationName": "26 km SSW of Sipí, Colombia",
+      "coordinates": {
+        "lon": -76.7695,
+        "lat": 4.4474,
+        "depthKm": 74.903
+      },
+      "time": 1789416487031,
+      "sourceUpdatedAt": 1789427762685,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thgj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thgj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thfh",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 157 km SSE of Labuha, Indonesia",
+      "locationName": "157 km SSE of Labuha, Indonesia",
+      "coordinates": {
+        "lon": 128.1204,
+        "lat": -1.8912,
+        "depthKm": 10
+      },
+      "time": 1789408515206,
+      "sourceUpdatedAt": 1789409812040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thfh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thfh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thct",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 49 km E of Minami-Sōma, Japan",
+      "locationName": "49 km E of Minami-Sōma, Japan",
+      "coordinates": {
+        "lon": 141.5344,
+        "lat": 37.6068,
+        "depthKm": 51.32
+      },
+      "time": 1789383594677,
+      "sourceUpdatedAt": 1789385005040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thct",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thct.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thdw",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 11 km SSW of Sipí, Colombia",
+      "locationName": "11 km SSW of Sipí, Colombia",
+      "coordinates": {
+        "lon": -76.7002,
+        "lat": 4.5649,
+        "depthKm": 76.094
+      },
+      "time": 1789397831569,
+      "sourceUpdatedAt": 1789428041408,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thdw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thdw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thbl",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 109 km E of Tomioka, Japan",
+      "locationName": "109 km E of Tomioka, Japan",
+      "coordinates": {
+        "lon": 142.2375,
+        "lat": 37.1853,
+        "depthKm": 35
+      },
+      "time": 1789371184419,
+      "sourceUpdatedAt": 1789375799040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thbl",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thbl.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 27
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thb6",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 97 km NNE of Mount Hagen, Papua New Guinea",
+      "locationName": "97 km NNE of Mount Hagen, Papua New Guinea",
+      "coordinates": {
+        "lon": 144.6082,
+        "lat": -5.0593,
+        "depthKm": 99.155
+      },
+      "time": 1789366751496,
+      "sourceUpdatedAt": 1789372932040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thb6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thb6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 21,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
