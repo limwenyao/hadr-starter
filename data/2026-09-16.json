@@ -1,0 +1,308 @@
+{
+  "generatedAt": 1789535129572,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thrz",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 60 km SSW of Ocós, Guatemala",
+      "locationName": "60 km SSW of Ocós, Guatemala",
+      "coordinates": {
+        "lon": -92.4543,
+        "lat": 14.0287,
+        "depthKm": 10
+      },
+      "time": 1789530303456,
+      "sourceUpdatedAt": 1789531364040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thrz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thrz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thjr",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 289 km WSW of Tual, Indonesia",
+      "locationName": "289 km WSW of Tual, Indonesia",
+      "coordinates": {
+        "lon": 130.3422,
+        "lat": -6.6349,
+        "depthKm": 83.829
+      },
+      "time": 1789452472712,
+      "sourceUpdatedAt": 1789453615040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thjr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thjr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thr6",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 161 km N of Caluula, Somalia",
+      "locationName": "161 km N of Caluula, Somalia",
+      "coordinates": {
+        "lon": 50.7581,
+        "lat": 13.4261,
+        "depthKm": 10
+      },
+      "time": 1789516019464,
+      "sourceUpdatedAt": 1789529796040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thr6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thr6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thq1",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 89 km NE of Yonakuni, Japan",
+      "locationName": "89 km NE of Yonakuni, Japan",
+      "coordinates": {
+        "lon": 123.6247,
+        "lat": 25.0376,
+        "depthKm": 11.478
+      },
+      "time": 1789506035404,
+      "sourceUpdatedAt": 1789527712040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thq1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thq1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 52
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thl5",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 120 km S of Panguna, Papua New Guinea",
+      "locationName": "120 km S of Panguna, Papua New Guinea",
+      "coordinates": {
+        "lon": 155.3847,
+        "lat": -7.3986,
+        "depthKm": 10
+      },
+      "time": 1789472098788,
+      "sourceUpdatedAt": 1789476837040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thl5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thl5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thrm",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 45 km NNW of Duaca, Venezuela",
+      "locationName": "45 km NNW of Duaca, Venezuela",
+      "coordinates": {
+        "lon": -69.2782,
+        "lat": 10.6842,
+        "depthKm": 10
+      },
+      "time": 1789522637171,
+      "sourceUpdatedAt": 1789525282040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thrm",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thrm.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thr4",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 17 km WNW of Palora, Ecuador",
+      "locationName": "17 km WNW of Palora, Ecuador",
+      "coordinates": {
+        "lon": -78.094,
+        "lat": -1.6157,
+        "depthKm": 155.806
+      },
+      "time": 1789515906518,
+      "sourceUpdatedAt": 1789529528040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thr4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thr4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thni",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 49 km SW of Cachí, Argentina",
+      "locationName": "49 km SW of Cachí, Argentina",
+      "coordinates": {
+        "lon": -66.4888,
+        "lat": -25.4555,
+        "depthKm": 185.605
+      },
+      "time": 1789494085765,
+      "sourceUpdatedAt": 1789498905040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thni",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thni.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thn3",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 55 km SSW of Bengkulu, Indonesia",
+      "locationName": "55 km SSW of Bengkulu, Indonesia",
+      "coordinates": {
+        "lon": 102.0754,
+        "lat": -4.2614,
+        "depthKm": 76.224
+      },
+      "time": 1789488769382,
+      "sourceUpdatedAt": 1789508855040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thn3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thn3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thlq",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 251 km E of Lospalos, Timor Leste",
+      "locationName": "251 km E of Lospalos, Timor Leste",
+      "coordinates": {
+        "lon": 129.2771,
+        "lat": -8.3244,
+        "depthKm": 10
+      },
+      "time": 1789481771033,
+      "sourceUpdatedAt": 1789498426040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thlq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thlq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 10,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
