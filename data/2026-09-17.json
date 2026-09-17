@@ -1,0 +1,462 @@
+{
+  "generatedAt": 1789621699279,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thz3",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 155 km SSE of Hihifo, Tonga",
+      "locationName": "155 km SSE of Hihifo, Tonga",
+      "coordinates": {
+        "lon": -173.4476,
+        "lat": -17.3232,
+        "depthKm": 10
+      },
+      "time": 1789618013528,
+      "sourceUpdatedAt": 1789619071040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thz3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thz3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thwt",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 77 km SSW of San Jose Village, Northern Mariana Islands",
+      "locationName": "77 km SSW of San Jose Village, Northern Mariana Islands",
+      "coordinates": {
+        "lon": 145.4729,
+        "lat": 14.2866,
+        "depthKm": 110.79
+      },
+      "time": 1789582000886,
+      "sourceUpdatedAt": 1789615414066,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 403
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thwt",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thwt.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thsx",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 172 km ESE of Saipan, Northern Mariana Islands",
+      "locationName": "172 km ESE of Saipan, Northern Mariana Islands",
+      "coordinates": {
+        "lon": 147.1141,
+        "lat": 14.3886,
+        "depthKm": 10
+      },
+      "time": 1789547820012,
+      "sourceUpdatedAt": 1789613222383,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 401
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thsx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thsx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thxc",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 29 km WSW of Sipí, Colombia",
+      "locationName": "29 km WSW of Sipí, Colombia",
+      "coordinates": {
+        "lon": -76.8772,
+        "lat": 4.5241,
+        "depthKm": 59.026
+      },
+      "time": 1789589572070,
+      "sourceUpdatedAt": 1789616325180,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thxc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thxc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 41
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thv6",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 5 km NE of Mitsukaidō, Japan",
+      "locationName": "5 km NE of Mitsukaidō, Japan",
+      "coordinates": {
+        "lon": 140.0207,
+        "lat": 36.0556,
+        "depthKm": 77.348
+      },
+      "time": 1789571258245,
+      "sourceUpdatedAt": 1789620293913,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 408
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thv6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thv6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ths9",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 281 km SSE of Dunhuang, China",
+      "locationName": "281 km SSE of Dunhuang, China",
+      "coordinates": {
+        "lon": 95.4963,
+        "lat": 37.7078,
+        "depthKm": 10.46
+      },
+      "time": 1789537923328,
+      "sourceUpdatedAt": 1789539088040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ths9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ths9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thxg",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 191 km ESE of Kimbe, Papua New Guinea",
+      "locationName": "191 km ESE of Kimbe, Papua New Guinea",
+      "coordinates": {
+        "lon": 151.7775,
+        "lat": -6.1072,
+        "depthKm": 10
+      },
+      "time": 1789590084970,
+      "sourceUpdatedAt": 1789591050040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thxg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thxg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thxb",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Kermadec Islands, New Zealand",
+      "locationName": "Kermadec Islands, New Zealand",
+      "coordinates": {
+        "lon": -177.5927,
+        "lat": -30.2154,
+        "depthKm": 35
+      },
+      "time": 1789589015025,
+      "sourceUpdatedAt": 1789591403040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thxb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thxb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 55
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thti",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 64 km E of Kinablangan, Philippines",
+      "locationName": "64 km E of Kinablangan, Philippines",
+      "coordinates": {
+        "lon": 127.1328,
+        "lat": 7.7513,
+        "depthKm": 10
+      },
+      "time": 1789559412695,
+      "sourceUpdatedAt": 1789561765040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thti",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thti.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thsp",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 47 km WSW of Bahía Solano, Colombia",
+      "locationName": "47 km WSW of Bahía Solano, Colombia",
+      "coordinates": {
+        "lon": -77.8115,
+        "lat": 6.0969,
+        "depthKm": 10
+      },
+      "time": 1789542133029,
+      "sourceUpdatedAt": 1789543705040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thsp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thsp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thxm",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 27 km SW of Sipí, Colombia",
+      "locationName": "27 km SW of Sipí, Colombia",
+      "coordinates": {
+        "lon": -76.8006,
+        "lat": 4.46,
+        "depthKm": 51.459
+      },
+      "time": 1789592100902,
+      "sourceUpdatedAt": 1789596443040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thxm",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thxm.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 15
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tht8",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 6 km WSW of Port-Olry, Vanuatu",
+      "locationName": "6 km WSW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 167.0164,
+        "lat": -15.0655,
+        "depthKm": 60.686
+      },
+      "time": 1789551707654,
+      "sourceUpdatedAt": 1789553404040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tht8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tht8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thx7",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 43 km SE of Madang, Papua New Guinea",
+      "locationName": "43 km SE of Madang, Papua New Guinea",
+      "coordinates": {
+        "lon": 146.0172,
+        "lat": -5.5399,
+        "depthKm": 59.858
+      },
+      "time": 1789587425143,
+      "sourceUpdatedAt": 1789593978040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thx7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thx7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thse",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 23 km SW of Sipí, Colombia",
+      "locationName": "23 km SW of Sipí, Colombia",
+      "coordinates": {
+        "lon": -76.7822,
+        "lat": 4.495,
+        "depthKm": 71.01
+      },
+      "time": 1789539486190,
+      "sourceUpdatedAt": 1789541135040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thse",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thse.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000thts",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 6 km NW of Āwash, Ethiopia",
+      "locationName": "6 km NW of Āwash, Ethiopia",
+      "coordinates": {
+        "lon": 40.13,
+        "lat": 9.0247,
+        "depthKm": 10
+      },
+      "time": 1789562003712,
+      "sourceUpdatedAt": 1789586039507,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thts",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thts.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 15,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
