@@ -1,0 +1,506 @@
+{
+  "generatedAt": 1789881186161,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tinl",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 108 km ESE of Yigo Village, Guam",
+      "locationName": "108 km ESE of Yigo Village, Guam",
+      "coordinates": {
+        "lon": 145.7591,
+        "lat": 13.0568,
+        "depthKm": 10
+      },
+      "time": 1789875804649,
+      "sourceUpdatedAt": 1789879409789,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tinl",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tinl.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000timy",
+      "hazardType": "EQ",
+      "title": "M 5.3 - Reykjanes Ridge",
+      "locationName": "Reykjanes Ridge",
+      "coordinates": {
+        "lon": -33.5459,
+        "lat": 57.1211,
+        "depthKm": 10
+      },
+      "time": 1789865894425,
+      "sourceUpdatedAt": 1789866820040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000timy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000timy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tild",
+      "hazardType": "EQ",
+      "title": "M 5.2 - Reykjanes Ridge",
+      "locationName": "Reykjanes Ridge",
+      "coordinates": {
+        "lon": -33.4247,
+        "lat": 57.1175,
+        "depthKm": 10
+      },
+      "time": 1789849482449,
+      "sourceUpdatedAt": 1789850596040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tild",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tild.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tiju",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 67 km NE of Ruteng, Indonesia",
+      "locationName": "67 km NE of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 120.8819,
+        "lat": -8.1668,
+        "depthKm": 10
+      },
+      "time": 1789826160869,
+      "sourceUpdatedAt": 1789844064040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tiju",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tiju.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tiis",
+      "hazardType": "EQ",
+      "title": "M 5.0 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -28.1116,
+        "lat": -55.6255,
+        "depthKm": 77.621
+      },
+      "time": 1789811999264,
+      "sourceUpdatedAt": 1789812913040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tiis",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tiis.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000timw",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 85 km W of Hihifo, Tonga",
+      "locationName": "85 km W of Hihifo, Tonga",
+      "coordinates": {
+        "lon": -174.5971,
+        "lat": -15.9606,
+        "depthKm": 10
+      },
+      "time": 1789864401417,
+      "sourceUpdatedAt": 1789866327040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000timw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000timw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tii3",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 117 km NW of Barranca, Peru",
+      "locationName": "117 km NW of Barranca, Peru",
+      "coordinates": {
+        "lon": -77.349,
+        "lat": -4.0134,
+        "depthKm": 10
+      },
+      "time": 1789801947058,
+      "sourceUpdatedAt": 1789802952040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tii3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tii3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tijs",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 29 km WSW of Sipí, Colombia",
+      "locationName": "29 km WSW of Sipí, Colombia",
+      "coordinates": {
+        "lon": -76.8729,
+        "lat": 4.5179,
+        "depthKm": 58.204
+      },
+      "time": 1789825475732,
+      "sourceUpdatedAt": 1789841726434,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 355
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tijs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tijs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 10
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tiiz",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 18 km SW of Mongar, Bhutan",
+      "locationName": "18 km SW of Mongar, Bhutan",
+      "coordinates": {
+        "lon": 91.1016,
+        "lat": 27.1636,
+        "depthKm": 10
+      },
+      "time": 1789813877071,
+      "sourceUpdatedAt": 1789843804536,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 359
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tiiz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tiiz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tiim",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 268 km NNW of Kuril’sk, Russia",
+      "locationName": "268 km NNW of Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 146.3637,
+        "lat": 47.4016,
+        "depthKm": 394.117
+      },
+      "time": 1789810444394,
+      "sourceUpdatedAt": 1789811201040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tiim",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tiim.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tiib",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 210 km W of Abepura, Indonesia",
+      "locationName": "210 km W of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 138.7377,
+        "lat": -2.5871,
+        "depthKm": 10
+      },
+      "time": 1789803865478,
+      "sourceUpdatedAt": 1789804979040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tiib",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tiib.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tijd",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 25 km NW of Ushibukamachi, Japan",
+      "locationName": "25 km NW of Ushibukamachi, Japan",
+      "coordinates": {
+        "lon": 129.8568,
+        "lat": 32.3799,
+        "depthKm": 10
+      },
+      "time": 1789819632020,
+      "sourceUpdatedAt": 1789829113470,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tijd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tijd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tii4",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 57 km ESE of Koseda, Japan",
+      "locationName": "57 km ESE of Koseda, Japan",
+      "coordinates": {
+        "lon": 131.1901,
+        "lat": 30.1668,
+        "depthKm": 38.536
+      },
+      "time": 1789801703856,
+      "sourceUpdatedAt": 1789803460040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tii4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tii4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 29
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tinf",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 54 km ENE of Sainte-Marie, Martinique",
+      "locationName": "54 km ENE of Sainte-Marie, Martinique",
+      "coordinates": {
+        "lon": -60.5578,
+        "lat": 15.0395,
+        "depthKm": 46.424
+      },
+      "time": 1789872261022,
+      "sourceUpdatedAt": 1789875605425,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tinf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tinf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tikb",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 75 km SE of Kuqa, China",
+      "locationName": "75 km SE of Kuqa, China",
+      "coordinates": {
+        "lon": 83.518,
+        "lat": 41.1968,
+        "depthKm": 10
+      },
+      "time": 1789833234494,
+      "sourceUpdatedAt": 1789846106040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tikb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tikb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tijf",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 273 km NNW of Dêqên, China",
+      "locationName": "273 km NNW of Dêqên, China",
+      "coordinates": {
+        "lon": 89.2243,
+        "lat": 32.0711,
+        "depthKm": 10
+      },
+      "time": 1789820395048,
+      "sourceUpdatedAt": 1789821550040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tijf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tijf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 16,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
