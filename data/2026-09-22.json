@@ -1,0 +1,528 @@
+{
+  "generatedAt": 1790054146451,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027450",
+      "hazardType": "DR",
+      "title": "Drought in Djibouti, Eritrea, Ethiopia, Kenya, Sudan, Somalia, South Sudan, Uganda",
+      "locationName": "Djibouti, Eritrea, Ethiopia, Kenya, Sudan, Somalia, South Sudan, Uganda",
+      "coordinates": {
+        "lon": 38.087,
+        "lat": 8.868
+      },
+      "time": 1776729600000,
+      "sourceUpdatedAt": 1790002675000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027450&episodeid=9&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027450&episodeid=9",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 1327
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027465",
+      "hazardType": "DR",
+      "title": "Drought in Democratic Republic of Congo, Kenya, Tanzania, Uganda",
+      "locationName": "Democratic Republic of Congo, Kenya, Tanzania, Uganda",
+      "coordinates": {
+        "lon": 33.813,
+        "lat": 0.938
+      },
+      "time": 1779321600000,
+      "sourceUpdatedAt": 1790002670000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027465&episodeid=6&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027465&episodeid=6",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 433
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027449",
+      "hazardType": "DR",
+      "title": "Drought in The Bahamas, Belize, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador",
+      "locationName": "The Bahamas, Belize, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador",
+      "coordinates": {
+        "lon": -93.751,
+        "lat": 16.611
+      },
+      "time": 1776729600000,
+      "sourceUpdatedAt": 1790002659000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027449&episodeid=9&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027449&episodeid=9",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 2093
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1104081",
+      "hazardType": "FL",
+      "title": "Flood in China",
+      "locationName": "China",
+      "coordinates": {
+        "lon": 102.5,
+        "lat": 30.5
+      },
+      "time": 1785459600000,
+      "sourceUpdatedAt": 1789972697000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1104081&episodeid=19&eventtype=FL",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=FL&eventid=1104081&episodeid=19",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1104121",
+      "hazardType": "FL",
+      "title": "Flood in India",
+      "locationName": "India",
+      "coordinates": {
+        "lon": 76.234,
+        "lat": 23.8351
+      },
+      "time": 1786237200000,
+      "sourceUpdatedAt": 1789972716000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1104121&episodeid=15&eventtype=FL",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=FL&eventid=1104121&episodeid=15",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · flood)",
+        "isEstimate": false,
+        "radiusKm": 1138
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tj1s",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 97 km S of Sarangani, Philippines",
+      "locationName": "97 km S of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.3573,
+        "lat": 4.525,
+        "depthKm": 10
+      },
+      "time": 1790034493180,
+      "sourceUpdatedAt": 1790051462040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj1s",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tj1s.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tixc",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 167 km WNW of Mejillones, Chile",
+      "locationName": "167 km WNW of Mejillones, Chile",
+      "coordinates": {
+        "lon": -71.8678,
+        "lat": -22.3643,
+        "depthKm": 10
+      },
+      "time": 1789991308996,
+      "sourceUpdatedAt": 1789993664858,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tixc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tixc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tj0z",
+      "hazardType": "EQ",
+      "title": "M 5.0 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -24.1479,
+        "lat": -56.5064,
+        "depthKm": 10
+      },
+      "time": 1790026624871,
+      "sourceUpdatedAt": 1790043302040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj0z",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tj0z.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tixp",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 38 km E of Nobeoka, Japan",
+      "locationName": "38 km E of Nobeoka, Japan",
+      "coordinates": {
+        "lon": 132.0805,
+        "lat": 32.5978,
+        "depthKm": 42.736
+      },
+      "time": 1789997912404,
+      "sourceUpdatedAt": 1789998975040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tixp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tixp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tiw4",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 34 km WNW of Luwuk, Indonesia",
+      "locationName": "34 km WNW of Luwuk, Indonesia",
+      "coordinates": {
+        "lon": 122.4959,
+        "lat": -0.8563,
+        "depthKm": 9.863
+      },
+      "time": 1789975867967,
+      "sourceUpdatedAt": 1789977112040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tiw4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tiw4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tj21",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 70 km N of Claveria, Philippines",
+      "locationName": "70 km N of Claveria, Philippines",
+      "coordinates": {
+        "lon": 121.0734,
+        "lat": 19.2426,
+        "depthKm": 10
+      },
+      "time": 1790035684893,
+      "sourceUpdatedAt": 1790052716040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj21",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tj21.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tj37",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 54 km NNW of Ende, Indonesia",
+      "locationName": "54 km NNW of Ende, Indonesia",
+      "coordinates": {
+        "lon": 121.4677,
+        "lat": -8.3909,
+        "depthKm": 10
+      },
+      "time": 1790048185949,
+      "sourceUpdatedAt": 1790049883040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj37",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tj37.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tixg",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 76 km W of Ollagüe, Chile",
+      "locationName": "76 km W of Ollagüe, Chile",
+      "coordinates": {
+        "lon": -68.9887,
+        "lat": -21.2643,
+        "depthKm": 121.183
+      },
+      "time": 1789993025292,
+      "sourceUpdatedAt": 1789994060040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tixg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tixg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tiwz",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 95 km ENE of Khorugh, Tajikistan",
+      "locationName": "95 km ENE of Khorugh, Tajikistan",
+      "coordinates": {
+        "lon": 72.4916,
+        "lat": 37.9169,
+        "depthKm": 129.316
+      },
+      "time": 1789987696231,
+      "sourceUpdatedAt": 1789995624040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tiwz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tiwz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tj1b",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 91 km E of Namie, Japan",
+      "locationName": "91 km E of Namie, Japan",
+      "coordinates": {
+        "lon": 142.0382,
+        "lat": 37.5214,
+        "depthKm": 35
+      },
+      "time": 1790029799360,
+      "sourceUpdatedAt": 1790048240040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj1b",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tj1b.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 27
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tizt",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 5 km SW of San Antonio, Colombia",
+      "locationName": "5 km SW of San Antonio, Colombia",
+      "coordinates": {
+        "lon": -75.5116,
+        "lat": 3.8759,
+        "depthKm": 10
+      },
+      "time": 1790016524774,
+      "sourceUpdatedAt": 1790023986911,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tizt",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tizt.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tiya",
+      "hazardType": "EQ",
+      "title": "M 4.5 - Izu Islands, Japan region",
+      "locationName": "Izu Islands, Japan region",
+      "coordinates": {
+        "lon": 142.3611,
+        "lat": 31.7337,
+        "depthKm": 10
+      },
+      "time": 1790006180386,
+      "sourceUpdatedAt": 1790007271040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tiya",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tiya.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 17,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
