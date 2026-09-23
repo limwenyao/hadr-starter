@@ -1,0 +1,399 @@
+{
+  "generatedAt": 1790139620111,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1104121",
+      "hazardType": "FL",
+      "title": "Flood in India",
+      "locationName": "India",
+      "coordinates": {
+        "lon": 76.6455,
+        "lat": 9.6287
+      },
+      "time": 1786237200000,
+      "sourceUpdatedAt": 1790058490000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1104121&episodeid=16&eventtype=FL",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=FL&eventid=1104121&episodeid=16",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · flood)",
+        "isEstimate": false,
+        "radiusKm": 1546
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tj4y",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 88 km NNW of Uken, Japan",
+      "locationName": "88 km NNW of Uken, Japan",
+      "coordinates": {
+        "lon": 128.8944,
+        "lat": 29.0367,
+        "depthKm": 10
+      },
+      "time": 1790073982312,
+      "sourceUpdatedAt": 1790075179040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj4y",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tj4y.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tj3k",
+      "hazardType": "EQ",
+      "title": "M 5.0 - Volcano Islands, Japan region",
+      "locationName": "Volcano Islands, Japan region",
+      "coordinates": {
+        "lon": 142.4369,
+        "lat": 23.1331,
+        "depthKm": 10
+      },
+      "time": 1790054304687,
+      "sourceUpdatedAt": 1790055484040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj3k",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tj3k.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tj3s",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Volcano Islands, Japan region",
+      "locationName": "Volcano Islands, Japan region",
+      "coordinates": {
+        "lon": 142.3395,
+        "lat": 23.003,
+        "depthKm": 10
+      },
+      "time": 1790057470037,
+      "sourceUpdatedAt": 1790058653040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj3s",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tj3s.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000twyf",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 26 km NW of Houma, Tonga",
+      "locationName": "26 km NW of Houma, Tonga",
+      "coordinates": {
+        "lon": -175.461,
+        "lat": -20.9839,
+        "depthKm": 121.928
+      },
+      "time": 1790107910722,
+      "sourceUpdatedAt": 1790109985040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000twyf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000twyf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tj58",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 7 km WNW of La Gomera, Guatemala",
+      "locationName": "7 km WNW of La Gomera, Guatemala",
+      "coordinates": {
+        "lon": -91.1165,
+        "lat": 14.113,
+        "depthKm": 88.793
+      },
+      "time": 1790077425547,
+      "sourceUpdatedAt": 1790132499780,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 342
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj58",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tj58.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000twys",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 46 km E of Union, Philippines",
+      "locationName": "46 km E of Union, Philippines",
+      "coordinates": {
+        "lon": 126.5291,
+        "lat": 9.6886,
+        "depthKm": 10
+      },
+      "time": 1790109283296,
+      "sourceUpdatedAt": 1790138035287,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000twys",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000twys.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tj5n",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 37 km SE of Severo-Kuril’sk, Russia",
+      "locationName": "37 km SE of Severo-Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 156.4937,
+        "lat": 50.4343,
+        "depthKm": 83.948
+      },
+      "time": 1790085375091,
+      "sourceUpdatedAt": 1790095116040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj5n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tj5n.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tj4v",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 296 km S of Ambon, Indonesia",
+      "locationName": "296 km S of Ambon, Indonesia",
+      "coordinates": {
+        "lon": 128.6303,
+        "lat": -6.3408,
+        "depthKm": 295.618
+      },
+      "time": 1790073019045,
+      "sourceUpdatedAt": 1790074112040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj4v",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tj4v.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tj3v",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 19 km ENE of Nailong, Philippines",
+      "locationName": "19 km ENE of Nailong, Philippines",
+      "coordinates": {
+        "lon": 124.2096,
+        "lat": 11.0957,
+        "depthKm": 10
+      },
+      "time": 1790059689705,
+      "sourceUpdatedAt": 1790063406452,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj3v",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tj3v.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx08",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 63 km NE of Ruteng, Indonesia",
+      "locationName": "63 km NE of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 120.808,
+        "lat": -8.1454,
+        "depthKm": 10
+      },
+      "time": 1790128963755,
+      "sourceUpdatedAt": 1790130196040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx08",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx08.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000twzp",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 68 km SSW of Labuan, Indonesia",
+      "locationName": "68 km SSW of Labuan, Indonesia",
+      "coordinates": {
+        "lon": 105.5232,
+        "lat": -6.9217,
+        "depthKm": 35
+      },
+      "time": 1790116058897,
+      "sourceUpdatedAt": 1790132436040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000twzp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000twzp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 27
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000twwy",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 51 km W of Kuqa, China",
+      "locationName": "51 km W of Kuqa, China",
+      "coordinates": {
+        "lon": 82.3165,
+        "lat": 41.7997,
+        "depthKm": 10
+      },
+      "time": 1790093349440,
+      "sourceUpdatedAt": 1790101220040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000twwy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000twwy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 12,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
