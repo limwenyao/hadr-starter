@@ -1,0 +1,397 @@
+{
+  "generatedAt": 1790226691421,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx3m",
+      "hazardType": "EQ",
+      "title": "M 5.7 - 180 km NW of Hihifo, Tonga",
+      "locationName": "180 km NW of Hihifo, Tonga",
+      "coordinates": {
+        "lon": -175.1114,
+        "lat": -14.9369,
+        "depthKm": 10
+      },
+      "time": 1790174462650,
+      "sourceUpdatedAt": 1790182251242,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.7,
+        "sig": 500,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx3m",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx3m.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001326",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone ONE-26",
+      "locationName": "India",
+      "coordinates": {
+        "lon": 83.7,
+        "lat": 18.1
+      },
+      "time": 1790100000000,
+      "sourceUpdatedAt": 1790215623000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001326&episodeid=6&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001326&episodeid=6",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 315
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx29",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 51 km WSW of Arauco, Argentina",
+      "locationName": "51 km WSW of Arauco, Argentina",
+      "coordinates": {
+        "lon": -67.2912,
+        "lat": -28.7298,
+        "depthKm": 121.534
+      },
+      "time": 1790155274600,
+      "sourceUpdatedAt": 1790178858908,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 434
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx29",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx29.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx58",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 140 km NNE of Ba, Fiji",
+      "locationName": "140 km NNE of Ba, Fiji",
+      "coordinates": {
+        "lon": 178.0194,
+        "lat": -16.3072,
+        "depthKm": 10
+      },
+      "time": 1790185566489,
+      "sourceUpdatedAt": 1790188725040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx58",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx58.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx38",
+      "hazardType": "EQ",
+      "title": "M 5.0 - Mariana Islands region",
+      "locationName": "Mariana Islands region",
+      "coordinates": {
+        "lon": 143.0239,
+        "lat": 21.6622,
+        "depthKm": 306.016
+      },
+      "time": 1790168511614,
+      "sourceUpdatedAt": 1790212317490,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx38",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx38.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx53",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 193 km SE of Mata-Utu, Wallis and Futuna",
+      "locationName": "193 km SE of Mata-Utu, Wallis and Futuna",
+      "coordinates": {
+        "lon": -175.0529,
+        "lat": -14.6397,
+        "depthKm": 10
+      },
+      "time": 1790184032721,
+      "sourceUpdatedAt": 1790185254040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx53",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx53.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx23",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Scotia Sea",
+      "locationName": "Scotia Sea",
+      "coordinates": {
+        "lon": -47.6004,
+        "lat": -60.2661,
+        "depthKm": 10
+      },
+      "time": 1790152918018,
+      "sourceUpdatedAt": 1790156000806,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx23",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx23.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx16",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 30 km SE of Khorugh, Tajikistan",
+      "locationName": "30 km SE of Khorugh, Tajikistan",
+      "coordinates": {
+        "lon": 71.768,
+        "lat": 37.2772,
+        "depthKm": 141.19
+      },
+      "time": 1790142371056,
+      "sourceUpdatedAt": 1790143382040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx16",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx16.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx7g",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 223 km WNW of Abepura, Indonesia",
+      "locationName": "223 km WNW of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 138.7809,
+        "lat": -1.8133,
+        "depthKm": 35
+      },
+      "time": 1790209598374,
+      "sourceUpdatedAt": 1790221333040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx7g",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx7g.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 34
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx4w",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 59 km WNW of San Antonio de los Cobres, Argentina",
+      "locationName": "59 km WNW of San Antonio de los Cobres, Argentina",
+      "coordinates": {
+        "lon": -66.8891,
+        "lat": -24.0812,
+        "depthKm": 193.188
+      },
+      "time": 1790182117858,
+      "sourceUpdatedAt": 1790189583040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx4w",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx4w.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx3n",
+      "hazardType": "EQ",
+      "title": "M 4.6 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": 179.2578,
+        "lat": -23.9741,
+        "depthKm": 528.269
+      },
+      "time": 1790174735743,
+      "sourceUpdatedAt": 1790176040040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx3n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx3n.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx31",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 106 km WNW of Ternate, Indonesia",
+      "locationName": "106 km WNW of Ternate, Indonesia",
+      "coordinates": {
+        "lon": 126.5263,
+        "lat": 1.217,
+        "depthKm": 48.462
+      },
+      "time": 1790166200274,
+      "sourceUpdatedAt": 1790169301040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx31",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx31.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 2
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx8q",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 31 km NNW of Komodo, Indonesia",
+      "locationName": "31 km NNW of Komodo, Indonesia",
+      "coordinates": {
+        "lon": 119.3665,
+        "lat": -8.33,
+        "depthKm": 10
+      },
+      "time": 1790220626013,
+      "sourceUpdatedAt": 1790221910040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx8q",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx8q.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 13,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
