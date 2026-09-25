@@ -1,0 +1,429 @@
+{
+  "generatedAt": 1790313226585,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001325",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone POLO-26",
+      "locationName": "Mexico",
+      "coordinates": {
+        "lon": -106.5,
+        "lat": 17.1
+      },
+      "time": 1789959600000,
+      "sourceUpdatedAt": 1790305944000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001325&episodeid=18&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001325&episodeid=18",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 1236
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001326",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone ONE-26",
+      "locationName": "India",
+      "coordinates": {
+        "lon": 83.7,
+        "lat": 18.1
+      },
+      "time": 1790100000000,
+      "sourceUpdatedAt": 1790313019000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001326&episodeid=6&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001326&episodeid=6",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 315
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txhp",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 72 km NW of Finschhafen, Papua New Guinea",
+      "locationName": "72 km NW of Finschhafen, Papua New Guinea",
+      "coordinates": {
+        "lon": 147.3935,
+        "lat": -6.0863,
+        "depthKm": 53.586
+      },
+      "time": 1790292628053,
+      "sourceUpdatedAt": 1790293735040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txhp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txhp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 81
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tx9u",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 15 km SSW of Hilvan, Turkey",
+      "locationName": "15 km SSW of Hilvan, Turkey",
+      "coordinates": {
+        "lon": 38.8612,
+        "lat": 37.4736,
+        "depthKm": 10
+      },
+      "time": 1790235658138,
+      "sourceUpdatedAt": 1790311082727,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 437
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx9u",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tx9u.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txbm",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 139 km SW of Kokopo, Papua New Guinea",
+      "locationName": "139 km SW of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 151.4915,
+        "lat": -5.3396,
+        "depthKm": 95.598
+      },
+      "time": 1790252998824,
+      "sourceUpdatedAt": 1790253894040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txbm",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txbm.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txf9",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 32 km S of Kokopo, Papua New Guinea",
+      "locationName": "32 km S of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.2767,
+        "lat": -4.6356,
+        "depthKm": 93.994
+      },
+      "time": 1790272847703,
+      "sourceUpdatedAt": 1790273876040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txf9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txf9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txim",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 124 km N of Metinaro, Timor Leste",
+      "locationName": "124 km N of Metinaro, Timor Leste",
+      "coordinates": {
+        "lon": 125.6985,
+        "lat": -7.4036,
+        "depthKm": 10
+      },
+      "time": 1790310460435,
+      "sourceUpdatedAt": 1790311281040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txim",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txim.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txha",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Kermadec Islands, New Zealand",
+      "locationName": "Kermadec Islands, New Zealand",
+      "coordinates": {
+        "lon": -177.6601,
+        "lat": -29.4432,
+        "depthKm": 48.811
+      },
+      "time": 1790288579185,
+      "sourceUpdatedAt": 1790295112040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txha",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txha.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txb3",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Kermadec Islands, New Zealand",
+      "locationName": "Kermadec Islands, New Zealand",
+      "coordinates": {
+        "lon": -177.8691,
+        "lat": -30.2344,
+        "depthKm": 35
+      },
+      "time": 1790248104838,
+      "sourceUpdatedAt": 1790250141040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txb3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txb3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 55
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txg5",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 155 km NW of Ternate, Indonesia",
+      "locationName": "155 km NW of Ternate, Indonesia",
+      "coordinates": {
+        "lon": 126.5357,
+        "lat": 1.9132,
+        "depthKm": 48.469
+      },
+      "time": 1790280325988,
+      "sourceUpdatedAt": 1790286075040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txg5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txg5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 2
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txdb",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 21 km NNW of Rioblanco, Colombia",
+      "locationName": "21 km NNW of Rioblanco, Colombia",
+      "coordinates": {
+        "lon": -75.7529,
+        "lat": 3.6948,
+        "depthKm": 10
+      },
+      "time": 1790268391662,
+      "sourceUpdatedAt": 1790277573040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txdb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txdb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txcw",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 119 km SW of Abepura, Indonesia",
+      "locationName": "119 km SW of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 139.7677,
+        "lat": -3.243,
+        "depthKm": 68.453
+      },
+      "time": 1790267280188,
+      "sourceUpdatedAt": 1790273190040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txcw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txcw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txhs",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 39 km WSW of Sipí, Colombia",
+      "locationName": "39 km WSW of Sipí, Colombia",
+      "coordinates": {
+        "lon": -76.9788,
+        "lat": 4.5217,
+        "depthKm": 52.219
+      },
+      "time": 1790297827267,
+      "sourceUpdatedAt": 1790307312040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txhs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txhs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txc1",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 106 km SW of Puerto Madero, Mexico",
+      "locationName": "106 km SW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -93.213,
+        "lat": 14.1475,
+        "depthKm": 10
+      },
+      "time": 1790258562293,
+      "sourceUpdatedAt": 1790271944040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txc1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txc1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 13,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
