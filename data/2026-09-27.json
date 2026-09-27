@@ -1,0 +1,962 @@
+{
+  "generatedAt": 1790487336275,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txtc",
+      "hazardType": "EQ",
+      "title": "M 5.6 - 74 km ESE of Kokopo, Papua New Guinea",
+      "locationName": "74 km ESE of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.8383,
+        "lat": -4.6952,
+        "depthKm": 57.78
+      },
+      "time": 1790431697704,
+      "sourceUpdatedAt": 1790448001040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 483,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txtc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txtc.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001325",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone POLO-26",
+      "locationName": "Mexico",
+      "coordinates": {
+        "lon": -113.1,
+        "lat": 19.3
+      },
+      "time": 1789959600000,
+      "sourceUpdatedAt": 1790486669000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001325&episodeid=26&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001325&episodeid=26",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 1313
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txtz",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 148 km NW of Kilmia, Yemen",
+      "locationName": "148 km NW of Kilmia, Yemen",
+      "coordinates": {
+        "lon": 51.4282,
+        "lat": 13.2741,
+        "depthKm": 10
+      },
+      "time": 1790440423270,
+      "sourceUpdatedAt": 1790441540040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txtz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txtz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txt0",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 58 km NE of Tadine, New Caledonia",
+      "locationName": "58 km NE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.3226,
+        "lat": -21.2176,
+        "depthKm": 10
+      },
+      "time": 1790424898406,
+      "sourceUpdatedAt": 1790426537040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txt0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txt0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txw5",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 90 km ENE of Tadine, New Caledonia",
+      "locationName": "90 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.7073,
+        "lat": -21.2857,
+        "depthKm": 10
+      },
+      "time": 1790475730562,
+      "sourceUpdatedAt": 1790476734040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txw5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txw5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txtn",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 74 km ENE of Tadine, New Caledonia",
+      "locationName": "74 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.5751,
+        "lat": -21.3884,
+        "depthKm": 10
+      },
+      "time": 1790434896433,
+      "sourceUpdatedAt": 1790436048040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txtn",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txtn.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txrn",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 68 km NE of Tadine, New Caledonia",
+      "locationName": "68 km NE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.4225,
+        "lat": -21.1943,
+        "depthKm": 10
+      },
+      "time": 1790406482558,
+      "sourceUpdatedAt": 1790408892040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txrn",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txrn.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txrf",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 64 km ENE of Tadine, New Caledonia",
+      "locationName": "64 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.4033,
+        "lat": -21.227,
+        "depthKm": 10
+      },
+      "time": 1790401848716,
+      "sourceUpdatedAt": 1790402920040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txrf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txrf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txvu",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 61 km ENE of Tadine, New Caledonia",
+      "locationName": "61 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.4566,
+        "lat": -21.4298,
+        "depthKm": 10
+      },
+      "time": 1790471905822,
+      "sourceUpdatedAt": 1790472668040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txvu",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txvu.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txur",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 52 km NNW of Ruteng, Indonesia",
+      "locationName": "52 km NNW of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 120.3294,
+        "lat": -8.1581,
+        "depthKm": 10
+      },
+      "time": 1790451421212,
+      "sourceUpdatedAt": 1790452486040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txur",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txur.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txsz",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 76 km NE of Tadine, New Caledonia",
+      "locationName": "76 km NE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.4681,
+        "lat": -21.1281,
+        "depthKm": 10
+      },
+      "time": 1790424860648,
+      "sourceUpdatedAt": 1790426796040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txsz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txsz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txrs",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 78 km ENE of Tadine, New Caledonia",
+      "locationName": "78 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.5478,
+        "lat": -21.2116,
+        "depthKm": 10
+      },
+      "time": 1790411098743,
+      "sourceUpdatedAt": 1790412120040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txrs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txrs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txrq",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 84 km ENE of Tadine, New Caledonia",
+      "locationName": "84 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.614,
+        "lat": -21.2249,
+        "depthKm": 10
+      },
+      "time": 1790407332908,
+      "sourceUpdatedAt": 1790408382040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txrq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txrq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txwy",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 159 km ESE of Gizo, Solomon Islands",
+      "locationName": "159 km ESE of Gizo, Solomon Islands",
+      "coordinates": {
+        "lon": 158.0533,
+        "lat": -8.8929,
+        "depthKm": 10
+      },
+      "time": 1790485188847,
+      "sourceUpdatedAt": 1790486255040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txwy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txwy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txv7",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 78 km ESE of Kokopo, Papua New Guinea",
+      "locationName": "78 km ESE of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.9096,
+        "lat": -4.6357,
+        "depthKm": 63.571
+      },
+      "time": 1790459367543,
+      "sourceUpdatedAt": 1790460396040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txv7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txv7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 15
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txse",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 73 km ENE of Tadine, New Caledonia",
+      "locationName": "73 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.4957,
+        "lat": -21.2105,
+        "depthKm": 10
+      },
+      "time": 1790418065896,
+      "sourceUpdatedAt": 1790419048040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txse",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txse.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txuf",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 74 km ENE of Tadine, New Caledonia",
+      "locationName": "74 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.5681,
+        "lat": -21.3627,
+        "depthKm": 10
+      },
+      "time": 1790447123929,
+      "sourceUpdatedAt": 1790448468040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txuf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txuf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txty",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 72 km E of Tadine, New Caledonia",
+      "locationName": "72 km E of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.5787,
+        "lat": -21.4649,
+        "depthKm": 10
+      },
+      "time": 1790438808430,
+      "sourceUpdatedAt": 1790444633040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txty",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txty.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txt9",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 86 km NE of Tadine, New Caledonia",
+      "locationName": "86 km NE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.5329,
+        "lat": -21.0626,
+        "depthKm": 14.383
+      },
+      "time": 1790430530275,
+      "sourceUpdatedAt": 1790432349040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txt9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txt9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 57
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txs3",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 78 km ENE of Tadine, New Caledonia",
+      "locationName": "78 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.5301,
+        "lat": -21.182,
+        "depthKm": 10
+      },
+      "time": 1790413831027,
+      "sourceUpdatedAt": 1790415080040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txs3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txs3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txs2",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 97 km NE of Tadine, New Caledonia",
+      "locationName": "97 km NE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.6238,
+        "lat": -21.0058,
+        "depthKm": 10
+      },
+      "time": 1790413685869,
+      "sourceUpdatedAt": 1790414844040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txs2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txs2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txuj",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 5 km N of Bowangshan, China",
+      "locationName": "5 km N of Bowangshan, China",
+      "coordinates": {
+        "lon": 105.0553,
+        "lat": 28.3596,
+        "depthKm": 10
+      },
+      "time": 1790447502679,
+      "sourceUpdatedAt": 1790449066040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txuj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txuj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txsy",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 73 km ENE of Tadine, New Caledonia",
+      "locationName": "73 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.5179,
+        "lat": -21.2646,
+        "depthKm": 10
+      },
+      "time": 1790424661897,
+      "sourceUpdatedAt": 1790427479040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txsy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txsy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txsh",
+      "hazardType": "EQ",
+      "title": "M 4.7 - North Indian Ocean",
+      "locationName": "North Indian Ocean",
+      "coordinates": {
+        "lon": 89.4977,
+        "lat": 1.831,
+        "depthKm": 10
+      },
+      "time": 1790419995123,
+      "sourceUpdatedAt": 1790420897040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txsh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txsh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txs6",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 71 km ENE of Tadine, New Caledonia",
+      "locationName": "71 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.4865,
+        "lat": -21.2366,
+        "depthKm": 10
+      },
+      "time": 1790413639622,
+      "sourceUpdatedAt": 1790415894040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txs6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txs6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txrz",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 97 km NE of Tadine, New Caledonia",
+      "locationName": "97 km NE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.6325,
+        "lat": -21.0172,
+        "depthKm": 10
+      },
+      "time": 1790412843961,
+      "sourceUpdatedAt": 1790413965040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txrz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txrz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txuc",
+      "hazardType": "EQ",
+      "title": "M 4.6 - south of Africa",
+      "locationName": "south of Africa",
+      "coordinates": {
+        "lon": 31.1369,
+        "lat": -48.5563,
+        "depthKm": 10
+      },
+      "time": 1790445020706,
+      "sourceUpdatedAt": 1790446065040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txuc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txuc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txt8",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 145 km NE of Maumere, Indonesia",
+      "locationName": "145 km NE of Maumere, Indonesia",
+      "coordinates": {
+        "lon": 123.2938,
+        "lat": -7.8646,
+        "depthKm": 235.082
+      },
+      "time": 1790429895958,
+      "sourceUpdatedAt": 1790435294040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txt8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txt8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txrj",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 25 km W of Roncesvalles, Colombia",
+      "locationName": "25 km W of Roncesvalles, Colombia",
+      "coordinates": {
+        "lon": -75.8315,
+        "lat": 4.018,
+        "depthKm": 10
+      },
+      "time": 1790404699029,
+      "sourceUpdatedAt": 1790405885040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txrj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txrj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000txwk",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 145 km WNW of Lebu, Chile",
+      "locationName": "145 km WNW of Lebu, Chile",
+      "coordinates": {
+        "lon": -75.1898,
+        "lat": -37.1357,
+        "depthKm": 10
+      },
+      "time": 1790482484454,
+      "sourceUpdatedAt": 1790483737040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txwk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000txwk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 29,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
