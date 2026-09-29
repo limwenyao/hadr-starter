@@ -1,0 +1,448 @@
+{
+  "generatedAt": 1790661643332,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ty57",
+      "hazardType": "EQ",
+      "title": "M 5.4 - north of Svalbard",
+      "locationName": "north of Svalbard",
+      "coordinates": {
+        "lon": -7.1923,
+        "lat": 82.6385,
+        "depthKm": 10
+      },
+      "time": 1790601759769,
+      "sourceUpdatedAt": 1790609342635,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty57",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ty57.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tya5",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 76 km NE of Tadine, New Caledonia",
+      "locationName": "76 km NE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.4092,
+        "lat": -21.0716,
+        "depthKm": 10
+      },
+      "time": 1790652234418,
+      "sourceUpdatedAt": 1790655241080,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tya5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tya5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ty43",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 190 km WSW of Port McNeill, Canada",
+      "locationName": "190 km WSW of Port McNeill, Canada",
+      "coordinates": {
+        "lon": -129.6785,
+        "lat": 50.171,
+        "depthKm": 10
+      },
+      "time": 1790586819402,
+      "sourceUpdatedAt": 1790587837040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty43",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ty43.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ty7u",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 2 km SW of Sakai, Japan",
+      "locationName": "2 km SW of Sakai, Japan",
+      "coordinates": {
+        "lon": 139.7782,
+        "lat": 36.0809,
+        "depthKm": 70.972
+      },
+      "time": 1790624707515,
+      "sourceUpdatedAt": 1790653439567,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 396
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty7u",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ty7u.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ty5m",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 124 km SE of Pondaguitan, Philippines",
+      "locationName": "124 km SE of Pondaguitan, Philippines",
+      "coordinates": {
+        "lon": 127.0338,
+        "lat": 5.634,
+        "depthKm": 78.202
+      },
+      "time": 1790607699183,
+      "sourceUpdatedAt": 1790609295040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty5m",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ty5m.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ty5b",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 22 km WNW of Malango, Solomon Islands",
+      "locationName": "22 km WNW of Malango, Solomon Islands",
+      "coordinates": {
+        "lon": 159.5458,
+        "lat": -9.5835,
+        "depthKm": 10
+      },
+      "time": 1790602720724,
+      "sourceUpdatedAt": 1790607384040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty5b",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ty5b.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyab",
+      "hazardType": "EQ",
+      "title": "M 4.8 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -28.2098,
+        "lat": -55.3157,
+        "depthKm": 35.08
+      },
+      "time": 1790655387199,
+      "sourceUpdatedAt": 1790656431040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyab",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyab.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 48
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ty71",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 155 km NNW of Kilmia, Yemen",
+      "locationName": "155 km NNW of Kilmia, Yemen",
+      "coordinates": {
+        "lon": 51.4935,
+        "lat": 13.3879,
+        "depthKm": 10
+      },
+      "time": 1790617075108,
+      "sourceUpdatedAt": 1790617908040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty71",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ty71.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ty5h",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 115 km WSW of Banda Aceh, Indonesia",
+      "locationName": "115 km WSW of Banda Aceh, Indonesia",
+      "coordinates": {
+        "lon": 94.3303,
+        "lat": 5.2548,
+        "depthKm": 45.734
+      },
+      "time": 1790606590687,
+      "sourceUpdatedAt": 1790614071040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty5h",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ty5h.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 28
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ty4w",
+      "hazardType": "EQ",
+      "title": "M 4.7 - Fiji region",
+      "locationName": "Fiji region",
+      "coordinates": {
+        "lon": -178.4971,
+        "lat": -20.6932,
+        "depthKm": 573.114
+      },
+      "time": 1790597664032,
+      "sourceUpdatedAt": 1790598745040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty4w",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ty4w.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ty3w",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 65 km E of Pilar, Philippines",
+      "locationName": "65 km E of Pilar, Philippines",
+      "coordinates": {
+        "lon": 126.6861,
+        "lat": 9.9585,
+        "depthKm": 10
+      },
+      "time": 1790583373363,
+      "sourceUpdatedAt": 1790591914253,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty3w",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ty3w.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ty3c",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 149 km NE of Hicks Bay, New Zealand",
+      "locationName": "149 km NE of Hicks Bay, New Zealand",
+      "coordinates": {
+        "lon": 179.6666,
+        "lat": -36.8177,
+        "depthKm": 10
+      },
+      "time": 1790577476356,
+      "sourceUpdatedAt": 1790584668040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty3c",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ty3c.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ty73",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 36 km SE of Hualien City, Taiwan",
+      "locationName": "36 km SE of Hualien City, Taiwan",
+      "coordinates": {
+        "lon": 121.8063,
+        "lat": 23.702,
+        "depthKm": 19.011
+      },
+      "time": 1790619644330,
+      "sourceUpdatedAt": 1790635554390,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty73",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ty73.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 45
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ty9i",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 173 km SE of Atlasovo, Russia",
+      "locationName": "173 km SE of Atlasovo, Russia",
+      "coordinates": {
+        "lon": 161.5616,
+        "lat": 54.5068,
+        "depthKm": 35
+      },
+      "time": 1790640323887,
+      "sourceUpdatedAt": 1790643720040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty9i",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ty9i.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 27
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [
+    {
+      "feed": "GDACS",
+      "reason": "TimeoutError: The operation was aborted due to timeout"
+    }
+  ],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 14,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
