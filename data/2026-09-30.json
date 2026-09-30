@@ -1,0 +1,663 @@
+{
+  "generatedAt": 1790747387200,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001325",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone POLO-26",
+      "locationName": "Mexico",
+      "coordinates": {
+        "lon": -108,
+        "lat": 30.5
+      },
+      "time": 1789959600000,
+      "sourceUpdatedAt": 1790747121000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001325&episodeid=38&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001325&episodeid=38",
+      "tier": "CRITICAL",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 1283
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyhk",
+      "hazardType": "EQ",
+      "title": "M 5.6 - 74 km S of Yonakuni, Japan",
+      "locationName": "74 km S of Yonakuni, Japan",
+      "coordinates": {
+        "lon": 122.9149,
+        "lat": 23.8027,
+        "depthKm": 10.792
+      },
+      "time": 1790744424971,
+      "sourceUpdatedAt": 1790746776119,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 485,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyhk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyhk.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyc3",
+      "hazardType": "EQ",
+      "title": "M 5.6 - southern Mid-Atlantic Ridge",
+      "locationName": "southern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -16.1859,
+        "lat": -35.204,
+        "depthKm": 10
+      },
+      "time": 1790687170191,
+      "sourceUpdatedAt": 1790694771453,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 482,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyc3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyc3.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyhi",
+      "hazardType": "EQ",
+      "title": "M 5.4 - Balleny Islands region",
+      "locationName": "Balleny Islands region",
+      "coordinates": {
+        "lon": 169.2156,
+        "lat": -63.0088,
+        "depthKm": 10
+      },
+      "time": 1790743686031,
+      "sourceUpdatedAt": 1790745619774,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyhi",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyhi.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyc1",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 99 km SSE of Pangai, Tonga",
+      "locationName": "99 km SSE of Pangai, Tonga",
+      "coordinates": {
+        "lon": -174.0813,
+        "lat": -20.6773,
+        "depthKm": 10
+      },
+      "time": 1790685635064,
+      "sourceUpdatedAt": 1790700536466,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyc1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyc1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyc9",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 58 km NW of Pante Makasar, Timor Leste",
+      "locationName": "58 km NW of Pante Makasar, Timor Leste",
+      "coordinates": {
+        "lon": 124.0495,
+        "lat": -8.7834,
+        "depthKm": 157.801
+      },
+      "time": 1790691246077,
+      "sourceUpdatedAt": 1790694934040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyc9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyc9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tybr",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 77 km ENE of Tadine, New Caledonia",
+      "locationName": "77 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.5924,
+        "lat": -21.3447,
+        "depthKm": 10
+      },
+      "time": 1790678577409,
+      "sourceUpdatedAt": 1790679559040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tybr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tybr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyck",
+      "hazardType": "EQ",
+      "title": "M 4.9 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -26.0066,
+        "lat": -58.7388,
+        "depthKm": 114.785
+      },
+      "time": 1790695038348,
+      "sourceUpdatedAt": 1790703637040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyck",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyck.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tygs",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 18 km SW of Tayaman, Philippines",
+      "locationName": "18 km SW of Tayaman, Philippines",
+      "coordinates": {
+        "lon": 120.4734,
+        "lat": 13.0922,
+        "depthKm": 10
+      },
+      "time": 1790732045751,
+      "sourceUpdatedAt": 1790743407238,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 355
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tygs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tygs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tygq",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 75 km NE of Tadine, New Caledonia",
+      "locationName": "75 km NE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.3284,
+        "lat": -21.0085,
+        "depthKm": 10
+      },
+      "time": 1790731067844,
+      "sourceUpdatedAt": 1790732108040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tygq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tygq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tycv",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 44 km NNE of Fangale’ounga, Tonga",
+      "locationName": "44 km NNE of Fangale’ounga, Tonga",
+      "coordinates": {
+        "lon": -174.1824,
+        "lat": -19.3714,
+        "depthKm": 10
+      },
+      "time": 1790698376037,
+      "sourceUpdatedAt": 1790702124040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tycv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tycv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tybs",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 98 km SW of Port-Vila, Vanuatu",
+      "locationName": "98 km SW of Port-Vila, Vanuatu",
+      "coordinates": {
+        "lon": 167.5446,
+        "lat": -18.2306,
+        "depthKm": 10
+      },
+      "time": 1790681268406,
+      "sourceUpdatedAt": 1790682345040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tybs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tybs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyat",
+      "hazardType": "EQ",
+      "title": "M 4.8 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -28.4628,
+        "lat": -55.2555,
+        "depthKm": 35
+      },
+      "time": 1790663929006,
+      "sourceUpdatedAt": 1790665102040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyat",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyat.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 48
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "nc75444322",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 97 km W of Petrolia, CA",
+      "locationName": "97 km W of Petrolia, CA",
+      "coordinates": {
+        "lon": -125.418333333333,
+        "lat": 40.4225,
+        "depthKm": 10
+      },
+      "time": 1790681799240,
+      "sourceUpdatedAt": 1790747204944,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.77,
+        "sig": 355,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75444322",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc75444322.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyf0",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 49 km N of Dicabisagan, Philippines",
+      "locationName": "49 km N of Dicabisagan, Philippines",
+      "coordinates": {
+        "lon": 122.4136,
+        "lat": 17.5267,
+        "depthKm": 10
+      },
+      "time": 1790714750983,
+      "sourceUpdatedAt": 1790716331040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyf0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyf0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tycz",
+      "hazardType": "EQ",
+      "title": "M 4.6 - West Chile Rise",
+      "locationName": "West Chile Rise",
+      "coordinates": {
+        "lon": -91.4145,
+        "lat": -40.9373,
+        "depthKm": 10
+      },
+      "time": 1790695878586,
+      "sourceUpdatedAt": 1790704528040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tycz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tycz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyh0",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 112 km SSW of Banda Aceh, Indonesia",
+      "locationName": "112 km SSW of Banda Aceh, Indonesia",
+      "coordinates": {
+        "lon": 94.8515,
+        "lat": 4.6488,
+        "depthKm": 33.873
+      },
+      "time": 1790735750369,
+      "sourceUpdatedAt": 1790737310040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyh0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyh0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 28
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tygz",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 104 km SSE of Sarangani, Philippines",
+      "locationName": "104 km SSE of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.7472,
+        "lat": 4.5021,
+        "depthKm": 156.847
+      },
+      "time": 1790735444716,
+      "sourceUpdatedAt": 1790736759040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tygz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tygz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyfk",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 15 km SW of San Antonio, Colombia",
+      "locationName": "15 km SW of San Antonio, Colombia",
+      "coordinates": {
+        "lon": -75.5906,
+        "lat": 3.8311,
+        "depthKm": 10
+      },
+      "time": 1790718629969,
+      "sourceUpdatedAt": 1790720530040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyfk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyfk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tybk",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 96 km ENE of Alianza Cristiana, Peru",
+      "locationName": "96 km ENE of Alianza Cristiana, Peru",
+      "coordinates": {
+        "lon": -75.6413,
+        "lat": -3.1213,
+        "depthKm": 134.763
+      },
+      "time": 1790677334613,
+      "sourceUpdatedAt": 1790678869040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tybk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tybk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyb6",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 95 km SSW of Ocós, Guatemala",
+      "locationName": "95 km SSW of Ocós, Guatemala",
+      "coordinates": {
+        "lon": -92.6345,
+        "lat": 13.7623,
+        "depthKm": 41.479
+      },
+      "time": 1790670116906,
+      "sourceUpdatedAt": 1790683567040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyb6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyb6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 14
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 21,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
