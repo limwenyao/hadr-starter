@@ -1,0 +1,444 @@
+{
+  "generatedAt": 1790835777670,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001325",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone POLO-26",
+      "locationName": "Mexico",
+      "coordinates": {
+        "lon": -108,
+        "lat": 30.5
+      },
+      "time": 1789959600000,
+      "sourceUpdatedAt": 1790830843000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001325&episodeid=38&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001325&episodeid=38",
+      "tier": "CRITICAL",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 1283
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tymj",
+      "hazardType": "EQ",
+      "title": "M 5.6 - 94 km SW of Tamarindo, Costa Rica",
+      "locationName": "94 km SW of Tamarindo, Costa Rica",
+      "coordinates": {
+        "lon": -86.5063,
+        "lat": 9.7526,
+        "depthKm": 8
+      },
+      "time": 1790805326169,
+      "sourceUpdatedAt": 1790812871426,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 483,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tymj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tymj.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyny",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 7 km ESE of Baghlān, Afghanistan",
+      "locationName": "7 km ESE of Baghlān, Afghanistan",
+      "coordinates": {
+        "lon": 68.7818,
+        "lat": 36.0991,
+        "depthKm": 49.602
+      },
+      "time": 1790818160694,
+      "sourceUpdatedAt": 1790819570450,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyny",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyny.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 72
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyik",
+      "hazardType": "EQ",
+      "title": "M 5.2 - Balleny Islands region",
+      "locationName": "Balleny Islands region",
+      "coordinates": {
+        "lon": 171.414,
+        "lat": -63.5619,
+        "depthKm": 10
+      },
+      "time": 1790752036005,
+      "sourceUpdatedAt": 1790754131040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyik",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyik.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyit",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 121 km S of Kokopo, Papua New Guinea",
+      "locationName": "121 km S of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.1328,
+        "lat": -5.435,
+        "depthKm": 28.026
+      },
+      "time": 1790756117486,
+      "sourceUpdatedAt": 1790757071040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyit",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyit.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 74
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyq7",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 38 km WSW of Palimbang, Philippines",
+      "locationName": "38 km WSW of Palimbang, Philippines",
+      "coordinates": {
+        "lon": 123.8599,
+        "lat": 6.1116,
+        "depthKm": 10
+      },
+      "time": 1790832850634,
+      "sourceUpdatedAt": 1790833746040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyq7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyq7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyku",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 142 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "locationName": "142 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "coordinates": {
+        "lon": 160.3332,
+        "lat": 52.3167,
+        "depthKm": 35
+      },
+      "time": 1790792479257,
+      "sourceUpdatedAt": 1790793462040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyku",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyku.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 63
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyjb",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 27 km N of Kupang, Indonesia",
+      "locationName": "27 km N of Kupang, Indonesia",
+      "coordinates": {
+        "lon": 123.6462,
+        "lat": -9.9243,
+        "depthKm": 19.368
+      },
+      "time": 1790765930586,
+      "sourceUpdatedAt": 1790767784285,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyjb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyjb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 69
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyid",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 83 km NE of Tadine, New Caledonia",
+      "locationName": "83 km NE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.4237,
+        "lat": -20.988,
+        "depthKm": 10
+      },
+      "time": 1790751003339,
+      "sourceUpdatedAt": 1790752024040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyid",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyid.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tynp",
+      "hazardType": "EQ",
+      "title": "M 4.9 - northern Mid-Atlantic Ridge",
+      "locationName": "northern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -43.0353,
+        "lat": 19.2756,
+        "depthKm": 10
+      },
+      "time": 1790814502644,
+      "sourceUpdatedAt": 1790815524040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tynp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tynp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tykw",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 136 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "locationName": "136 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "coordinates": {
+        "lon": 160.2895,
+        "lat": 52.3676,
+        "depthKm": 31.929
+      },
+      "time": 1790793382667,
+      "sourceUpdatedAt": 1790794791040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tykw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tykw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 57
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000typ0",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 45 km ENE of Luwuk, Indonesia",
+      "locationName": "45 km ENE of Luwuk, Indonesia",
+      "coordinates": {
+        "lon": 123.1839,
+        "lat": -0.863,
+        "depthKm": 116.392
+      },
+      "time": 1790818283443,
+      "sourceUpdatedAt": 1790819410040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000typ0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000typ0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tym9",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 131 km SE of Itoman, Japan",
+      "locationName": "131 km SE of Itoman, Japan",
+      "coordinates": {
+        "lon": 128.5077,
+        "lat": 25.2167,
+        "depthKm": 10
+      },
+      "time": 1790802717694,
+      "sourceUpdatedAt": 1790805205040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tym9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tym9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000typ5",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 272 km WSW of Tual, Indonesia",
+      "locationName": "272 km WSW of Tual, Indonesia",
+      "coordinates": {
+        "lon": 130.346,
+        "lat": -6.154,
+        "depthKm": 94.793
+      },
+      "time": 1790820559068,
+      "sourceUpdatedAt": 1790826978040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000typ5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000typ5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 13,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
