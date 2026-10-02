@@ -1,0 +1,480 @@
+{
+  "generatedAt": 1790920823948,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tytg",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 0 km NNE of Yōkaichiba, Japan",
+      "locationName": "0 km NNE of Yōkaichiba, Japan",
+      "coordinates": {
+        "lon": 140.5507,
+        "lat": 35.7025,
+        "depthKm": 41.649
+      },
+      "time": 1790857631864,
+      "sourceUpdatedAt": 1790902738566,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 441
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tytg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tytg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyzl",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 159 km SE of Gizo, Solomon Islands",
+      "locationName": "159 km SE of Gizo, Solomon Islands",
+      "coordinates": {
+        "lon": 158.0215,
+        "lat": -8.9326,
+        "depthKm": 10
+      },
+      "time": 1790916293423,
+      "sourceUpdatedAt": 1790917177040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyzl",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyzl.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyx0",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 176 km SE of Lata, Solomon Islands",
+      "locationName": "176 km SE of Lata, Solomon Islands",
+      "coordinates": {
+        "lon": 167.0918,
+        "lat": -11.6728,
+        "depthKm": 10
+      },
+      "time": 1790884834322,
+      "sourceUpdatedAt": 1790886037040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyx0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyx0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tywu",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 171 km SE of Lata, Solomon Islands",
+      "locationName": "171 km SE of Lata, Solomon Islands",
+      "coordinates": {
+        "lon": 166.961,
+        "lat": -11.7706,
+        "depthKm": 10
+      },
+      "time": 1790883481795,
+      "sourceUpdatedAt": 1790884982040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tywu",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tywu.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyw6",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 108 km ENE of Miyako, Japan",
+      "locationName": "108 km ENE of Miyako, Japan",
+      "coordinates": {
+        "lon": 143.1734,
+        "lat": 39.8778,
+        "depthKm": 35
+      },
+      "time": 1790875040097,
+      "sourceUpdatedAt": 1790876954202,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyw6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyw6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyzi",
+      "hazardType": "EQ",
+      "title": "M 5.0 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": 178.6446,
+        "lat": -24.7752,
+        "depthKm": 557.245
+      },
+      "time": 1790915225754,
+      "sourceUpdatedAt": 1790916138040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyzi",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyzi.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyua",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 176 km NNE of Ruteng, Indonesia",
+      "locationName": "176 km NNE of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 120.9136,
+        "lat": -7.0805,
+        "depthKm": 10
+      },
+      "time": 1790864399078,
+      "sourceUpdatedAt": 1790865515040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyua",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyua.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyzg",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 97 km S of Panguna, Papua New Guinea",
+      "locationName": "97 km S of Panguna, Papua New Guinea",
+      "coordinates": {
+        "lon": 155.6075,
+        "lat": -7.1852,
+        "depthKm": 35
+      },
+      "time": 1790914258487,
+      "sourceUpdatedAt": 1790916591040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyzg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyzg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 55
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyr4",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 145 km ESE of Neiafu, Tonga",
+      "locationName": "145 km ESE of Neiafu, Tonga",
+      "coordinates": {
+        "lon": -172.7038,
+        "lat": -19.141,
+        "depthKm": 10
+      },
+      "time": 1790844344312,
+      "sourceUpdatedAt": 1790845949040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyr4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyr4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyuf",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 127 km S of False Pass, Alaska",
+      "locationName": "127 km S of False Pass, Alaska",
+      "coordinates": {
+        "lon": -163.7238,
+        "lat": 53.7226,
+        "depthKm": 35
+      },
+      "time": 1790865979877,
+      "sourceUpdatedAt": 1790888901440,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyuf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyuf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tysi",
+      "hazardType": "EQ",
+      "title": "M 4.7 - northern Mid-Atlantic Ridge",
+      "locationName": "northern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -41.428,
+        "lat": 31.0444,
+        "depthKm": 10
+      },
+      "time": 1790848995128,
+      "sourceUpdatedAt": 1790853124040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tysi",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tysi.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyw9",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 83 km NE of Ruteng, Indonesia",
+      "locationName": "83 km NE of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 120.9009,
+        "lat": -7.9896,
+        "depthKm": 10
+      },
+      "time": 1790876231734,
+      "sourceUpdatedAt": 1790878530040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyw9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyw9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyqx",
+      "hazardType": "EQ",
+      "title": "M 4.6 - northern Mid-Atlantic Ridge",
+      "locationName": "northern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -41.5851,
+        "lat": 31.2357,
+        "depthKm": 10
+      },
+      "time": 1790840406605,
+      "sourceUpdatedAt": 1790844197040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyqx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyqx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyxk",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 2 km NE of Satte, Japan",
+      "locationName": "2 km NE of Satte, Japan",
+      "coordinates": {
+        "lon": 139.7487,
+        "lat": 36.0904,
+        "depthKm": 65.032
+      },
+      "time": 1790888501707,
+      "sourceUpdatedAt": 1790896790040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyxk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyxk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyqy",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 49 km SSE of Toktogul, Kyrgyzstan",
+      "locationName": "49 km SSE of Toktogul, Kyrgyzstan",
+      "coordinates": {
+        "lon": 73.1419,
+        "lat": 41.4538,
+        "depthKm": 10
+      },
+      "time": 1790842679307,
+      "sourceUpdatedAt": 1790848661040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyqy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyqy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 15,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
