@@ -1,0 +1,611 @@
+{
+  "generatedAt": 1791005752609,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz62",
+      "hazardType": "EQ",
+      "title": "M 5.8 - 165 km SSE of Vilyuchinsk, Russia",
+      "locationName": "165 km SSE of Vilyuchinsk, Russia",
+      "coordinates": {
+        "lon": 159.7398,
+        "lat": 51.6873,
+        "depthKm": 29.477
+      },
+      "time": 1790958881010,
+      "sourceUpdatedAt": 1790966456479,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.8,
+        "sig": 518,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz62",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz62.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz8c",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 199 km SSE of Vilyuchinsk, Russia",
+      "locationName": "199 km SSE of Vilyuchinsk, Russia",
+      "coordinates": {
+        "lon": 159.665,
+        "lat": 51.3149,
+        "depthKm": 10
+      },
+      "time": 1790972847120,
+      "sourceUpdatedAt": 1790979275040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz8c",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz8c.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tzal",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 163 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "locationName": "163 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "coordinates": {
+        "lon": 160.4217,
+        "lat": 52.0836,
+        "depthKm": 10
+      },
+      "time": 1790996346296,
+      "sourceUpdatedAt": 1790997259040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzal",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tzal.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz8l",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 171 km SE of Vilyuchinsk, Russia",
+      "locationName": "171 km SE of Vilyuchinsk, Russia",
+      "coordinates": {
+        "lon": 159.8843,
+        "lat": 51.6886,
+        "depthKm": 30.93
+      },
+      "time": 1790974455391,
+      "sourceUpdatedAt": 1790975850040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz8l",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz8l.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 65
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz7b",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 179 km SSE of Vilyuchinsk, Russia",
+      "locationName": "179 km SSE of Vilyuchinsk, Russia",
+      "coordinates": {
+        "lon": 159.8307,
+        "lat": 51.5775,
+        "depthKm": 10
+      },
+      "time": 1790965520940,
+      "sourceUpdatedAt": 1790966786040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz7b",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz7b.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz5h",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 26 km SSW of Güiria, Venezuela",
+      "locationName": "26 km SSW of Güiria, Venezuela",
+      "coordinates": {
+        "lon": -62.4223,
+        "lat": 10.3698,
+        "depthKm": 9.763
+      },
+      "time": 1790958685762,
+      "sourceUpdatedAt": 1790959874040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz5h",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz5h.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz1c",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 6 km E of Inglewood, New Zealand",
+      "locationName": "6 km E of Inglewood, New Zealand",
+      "coordinates": {
+        "lon": 174.2598,
+        "lat": -39.1598,
+        "depthKm": 10
+      },
+      "time": 1790949435838,
+      "sourceUpdatedAt": 1790983016904,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 390,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz1c",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz1c.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz0x",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 63 km SW of Panguna, Papua New Guinea",
+      "locationName": "63 km SW of Panguna, Papua New Guinea",
+      "coordinates": {
+        "lon": 155.0136,
+        "lat": -6.6368,
+        "depthKm": 38.25
+      },
+      "time": 1790939654383,
+      "sourceUpdatedAt": 1790940834040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz0x",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz0x.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 61
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz8a",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 136 km SSE of Vilyuchinsk, Russia",
+      "locationName": "136 km SSE of Vilyuchinsk, Russia",
+      "coordinates": {
+        "lon": 159.3971,
+        "lat": 51.862,
+        "depthKm": 38.829
+      },
+      "time": 1790972729894,
+      "sourceUpdatedAt": 1790974821040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz8a",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz8a.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 52
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz9v",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 121 km SSE of Vilyuchinsk, Russia",
+      "locationName": "121 km SSE of Vilyuchinsk, Russia",
+      "coordinates": {
+        "lon": 159.2731,
+        "lat": 51.9749,
+        "depthKm": 38.69
+      },
+      "time": 1790985698784,
+      "sourceUpdatedAt": 1790990350040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz9v",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz9v.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 45
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz1q",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 78 km WSW of San Nicolas, Philippines",
+      "locationName": "78 km WSW of San Nicolas, Philippines",
+      "coordinates": {
+        "lon": 119.4593,
+        "lat": 14.571,
+        "depthKm": 10
+      },
+      "time": 1790953819729,
+      "sourceUpdatedAt": 1790955335040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz1q",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz1q.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyzx",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 35 km SSW of El Colomo, Mexico",
+      "locationName": "35 km SSW of El Colomo, Mexico",
+      "coordinates": {
+        "lon": -104.3753,
+        "lat": 18.7561,
+        "depthKm": 23.972
+      },
+      "time": 1790924015007,
+      "sourceUpdatedAt": 1790925115040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyzx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyzx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 54
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyzt",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 192 km WNW of Tobelo, Indonesia",
+      "locationName": "192 km WNW of Tobelo, Indonesia",
+      "coordinates": {
+        "lon": 126.4944,
+        "lat": 2.5781,
+        "depthKm": 10
+      },
+      "time": 1790919535084,
+      "sourceUpdatedAt": 1790921544040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyzt",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyzt.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz9s",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 153 km SSE of Vilyuchinsk, Russia",
+      "locationName": "153 km SSE of Vilyuchinsk, Russia",
+      "coordinates": {
+        "lon": 159.4679,
+        "lat": 51.7161,
+        "depthKm": 35
+      },
+      "time": 1790985253503,
+      "sourceUpdatedAt": 1790988526040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz9s",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz9s.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 40
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz1y",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 5 km NNE of Korumburra, Australia",
+      "locationName": "5 km NNE of Korumburra, Australia",
+      "coordinates": {
+        "lon": 145.8401,
+        "lat": -38.3802,
+        "depthKm": 10
+      },
+      "time": 1790956899581,
+      "sourceUpdatedAt": 1790971152074,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 619,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz1y",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz1y.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz9t",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 174 km SSE of Vilyuchinsk, Russia",
+      "locationName": "174 km SSE of Vilyuchinsk, Russia",
+      "coordinates": {
+        "lon": 159.7182,
+        "lat": 51.5846,
+        "depthKm": 10
+      },
+      "time": 1790985566824,
+      "sourceUpdatedAt": 1790989234040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz9t",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz9t.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz8b",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 67 km ESE of Kokopo, Papua New Guinea",
+      "locationName": "67 km ESE of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.8363,
+        "lat": -4.565,
+        "depthKm": 86.736
+      },
+      "time": 1790972762878,
+      "sourceUpdatedAt": 1790976710040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz8b",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz8b.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tz9w",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 7 km NNW of Ibusuki, Japan",
+      "locationName": "7 km NNW of Ibusuki, Japan",
+      "coordinates": {
+        "lon": 130.6093,
+        "lat": 31.2953,
+        "depthKm": 126.853
+      },
+      "time": 1790986298239,
+      "sourceUpdatedAt": 1790993774040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz9w",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tz9w.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tyzy",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 101 km NE of Ruteng, Indonesia",
+      "locationName": "101 km NE of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 121.0985,
+        "lat": -7.9511,
+        "depthKm": 10
+      },
+      "time": 1790923686954,
+      "sourceUpdatedAt": 1790925874040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyzy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tyzy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 19,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
