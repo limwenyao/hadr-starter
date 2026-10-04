@@ -1,0 +1,310 @@
+{
+  "generatedAt": 1791094307445,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tzer",
+      "hazardType": "EQ",
+      "title": "M 5.9 - 39 km WSW of Tambolaka, Indonesia",
+      "locationName": "39 km WSW of Tambolaka, Indonesia",
+      "coordinates": {
+        "lon": 118.9078,
+        "lat": -9.5672,
+        "depthKm": 45.951
+      },
+      "time": 1791068155358,
+      "sourceUpdatedAt": 1791084486947,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.9,
+        "sig": 538,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzer",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tzer.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tzfg",
+      "hazardType": "EQ",
+      "title": "M 5.6 - 80 km S of Banda Aceh, Indonesia",
+      "locationName": "80 km S of Banda Aceh, Indonesia",
+      "coordinates": {
+        "lon": 95.2428,
+        "lat": 4.8223,
+        "depthKm": 69.726
+      },
+      "time": 1791070655621,
+      "sourceUpdatedAt": 1791078207399,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 482,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzfg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tzfg.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tze2",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 182 km SSE of Vilyuchinsk, Russia",
+      "locationName": "182 km SSE of Vilyuchinsk, Russia",
+      "coordinates": {
+        "lon": 159.8296,
+        "lat": 51.5457,
+        "depthKm": 10
+      },
+      "time": 1791057644104,
+      "sourceUpdatedAt": 1791058934040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tze2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tze2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tzg0",
+      "hazardType": "EQ",
+      "title": "M 4.9 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -23.3522,
+        "lat": -58.1594,
+        "depthKm": 10
+      },
+      "time": 1791078472030,
+      "sourceUpdatedAt": 1791083527040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzg0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tzg0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tzfv",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 21 km NE of Lae, Papua New Guinea",
+      "locationName": "21 km NE of Lae, Papua New Guinea",
+      "coordinates": {
+        "lon": 147.1353,
+        "lat": -6.5916,
+        "depthKm": 94.221
+      },
+      "time": 1791077926078,
+      "sourceUpdatedAt": 1791079052040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzfv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tzfv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tzdp",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 72 km NE of Sittwe, Burma (Myanmar)",
+      "locationName": "72 km NE of Sittwe, Burma (Myanmar)",
+      "coordinates": {
+        "lon": 93.3991,
+        "lat": 20.6061,
+        "depthKm": 35
+      },
+      "time": 1791051166916,
+      "sourceUpdatedAt": 1791052492040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzdp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tzdp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 55
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tzdj",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 76 km NNE of Lae, Papua New Guinea",
+      "locationName": "76 km NNE of Lae, Papua New Guinea",
+      "coordinates": {
+        "lon": 147.1678,
+        "lat": -6.0496,
+        "depthKm": 81.86
+      },
+      "time": 1791048252545,
+      "sourceUpdatedAt": 1791049953040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzdj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tzdj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tzf7",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 293 km SSE of Tabiauan, Philippines",
+      "locationName": "293 km SSE of Tabiauan, Philippines",
+      "coordinates": {
+        "lon": 122.9296,
+        "lat": 3.5895,
+        "depthKm": 575.042
+      },
+      "time": 1791069275782,
+      "sourceUpdatedAt": 1791070785040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzf7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tzf7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tze6",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 121 km SW of Puerto Madero, Mexico",
+      "locationName": "121 km SW of Puerto Madero, Mexico",
+      "coordinates": {
+        "lon": -93.3523,
+        "lat": 14.1052,
+        "depthKm": 10
+      },
+      "time": 1791059625577,
+      "sourceUpdatedAt": 1791060492040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tze6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tze6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tzcm",
+      "hazardType": "EQ",
+      "title": "M 4.5 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": -179.4827,
+        "lat": -27.4948,
+        "depthKm": 453.487
+      },
+      "time": 1791035471299,
+      "sourceUpdatedAt": 1791037310040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzcm",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tzcm.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 10,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
