@@ -1,0 +1,569 @@
+{
+  "generatedAt": 1791353936891,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0hy",
+      "hazardType": "EQ",
+      "title": "M 5.9 - 264 km SSW of Severo-Kuril’sk, Russia",
+      "locationName": "264 km SSW of Severo-Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 154.8085,
+        "lat": 48.4554,
+        "depthKm": 26.047
+      },
+      "time": 1791305301805,
+      "sourceUpdatedAt": 1791312832600,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.9,
+        "sig": 536,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0hy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0hy.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "aka2026tuxgky",
+      "hazardType": "EQ",
+      "title": "M 5.5 - 92 km NNW of Aleneva, Alaska",
+      "locationName": "92 km NNW of Aleneva, Alaska",
+      "coordinates": {
+        "lon": -153.609,
+        "lat": 58.802,
+        "depthKm": 87.6
+      },
+      "time": 1791311671760,
+      "sourceUpdatedAt": 1791352993769,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 619,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026tuxgky",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026tuxgky.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0hz",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 34 km NNW of Bāgeshwar, India",
+      "locationName": "34 km NNW of Bāgeshwar, India",
+      "coordinates": {
+        "lon": 79.6148,
+        "lat": 30.1171,
+        "depthKm": 10
+      },
+      "time": 1791305591296,
+      "sourceUpdatedAt": 1791348467718,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 422,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0hz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0hz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0pb",
+      "hazardType": "EQ",
+      "title": "M 4.9 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -30.0294,
+        "lat": -55.6737,
+        "depthKm": 10
+      },
+      "time": 1791347966324,
+      "sourceUpdatedAt": 1791350810040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0pb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0pb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0le",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 189 km SW of Abepura, Indonesia",
+      "locationName": "189 km SW of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 139.5723,
+        "lat": -3.9438,
+        "depthKm": 80.203
+      },
+      "time": 1791323803985,
+      "sourceUpdatedAt": 1791338960040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0le",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0le.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0jq",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 114 km SW of Turpan, China",
+      "locationName": "114 km SW of Turpan, China",
+      "coordinates": {
+        "lon": 88.2203,
+        "lat": 42.2039,
+        "depthKm": 10
+      },
+      "time": 1791310534402,
+      "sourceUpdatedAt": 1791320438040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0jq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0jq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tzwg",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 48 km NNE of Semporna, Malaysia",
+      "locationName": "48 km NNE of Semporna, Malaysia",
+      "coordinates": {
+        "lon": 118.8285,
+        "lat": 4.8667,
+        "depthKm": 10
+      },
+      "time": 1791292282577,
+      "sourceUpdatedAt": 1791301926274,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 370
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzwg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tzwg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tzvn",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 55 km ESE of Kokopo, Papua New Guinea",
+      "locationName": "55 km ESE of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.7519,
+        "lat": -4.4773,
+        "depthKm": 20.643
+      },
+      "time": 1791276326946,
+      "sourceUpdatedAt": 1791277967040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzvn",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tzvn.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 62
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0ns",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 132 km ENE of Tadine, New Caledonia",
+      "locationName": "132 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 169.0011,
+        "lat": -20.979,
+        "depthKm": 10
+      },
+      "time": 1791341399426,
+      "sourceUpdatedAt": 1791342849040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0ns",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0ns.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0mu",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 57 km E of Petropavlovsk-Kamchatsky, Russia",
+      "locationName": "57 km E of Petropavlovsk-Kamchatsky, Russia",
+      "coordinates": {
+        "lon": 159.4666,
+        "lat": 52.9685,
+        "depthKm": 61.934
+      },
+      "time": 1791333008365,
+      "sourceUpdatedAt": 1791347055040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0mu",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0mu.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0ji",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 85 km ENE of Shikotan, Russia",
+      "locationName": "85 km ENE of Shikotan, Russia",
+      "coordinates": {
+        "lon": 147.7419,
+        "lat": 44.0053,
+        "depthKm": 35
+      },
+      "time": 1791308824306,
+      "sourceUpdatedAt": 1791319691040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0ji",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0ji.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 48
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0ll",
+      "hazardType": "EQ",
+      "title": "M 4.7 - Kermadec Islands, New Zealand",
+      "locationName": "Kermadec Islands, New Zealand",
+      "coordinates": {
+        "lon": -177.6188,
+        "lat": -29.8721,
+        "depthKm": 71.248
+      },
+      "time": 1791324766267,
+      "sourceUpdatedAt": 1791343349040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0ll",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0ll.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u01m",
+      "hazardType": "EQ",
+      "title": "M 4.7 - Chagos Archipelago region",
+      "locationName": "Chagos Archipelago region",
+      "coordinates": {
+        "lon": 72.295,
+        "lat": -6.6864,
+        "depthKm": 10
+      },
+      "time": 1791299529822,
+      "sourceUpdatedAt": 1791303185040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u01m",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u01m.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0nb",
+      "hazardType": "EQ",
+      "title": "M 4.6 - Kuril Islands",
+      "locationName": "Kuril Islands",
+      "coordinates": {
+        "lon": 153.3699,
+        "lat": 48.1853,
+        "depthKm": 108.743
+      },
+      "time": 1791337145561,
+      "sourceUpdatedAt": 1791339979040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0nb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0nb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0km",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 14 km NE of Mataram, Indonesia",
+      "locationName": "14 km NE of Mataram, Indonesia",
+      "coordinates": {
+        "lon": 116.218,
+        "lat": -8.4933,
+        "depthKm": 144.45
+      },
+      "time": 1791317728171,
+      "sourceUpdatedAt": 1791339349490,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 330
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0km",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0km.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0mr",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 37 km ESE of Iwaki, Japan",
+      "locationName": "37 km ESE of Iwaki, Japan",
+      "coordinates": {
+        "lon": 141.2803,
+        "lat": 36.9504,
+        "depthKm": 52.668
+      },
+      "time": 1791332561953,
+      "sourceUpdatedAt": 1791346172040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0mr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0mr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0k2",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 43 km WNW of Bengkulu, Indonesia",
+      "locationName": "43 km WNW of Bengkulu, Indonesia",
+      "coordinates": {
+        "lon": 101.8914,
+        "lat": -3.6796,
+        "depthKm": 73.115
+      },
+      "time": 1791313319145,
+      "sourceUpdatedAt": 1791320820040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0k2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0k2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tzwi",
+      "hazardType": "EQ",
+      "title": "M 4.5 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": 178.7672,
+        "lat": -30.8569,
+        "depthKm": 537.886
+      },
+      "time": 1791293182092,
+      "sourceUpdatedAt": 1791300896040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzwi",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tzwi.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000tzva",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 60 km WNW of Colchani, Bolivia",
+      "locationName": "60 km WNW of Colchani, Bolivia",
+      "coordinates": {
+        "lon": -67.4214,
+        "lat": -20.0088,
+        "depthKm": 191.741
+      },
+      "time": 1791269650618,
+      "sourceUpdatedAt": 1791272062040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzva",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000tzva.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 19,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
