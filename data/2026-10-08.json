@@ -1,0 +1,468 @@
+{
+  "generatedAt": 1791440958102,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001335",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone SIMON-26",
+      "locationName": "location unknown",
+      "coordinates": {
+        "lon": -102.5,
+        "lat": 15.6
+      },
+      "time": 1791385200000,
+      "sourceUpdatedAt": 1791437544000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001335&episodeid=3&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001335&episodeid=3",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 836
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0rr",
+      "hazardType": "EQ",
+      "title": "M 5.2 - Chagos Archipelago region",
+      "locationName": "Chagos Archipelago region",
+      "coordinates": {
+        "lon": 72.2362,
+        "lat": -6.6637,
+        "depthKm": 10
+      },
+      "time": 1791385165858,
+      "sourceUpdatedAt": 1791423525578,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0rr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0rr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0wa",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 92 km N of Ruteng, Indonesia",
+      "locationName": "92 km N of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 120.5395,
+        "lat": -7.7761,
+        "depthKm": 10
+      },
+      "time": 1791434939943,
+      "sourceUpdatedAt": 1791435854040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0wa",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0wa.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0w0",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 81 km NNW of Malfa, Italy",
+      "locationName": "81 km NNW of Malfa, Italy",
+      "coordinates": {
+        "lon": 14.3516,
+        "lat": 39.2061,
+        "depthKm": 367.078
+      },
+      "time": 1791430972895,
+      "sourceUpdatedAt": 1791431482040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0w0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0w0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0u7",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 13 km SE of Yokoshiba, Japan",
+      "locationName": "13 km SE of Yokoshiba, Japan",
+      "coordinates": {
+        "lon": 140.5835,
+        "lat": 35.5597,
+        "depthKm": 50.601
+      },
+      "time": 1791400427589,
+      "sourceUpdatedAt": 1791407128953,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 370
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0u7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0u7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 41
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0q1",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 80 km SW of El Arenal, Mexico",
+      "locationName": "80 km SW of El Arenal, Mexico",
+      "coordinates": {
+        "lon": -93.1891,
+        "lat": 14.6207,
+        "depthKm": 61.654
+      },
+      "time": 1791358999524,
+      "sourceUpdatedAt": 1791360136040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0q1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0q1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 21
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0tm",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 194 km S of Ust’-Kamchatsk Staryy, Russia",
+      "locationName": "194 km S of Ust’-Kamchatsk Staryy, Russia",
+      "coordinates": {
+        "lon": 162.5648,
+        "lat": 54.4775,
+        "depthKm": 10
+      },
+      "time": 1791396904107,
+      "sourceUpdatedAt": 1791399233040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0tm",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0tm.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0wb",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 47 km W of Tambolaka, Indonesia",
+      "locationName": "47 km W of Tambolaka, Indonesia",
+      "coordinates": {
+        "lon": 118.8068,
+        "lat": -9.421,
+        "depthKm": 65.279
+      },
+      "time": 1791436012046,
+      "sourceUpdatedAt": 1791439110040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0wb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0wb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0vw",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 101 km NE of Ruteng, Indonesia",
+      "locationName": "101 km NE of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 121.0443,
+        "lat": -7.8993,
+        "depthKm": 10
+      },
+      "time": 1791428401461,
+      "sourceUpdatedAt": 1791429475040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0vw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0vw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0t4",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 34 km E of Sarangani, Philippines",
+      "locationName": "34 km E of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.7754,
+        "lat": 5.3818,
+        "depthKm": 117.206
+      },
+      "time": 1791391369325,
+      "sourceUpdatedAt": 1791394621040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0t4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0t4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0rx",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 45 km WNW of Ollagüe, Chile",
+      "locationName": "45 km WNW of Ollagüe, Chile",
+      "coordinates": {
+        "lon": -68.68,
+        "lat": -21.1132,
+        "depthKm": 105.86
+      },
+      "time": 1791387974830,
+      "sourceUpdatedAt": 1791392104040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0rx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0rx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0qw",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 22 km WNW of Manado, Indonesia",
+      "locationName": "22 km WNW of Manado, Indonesia",
+      "coordinates": {
+        "lon": 124.6702,
+        "lat": 1.5798,
+        "depthKm": 139.831
+      },
+      "time": 1791370654247,
+      "sourceUpdatedAt": 1791371763040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0qw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0qw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0tl",
+      "hazardType": "EQ",
+      "title": "M 4.6 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": 179.8762,
+        "lat": -24.7869,
+        "depthKm": 504.432
+      },
+      "time": 1791396793966,
+      "sourceUpdatedAt": 1791397982040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0tl",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0tl.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0te",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 48 km SSW of Angoram, Papua New Guinea",
+      "locationName": "48 km SSW of Angoram, Papua New Guinea",
+      "coordinates": {
+        "lon": 143.8558,
+        "lat": -4.4473,
+        "depthKm": 101.453
+      },
+      "time": 1791394573751,
+      "sourceUpdatedAt": 1791399865040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0te",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0te.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0wh",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 39 km NE of Calama, Chile",
+      "locationName": "39 km NE of Calama, Chile",
+      "coordinates": {
+        "lon": -68.6682,
+        "lat": -22.1924,
+        "depthKm": 121.38
+      },
+      "time": 1791437756016,
+      "sourceUpdatedAt": 1791438745040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0wh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0wh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0qs",
+      "hazardType": "EQ",
+      "title": "M 4.5 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": 179.8316,
+        "lat": -24.2564,
+        "depthKm": 528.878
+      },
+      "time": 1791368433568,
+      "sourceUpdatedAt": 1791369645040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0qs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0qs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 16,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
