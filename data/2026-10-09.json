@@ -1,0 +1,429 @@
+{
+  "generatedAt": 1791527443599,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0xi",
+      "hazardType": "EQ",
+      "title": "M 6.3 - 102 km NE of Norsup, Vanuatu",
+      "locationName": "102 km NE of Norsup, Vanuatu",
+      "coordinates": {
+        "lon": 168.1889,
+        "lat": -15.5411,
+        "depthKm": 10
+      },
+      "time": 1791450007768,
+      "sourceUpdatedAt": 1791508270737,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.3,
+        "sig": 614,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0xi",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0xi.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 7
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0x4",
+      "hazardType": "EQ",
+      "title": "M 5.5 - 17 km SW of Burias, Philippines",
+      "locationName": "17 km SW of Burias, Philippines",
+      "coordinates": {
+        "lon": 125.1521,
+        "lat": 5.6006,
+        "depthKm": 52.054
+      },
+      "time": 1791446879114,
+      "sourceUpdatedAt": 1791518104713,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 472,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0x4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0x4.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0ws",
+      "hazardType": "EQ",
+      "title": "M 5.5 - west of Macquarie Island",
+      "locationName": "west of Macquarie Island",
+      "coordinates": {
+        "lon": 140.2121,
+        "lat": -52.5475,
+        "depthKm": 10
+      },
+      "time": 1791442007971,
+      "sourceUpdatedAt": 1791449548112,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 465,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0ws",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0ws.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001335",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone SIMON-26",
+      "locationName": "Mexico",
+      "coordinates": {
+        "lon": -104.6,
+        "lat": 15.6
+      },
+      "time": 1791385200000,
+      "sourceUpdatedAt": 1791524461000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001335&episodeid=7&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001335&episodeid=7",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 725
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1000151",
+      "hazardType": "VO",
+      "title": "Eruption  Taal",
+      "locationName": "Philippines",
+      "coordinates": {
+        "lon": 120.9975,
+        "lat": 14.0106
+      },
+      "time": 1791455340000,
+      "sourceUpdatedAt": 1791464540000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1000151&episodeid=1&eventtype=VO",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=VO&eventid=1000151&episodeid=1",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · volcano)",
+        "isEstimate": false,
+        "radiusKm": 42
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1570077",
+      "hazardType": "EQ",
+      "title": "Earthquake in Vanuatu",
+      "locationName": "Vanuatu",
+      "coordinates": {
+        "lon": 168.1889,
+        "lat": -15.5411
+      },
+      "time": 1791450007000,
+      "sourceUpdatedAt": 1791460923000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1570077&episodeid=1738390&eventtype=EQ",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=EQ&eventid=1570077&episodeid=1738390",
+      "tier": "HIGH",
+      "duplicateOf": {
+        "feed": "USGS",
+        "feedEventId": "us6000u0xi",
+        "title": "M 6.3 - 102 km NE of Norsup, Vanuatu"
+      },
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · earthquake)",
+        "isEstimate": false,
+        "radiusKm": 141
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u13v",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 117 km SE of Bitung, Indonesia",
+      "locationName": "117 km SE of Bitung, Indonesia",
+      "coordinates": {
+        "lon": 125.9365,
+        "lat": 0.7587,
+        "depthKm": 40.049
+      },
+      "time": 1791522664200,
+      "sourceUpdatedAt": 1791526612038,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 417
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u13v",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u13v.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 78
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0xn",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 236 km E of Levuka, Fiji",
+      "locationName": "236 km E of Levuka, Fiji",
+      "coordinates": {
+        "lon": -178.4545,
+        "lat": -18.0147,
+        "depthKm": 602.272
+      },
+      "time": 1791454048642,
+      "sourceUpdatedAt": 1791454888040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0xn",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0xn.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u13y",
+      "hazardType": "EQ",
+      "title": "M 4.9 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -177.334,
+        "lat": -24.309,
+        "depthKm": 130.36
+      },
+      "time": 1791523024106,
+      "sourceUpdatedAt": 1791526755040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u13y",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u13y.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0yr",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 113 km NW of Baa, Indonesia",
+      "locationName": "113 km NW of Baa, Indonesia",
+      "coordinates": {
+        "lon": 122.2936,
+        "lat": -10.0202,
+        "depthKm": 10
+      },
+      "time": 1791468709678,
+      "sourceUpdatedAt": 1791470673040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0yr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0yr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u10n",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 46 km N of Waingapu, Indonesia",
+      "locationName": "46 km N of Waingapu, Indonesia",
+      "coordinates": {
+        "lon": 120.3127,
+        "lat": -9.2392,
+        "depthKm": 91.156
+      },
+      "time": 1791482760577,
+      "sourceUpdatedAt": 1791488735040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u10n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u10n.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0yy",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 84 km WNW of Bengkulu, Indonesia",
+      "locationName": "84 km WNW of Bengkulu, Indonesia",
+      "coordinates": {
+        "lon": 101.5886,
+        "lat": -3.4591,
+        "depthKm": 50.572
+      },
+      "time": 1791473027618,
+      "sourceUpdatedAt": 1791489957040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0yy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0yy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 18
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u10v",
+      "hazardType": "EQ",
+      "title": "M 4.6 - Izu Islands, Japan region",
+      "locationName": "Izu Islands, Japan region",
+      "coordinates": {
+        "lon": 140.6005,
+        "lat": 30.7337,
+        "depthKm": 95.608
+      },
+      "time": 1791484323544,
+      "sourceUpdatedAt": 1791489839040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u10v",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u10v.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u0x2",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 61 km W of Banda Aceh, Indonesia",
+      "locationName": "61 km W of Banda Aceh, Indonesia",
+      "coordinates": {
+        "lon": 94.7814,
+        "lat": 5.4545,
+        "depthKm": 97.534
+      },
+      "time": 1791445512588,
+      "sourceUpdatedAt": 1791446572040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0x2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0x2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 13,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
