@@ -1,0 +1,1706 @@
+{
+  "generatedAt": 1791612799638,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u18k",
+      "hazardType": "EQ",
+      "title": "M 7.7 - 12 km WSW of Pitaloza Arriba, Panama",
+      "locationName": "12 km WSW of Pitaloza Arriba, Panama",
+      "coordinates": {
+        "lon": -80.769,
+        "lat": 7.5868,
+        "depthKm": 12.647
+      },
+      "time": 1791568566036,
+      "sourceUpdatedAt": 1791612244923,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 7.7,
+        "sig": 2598,
+        "pagerAlert": "red"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18k",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u18k.geojson",
+      "tier": "CRITICAL",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 9
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u19w",
+      "hazardType": "EQ",
+      "title": "M 6.6 - 14 km W of Río Grande, Panama",
+      "locationName": "14 km W of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.4687,
+        "lat": 7.7176,
+        "depthKm": 10
+      },
+      "time": 1791577539080,
+      "sourceUpdatedAt": 1791599377126,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.6,
+        "sig": 689,
+        "pagerAlert": "yellow"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19w",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u19w.geojson",
+      "tier": "CRITICAL",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 7.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001335",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone SIMON-26",
+      "locationName": "Mexico",
+      "coordinates": {
+        "lon": -104.6,
+        "lat": 16.8
+      },
+      "time": 1791385200000,
+      "sourceUpdatedAt": 1791600158000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001335&episodeid=11&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001335&episodeid=11",
+      "tier": "CRITICAL",
+      "change": {
+        "kind": "revised",
+        "note": "tier changed: HIGH → CRITICAL; alert level: orange → red"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 607
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1cf",
+      "hazardType": "EQ",
+      "title": "M 6.0 - 7 km N of La Tronosa, Panama",
+      "locationName": "7 km N of La Tronosa, Panama",
+      "coordinates": {
+        "lon": -80.5985,
+        "lat": 7.5068,
+        "depthKm": 10
+      },
+      "time": 1791605641786,
+      "sourceUpdatedAt": 1791611945295,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6,
+        "sig": 676,
+        "pagerAlert": "yellow"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1cf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1cf.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 7
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u164",
+      "hazardType": "EQ",
+      "title": "M 5.9 - west of Macquarie Island",
+      "locationName": "west of Macquarie Island",
+      "coordinates": {
+        "lon": 154.4619,
+        "lat": -60.9758,
+        "depthKm": 10
+      },
+      "time": 1791557381714,
+      "sourceUpdatedAt": 1791564882378,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.9,
+        "sig": 536,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u164",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u164.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u18x",
+      "hazardType": "EQ",
+      "title": "M 5.8 - 1 km S of El Cacao, Panama",
+      "locationName": "1 km S of El Cacao, Panama",
+      "coordinates": {
+        "lon": -80.4012,
+        "lat": 7.4362,
+        "depthKm": 10
+      },
+      "time": 1791571066146,
+      "sourceUpdatedAt": 1791598732590,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.8,
+        "sig": 657,
+        "pagerAlert": "yellow"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18x",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u18x.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 7
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u18t",
+      "hazardType": "EQ",
+      "title": "M 5.5 - 3 km SW of Bajo Corral, Panama",
+      "locationName": "3 km SW of Bajo Corral, Panama",
+      "coordinates": {
+        "lon": -80.2885,
+        "lat": 7.586,
+        "depthKm": 10
+      },
+      "time": 1791570135709,
+      "sourceUpdatedAt": 1791598148770,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 467,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18t",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u18t.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001334",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone ISAIAS-26",
+      "locationName": "United States",
+      "coordinates": {
+        "lon": -86.5,
+        "lat": 30.8
+      },
+      "time": 1791320400000,
+      "sourceUpdatedAt": 1791605533000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001334&episodeid=14&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001334&episodeid=14",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 1305
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1570339",
+      "hazardType": "EQ",
+      "title": "Earthquake in Panama",
+      "locationName": "Panama",
+      "coordinates": {
+        "lon": -80.769,
+        "lat": 7.5868
+      },
+      "time": 1791568566000,
+      "sourceUpdatedAt": 1791590508000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1570339&episodeid=1738684&eventtype=EQ",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=EQ&eventid=1570339&episodeid=1738684",
+      "tier": "HIGH",
+      "duplicateOf": {
+        "feed": "USGS",
+        "feedEventId": "us6000u18k",
+        "title": "M 7.7 - 12 km WSW of Pitaloza Arriba, Panama"
+      },
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · earthquake)",
+        "isEstimate": false,
+        "radiusKm": 541
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1ay",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 9 km SSE of Los Asientos, Panama",
+      "locationName": "9 km SSE of Los Asientos, Panama",
+      "coordinates": {
+        "lon": -80.0968,
+        "lat": 7.4366,
+        "depthKm": 10
+      },
+      "time": 1791587557790,
+      "sourceUpdatedAt": 1791598532344,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 451,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ay",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1ay.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u15x",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 99 km NE of Norsup, Vanuatu",
+      "locationName": "99 km NE of Norsup, Vanuatu",
+      "coordinates": {
+        "lon": 168.1451,
+        "lat": -15.5361,
+        "depthKm": 10
+      },
+      "time": 1791553902764,
+      "sourceUpdatedAt": 1791561504201,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u15x",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u15x.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1cd",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 41 km NNE of Yigo Village, Guam",
+      "locationName": "41 km NNE of Yigo Village, Guam",
+      "coordinates": {
+        "lon": 145.0892,
+        "lat": 13.8594,
+        "depthKm": 111.584
+      },
+      "time": 1791604698250,
+      "sourceUpdatedAt": 1791612504769,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 448
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1cd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1cd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u19h",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 11 km SE of Río Grande, Panama",
+      "locationName": "11 km SE of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.2677,
+        "lat": 7.6417,
+        "depthKm": 10
+      },
+      "time": 1791575335624,
+      "sourceUpdatedAt": 1791580938248,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19h",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u19h.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1bu",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 1 km NNE of Tonosí, Panama",
+      "locationName": "1 km NNE of Tonosí, Panama",
+      "coordinates": {
+        "lon": -80.4348,
+        "lat": 7.4178,
+        "depthKm": 10
+      },
+      "time": 1791599192740,
+      "sourceUpdatedAt": 1791600314040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bu",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1bu.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1bs",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 133 km WNW of Ternate, Indonesia",
+      "locationName": "133 km WNW of Ternate, Indonesia",
+      "coordinates": {
+        "lon": 126.3601,
+        "lat": 1.416,
+        "depthKm": 10
+      },
+      "time": 1791597642634,
+      "sourceUpdatedAt": 1791598793040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1bs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u153",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 72 km SSW of Colchane, Chile",
+      "locationName": "72 km SSW of Colchane, Chile",
+      "coordinates": {
+        "lon": -68.7905,
+        "lat": -19.9128,
+        "depthKm": 123.835
+      },
+      "time": 1791541334915,
+      "sourceUpdatedAt": 1791567564926,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 403
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u153",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u153.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1cv",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 141 km E of Bitung, Indonesia",
+      "locationName": "141 km E of Bitung, Indonesia",
+      "coordinates": {
+        "lon": 126.3886,
+        "lat": 1.6248,
+        "depthKm": 10
+      },
+      "time": 1791610321552,
+      "sourceUpdatedAt": 1791611442040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1cv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1cv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1ax",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 8 km ESE of La Tronosa, Panama",
+      "locationName": "8 km ESE of La Tronosa, Panama",
+      "coordinates": {
+        "lon": -80.5284,
+        "lat": 7.3962,
+        "depthKm": 10
+      },
+      "time": 1791587402875,
+      "sourceUpdatedAt": 1791589087040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ax",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1ax.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1aa",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 13 km W of Río Grande, Panama",
+      "locationName": "13 km W of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.4589,
+        "lat": 7.7249,
+        "depthKm": 10
+      },
+      "time": 1791578528725,
+      "sourceUpdatedAt": 1791582650040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1aa",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1aa.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u19t",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 6 km NE of La Tronosa, Panama",
+      "locationName": "6 km NE of La Tronosa, Panama",
+      "coordinates": {
+        "lon": -80.5491,
+        "lat": 7.4734,
+        "depthKm": 10
+      },
+      "time": 1791577297940,
+      "sourceUpdatedAt": 1791583193040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19t",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u19t.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u197",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 14 km SE of Río Grande, Panama",
+      "locationName": "14 km SE of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.2492,
+        "lat": 7.6161,
+        "depthKm": 10
+      },
+      "time": 1791572689305,
+      "sourceUpdatedAt": 1791573901040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u197",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u197.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u194",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 18 km S of Los Asientos, Panama",
+      "locationName": "18 km S of Los Asientos, Panama",
+      "coordinates": {
+        "lon": -80.1178,
+        "lat": 7.3504,
+        "depthKm": 10
+      },
+      "time": 1791571812134,
+      "sourceUpdatedAt": 1791572859040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u194",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u194.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u195",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 19 km S of Leones Arriba, Panama",
+      "locationName": "19 km S of Leones Arriba, Panama",
+      "coordinates": {
+        "lon": -81.0943,
+        "lat": 7.5783,
+        "depthKm": 10
+      },
+      "time": 1791571624065,
+      "sourceUpdatedAt": 1791573213040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u195",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u195.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1az",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 9 km SW of Río Grande, Panama",
+      "locationName": "9 km SW of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.4005,
+        "lat": 7.6651,
+        "depthKm": 10
+      },
+      "time": 1791588193082,
+      "sourceUpdatedAt": 1791590527029,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 370
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1az",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1az.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1a9",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 13 km W of Río Grande, Panama",
+      "locationName": "13 km W of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.452,
+        "lat": 7.7299,
+        "depthKm": 10
+      },
+      "time": 1791579925304,
+      "sourceUpdatedAt": 1791582829040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1a9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1a9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1a6",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 16 km SSW of Calidonia, Panama",
+      "locationName": "16 km SSW of Calidonia, Panama",
+      "coordinates": {
+        "lon": -81.467,
+        "lat": 7.8349,
+        "depthKm": 10
+      },
+      "time": 1791579296367,
+      "sourceUpdatedAt": 1791584313040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1a6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1a6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1a5",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 8 km SSE of Leones Arriba, Panama",
+      "locationName": "8 km SSE of Leones Arriba, Panama",
+      "coordinates": {
+        "lon": -81.0923,
+        "lat": 7.6771,
+        "depthKm": 10
+      },
+      "time": 1791578464293,
+      "sourceUpdatedAt": 1791583144040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1a5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1a5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u19s",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 12 km SSW of Tebario, Panama",
+      "locationName": "12 km SSW of Tebario, Panama",
+      "coordinates": {
+        "lon": -81.0268,
+        "lat": 7.6169,
+        "depthKm": 10
+      },
+      "time": 1791577223334,
+      "sourceUpdatedAt": 1791579439040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19s",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u19s.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u14w",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 77 km ENE of Tuapejat, Indonesia",
+      "locationName": "77 km ENE of Tuapejat, Indonesia",
+      "coordinates": {
+        "lon": 100.2717,
+        "lat": -1.8867,
+        "depthKm": 40.817
+      },
+      "time": 1791539267081,
+      "sourceUpdatedAt": 1791543569040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u14w",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u14w.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 51
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1b5",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 5 km SW of Cañas, Panama",
+      "locationName": "5 km SW of Cañas, Panama",
+      "coordinates": {
+        "lon": -80.2957,
+        "lat": 7.4053,
+        "depthKm": 10
+      },
+      "time": 1791590584799,
+      "sourceUpdatedAt": 1791596010040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1b5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u19i",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 2 km N of Los Asientos, Panama",
+      "locationName": "2 km N of Los Asientos, Panama",
+      "coordinates": {
+        "lon": -80.1336,
+        "lat": 7.5448,
+        "depthKm": 10
+      },
+      "time": 1791575158101,
+      "sourceUpdatedAt": 1791584015040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19i",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u19i.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u198",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 14 km SSW of Tebario, Panama",
+      "locationName": "14 km SSW of Tebario, Panama",
+      "coordinates": {
+        "lon": -81.0415,
+        "lat": 7.6086,
+        "depthKm": 25.962
+      },
+      "time": 1791573442610,
+      "sourceUpdatedAt": 1791574501040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u198",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u198.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u18e",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 191 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "locationName": "191 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "coordinates": {
+        "lon": 160.6987,
+        "lat": 51.8952,
+        "depthKm": 10
+      },
+      "time": 1791565744613,
+      "sourceUpdatedAt": 1791566817040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u18e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u15l",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 17 km S of Nandaime, Nicaragua",
+      "locationName": "17 km S of Nandaime, Nicaragua",
+      "coordinates": {
+        "lon": -86.0613,
+        "lat": 11.5951,
+        "depthKm": 165.662
+      },
+      "time": 1791549223985,
+      "sourceUpdatedAt": 1791569578282,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 355
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u15l",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u15l.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u14u",
+      "hazardType": "EQ",
+      "title": "M 4.8 - northern Mid-Atlantic Ridge",
+      "locationName": "northern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -35.5737,
+        "lat": 35.3331,
+        "depthKm": 10
+      },
+      "time": 1791538158117,
+      "sourceUpdatedAt": 1791539784040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u14u",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u14u.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u14i",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 97 km E of Levuka, Fiji",
+      "locationName": "97 km E of Levuka, Fiji",
+      "coordinates": {
+        "lon": -179.7622,
+        "lat": -17.9914,
+        "depthKm": 639.935
+      },
+      "time": 1791534430358,
+      "sourceUpdatedAt": 1791535337040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u14i",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u14i.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1cb",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 8 km N of La Tronosa, Panama",
+      "locationName": "8 km N of La Tronosa, Panama",
+      "coordinates": {
+        "lon": -80.5849,
+        "lat": 7.5141,
+        "depthKm": 10
+      },
+      "time": 1791604577471,
+      "sourceUpdatedAt": 1791607808248,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1cb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1cb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1bl",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 10 km N of La Tronosa, Panama",
+      "locationName": "10 km N of La Tronosa, Panama",
+      "coordinates": {
+        "lon": -80.5858,
+        "lat": 7.5302,
+        "depthKm": 10
+      },
+      "time": 1791594707812,
+      "sourceUpdatedAt": 1791596214248,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bl",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1bl.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1bh",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 85 km ENE of Tadine, New Caledonia",
+      "locationName": "85 km ENE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 168.6507,
+        "lat": -21.2633,
+        "depthKm": 10
+      },
+      "time": 1791592738282,
+      "sourceUpdatedAt": 1791598677040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1bh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1b4",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 14 km W of Río Grande, Panama",
+      "locationName": "14 km W of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.4599,
+        "lat": 7.7378,
+        "depthKm": 10
+      },
+      "time": 1791590258179,
+      "sourceUpdatedAt": 1791595314040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1b4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u19v",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 121 km S of Kokopo, Papua New Guinea",
+      "locationName": "121 km S of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.1103,
+        "lat": -5.4312,
+        "depthKm": 50.541
+      },
+      "time": 1791577209257,
+      "sourceUpdatedAt": 1791585403040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19v",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u19v.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 18
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u19c",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 8 km N of La Tronosa, Panama",
+      "locationName": "8 km N of La Tronosa, Panama",
+      "coordinates": {
+        "lon": -80.5899,
+        "lat": 7.5147,
+        "depthKm": 10
+      },
+      "time": 1791574339273,
+      "sourceUpdatedAt": 1791582003031,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19c",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u19c.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u18d",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 138 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "locationName": "138 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "coordinates": {
+        "lon": 160.1309,
+        "lat": 52.2214,
+        "depthKm": 33.508
+      },
+      "time": 1791565175349,
+      "sourceUpdatedAt": 1791567147040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18d",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u18d.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 42
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1bp",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 10 km S of Río Grande, Panama",
+      "locationName": "10 km S of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.3237,
+        "lat": 7.6272,
+        "depthKm": 10
+      },
+      "time": 1791596147527,
+      "sourceUpdatedAt": 1791597277040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1bp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1bj",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 9 km NNE of La Tronosa, Panama",
+      "locationName": "9 km NNE of La Tronosa, Panama",
+      "coordinates": {
+        "lon": -80.5568,
+        "lat": 7.5164,
+        "depthKm": 10
+      },
+      "time": 1791593508773,
+      "sourceUpdatedAt": 1791602153565,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1bj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1ai",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 4 km NNE of Río Grande, Panama",
+      "locationName": "4 km NNE of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.319,
+        "lat": 7.7551,
+        "depthKm": 10
+      },
+      "time": 1791582469913,
+      "sourceUpdatedAt": 1791590337909,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ai",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1ai.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1ah",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 96 km NE of Ozernovskiy, Russia",
+      "locationName": "96 km NE of Ozernovskiy, Russia",
+      "coordinates": {
+        "lon": 157.5832,
+        "lat": 52.0441,
+        "depthKm": 78.277
+      },
+      "time": 1791580756481,
+      "sourceUpdatedAt": 1791584055040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ah",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1ah.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u168",
+      "hazardType": "EQ",
+      "title": "M 4.6 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": 179.9109,
+        "lat": -24.7105,
+        "depthKm": 501.59
+      },
+      "time": 1791559135617,
+      "sourceUpdatedAt": 1791560192040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u168",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u168.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u14r",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 17 km NNE of Santa Cruz, Philippines",
+      "locationName": "17 km NNE of Santa Cruz, Philippines",
+      "coordinates": {
+        "lon": 120.7766,
+        "lat": 13.2209,
+        "depthKm": 10
+      },
+      "time": 1791537438680,
+      "sourceUpdatedAt": 1791544636040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u14r",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u14r.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1ck",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 9 km WNW of Flores, Panama",
+      "locationName": "9 km WNW of Flores, Panama",
+      "coordinates": {
+        "lon": -80.4791,
+        "lat": 7.5239,
+        "depthKm": 10
+      },
+      "time": 1791606783219,
+      "sourceUpdatedAt": 1791607896040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ck",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1ck.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1bw",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 18 km SSE of Río Grande, Panama",
+      "locationName": "18 km SSE of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.2493,
+        "lat": 7.5746,
+        "depthKm": 10
+      },
+      "time": 1791600218371,
+      "sourceUpdatedAt": 1791610675863,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1bw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1b3",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 45 km SSE of Pedasí, Panama",
+      "locationName": "45 km SSE of Pedasí, Panama",
+      "coordinates": {
+        "lon": -79.8903,
+        "lat": 7.1444,
+        "depthKm": 10
+      },
+      "time": 1791590062924,
+      "sourceUpdatedAt": 1791593602993,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1b3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u19e",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 5 km N of Oria Arriba, Panama",
+      "locationName": "5 km N of Oria Arriba, Panama",
+      "coordinates": {
+        "lon": -80.2145,
+        "lat": 7.5554,
+        "depthKm": 10
+      },
+      "time": 1791574970202,
+      "sourceUpdatedAt": 1791582345040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u19e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u14e",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 249 km E of Levuka, Fiji",
+      "locationName": "249 km E of Levuka, Fiji",
+      "coordinates": {
+        "lon": -178.3548,
+        "lat": -17.72,
+        "depthKm": 559.662
+      },
+      "time": 1791533507203,
+      "sourceUpdatedAt": 1791534523040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u14e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u14e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 53,
+    "revised": 1,
+    "withdrawn": 0
+  }
+}
