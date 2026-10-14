@@ -1,0 +1,729 @@
+{
+  "generatedAt": 1791954780170,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u214",
+      "hazardType": "EQ",
+      "title": "M 6.8 - central Mid-Atlantic Ridge",
+      "locationName": "central Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -19.4308,
+        "lat": -0.4085,
+        "depthKm": 10
+      },
+      "time": 1791894187248,
+      "sourceUpdatedAt": 1791905973040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.8,
+        "sig": 711,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u214",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u214.geojson",
+      "tier": "CRITICAL",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 8
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1z5",
+      "hazardType": "EQ",
+      "title": "M 6.7 - central Mid-Atlantic Ridge",
+      "locationName": "central Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -19.8598,
+        "lat": 0.1685,
+        "depthKm": 10
+      },
+      "time": 1791870286919,
+      "sourceUpdatedAt": 1791906059040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.7,
+        "sig": 691,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1z5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1z5.geojson",
+      "tier": "CRITICAL",
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 7.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001337",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone TRUDY-26",
+      "locationName": "Mexico",
+      "coordinates": {
+        "lon": -97,
+        "lat": 11.2
+      },
+      "time": 1791903600000,
+      "sourceUpdatedAt": 1791946945000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001337&episodeid=3&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001337&episodeid=3",
+      "tier": "CRITICAL",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 1017
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u24c",
+      "hazardType": "EQ",
+      "title": "M 6.0 - 126 km S of Kokopo, Papua New Guinea",
+      "locationName": "126 km S of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.1364,
+        "lat": -5.4832,
+        "depthKm": 20.842
+      },
+      "time": 1791917103231,
+      "sourceUpdatedAt": 1791925814489,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6,
+        "sig": 554,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u24c",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u24c.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001335",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone SIMON-26",
+      "locationName": "Mexico",
+      "coordinates": {
+        "lon": -107.6,
+        "lat": 20.1
+      },
+      "time": 1791385200000,
+      "sourceUpdatedAt": 1791945974000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001335&episodeid=27&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001335&episodeid=27",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 1094
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u21s",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 122 km S of Kokopo, Papua New Guinea",
+      "locationName": "122 km S of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.1255,
+        "lat": -5.4448,
+        "depthKm": 18.521
+      },
+      "time": 1791902170660,
+      "sourceUpdatedAt": 1791903253040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u21s",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u21s.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 95
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u207",
+      "hazardType": "EQ",
+      "title": "M 5.3 - southern Mid-Atlantic Ridge",
+      "locationName": "southern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -12.5205,
+        "lat": -28.556,
+        "depthKm": 10
+      },
+      "time": 1791880708325,
+      "sourceUpdatedAt": 1791881877040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u207",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u207.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 96
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u26c",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 93 km NNW of Coquimbo, Chile",
+      "locationName": "93 km NNW of Coquimbo, Chile",
+      "coordinates": {
+        "lon": -71.8024,
+        "lat": -29.2155,
+        "depthKm": 21.947
+      },
+      "time": 1791937847706,
+      "sourceUpdatedAt": 1791950768836,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 401
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u26c",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u26c.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 76
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u23d",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 119 km S of Kokopo, Papua New Guinea",
+      "locationName": "119 km S of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.1142,
+        "lat": -5.4162,
+        "depthKm": 28.4
+      },
+      "time": 1791908894303,
+      "sourceUpdatedAt": 1791910714040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u23d",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u23d.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 74
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u26f",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 98 km NW of Coquimbo, Chile",
+      "locationName": "98 km NW of Coquimbo, Chile",
+      "coordinates": {
+        "lon": -71.9168,
+        "lat": -29.219,
+        "depthKm": 10
+      },
+      "time": 1791938205416,
+      "sourceUpdatedAt": 1791952423892,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u26f",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u26f.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u272",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 16 km WSW of La Tirana, Chile",
+      "locationName": "16 km WSW of La Tirana, Chile",
+      "coordinates": {
+        "lon": -70.2699,
+        "lat": -20.3552,
+        "depthKm": 44.914
+      },
+      "time": 1791947469258,
+      "sourceUpdatedAt": 1791953339637,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 375
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u272",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u272.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u20z",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 180 km SE of Vilyuchinsk, Russia",
+      "locationName": "180 km SE of Vilyuchinsk, Russia",
+      "coordinates": {
+        "lon": 159.9496,
+        "lat": 51.6162,
+        "depthKm": 10
+      },
+      "time": 1791893141519,
+      "sourceUpdatedAt": 1791896531040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u20z",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u20z.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u273",
+      "hazardType": "EQ",
+      "title": "M 4.8 - North Atlantic Ocean",
+      "locationName": "North Atlantic Ocean",
+      "coordinates": {
+        "lon": -27.5843,
+        "lat": 5.0056,
+        "depthKm": 10
+      },
+      "time": 1791946934593,
+      "sourceUpdatedAt": 1791948600040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u273",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u273.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u25i",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 5 km NW of Cepitá, Colombia",
+      "locationName": "5 km NW of Cepitá, Colombia",
+      "coordinates": {
+        "lon": -73.0065,
+        "lat": 6.7888,
+        "depthKm": 162.209
+      },
+      "time": 1791926661135,
+      "sourceUpdatedAt": 1791937685318,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 357
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u25i",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u25i.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u21y",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 8 km SE of Sarangani, Philippines",
+      "locationName": "8 km SE of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 125.5183,
+        "lat": 5.3478,
+        "depthKm": 65.699
+      },
+      "time": 1791904904242,
+      "sourceUpdatedAt": 1791913990040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u21y",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u21y.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u271",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 128 km S of Kokopo, Papua New Guinea",
+      "locationName": "128 km S of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.3942,
+        "lat": -5.4957,
+        "depthKm": 10
+      },
+      "time": 1791946767574,
+      "sourceUpdatedAt": 1791952342040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u271",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u271.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u20g",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 9 km NE of Boshkengash, Tajikistan",
+      "locationName": "9 km NE of Boshkengash, Tajikistan",
+      "coordinates": {
+        "lon": 68.8922,
+        "lat": 38.5166,
+        "depthKm": 10
+      },
+      "time": 1791884472899,
+      "sourceUpdatedAt": 1791889026040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u20g",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u20g.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1zh",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 14 km WNW of Río Grande, Panama",
+      "locationName": "14 km WNW of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.4531,
+        "lat": 7.7685,
+        "depthKm": 10
+      },
+      "time": 1791873544944,
+      "sourceUpdatedAt": 1791876995040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1zh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1zh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u1zc",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 124 km N of Pagudpud, Philippines",
+      "locationName": "124 km N of Pagudpud, Philippines",
+      "coordinates": {
+        "lon": 120.7047,
+        "lat": 19.6853,
+        "depthKm": 10
+      },
+      "time": 1791871284155,
+      "sourceUpdatedAt": 1791875231040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1zc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u1zc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u26u",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 75 km E of Kokopo, Papua New Guinea",
+      "locationName": "75 km E of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.9436,
+        "lat": -4.4488,
+        "depthKm": 10
+      },
+      "time": 1791943934885,
+      "sourceUpdatedAt": 1791945637040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u26u",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u26u.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u200",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 63 km W of Bayan Hot, China",
+      "locationName": "63 km W of Bayan Hot, China",
+      "coordinates": {
+        "lon": 104.9421,
+        "lat": 38.8294,
+        "depthKm": 10
+      },
+      "time": 1791879304080,
+      "sourceUpdatedAt": 1791898825040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u200",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u200.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u21d",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 26 km SSW of Zapotillo, Panama",
+      "locationName": "26 km SSW of Zapotillo, Panama",
+      "coordinates": {
+        "lon": -81.6085,
+        "lat": 7.7902,
+        "depthKm": 10
+      },
+      "time": 1791895892169,
+      "sourceUpdatedAt": 1791918529040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u21d",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u21d.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u20i",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 71 km SW of Tambolaka, Indonesia",
+      "locationName": "71 km SW of Tambolaka, Indonesia",
+      "coordinates": {
+        "lon": 118.8246,
+        "lat": -9.9266,
+        "depthKm": 35
+      },
+      "time": 1791884908205,
+      "sourceUpdatedAt": 1791886827040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u20i",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u20i.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 27
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 21,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
