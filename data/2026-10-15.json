@@ -1,0 +1,282 @@
+{
+  "generatedAt": 1792040424697,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u28y",
+      "hazardType": "EQ",
+      "title": "M 5.9 - Fiji region",
+      "locationName": "Fiji region",
+      "coordinates": {
+        "lon": -178.7711,
+        "lat": -20.9899,
+        "depthKm": 585.07
+      },
+      "time": 1791974987588,
+      "sourceUpdatedAt": 1791996170258,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.9,
+        "sig": 536,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u28y",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u28y.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001335",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone SIMON-26",
+      "locationName": "Mexico",
+      "coordinates": {
+        "lon": -108.6,
+        "lat": 19.1
+      },
+      "time": 1791385200000,
+      "sourceUpdatedAt": 1792032377000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001335&episodeid=31&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001335&episodeid=31",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 1205
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001338",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone TWENTYNINE-26",
+      "locationName": "Guam",
+      "coordinates": {
+        "lon": 159.4,
+        "lat": 10.7
+      },
+      "time": 1791979200000,
+      "sourceUpdatedAt": 1792032562000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001338&episodeid=3&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001338&episodeid=3",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 1759
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2ec",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 36 km E of Safotu, Samoa",
+      "locationName": "36 km E of Safotu, Samoa",
+      "coordinates": {
+        "lon": -172.0686,
+        "lat": -13.409,
+        "depthKm": 13.211
+      },
+      "time": 1792035389038,
+      "sourceUpdatedAt": 1792037400919,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 401
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2ec",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2ec.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 78
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u27u",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 121 km S of Kokopo, Papua New Guinea",
+      "locationName": "121 km S of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.2617,
+        "lat": -5.443,
+        "depthKm": 35
+      },
+      "time": 1791959226453,
+      "sourceUpdatedAt": 1791964387040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u27u",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u27u.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 55
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2eh",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 30 km E of Safotu, Samoa",
+      "locationName": "30 km E of Safotu, Samoa",
+      "coordinates": {
+        "lon": -172.1174,
+        "lat": -13.4327,
+        "depthKm": 13.468
+      },
+      "time": 1792035368430,
+      "sourceUpdatedAt": 1792036956040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2eh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2eh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u27j",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 10 km S of La Mesa, Panama",
+      "locationName": "10 km S of La Mesa, Panama",
+      "coordinates": {
+        "lon": -80.6021,
+        "lat": 7.5657,
+        "depthKm": 10
+      },
+      "time": 1791954575397,
+      "sourceUpdatedAt": 1792031065821,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u27j",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u27j.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u28e",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 42 km NNE of Kilimatinde, Tanzania",
+      "locationName": "42 km NNE of Kilimatinde, Tanzania",
+      "coordinates": {
+        "lon": 35.0428,
+        "lat": -5.4767,
+        "depthKm": 10
+      },
+      "time": 1791969378828,
+      "sourceUpdatedAt": 1791982586040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u28e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u28e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2d6",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 82 km SSW of Mil’kovo, Russia",
+      "locationName": "82 km SSW of Mil’kovo, Russia",
+      "coordinates": {
+        "lon": 158.1848,
+        "lat": 54.0004,
+        "depthKm": 183.497
+      },
+      "time": 1792020059714,
+      "sourceUpdatedAt": 1792020948040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2d6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2d6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 8,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
