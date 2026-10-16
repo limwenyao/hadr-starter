@@ -1,0 +1,418 @@
+{
+  "generatedAt": 1792126221696,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2mq",
+      "hazardType": "EQ",
+      "title": "M 6.9 - 76 km NE of Ozernovskiy, Russia",
+      "locationName": "76 km NE of Ozernovskiy, Russia",
+      "coordinates": {
+        "lon": 157.2701,
+        "lat": 51.9848,
+        "depthKm": 135
+      },
+      "time": 1792121731925,
+      "sourceUpdatedAt": 1792124507778,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.9,
+        "sig": 732,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2mq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2mq.geojson",
+      "tier": "CRITICAL",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001338",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone CHAMPI-26",
+      "locationName": "Guam",
+      "coordinates": {
+        "lon": 154,
+        "lat": 11.3
+      },
+      "time": 1791979200000,
+      "sourceUpdatedAt": 1792116507000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001338&episodeid=7&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001338&episodeid=7",
+      "tier": "CRITICAL",
+      "change": {
+        "kind": "revised",
+        "note": "tier changed: HIGH → CRITICAL; alert level: orange → red"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 2000
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "aka2026ukynnb",
+      "hazardType": "EQ",
+      "title": "M 5.6 - 43 km NNW of Lake Minchumina, Alaska",
+      "locationName": "43 km NNW of Lake Minchumina, Alaska",
+      "coordinates": {
+        "lon": -152.746,
+        "lat": 64.22,
+        "depthKm": 4.5
+      },
+      "time": 1792062421800,
+      "sourceUpdatedAt": 1792116802541,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 539
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026ukynnb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026ukynnb.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001335",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone SIMON-26",
+      "locationName": "México",
+      "coordinates": {
+        "lon": -108.5,
+        "lat": 19.5
+      },
+      "time": 1791385200000,
+      "sourceUpdatedAt": 1792123645000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001335&episodeid=35&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001335&episodeid=35",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 945
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2ev",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 43 km SSE of Otorohanga, New Zealand",
+      "locationName": "43 km SSE of Otorohanga, New Zealand",
+      "coordinates": {
+        "lon": 175.3814,
+        "lat": -38.5478,
+        "depthKm": 286.008
+      },
+      "time": 1792041931942,
+      "sourceUpdatedAt": 1792049502327,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 434,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2ev",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2ev.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 2
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2hv",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 107 km NNE of Hihifo, Tonga",
+      "locationName": "107 km NNE of Hihifo, Tonga",
+      "coordinates": {
+        "lon": -173.4439,
+        "lat": -15.0429,
+        "depthKm": 10
+      },
+      "time": 1792070971862,
+      "sourceUpdatedAt": 1792076912052,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2hv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2hv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2hp",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 157 km W of Sola, Vanuatu",
+      "locationName": "157 km W of Sola, Vanuatu",
+      "coordinates": {
+        "lon": 166.0921,
+        "lat": -13.8878,
+        "depthKm": 10
+      },
+      "time": 1792069611678,
+      "sourceUpdatedAt": 1792070828040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2hp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2hp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2i2",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 198 km SSE of Vilyuchinsk, Russia",
+      "locationName": "198 km SSE of Vilyuchinsk, Russia",
+      "coordinates": {
+        "lon": 159.8474,
+        "lat": 51.3801,
+        "depthKm": 10
+      },
+      "time": 1792076392905,
+      "sourceUpdatedAt": 1792079020040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2i2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2i2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2gd",
+      "hazardType": "EQ",
+      "title": "M 4.8 - off the coast of Ecuador",
+      "locationName": "off the coast of Ecuador",
+      "coordinates": {
+        "lon": -85.429,
+        "lat": 0.7509,
+        "depthKm": 10
+      },
+      "time": 1792063003490,
+      "sourceUpdatedAt": 1792065222040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2gd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2gd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2hr",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 114 km SSW of Nikolski, Alaska",
+      "locationName": "114 km SSW of Nikolski, Alaska",
+      "coordinates": {
+        "lon": -169.576,
+        "lat": 52.0024,
+        "depthKm": 10
+      },
+      "time": 1792070186373,
+      "sourceUpdatedAt": 1792080783240,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2hr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2hr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2kz",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 44 km SSE of Champerico, Guatemala",
+      "locationName": "44 km SSE of Champerico, Guatemala",
+      "coordinates": {
+        "lon": -91.8178,
+        "lat": 13.9013,
+        "depthKm": 59.487
+      },
+      "time": 1792096765755,
+      "sourceUpdatedAt": 1792097955040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2kz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2kz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2i9",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 22 km W of Tamarindo, Costa Rica",
+      "locationName": "22 km W of Tamarindo, Costa Rica",
+      "coordinates": {
+        "lon": -86.049,
+        "lat": 10.3031,
+        "depthKm": 22.782
+      },
+      "time": 1792078838840,
+      "sourceUpdatedAt": 1792085029001,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2i9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2i9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 38
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2ht",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 9 km SSE of Los Asientos, Panama",
+      "locationName": "9 km SSE of Los Asientos, Panama",
+      "coordinates": {
+        "lon": -80.0893,
+        "lat": 7.4452,
+        "depthKm": 10
+      },
+      "time": 1792071097166,
+      "sourceUpdatedAt": 1792093678575,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 316
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2ht",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2ht.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 11,
+    "revised": 1,
+    "withdrawn": 0
+  }
+}
