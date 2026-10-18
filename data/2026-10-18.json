@@ -1,0 +1,299 @@
+{
+  "generatedAt": 1792299411805,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001338",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone CHAMPI-26",
+      "locationName": "Guam, Northern Mariana Islands",
+      "coordinates": {
+        "lon": 143.4,
+        "lat": 13.1
+      },
+      "time": 1791979200000,
+      "sourceUpdatedAt": 1792292466000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001338&episodeid=15&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001338&episodeid=15",
+      "tier": "CRITICAL",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 2437
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2y1",
+      "hazardType": "EQ",
+      "title": "M 5.7 - 48 km WNW of Khuzdar, Pakistan",
+      "locationName": "48 km WNW of Khuzdar, Pakistan",
+      "coordinates": {
+        "lon": 66.1708,
+        "lat": 28.0179,
+        "depthKm": 10
+      },
+      "time": 1792213617657,
+      "sourceUpdatedAt": 1792226951040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.7,
+        "sig": 651,
+        "pagerAlert": "yellow"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2y1.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001339",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone WATI-26",
+      "locationName": "Cook Islands",
+      "coordinates": {
+        "lon": -163.2,
+        "lat": -14.8
+      },
+      "time": 1792130400000,
+      "sourceUpdatedAt": 1792290247000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001339&episodeid=4&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001339&episodeid=4",
+      "tier": "HIGH",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 1450
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u309",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 86 km SW of Brisas Barra de Suchiate, Mexico",
+      "locationName": "86 km SW of Brisas Barra de Suchiate, Mexico",
+      "coordinates": {
+        "lon": -92.8552,
+        "lat": 14.0469,
+        "depthKm": 10
+      },
+      "time": 1792245574575,
+      "sourceUpdatedAt": 1792246659040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u309",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u309.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u32r",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 31 km SE of Kainantu, Papua New Guinea",
+      "locationName": "31 km SE of Kainantu, Papua New Guinea",
+      "coordinates": {
+        "lon": 146.0489,
+        "lat": -6.5103,
+        "depthKm": 124.07
+      },
+      "time": 1792283309111,
+      "sourceUpdatedAt": 1792285824040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u32r",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u32r.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2z9",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 110 km NE of Norsup, Vanuatu",
+      "locationName": "110 km NE of Norsup, Vanuatu",
+      "coordinates": {
+        "lon": 168.2516,
+        "lat": -15.5117,
+        "depthKm": 10
+      },
+      "time": 1792227591583,
+      "sourceUpdatedAt": 1792232165991,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 355
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2z9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2z9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u30x",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 88 km SSW of Uyuni, Bolivia",
+      "locationName": "88 km SSW of Uyuni, Bolivia",
+      "coordinates": {
+        "lon": -67.2144,
+        "lat": -21.1752,
+        "depthKm": 189.462
+      },
+      "time": 1792255965164,
+      "sourceUpdatedAt": 1792261560040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u30x",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u30x.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2zb",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 51 km N of Pante Makasar, Timor Leste",
+      "locationName": "51 km N of Pante Makasar, Timor Leste",
+      "coordinates": {
+        "lon": 124.3423,
+        "lat": -8.7339,
+        "depthKm": 90.844
+      },
+      "time": 1792228060745,
+      "sourceUpdatedAt": 1792229109040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2zb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2zb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2yz",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 80 km NW of Sola, Vanuatu",
+      "locationName": "80 km NW of Sola, Vanuatu",
+      "coordinates": {
+        "lon": 167.0474,
+        "lat": -13.3461,
+        "depthKm": 145.265
+      },
+      "time": 1792222802596,
+      "sourceUpdatedAt": 1792223890040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2yz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2yz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u2yw",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 59 km NNW of Ruteng, Indonesia",
+      "locationName": "59 km NNW of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 120.2824,
+        "lat": -8.1086,
+        "depthKm": 10
+      },
+      "time": 1792221648242,
+      "sourceUpdatedAt": 1792222586040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2yw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u2yw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 8,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
