@@ -1,0 +1,315 @@
+{
+  "generatedAt": 1792386342916,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001338",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone CHAMPI-26",
+      "locationName": "Guam, Northern Mariana Islands, Japan",
+      "coordinates": {
+        "lon": 139.2,
+        "lat": 14
+      },
+      "time": 1791979200000,
+      "sourceUpdatedAt": 1792382450000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001338&episodeid=19&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001338&episodeid=19",
+      "tier": "CRITICAL",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 2456
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u37h",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 71 km ESE of ‘Ohonua, Tonga",
+      "locationName": "71 km ESE of ‘Ohonua, Tonga",
+      "coordinates": {
+        "lon": -174.2956,
+        "lat": -21.541,
+        "depthKm": 10
+      },
+      "time": 1792351948734,
+      "sourceUpdatedAt": 1792354380040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u37h",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u37h.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u34e",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 55 km NNW of Ruteng, Indonesia",
+      "locationName": "55 km NNW of Ruteng, Indonesia",
+      "coordinates": {
+        "lon": 120.2734,
+        "lat": -8.1449,
+        "depthKm": 10
+      },
+      "time": 1792310406054,
+      "sourceUpdatedAt": 1792311286040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u34e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u34e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u38g",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 129 km SSE of Kokopo, Papua New Guinea",
+      "locationName": "129 km SSE of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.6162,
+        "lat": -5.4567,
+        "depthKm": 10
+      },
+      "time": 1792362703272,
+      "sourceUpdatedAt": 1792365895040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u38g",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u38g.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u38b",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 147 km SSW of Kokopo, Papua New Guinea",
+      "locationName": "147 km SSW of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 151.8407,
+        "lat": -5.6049,
+        "depthKm": 10
+      },
+      "time": 1792361173969,
+      "sourceUpdatedAt": 1792362920040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u38b",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u38b.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u36d",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 20 km SW of Sandy Point Town, Saint Kitts and Nevis",
+      "locationName": "20 km SW of Sandy Point Town, Saint Kitts and Nevis",
+      "coordinates": {
+        "lon": -63.0065,
+        "lat": 17.2531,
+        "depthKm": 149.951
+      },
+      "time": 1792337747580,
+      "sourceUpdatedAt": 1792383514212,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u36d",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u36d.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u366",
+      "hazardType": "EQ",
+      "title": "M 4.6 - Carlsberg Ridge",
+      "locationName": "Carlsberg Ridge",
+      "coordinates": {
+        "lon": 66.9867,
+        "lat": 1.452,
+        "depthKm": 10
+      },
+      "time": 1792333807877,
+      "sourceUpdatedAt": 1792346770040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u366",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u366.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u38i",
+      "hazardType": "EQ",
+      "title": "M 4.5 - Fiji region",
+      "locationName": "Fiji region",
+      "coordinates": {
+        "lon": -178.6587,
+        "lat": -20.9271,
+        "depthKm": 551.945
+      },
+      "time": 1792362862230,
+      "sourceUpdatedAt": 1792365573040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u38i",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u38i.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u36m",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 0 km NE of Río Grande, Panama",
+      "locationName": "0 km NE of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.3297,
+        "lat": 7.7244,
+        "depthKm": 10
+      },
+      "time": 1792339975030,
+      "sourceUpdatedAt": 1792348674040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u36m",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u36m.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u35l",
+      "hazardType": "EQ",
+      "title": "M 4.5 - Kermadec Islands, New Zealand",
+      "locationName": "Kermadec Islands, New Zealand",
+      "coordinates": {
+        "lon": -177.3838,
+        "lat": -30.1265,
+        "depthKm": 10
+      },
+      "time": 1792327342533,
+      "sourceUpdatedAt": 1792328391040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u35l",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u35l.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 9,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
