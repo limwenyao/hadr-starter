@@ -1,0 +1,815 @@
+{
+  "generatedAt": 1792559328499,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001338",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone CHAMPI-26",
+      "locationName": "Guam, Northern Mariana Islands, Japan",
+      "coordinates": {
+        "lon": 130.1,
+        "lat": 18.1
+      },
+      "time": 1791979200000,
+      "sourceUpdatedAt": 1792551644000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001338&episodeid=27&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001338&episodeid=27",
+      "tier": "CRITICAL",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 2665
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027465",
+      "hazardType": "DR",
+      "title": "Drought in Burundi, Democratic Republic of Congo, Kenya, Rwanda, Tanzania, Uganda",
+      "locationName": "Burundi, Democratic Republic of Congo, Kenya, Rwanda, Tanzania, Uganda",
+      "coordinates": {
+        "lon": 32.075,
+        "lat": -1.214
+      },
+      "time": 1779321600000,
+      "sourceUpdatedAt": 1792484300000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027465&episodeid=9&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027465&episodeid=9",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 668
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027449",
+      "hazardType": "DR",
+      "title": "Drought in The Bahamas, Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States",
+      "locationName": "The Bahamas, Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States",
+      "coordinates": {
+        "lon": -95.049,
+        "lat": 18.486
+      },
+      "time": 1776729600000,
+      "sourceUpdatedAt": 1792484282000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027449&episodeid=12&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027449&episodeid=12",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 2224
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1027450",
+      "hazardType": "DR",
+      "title": "Drought in Democratic Republic of Congo, Central African Republic, Cameroon, Eritrea, Ethiopia, Niger, Nigeria, Sudan, South Sudan, Chad",
+      "locationName": "Democratic Republic of Congo, Central African Republic, Cameroon, Eritrea, Ethiopia, Niger, Nigeria, Sudan, South Sudan, Chad",
+      "coordinates": {
+        "lon": 25.173,
+        "lat": 8.344
+      },
+      "time": 1782000000000,
+      "sourceUpdatedAt": 1792484278000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1027450&episodeid=12&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1027450&episodeid=12",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 1873
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1018332",
+      "hazardType": "DR",
+      "title": "Drought in Austria, Bosnia  and  Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Moldova, Montenegro, Netherlands, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, Ukraine, ",
+      "locationName": "Austria, Bosnia & Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Moldova, Montenegro, Netherlands, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, Ukraine, ",
+      "coordinates": {
+        "lon": 13.128,
+        "lat": 48.44
+      },
+      "time": 1766275200000,
+      "sourceUpdatedAt": 1792484271000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1018332&episodeid=25&eventtype=DR",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=DR&eventid=1018332&episodeid=25",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · drought)",
+        "isEstimate": false,
+        "radiusKm": 1857
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3nl",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 192 km S of Burica, Panama",
+      "locationName": "192 km S of Burica, Panama",
+      "coordinates": {
+        "lon": -82.5693,
+        "lat": 6.3226,
+        "depthKm": 10
+      },
+      "time": 1792515948338,
+      "sourceUpdatedAt": 1792517006040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3nl",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3nl.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 106
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3k5",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 206 km NW of Port-Olry, Vanuatu",
+      "locationName": "206 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.5874,
+        "lat": -13.857,
+        "depthKm": 10
+      },
+      "time": 1792477762432,
+      "sourceUpdatedAt": 1792480300040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3k5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3k5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3p1",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 39 km W of Mosteiros, Portugal",
+      "locationName": "39 km W of Mosteiros, Portugal",
+      "coordinates": {
+        "lon": -26.2588,
+        "lat": 37.9575,
+        "depthKm": 10
+      },
+      "time": 1792519638131,
+      "sourceUpdatedAt": 1792552079664,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 405
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3p1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3p1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3ka",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 263 km WSW of Yanglong, China",
+      "locationName": "263 km WSW of Yanglong, China",
+      "coordinates": {
+        "lon": 95.6436,
+        "lat": 37.9037,
+        "depthKm": 10
+      },
+      "time": 1792478483116,
+      "sourceUpdatedAt": 1792479359040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3ka",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3ka.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3rr",
+      "hazardType": "EQ",
+      "title": "M 5.0 - south of Panama",
+      "locationName": "south of Panama",
+      "coordinates": {
+        "lon": -82.7031,
+        "lat": 4.5985,
+        "depthKm": 10
+      },
+      "time": 1792545602961,
+      "sourceUpdatedAt": 1792546574040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3rr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3rr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3nc",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 21 km SW of Meulaboh, Indonesia",
+      "locationName": "21 km SW of Meulaboh, Indonesia",
+      "coordinates": {
+        "lon": 95.993,
+        "lat": 4.0005,
+        "depthKm": 75.876
+      },
+      "time": 1792513778818,
+      "sourceUpdatedAt": 1792514695040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3nc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3nc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3lf",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 81 km S of Sand Point, Alaska",
+      "locationName": "81 km S of Sand Point, Alaska",
+      "coordinates": {
+        "lon": -160.3291,
+        "lat": 54.6088,
+        "depthKm": 35
+      },
+      "time": 1792492840968,
+      "sourceUpdatedAt": 1792558243027,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 386
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3lf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3lf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 63
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3r3",
+      "hazardType": "EQ",
+      "title": "M 4.9 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": 179.592,
+        "lat": -25.502,
+        "depthKm": 529.781
+      },
+      "time": 1792538667101,
+      "sourceUpdatedAt": 1792542098040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3r3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3r3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3pq",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 187 km NW of Port-Olry, Vanuatu",
+      "locationName": "187 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.6598,
+        "lat": -14.0479,
+        "depthKm": 10
+      },
+      "time": 1792526606613,
+      "sourceUpdatedAt": 1792528102040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3pq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3pq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3li",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 184 km NW of Port-Olry, Vanuatu",
+      "locationName": "184 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.7462,
+        "lat": -13.991,
+        "depthKm": 10
+      },
+      "time": 1792496410539,
+      "sourceUpdatedAt": 1792499346040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3li",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3li.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3l0",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 199 km NW of Port-Olry, Vanuatu",
+      "locationName": "199 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.5875,
+        "lat": -13.9692,
+        "depthKm": 10
+      },
+      "time": 1792485596237,
+      "sourceUpdatedAt": 1792487434040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3l0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3l0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3kg",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Pagan region, Northern Mariana Islands",
+      "locationName": "Pagan region, Northern Mariana Islands",
+      "coordinates": {
+        "lon": 145.5173,
+        "lat": 18.8377,
+        "depthKm": 250.025
+      },
+      "time": 1792480148960,
+      "sourceUpdatedAt": 1792481592040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3kg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3kg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3nd",
+      "hazardType": "EQ",
+      "title": "M 4.8 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -177.0103,
+        "lat": -24.1803,
+        "depthKm": 109.548
+      },
+      "time": 1792513783678,
+      "sourceUpdatedAt": 1792515630040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3nd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3nd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3sj",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 173 km NW of Port-Olry, Vanuatu",
+      "locationName": "173 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.8331,
+        "lat": -14.035,
+        "depthKm": 10
+      },
+      "time": 1792556608083,
+      "sourceUpdatedAt": 1792557627040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3sj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3sj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3pm",
+      "hazardType": "EQ",
+      "title": "M 4.7 - Kuril Islands",
+      "locationName": "Kuril Islands",
+      "coordinates": {
+        "lon": 152.9149,
+        "lat": 46.2196,
+        "depthKm": 28.746
+      },
+      "time": 1792526039721,
+      "sourceUpdatedAt": 1792528744040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3pm",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3pm.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 45
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3r1",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 115 km NNE of Barishal, Pakistan",
+      "locationName": "115 km NNE of Barishal, Pakistan",
+      "coordinates": {
+        "lon": 75.121,
+        "lat": 37.3012,
+        "depthKm": 65.601
+      },
+      "time": 1792538203934,
+      "sourceUpdatedAt": 1792540803040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3r1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3r1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3k7",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 7 km SE of San Julian, Philippines",
+      "locationName": "7 km SE of San Julian, Philippines",
+      "coordinates": {
+        "lon": 125.5048,
+        "lat": 11.7067,
+        "depthKm": 10
+      },
+      "time": 1792476259173,
+      "sourceUpdatedAt": 1792485335040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3k7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3k7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3rn",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 2 km N of Honchō, Japan",
+      "locationName": "2 km N of Honchō, Japan",
+      "coordinates": {
+        "lon": 139.9836,
+        "lat": 35.7245,
+        "depthKm": 90.274
+      },
+      "time": 1792544669196,
+      "sourceUpdatedAt": 1792556091855,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 314
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3rn",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3rn.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3nn",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 215 km S of Burica, Panama",
+      "locationName": "215 km S of Burica, Panama",
+      "coordinates": {
+        "lon": -82.6622,
+        "lat": 6.0926,
+        "depthKm": 10
+      },
+      "time": 1792516716707,
+      "sourceUpdatedAt": 1792522868040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3nn",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3nn.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3m7",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 111 km S of Kokopo, Papua New Guinea",
+      "locationName": "111 km S of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.1448,
+        "lat": -5.3459,
+        "depthKm": 57.367
+      },
+      "time": 1792506049305,
+      "sourceUpdatedAt": 1792513505040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3m7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3m7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3lx",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 142 km SSW of Abepura, Indonesia",
+      "locationName": "142 km SSW of Abepura, Indonesia",
+      "coordinates": {
+        "lon": 139.9987,
+        "lat": -3.7134,
+        "depthKm": 10
+      },
+      "time": 1792502844320,
+      "sourceUpdatedAt": 1792512488040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3lx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3lx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u3l3",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 100 km SSW of Alo, Wallis and Futuna",
+      "locationName": "100 km SSW of Alo, Wallis and Futuna",
+      "coordinates": {
+        "lon": -178.4627,
+        "lat": -15.1536,
+        "depthKm": 417.492
+      },
+      "time": 1792486717177,
+      "sourceUpdatedAt": 1792488139040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3l3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u3l3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 26,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
