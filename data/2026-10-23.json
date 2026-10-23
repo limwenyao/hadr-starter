@@ -1,0 +1,827 @@
+{
+  "generatedAt": 1792732315036,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u43g",
+      "hazardType": "EQ",
+      "title": "M 7.0 - 191 km ENE of Nagqu, China",
+      "locationName": "191 km ENE of Nagqu, China",
+      "coordinates": {
+        "lon": 93.7797,
+        "lat": 32.3805,
+        "depthKm": 18
+      },
+      "time": 1792679620353,
+      "sourceUpdatedAt": 1792716711955,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 7,
+        "sig": 1004,
+        "pagerAlert": "orange"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u43g",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u43g.geojson",
+      "tier": "CRITICAL",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 7.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001338",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone CHAMPI-26",
+      "locationName": "Philippines, Guam, Northern Mariana Islands, Japan",
+      "coordinates": {
+        "lon": 123.8,
+        "lat": 22.7
+      },
+      "time": 1791979200000,
+      "sourceUpdatedAt": 1792724434000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001338&episodeid=35&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001338&episodeid=35",
+      "tier": "CRITICAL",
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 2618
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1573141",
+      "hazardType": "EQ",
+      "title": "Earthquake in China",
+      "locationName": "China",
+      "coordinates": {
+        "lon": 93.7797,
+        "lat": 32.3805
+      },
+      "time": 1792679620000,
+      "sourceUpdatedAt": 1792695740000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1573141&episodeid=1741837&eventtype=EQ",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=EQ&eventid=1573141&episodeid=1741837",
+      "tier": "CRITICAL",
+      "duplicateOf": {
+        "feed": "USGS",
+        "feedEventId": "us6000u43g",
+        "title": "M 7.0 - 191 km ENE of Nagqu, China"
+      },
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · earthquake)",
+        "isEstimate": false,
+        "radiusKm": 299
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u44n",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 201 km ENE of Nagqu, China",
+      "locationName": "201 km ENE of Nagqu, China",
+      "coordinates": {
+        "lon": 93.8669,
+        "lat": 32.4401,
+        "depthKm": 10
+      },
+      "time": 1792681924462,
+      "sourceUpdatedAt": 1792683656040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u44n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u44n.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u473",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 153 km S of Kokopo, Papua New Guinea",
+      "locationName": "153 km S of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.2646,
+        "lat": -5.728,
+        "depthKm": 10
+      },
+      "time": 1792699504207,
+      "sourceUpdatedAt": 1792701502040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u473",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u473.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u45j",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 207 km ENE of Nagqu, China",
+      "locationName": "207 km ENE of Nagqu, China",
+      "coordinates": {
+        "lon": 93.9886,
+        "lat": 32.3707,
+        "depthKm": 10
+      },
+      "time": 1792692404294,
+      "sourceUpdatedAt": 1792693727040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u45j",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u45j.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u46r",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 104 km NNE of Hihifo, Tonga",
+      "locationName": "104 km NNE of Hihifo, Tonga",
+      "coordinates": {
+        "lon": -173.3304,
+        "lat": -15.1269,
+        "depthKm": 23.411
+      },
+      "time": 1792696016074,
+      "sourceUpdatedAt": 1792697262040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u46r",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u46r.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 61
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u451",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 210 km ENE of Nagqu, China",
+      "locationName": "210 km ENE of Nagqu, China",
+      "coordinates": {
+        "lon": 93.9447,
+        "lat": 32.4918,
+        "depthKm": 10
+      },
+      "time": 1792686093822,
+      "sourceUpdatedAt": 1792696467040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u451",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u451.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u44w",
+      "hazardType": "EQ",
+      "title": "M 4.9 - western Xizang",
+      "locationName": "western Xizang",
+      "coordinates": {
+        "lon": 86.2316,
+        "lat": 33.7966,
+        "depthKm": 10
+      },
+      "time": 1792683937094,
+      "sourceUpdatedAt": 1792685382040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u44w",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u44w.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u432",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 200 km NW of Port-Olry, Vanuatu",
+      "locationName": "200 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.6239,
+        "lat": -13.9085,
+        "depthKm": 10
+      },
+      "time": 1792671777822,
+      "sourceUpdatedAt": 1792674454040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u432",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u432.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u42q",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 85 km NNW of Curup, Indonesia",
+      "locationName": "85 km NNW of Curup, Indonesia",
+      "coordinates": {
+        "lon": 102.1272,
+        "lat": -2.8037,
+        "depthKm": 135.261
+      },
+      "time": 1792666672259,
+      "sourceUpdatedAt": 1792668717040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u42q",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u42q.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u47l",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 269 km SSW of Severo-Kuril’sk, Russia",
+      "locationName": "269 km SSW of Severo-Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 154.9209,
+        "lat": 48.3802,
+        "depthKm": 50.389
+      },
+      "time": 1792703399090,
+      "sourceUpdatedAt": 1792711066040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u47l",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u47l.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 31
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u45f",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 39 km NE of Shikotan, Russia",
+      "locationName": "39 km NE of Shikotan, Russia",
+      "coordinates": {
+        "lon": 147.0825,
+        "lat": 44.035,
+        "depthKm": 76.309
+      },
+      "time": 1792689686780,
+      "sourceUpdatedAt": 1792690700040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u45f",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u45f.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u459",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 144 km SSW of ‘Ohonua, Tonga",
+      "locationName": "144 km SSW of ‘Ohonua, Tonga",
+      "coordinates": {
+        "lon": -175.4438,
+        "lat": -22.564,
+        "depthKm": 35
+      },
+      "time": 1792687881365,
+      "sourceUpdatedAt": 1792689794040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u459",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u459.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 48
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u41y",
+      "hazardType": "EQ",
+      "title": "M 4.8 - Balleny Islands region",
+      "locationName": "Balleny Islands region",
+      "coordinates": {
+        "lon": 163.5214,
+        "lat": -62.4088,
+        "depthKm": 10
+      },
+      "time": 1792655369455,
+      "sourceUpdatedAt": 1792659489040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u41y",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u41y.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u417",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 86 km S of Kokopo, Papua New Guinea",
+      "locationName": "86 km S of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 152.2467,
+        "lat": -5.1295,
+        "depthKm": 57.317
+      },
+      "time": 1792646639562,
+      "sourceUpdatedAt": 1792647649040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u417",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u417.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 14
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u45a",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 190 km ENE of Nagqu, China",
+      "locationName": "190 km ENE of Nagqu, China",
+      "coordinates": {
+        "lon": 93.8055,
+        "lat": 32.3207,
+        "depthKm": 10
+      },
+      "time": 1792688273999,
+      "sourceUpdatedAt": 1792699033040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u45a",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u45a.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u44u",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 139 km ENE of Kashgar, China",
+      "locationName": "139 km ENE of Kashgar, China",
+      "coordinates": {
+        "lon": 77.3556,
+        "lat": 40.1472,
+        "depthKm": 10
+      },
+      "time": 1792682868445,
+      "sourceUpdatedAt": 1792694238040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u44u",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u44u.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u47n",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 49 km S of Ollagüe, Chile",
+      "locationName": "49 km S of Ollagüe, Chile",
+      "coordinates": {
+        "lon": -68.3401,
+        "lat": -21.6653,
+        "depthKm": 141.88
+      },
+      "time": 1792705076543,
+      "sourceUpdatedAt": 1792714187040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u47n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u47n.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u455",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 193 km NE of Nagqu, China",
+      "locationName": "193 km NE of Nagqu, China",
+      "coordinates": {
+        "lon": 93.7403,
+        "lat": 32.4691,
+        "depthKm": 10
+      },
+      "time": 1792687500942,
+      "sourceUpdatedAt": 1792696988040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u455",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u455.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u42e",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 11 km W of Ashkāsham, Afghanistan",
+      "locationName": "11 km W of Ashkāsham, Afghanistan",
+      "coordinates": {
+        "lon": 71.3996,
+        "lat": 36.677,
+        "depthKm": 174.513
+      },
+      "time": 1792663661749,
+      "sourceUpdatedAt": 1792664675040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u42e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u42e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u41z",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 49 km NE of Yigo Village, Guam",
+      "locationName": "49 km NE of Yigo Village, Guam",
+      "coordinates": {
+        "lon": 145.2184,
+        "lat": 13.8474,
+        "depthKm": 99.23
+      },
+      "time": 1792656395200,
+      "sourceUpdatedAt": 1792712919940,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 329
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u41z",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u41z.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u49c",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 58 km SW of Atocha, Bolivia",
+      "locationName": "58 km SW of Atocha, Bolivia",
+      "coordinates": {
+        "lon": -66.5795,
+        "lat": -21.3469,
+        "depthKm": 235.829
+      },
+      "time": 1792723541183,
+      "sourceUpdatedAt": 1792724348040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u49c",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u49c.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u49a",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 18 km NNW of Yongning, China",
+      "locationName": "18 km NNW of Yongning, China",
+      "coordinates": {
+        "lon": 100.6189,
+        "lat": 27.9986,
+        "depthKm": 10
+      },
+      "time": 1792721821507,
+      "sourceUpdatedAt": 1792724233876,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u49a",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u49a.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u48i",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 102 km W of San Antonio de los Cobres, Argentina",
+      "locationName": "102 km W of San Antonio de los Cobres, Argentina",
+      "coordinates": {
+        "lon": -67.3224,
+        "lat": -24.286,
+        "depthKm": 185.541
+      },
+      "time": 1792714175519,
+      "sourceUpdatedAt": 1792721173040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u48i",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u48i.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u458",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 203 km ENE of Nagqu, China",
+      "locationName": "203 km ENE of Nagqu, China",
+      "coordinates": {
+        "lon": 93.8798,
+        "lat": 32.4493,
+        "depthKm": 10
+      },
+      "time": 1792687816850,
+      "sourceUpdatedAt": 1792697621040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u458",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u458.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000u423",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 136 km NE of Petropavlovsk-Kamchatsky, Russia",
+      "locationName": "136 km NE of Petropavlovsk-Kamchatsky, Russia",
+      "coordinates": {
+        "lon": 160.2671,
+        "lat": 53.7958,
+        "depthKm": 61.06
+      },
+      "time": 1792658058537,
+      "sourceUpdatedAt": 1792659800040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u423",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u423.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 26,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
