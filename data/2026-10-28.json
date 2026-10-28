@@ -1,0 +1,736 @@
+{
+  "generatedAt": 1793167423896,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttlm",
+      "hazardType": "EQ",
+      "title": "M 6.0 - 214 km NW of Port-Olry, Vanuatu",
+      "locationName": "214 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.446,
+        "lat": -13.9312,
+        "depthKm": 10
+      },
+      "time": 1793154105806,
+      "sourceUpdatedAt": 1793162671840,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6,
+        "sig": 554,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttlm",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttlm.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttfb",
+      "hazardType": "EQ",
+      "title": "M 5.8 - 196 km NW of Port-Olry, Vanuatu",
+      "locationName": "196 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.6671,
+        "lat": -13.9141,
+        "depthKm": 11
+      },
+      "time": 1793091323290,
+      "sourceUpdatedAt": 1793098850510,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.8,
+        "sig": 518,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttfb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttfb.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttlt",
+      "hazardType": "EQ",
+      "title": "M 5.6 - 174 km NW of Port-Olry, Vanuatu",
+      "locationName": "174 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.8001,
+        "lat": -14.0693,
+        "depthKm": 10
+      },
+      "time": 1793156388387,
+      "sourceUpdatedAt": 1793163890618,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.6,
+        "sig": 482,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttlt",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttlt.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttld",
+      "hazardType": "EQ",
+      "title": "M 5.5 - 221 km NW of Port-Olry, Vanuatu",
+      "locationName": "221 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.389,
+        "lat": -13.8946,
+        "depthKm": 10
+      },
+      "time": 1793151551004,
+      "sourceUpdatedAt": 1793159065158,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 465,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttld",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttld.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttke",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 193 km WSW of Merizo Village, Guam",
+      "locationName": "193 km WSW of Merizo Village, Guam",
+      "coordinates": {
+        "lon": 142.9938,
+        "lat": 12.6676,
+        "depthKm": 100.998
+      },
+      "time": 1793142857420,
+      "sourceUpdatedAt": 1793165060961,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttke",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttke.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttis",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 210 km ENE of Nagqu, China",
+      "locationName": "210 km ENE of Nagqu, China",
+      "coordinates": {
+        "lon": 93.9028,
+        "lat": 32.5388,
+        "depthKm": 10
+      },
+      "time": 1793127473135,
+      "sourceUpdatedAt": 1793134997410,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttis",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttis.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttgf",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 128 km S of Pundong, Indonesia",
+      "locationName": "128 km S of Pundong, Indonesia",
+      "coordinates": {
+        "lon": 110.3305,
+        "lat": -9.1162,
+        "depthKm": 10
+      },
+      "time": 1793112240933,
+      "sourceUpdatedAt": 1793158529937,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttgf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttgf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttlk",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 220 km NW of Port-Olry, Vanuatu",
+      "locationName": "220 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.4612,
+        "lat": -13.8123,
+        "depthKm": 10
+      },
+      "time": 1793153835975,
+      "sourceUpdatedAt": 1793154920040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttlk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttlk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttlc",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 6 km NW of Balangonan, Philippines",
+      "locationName": "6 km NW of Balangonan, Philippines",
+      "coordinates": {
+        "lon": 125.3054,
+        "lat": 5.6079,
+        "depthKm": 45.941
+      },
+      "time": 1793149914979,
+      "sourceUpdatedAt": 1793156864285,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 418
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttlc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttlc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 75
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttfk",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 191 km NW of Port-Olry, Vanuatu",
+      "locationName": "191 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.6479,
+        "lat": -14.0067,
+        "depthKm": 10
+      },
+      "time": 1793098235418,
+      "sourceUpdatedAt": 1793099351040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttfk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttfk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttkk",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 7 km N of Balangonan, Philippines",
+      "locationName": "7 km N of Balangonan, Philippines",
+      "coordinates": {
+        "lon": 125.3536,
+        "lat": 5.6402,
+        "depthKm": 57.848
+      },
+      "time": 1793144631480,
+      "sourceUpdatedAt": 1793156772402,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 403
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttkk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttkk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 54
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttm2",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 200 km W of Sola, Vanuatu",
+      "locationName": "200 km W of Sola, Vanuatu",
+      "coordinates": {
+        "lon": 165.7007,
+        "lat": -13.7421,
+        "depthKm": 10
+      },
+      "time": 1793161864089,
+      "sourceUpdatedAt": 1793162869040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttm2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttm2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttgq",
+      "hazardType": "EQ",
+      "title": "M 5.0 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -179.7358,
+        "lat": -23.7469,
+        "depthKm": 509.065
+      },
+      "time": 1793115102073,
+      "sourceUpdatedAt": 1793116256040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttgq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttgq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttgm",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 27 km W of Río Grande, Panama",
+      "locationName": "27 km W of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.584,
+        "lat": 7.706,
+        "depthKm": 10
+      },
+      "time": 1793114762987,
+      "sourceUpdatedAt": 1793153124774,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttgm",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttgm.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttfj",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 184 km NW of Port-Olry, Vanuatu",
+      "locationName": "184 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.7876,
+        "lat": -13.9437,
+        "depthKm": 10
+      },
+      "time": 1793095591916,
+      "sourceUpdatedAt": 1793098239040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttfj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttfj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttfe",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 206 km NW of Port-Olry, Vanuatu",
+      "locationName": "206 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.5556,
+        "lat": -13.9006,
+        "depthKm": 10
+      },
+      "time": 1793092855730,
+      "sourceUpdatedAt": 1793093996040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttfe",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttfe.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttfc",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 95 km NNE of Hihifo, Tonga",
+      "locationName": "95 km NNE of Hihifo, Tonga",
+      "coordinates": {
+        "lon": -173.4094,
+        "lat": -15.1739,
+        "depthKm": 10
+      },
+      "time": 1793092065122,
+      "sourceUpdatedAt": 1793147750511,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttfc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttfc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tth4",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 70 km WNW of Callaguip, Philippines",
+      "locationName": "70 km WNW of Callaguip, Philippines",
+      "coordinates": {
+        "lon": 119.8508,
+        "lat": 18.2708,
+        "depthKm": 10
+      },
+      "time": 1793117273845,
+      "sourceUpdatedAt": 1793126324040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tth4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tth4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttgh",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 156 km S of Pundong, Indonesia",
+      "locationName": "156 km S of Pundong, Indonesia",
+      "coordinates": {
+        "lon": 110.2973,
+        "lat": -9.3662,
+        "depthKm": 20.614
+      },
+      "time": 1793112189497,
+      "sourceUpdatedAt": 1793113955040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttgh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttgh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 62
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttli",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 217 km NW of Port-Olry, Vanuatu",
+      "locationName": "217 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.4403,
+        "lat": -13.8902,
+        "depthKm": 10
+      },
+      "time": 1793153635226,
+      "sourceUpdatedAt": 1793155332040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttli",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttli.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttgc",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 41 km S of Farkhār, Afghanistan",
+      "locationName": "41 km S of Farkhār, Afghanistan",
+      "coordinates": {
+        "lon": 69.9044,
+        "lat": 36.2043,
+        "depthKm": 115.076
+      },
+      "time": 1793110146874,
+      "sourceUpdatedAt": 1793121739040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttgc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttgc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttfx",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 5 km ENE of Tierra y Libertad, Mexico",
+      "locationName": "5 km ENE of Tierra y Libertad, Mexico",
+      "coordinates": {
+        "lon": -93.817,
+        "lat": 16.3977,
+        "depthKm": 140.342
+      },
+      "time": 1793102471952,
+      "sourceUpdatedAt": 1793104946291,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttfx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttfx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ttfs",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 100 km W of El Aguilar, Argentina",
+      "locationName": "100 km W of El Aguilar, Argentina",
+      "coordinates": {
+        "lon": -66.6616,
+        "lat": -23.1819,
+        "depthKm": 206.259
+      },
+      "time": 1793101282141,
+      "sourceUpdatedAt": 1793102486040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttfs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttfs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [
+    {
+      "feed": "GDACS",
+      "reason": "TimeoutError: The operation was aborted due to timeout"
+    }
+  ],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 23,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
