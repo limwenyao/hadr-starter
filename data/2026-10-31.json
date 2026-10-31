@@ -1,0 +1,422 @@
+{
+  "generatedAt": 1793426855157,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tu7j",
+      "hazardType": "EQ",
+      "title": "M 5.1 - Balleny Islands region",
+      "locationName": "Balleny Islands region",
+      "coordinates": {
+        "lon": 155.2618,
+        "lat": -62.4457,
+        "depthKm": 10
+      },
+      "time": 1793355148219,
+      "sourceUpdatedAt": 1793356255040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tu7j",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tu7j.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tugd",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 97 km ENE of Port-Olry, Vanuatu",
+      "locationName": "97 km ENE of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 167.9478,
+        "lat": -14.8091,
+        "depthKm": 10
+      },
+      "time": 1793406395699,
+      "sourceUpdatedAt": 1793408434040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tugd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tugd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tufc",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 222 km NW of Port-Olry, Vanuatu",
+      "locationName": "222 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.4282,
+        "lat": -13.8288,
+        "depthKm": 10
+      },
+      "time": 1793398495008,
+      "sourceUpdatedAt": 1793403082040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tufc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tufc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tu7m",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 42 km SE of Sykiá, Greece",
+      "locationName": "42 km SE of Sykiá, Greece",
+      "coordinates": {
+        "lon": 24.2284,
+        "lat": 39.7308,
+        "depthKm": 10
+      },
+      "time": 1793357103842,
+      "sourceUpdatedAt": 1793360254040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tu7m",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tu7m.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tugv",
+      "hazardType": "EQ",
+      "title": "M 4.6 - Izu Islands, Japan region",
+      "locationName": "Izu Islands, Japan region",
+      "coordinates": {
+        "lon": 142.5186,
+        "lat": 30.9098,
+        "depthKm": 10
+      },
+      "time": 1793416453580,
+      "sourceUpdatedAt": 1793417622040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tugv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tugv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tufp",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 33 km NE of Mazo Cruz, Peru",
+      "locationName": "33 km NE of Mazo Cruz, Peru",
+      "coordinates": {
+        "lon": -69.4844,
+        "lat": -16.5439,
+        "depthKm": 194.807
+      },
+      "time": 1793400417982,
+      "sourceUpdatedAt": 1793402053040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tufp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tufp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tub8",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 7 km NE of Tago, Philippines",
+      "locationName": "7 km NE of Tago, Philippines",
+      "coordinates": {
+        "lon": 126.2834,
+        "lat": 9.0593,
+        "depthKm": 10
+      },
+      "time": 1793379986864,
+      "sourceUpdatedAt": 1793389042040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tub8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tub8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tu7b",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 64 km SSW of Shikotan, Russia",
+      "locationName": "64 km SSW of Shikotan, Russia",
+      "coordinates": {
+        "lon": 146.4242,
+        "lat": 43.2605,
+        "depthKm": 43.625
+      },
+      "time": 1793349949982,
+      "sourceUpdatedAt": 1793350865040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tu7b",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tu7b.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 21
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tugs",
+      "hazardType": "EQ",
+      "title": "M 4.5 - central Mid-Atlantic Ridge",
+      "locationName": "central Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -34.6828,
+        "lat": 7.087,
+        "depthKm": 10
+      },
+      "time": 1793414239894,
+      "sourceUpdatedAt": 1793415536040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tugs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tugs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tugf",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 223 km SE of Katsuura, Japan",
+      "locationName": "223 km SE of Katsuura, Japan",
+      "coordinates": {
+        "lon": 141.8118,
+        "lat": 33.5548,
+        "depthKm": 10
+      },
+      "time": 1793406766687,
+      "sourceUpdatedAt": 1793414619040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tugf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tugf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tudk",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 236 km ESE of Zyryanka, Russia",
+      "locationName": "236 km ESE of Zyryanka, Russia",
+      "coordinates": {
+        "lon": 155.7595,
+        "lat": 65.0985,
+        "depthKm": 10
+      },
+      "time": 1793383270672,
+      "sourceUpdatedAt": 1793388755040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tudk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tudk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tu83",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 68 km ENE of Kuji, Japan",
+      "locationName": "68 km ENE of Kuji, Japan",
+      "coordinates": {
+        "lon": 142.4748,
+        "lat": 40.4803,
+        "depthKm": 42.816
+      },
+      "time": 1793366299151,
+      "sourceUpdatedAt": 1793381811040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tu83",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tu83.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 10
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tu7k",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 104 km ENE of Barcelona, Philippines",
+      "locationName": "104 km ENE of Barcelona, Philippines",
+      "coordinates": {
+        "lon": 127.3616,
+        "lat": 8.3731,
+        "depthKm": 10
+      },
+      "time": 1793355851303,
+      "sourceUpdatedAt": 1793357642040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tu7k",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tu7k.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 13,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
