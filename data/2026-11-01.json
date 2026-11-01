@@ -1,0 +1,417 @@
+{
+  "generatedAt": 1793515051463,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuku",
+      "hazardType": "EQ",
+      "title": "M 6.0 - 58 km SSE of Shima, Japan",
+      "locationName": "58 km SSE of Shima, Japan",
+      "coordinates": {
+        "lon": 136.9854,
+        "lat": 33.822,
+        "depthKm": 352.449
+      },
+      "time": 1793484902901,
+      "sourceUpdatedAt": 1793514141361,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6,
+        "sig": 560,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuku",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuku.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 2.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuky",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 200 km NW of Port-Olry, Vanuatu",
+      "locationName": "200 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.6456,
+        "lat": -13.8729,
+        "depthKm": 10
+      },
+      "time": 1793486559540,
+      "sourceUpdatedAt": 1793488268040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuky",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuky.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tujf",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 4 km S of Bajo Corral, Panama",
+      "locationName": "4 km S of Bajo Corral, Panama",
+      "coordinates": {
+        "lon": -80.2547,
+        "lat": 7.5692,
+        "depthKm": 10
+      },
+      "time": 1793461818909,
+      "sourceUpdatedAt": 1793479394907,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 431
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tujf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tujf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tukm",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 115 km SE of Bushehr, Iran",
+      "locationName": "115 km SE of Bushehr, Iran",
+      "coordinates": {
+        "lon": 51.5076,
+        "lat": 28.114,
+        "depthKm": 10
+      },
+      "time": 1793481639173,
+      "sourceUpdatedAt": 1793482556040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tukm",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tukm.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuif",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 196 km NW of Port-Olry, Vanuatu",
+      "locationName": "196 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.6759,
+        "lat": -13.9069,
+        "depthKm": 10
+      },
+      "time": 1793446272352,
+      "sourceUpdatedAt": 1793447241040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuif",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuif.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuht",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 236 km NW of Port-Olry, Vanuatu",
+      "locationName": "236 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.2951,
+        "lat": -13.7894,
+        "depthKm": 10
+      },
+      "time": 1793438312051,
+      "sourceUpdatedAt": 1793439635040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuht",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuht.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuhs",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 213 km W of Sola, Vanuatu",
+      "locationName": "213 km W of Sola, Vanuatu",
+      "coordinates": {
+        "lon": 165.5833,
+        "lat": -13.7683,
+        "depthKm": 10
+      },
+      "time": 1793438152568,
+      "sourceUpdatedAt": 1793439142040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuhs",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuhs.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tumy",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 71 km NNW of San Antonio de los Cobres, Argentina",
+      "locationName": "71 km NNW of San Antonio de los Cobres, Argentina",
+      "coordinates": {
+        "lon": -66.6315,
+        "lat": -23.6386,
+        "depthKm": 202.07
+      },
+      "time": 1793511114598,
+      "sourceUpdatedAt": 1793512047040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tumy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tumy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tule",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 199 km NW of Port-Olry, Vanuatu",
+      "locationName": "199 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.6627,
+        "lat": -13.8748,
+        "depthKm": 10
+      },
+      "time": 1793491075354,
+      "sourceUpdatedAt": 1793492226040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tule",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tule.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuly",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 55 km SSW of Ollagüe, Chile",
+      "locationName": "55 km SSW of Ollagüe, Chile",
+      "coordinates": {
+        "lon": -68.435,
+        "lat": -21.698,
+        "depthKm": 120.437
+      },
+      "time": 1793496292448,
+      "sourceUpdatedAt": 1793499236951,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuly",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuly.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuk4",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 111 km ESE of Atka, Alaska",
+      "locationName": "111 km ESE of Atka, Alaska",
+      "coordinates": {
+        "lon": -172.7931,
+        "lat": 51.6994,
+        "depthKm": 44.87
+      },
+      "time": 1793472662721,
+      "sourceUpdatedAt": 1793483896625,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuk4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuk4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "aka2026vpcige",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 121 km SE of Atka, Alaska",
+      "locationName": "121 km SE of Atka, Alaska",
+      "coordinates": {
+        "lon": -172.815,
+        "lat": 51.521,
+        "depthKm": 1
+      },
+      "time": 1793472658577,
+      "sourceUpdatedAt": 1793483774811,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026vpcige",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026vpcige.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tumt",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 295 km ESE of Tadine, New Caledonia",
+      "locationName": "295 km ESE of Tadine, New Caledonia",
+      "coordinates": {
+        "lon": 170.4074,
+        "lat": -22.8,
+        "depthKm": 10
+      },
+      "time": 1793455019106,
+      "sourceUpdatedAt": 1793510349040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tumt",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tumt.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 13,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
