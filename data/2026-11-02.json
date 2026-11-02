@@ -1,0 +1,701 @@
+{
+  "generatedAt": 1793601442450,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tupl",
+      "hazardType": "EQ",
+      "title": "M 6.0 - 165 km NW of Port-Olry, Vanuatu",
+      "locationName": "165 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.8242,
+        "lat": -14.1689,
+        "depthKm": 10
+      },
+      "time": 1793533623778,
+      "sourceUpdatedAt": 1793593062419,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6,
+        "sig": 554,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tupl",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tupl.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tut4",
+      "hazardType": "EQ",
+      "title": "M 5.1 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": -177.7236,
+        "lat": -31.2244,
+        "depthKm": 10
+      },
+      "time": 1793582296369,
+      "sourceUpdatedAt": 1793583368040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tut4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tut4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tusv",
+      "hazardType": "EQ",
+      "title": "M 5.1 - Banda Sea",
+      "locationName": "Banda Sea",
+      "coordinates": {
+        "lon": 129.9514,
+        "lat": -6.9205,
+        "depthKm": 93.548
+      },
+      "time": 1793580790555,
+      "sourceUpdatedAt": 1793582978040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tusv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tusv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuqk",
+      "hazardType": "EQ",
+      "title": "M 5.1 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -27.1985,
+        "lat": -56.2566,
+        "depthKm": 108.234
+      },
+      "time": 1793553116053,
+      "sourceUpdatedAt": 1793554232040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuqk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuqk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tund",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 201 km NW of Port-Olry, Vanuatu",
+      "locationName": "201 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.6455,
+        "lat": -13.8611,
+        "depthKm": 10
+      },
+      "time": 1793516454331,
+      "sourceUpdatedAt": 1793518153040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tund",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tund.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuqx",
+      "hazardType": "EQ",
+      "title": "M 5.0 - Mid-Indian Ridge",
+      "locationName": "Mid-Indian Ridge",
+      "coordinates": {
+        "lon": 69.5217,
+        "lat": -23.8735,
+        "depthKm": 10
+      },
+      "time": 1793558079200,
+      "sourceUpdatedAt": 1793559241040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuqx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuqx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuu0",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 175 km WNW of Panguna, Papua New Guinea",
+      "locationName": "175 km WNW of Panguna, Papua New Guinea",
+      "coordinates": {
+        "lon": 154.088,
+        "lat": -5.5626,
+        "depthKm": 87.891
+      },
+      "time": 1793596790104,
+      "sourceUpdatedAt": 1793598379177,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 370
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuu0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuu0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tur0",
+      "hazardType": "EQ",
+      "title": "M 4.8 - Mid-Indian Ridge",
+      "locationName": "Mid-Indian Ridge",
+      "coordinates": {
+        "lon": 78.4169,
+        "lat": -35.441,
+        "depthKm": 10
+      },
+      "time": 1793559237590,
+      "sourceUpdatedAt": 1793560361040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tur0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tur0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tupq",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 203 km NW of Port-Olry, Vanuatu",
+      "locationName": "203 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.6199,
+        "lat": -13.8667,
+        "depthKm": 10
+      },
+      "time": 1793534910561,
+      "sourceUpdatedAt": 1793535967040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tupq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tupq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tupp",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 176 km NW of Port-Olry, Vanuatu",
+      "locationName": "176 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.767,
+        "lat": -14.0776,
+        "depthKm": 10
+      },
+      "time": 1793534211778,
+      "sourceUpdatedAt": 1793535326040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tupp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tupp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tunq",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 33 km SE of Jiufen, Taiwan",
+      "locationName": "33 km SE of Jiufen, Taiwan",
+      "coordinates": {
+        "lon": 122.0621,
+        "lat": 24.8805,
+        "depthKm": 118.799
+      },
+      "time": 1793521207549,
+      "sourceUpdatedAt": 1793573414253,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 358
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tunq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tunq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuts",
+      "hazardType": "EQ",
+      "title": "M 4.7 - Mid-Indian Ridge",
+      "locationName": "Mid-Indian Ridge",
+      "coordinates": {
+        "lon": 78.0792,
+        "lat": -35.9577,
+        "depthKm": 10
+      },
+      "time": 1793587427892,
+      "sourceUpdatedAt": 1793601013040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuts",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuts.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000turj",
+      "hazardType": "EQ",
+      "title": "M 4.7 - Kermadec Islands region",
+      "locationName": "Kermadec Islands region",
+      "coordinates": {
+        "lon": -177.8708,
+        "lat": -27.291,
+        "depthKm": 150.95
+      },
+      "time": 1793568417524,
+      "sourceUpdatedAt": 1793570338040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000turj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000turj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuqi",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 78 km SSE of Yonakuni, Japan",
+      "locationName": "78 km SSE of Yonakuni, Japan",
+      "coordinates": {
+        "lon": 123.2705,
+        "lat": 23.8055,
+        "depthKm": 18.483
+      },
+      "time": 1793552478126,
+      "sourceUpdatedAt": 1793554810040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuqi",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuqi.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 50
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tung",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 191 km NW of Port-Olry, Vanuatu",
+      "locationName": "191 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.6642,
+        "lat": -13.9872,
+        "depthKm": 10
+      },
+      "time": 1793518667343,
+      "sourceUpdatedAt": 1793519605040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tung",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tung.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tutv",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 201 km NE of Kuril’sk, Russia",
+      "locationName": "201 km NE of Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 149.5786,
+        "lat": 46.6019,
+        "depthKm": 10
+      },
+      "time": 1793594748110,
+      "sourceUpdatedAt": 1793596280040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tutv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tutv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000turv",
+      "hazardType": "EQ",
+      "title": "M 4.6 - Mid-Indian Ridge",
+      "locationName": "Mid-Indian Ridge",
+      "coordinates": {
+        "lon": 78.3627,
+        "lat": -35.4346,
+        "depthKm": 10
+      },
+      "time": 1793571763980,
+      "sourceUpdatedAt": 1793576545040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000turv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000turv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuqy",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 101 km SW of Basco, Philippines",
+      "locationName": "101 km SW of Basco, Philippines",
+      "coordinates": {
+        "lon": 121.328,
+        "lat": 19.7626,
+        "depthKm": 38.488
+      },
+      "time": 1793558577023,
+      "sourceUpdatedAt": 1793562120040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuqy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuqy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 30
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuqv",
+      "hazardType": "EQ",
+      "title": "M 4.6 - Mid-Indian Ridge",
+      "locationName": "Mid-Indian Ridge",
+      "coordinates": {
+        "lon": 69.5065,
+        "lat": -23.9496,
+        "depthKm": 10
+      },
+      "time": 1793557823197,
+      "sourceUpdatedAt": 1793559328040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuqv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuqv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tute",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 135 km SW of Lorengau, Papua New Guinea",
+      "locationName": "135 km SW of Lorengau, Papua New Guinea",
+      "coordinates": {
+        "lon": 146.4573,
+        "lat": -2.9446,
+        "depthKm": 10
+      },
+      "time": 1793586243097,
+      "sourceUpdatedAt": 1793590666040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tute",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tute.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tutf",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 64 km SE of Yilan, Taiwan",
+      "locationName": "64 km SE of Yilan, Taiwan",
+      "coordinates": {
+        "lon": 122.1775,
+        "lat": 24.322,
+        "depthKm": 55.087
+      },
+      "time": 1793586188566,
+      "sourceUpdatedAt": 1793589724040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tutf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tutf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuta",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 288 km SSE of Muroto-misakicho, Japan",
+      "locationName": "288 km SSE of Muroto-misakicho, Japan",
+      "coordinates": {
+        "lon": 135.1987,
+        "lat": 30.8406,
+        "depthKm": 510.072
+      },
+      "time": 1793584495186,
+      "sourceUpdatedAt": 1793585553040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuta",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuta.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tus5",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 86 km WNW of Abra Pampa, Argentina",
+      "locationName": "86 km WNW of Abra Pampa, Argentina",
+      "coordinates": {
+        "lon": -66.523,
+        "lat": -22.5661,
+        "depthKm": 243.598
+      },
+      "time": 1793575085811,
+      "sourceUpdatedAt": 1793576730040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tus5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tus5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 23,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
