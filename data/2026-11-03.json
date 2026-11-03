@@ -1,0 +1,344 @@
+{
+  "generatedAt": 1793689611711,
+  "surfaced": [
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001346",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone MURASU-26",
+      "locationName": "India",
+      "coordinates": {
+        "lon": 80.3,
+        "lat": 15.5
+      },
+      "time": 1793491200000,
+      "sourceUpdatedAt": 1793685711000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "red"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001346&episodeid=9&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001346&episodeid=9",
+      "tier": "CRITICAL",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 595
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuxy",
+      "hazardType": "EQ",
+      "title": "M 5.3 - 81 km SSE of Palekastro, Greece",
+      "locationName": "81 km SSE of Palekastro, Greece",
+      "coordinates": {
+        "lon": 26.4694,
+        "lat": 34.4807,
+        "depthKm": 48.525
+      },
+      "time": 1793638157895,
+      "sourceUpdatedAt": 1793639236040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.3,
+        "sig": 432
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuxy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuxy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 84
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuxg",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 50 km WSW of Huarmey, Peru",
+      "locationName": "50 km WSW of Huarmey, Peru",
+      "coordinates": {
+        "lon": -78.5994,
+        "lat": -10.1699,
+        "depthKm": 67.239
+      },
+      "time": 1793633293954,
+      "sourceUpdatedAt": 1793634690959,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 401
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuxg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuxg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 42
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuuy",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 19 km WNW of Tomohon, Indonesia",
+      "locationName": "19 km WNW of Tomohon, Indonesia",
+      "coordinates": {
+        "lon": 124.6476,
+        "lat": 1.392,
+        "depthKm": 196.646
+      },
+      "time": 1793607194014,
+      "sourceUpdatedAt": 1793608069040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuuy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuuy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tv2p",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 74 km E of Petropavlovsk-Kamchatsky, Russia",
+      "locationName": "74 km E of Petropavlovsk-Kamchatsky, Russia",
+      "coordinates": {
+        "lon": 159.7384,
+        "lat": 53.0409,
+        "depthKm": 75.58
+      },
+      "time": 1793675592330,
+      "sourceUpdatedAt": 1793679960040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tv2p",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tv2p.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuxi",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 193 km ENE of Nagqu, China",
+      "locationName": "193 km ENE of Nagqu, China",
+      "coordinates": {
+        "lon": 93.831,
+        "lat": 32.3376,
+        "depthKm": 10
+      },
+      "time": 1793633712369,
+      "sourceUpdatedAt": 1793636670040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuxi",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuxi.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuwv",
+      "hazardType": "EQ",
+      "title": "M 4.7 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": 179.6708,
+        "lat": -25.6182,
+        "depthKm": 502.364
+      },
+      "time": 1793628323380,
+      "sourceUpdatedAt": 1793629822040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuwv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuwv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuv8",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 100 km SSE of Palekastro, Greece",
+      "locationName": "100 km SSE of Palekastro, Greece",
+      "coordinates": {
+        "lon": 26.528,
+        "lat": 34.3232,
+        "depthKm": 40.168
+      },
+      "time": 1793609962968,
+      "sourceUpdatedAt": 1793618487040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuv8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuv8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 35
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuv5",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 113 km SW of Basco, Philippines",
+      "locationName": "113 km SW of Basco, Philippines",
+      "coordinates": {
+        "lon": 121.1252,
+        "lat": 19.8007,
+        "depthKm": 35
+      },
+      "time": 1793608967228,
+      "sourceUpdatedAt": 1793612043040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuv5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuv5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 40
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tv03",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 226 km NW of Port-Olry, Vanuatu",
+      "locationName": "226 km NW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.3938,
+        "lat": -13.8072,
+        "depthKm": 10
+      },
+      "time": 1793652865928,
+      "sourceUpdatedAt": 1793653885040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tv03",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tv03.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tuzd",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 168 km SE of San Jose Village, Northern Mariana Islands",
+      "locationName": "168 km SE of San Jose Village, Northern Mariana Islands",
+      "coordinates": {
+        "lon": 146.6114,
+        "lat": 13.795,
+        "depthKm": 10
+      },
+      "time": 1793649544529,
+      "sourceUpdatedAt": 1793650705040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuzd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tuzd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 11,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
