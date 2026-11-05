@@ -1,0 +1,129 @@
+{
+  "generatedAt": 1793862665222,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tvwj",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 207 km ESE of Sarangani, Philippines",
+      "locationName": "207 km ESE of Sarangani, Philippines",
+      "coordinates": {
+        "lon": 127.0325,
+        "lat": 4.3895,
+        "depthKm": 49.074
+      },
+      "time": 1793778012288,
+      "sourceUpdatedAt": 1793779221040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tvwj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tvwj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "nc75462637",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 114 km W of Petrolia, CA",
+      "locationName": "114 km W of Petrolia, CA",
+      "coordinates": {
+        "lon": -125.627166748047,
+        "lat": 40.4253349304199,
+        "depthKm": 2.14000010490417
+      },
+      "time": 1793854561430,
+      "sourceUpdatedAt": 1793862639558,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.96,
+        "sig": 421,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75462637",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc75462637.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tw43",
+      "hazardType": "EQ",
+      "title": "M 4.6 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": 179.8797,
+        "lat": -25.2286,
+        "depthKm": 502.294
+      },
+      "time": 1793827464646,
+      "sourceUpdatedAt": 1793838838040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tw43",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tw43.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tw3k",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 2 km W of Chinandega, Nicaragua",
+      "locationName": "2 km W of Chinandega, Nicaragua",
+      "coordinates": {
+        "lon": -87.1544,
+        "lat": 12.6311,
+        "depthKm": 159.022
+      },
+      "time": 1793822126313,
+      "sourceUpdatedAt": 1793824002040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tw3k",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tw3k.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 4,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
