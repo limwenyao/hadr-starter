@@ -1,0 +1,294 @@
+{
+  "generatedAt": 1793949043388,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tw8r",
+      "hazardType": "EQ",
+      "title": "M 6.1 - Fiji region",
+      "locationName": "Fiji region",
+      "coordinates": {
+        "lon": -178.7145,
+        "lat": -21.1984,
+        "depthKm": 535
+      },
+      "time": 1793899305305,
+      "sourceUpdatedAt": 1793915618317,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.1,
+        "sig": 572,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tw8r",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tw8r.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tw76",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 19 km NNW of Masumbwe, Tanzania",
+      "locationName": "19 km NNW of Masumbwe, Tanzania",
+      "coordinates": {
+        "lon": 32.149,
+        "lat": -3.4641,
+        "depthKm": 10
+      },
+      "time": 1793870552714,
+      "sourceUpdatedAt": 1793901329804,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 410,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tw76",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tw76.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tw8p",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 130 km NE of Thang, India",
+      "locationName": "130 km NE of Thang, India",
+      "coordinates": {
+        "lon": 77.9399,
+        "lat": 35.6318,
+        "depthKm": 76.944
+      },
+      "time": 1793897785875,
+      "sourceUpdatedAt": 1793898826040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tw8p",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tw8p.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tw7b",
+      "hazardType": "EQ",
+      "title": "M 4.8 - Sea of Okhotsk",
+      "locationName": "Sea of Okhotsk",
+      "coordinates": {
+        "lon": 147.7534,
+        "lat": 49.2594,
+        "depthKm": 554.419
+      },
+      "time": 1793873373723,
+      "sourceUpdatedAt": 1793874271040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tw7b",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tw7b.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tweq",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 139 km SSE of False Pass, Alaska",
+      "locationName": "139 km SSE of False Pass, Alaska",
+      "coordinates": {
+        "lon": -162.9502,
+        "lat": 53.6347,
+        "depthKm": 27.963
+      },
+      "time": 1793932525631,
+      "sourceUpdatedAt": 1793940049673,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tweq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tweq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tweb",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 58 km WNW of Isangel, Vanuatu",
+      "locationName": "58 km WNW of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 168.7529,
+        "lat": -19.3647,
+        "depthKm": 83.271
+      },
+      "time": 1793929059847,
+      "sourceUpdatedAt": 1793930020040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tweb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tweb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twdd",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 96 km NNW of Lae, Papua New Guinea",
+      "locationName": "96 km NNW of Lae, Papua New Guinea",
+      "coordinates": {
+        "lon": 146.6624,
+        "lat": -5.9168,
+        "depthKm": 97.804
+      },
+      "time": 1793923345016,
+      "sourceUpdatedAt": 1793925364040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twdd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twdd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twd4",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 147 km SSE of False Pass, Alaska",
+      "locationName": "147 km SSE of False Pass, Alaska",
+      "coordinates": {
+        "lon": -162.9503,
+        "lat": 53.5527,
+        "depthKm": 16.134
+      },
+      "time": 1793919897395,
+      "sourceUpdatedAt": 1793927430729,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twd4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twd4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twcy",
+      "hazardType": "EQ",
+      "title": "M 4.6 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": 179.9392,
+        "lat": -23.5322,
+        "depthKm": 523.445
+      },
+      "time": 1793918088173,
+      "sourceUpdatedAt": 1793919228040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twcy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twcy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twaq",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 36 km E of Watari, Japan",
+      "locationName": "36 km E of Watari, Japan",
+      "coordinates": {
+        "lon": 141.2636,
+        "lat": 37.9934,
+        "depthKm": 87.44
+      },
+      "time": 1793901943367,
+      "sourceUpdatedAt": 1793937834181,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twaq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twaq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 10,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
