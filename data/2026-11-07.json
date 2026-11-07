@@ -1,0 +1,167 @@
+{
+  "generatedAt": 1794032624738,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twg9",
+      "hazardType": "EQ",
+      "title": "M 6.1 - 144 km SE of Hasaki, Japan",
+      "locationName": "144 km SE of Hasaki, Japan",
+      "coordinates": {
+        "lon": 142.1175,
+        "lat": 34.9677,
+        "depthKm": 29
+      },
+      "time": 1793961567869,
+      "sourceUpdatedAt": 1794032230436,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.1,
+        "sig": 588,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twg9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twg9.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twfk",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 41 km SW of Balangonan, Philippines",
+      "locationName": "41 km SW of Balangonan, Philippines",
+      "coordinates": {
+        "lon": 125.0977,
+        "lat": 5.2999,
+        "depthKm": 35
+      },
+      "time": 1793946506156,
+      "sourceUpdatedAt": 1793955309040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twfk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twfk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 55
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twmr",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 36 km WNW of Poso, Indonesia",
+      "locationName": "36 km WNW of Poso, Indonesia",
+      "coordinates": {
+        "lon": 120.4589,
+        "lat": -1.2393,
+        "depthKm": 10
+      },
+      "time": 1793992021269,
+      "sourceUpdatedAt": 1794002237040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twmr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twmr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twhq",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 101 km SSE of Palekastro, Greece",
+      "locationName": "101 km SSE of Palekastro, Greece",
+      "coordinates": {
+        "lon": 26.4987,
+        "lat": 34.3043,
+        "depthKm": 40.657
+      },
+      "time": 1793978818080,
+      "sourceUpdatedAt": 1793987842040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twhq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twhq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 17
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twfu",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 87 km N of Isangel, Vanuatu",
+      "locationName": "87 km N of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 169.2644,
+        "lat": -18.7543,
+        "depthKm": 246.521
+      },
+      "time": 1793952848319,
+      "sourceUpdatedAt": 1793953876040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twfu",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twfu.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 5,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
