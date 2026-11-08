@@ -1,0 +1,529 @@
+{
+  "generatedAt": 1794119514111,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twun",
+      "hazardType": "EQ",
+      "title": "M 5.8 - central Mid-Atlantic Ridge",
+      "locationName": "central Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -36.8221,
+        "lat": 7.4618,
+        "depthKm": 10
+      },
+      "time": 1794093425477,
+      "sourceUpdatedAt": 1794118084072,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.8,
+        "sig": 518,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twun",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twun.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twt0",
+      "hazardType": "EQ",
+      "title": "M 5.5 - 10 km NW of Hamakita, Japan",
+      "locationName": "10 km NW of Hamakita, Japan",
+      "coordinates": {
+        "lon": 137.691,
+        "lat": 34.8611,
+        "depthKm": 38.081
+      },
+      "time": 1794067475125,
+      "sourceUpdatedAt": 1794119145199,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 503,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twt0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twt0.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twrq",
+      "hazardType": "EQ",
+      "title": "M 5.5 - 74 km NE of Hasaki, Japan",
+      "locationName": "74 km NE of Hasaki, Japan",
+      "coordinates": {
+        "lon": 141.4404,
+        "lat": 36.1884,
+        "depthKm": 31.748
+      },
+      "time": 1794049663355,
+      "sourceUpdatedAt": 1794083289586,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 474,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twrq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twrq.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twus",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 91 km ENE of Hihifo, Tonga",
+      "locationName": "91 km ENE of Hihifo, Tonga",
+      "coordinates": {
+        "lon": -172.9847,
+        "lat": -15.6837,
+        "depthKm": 10
+      },
+      "time": 1794094029444,
+      "sourceUpdatedAt": 1794098159475,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twus",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twus.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twur",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 41 km WSW of Gadung, Philippines",
+      "locationName": "41 km WSW of Gadung, Philippines",
+      "coordinates": {
+        "lon": 123.6541,
+        "lat": 6.706,
+        "depthKm": 607.007
+      },
+      "time": 1794093935852,
+      "sourceUpdatedAt": 1794094868040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twur",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twur.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twss",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 77 km NNW of Khorixas, Namibia",
+      "locationName": "77 km NNW of Khorixas, Namibia",
+      "coordinates": {
+        "lon": 14.6467,
+        "lat": -19.7402,
+        "depthKm": 8.035
+      },
+      "time": 1794064970149,
+      "sourceUpdatedAt": 1794081247137,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 370
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twss",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twss.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 65
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twrt",
+      "hazardType": "EQ",
+      "title": "M 4.9 - southern Mid-Atlantic Ridge",
+      "locationName": "southern Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -12.9445,
+        "lat": -18.2483,
+        "depthKm": 10
+      },
+      "time": 1794051338338,
+      "sourceUpdatedAt": 1794052528040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twrt",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twrt.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twu1",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 43 km ESE of Ambon, Indonesia",
+      "locationName": "43 km ESE of Ambon, Indonesia",
+      "coordinates": {
+        "lon": 128.5121,
+        "lat": -3.905,
+        "depthKm": 136.656
+      },
+      "time": 1794084938512,
+      "sourceUpdatedAt": 1794086342040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twu1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twu1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twt8",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 45 km NNW of Salinas, Ecuador",
+      "locationName": "45 km NNW of Salinas, Ecuador",
+      "coordinates": {
+        "lon": -81.1439,
+        "lat": -1.8505,
+        "depthKm": 10
+      },
+      "time": 1794071858931,
+      "sourceUpdatedAt": 1794073035040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twt8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twt8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twrh",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 156 km ESE of Modisi, Indonesia",
+      "locationName": "156 km ESE of Modisi, Indonesia",
+      "coordinates": {
+        "lon": 125.7691,
+        "lat": 0.0075,
+        "depthKm": 38.531
+      },
+      "time": 1794044853240,
+      "sourceUpdatedAt": 1794054921040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twrh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twrh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 37
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twqw",
+      "hazardType": "EQ",
+      "title": "M 4.6 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -25.8023,
+        "lat": -57.9579,
+        "depthKm": 103.682
+      },
+      "time": 1794035650868,
+      "sourceUpdatedAt": 1794037299040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twqw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twqw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twvb",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 11 km W of Honmachi, Japan",
+      "locationName": "11 km W of Honmachi, Japan",
+      "coordinates": {
+        "lon": 130.4721,
+        "lat": 32.5014,
+        "depthKm": 10
+      },
+      "time": 1794102796193,
+      "sourceUpdatedAt": 1794105596040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twvb",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twvb.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twuq",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 77 km SW of La Gomera, Guatemala",
+      "locationName": "77 km SW of La Gomera, Guatemala",
+      "coordinates": {
+        "lon": -91.4602,
+        "lat": 13.5083,
+        "depthKm": 34.237
+      },
+      "time": 1794093755649,
+      "sourceUpdatedAt": 1794098384040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twuq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twuq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 28
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twtv",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 65 km WSW of Masachapa, Nicaragua",
+      "locationName": "65 km WSW of Masachapa, Nicaragua",
+      "coordinates": {
+        "lon": -87.0544,
+        "lat": 11.526,
+        "depthKm": 37.054
+      },
+      "time": 1794081310891,
+      "sourceUpdatedAt": 1794082383040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twtv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twtv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 24
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twsy",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 11 km ESE of Pedasí, Panama",
+      "locationName": "11 km ESE of Pedasí, Panama",
+      "coordinates": {
+        "lon": -79.921,
+        "lat": 7.5067,
+        "depthKm": 10
+      },
+      "time": 1794067312257,
+      "sourceUpdatedAt": 1794081191040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twsy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twsy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twsp",
+      "hazardType": "EQ",
+      "title": "M 4.5 - Fiji region",
+      "locationName": "Fiji region",
+      "coordinates": {
+        "lon": -178.7119,
+        "lat": -20.8363,
+        "depthKm": 571.898
+      },
+      "time": 1794063945113,
+      "sourceUpdatedAt": 1794068011040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twsp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twsp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twrp",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 57 km SW of Ollagüe, Chile",
+      "locationName": "57 km SW of Ollagüe, Chile",
+      "coordinates": {
+        "lon": -68.6413,
+        "lat": -21.6011,
+        "depthKm": 110.716
+      },
+      "time": 1794048792299,
+      "sourceUpdatedAt": 1794055567040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twrp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twrp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 17,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
