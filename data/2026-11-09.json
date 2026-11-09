@@ -1,0 +1,394 @@
+{
+  "generatedAt": 1794207641927,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tx16",
+      "hazardType": "EQ",
+      "title": "M 6.4 - 30 km WSW of Lata, Solomon Islands",
+      "locationName": "30 km WSW of Lata, Solomon Islands",
+      "coordinates": {
+        "lon": 165.5616,
+        "lat": -10.8669,
+        "depthKm": 17
+      },
+      "time": 1794195299466,
+      "sourceUpdatedAt": 1794207222451,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.4,
+        "sig": 631,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx16",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tx16.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tx1f",
+      "hazardType": "EQ",
+      "title": "M 5.7 - 106 km ENE of Hasaki, Japan",
+      "locationName": "106 km ENE of Hasaki, Japan",
+      "coordinates": {
+        "lon": 141.8299,
+        "lat": 36.2471,
+        "depthKm": 24.173
+      },
+      "time": 1794199971519,
+      "sourceUpdatedAt": 1794207595163,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.7,
+        "sig": 503,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx1f",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tx1f.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tx0f",
+      "hazardType": "EQ",
+      "title": "M 5.1 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": 179.2119,
+        "lat": -23.6774,
+        "depthKm": 535.494
+      },
+      "time": 1794185219021,
+      "sourceUpdatedAt": 1794199103040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx0f",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tx0f.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tx0x",
+      "hazardType": "EQ",
+      "title": "M 4.9 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -176.9956,
+        "lat": -25.1858,
+        "depthKm": 136.311
+      },
+      "time": 1794190917196,
+      "sourceUpdatedAt": 1794192092040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx0x",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tx0x.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tx1p",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 26 km SW of Lata, Solomon Islands",
+      "locationName": "26 km SW of Lata, Solomon Islands",
+      "coordinates": {
+        "lon": 165.6396,
+        "lat": -10.912,
+        "depthKm": 10
+      },
+      "time": 1794201416823,
+      "sourceUpdatedAt": 1794202546040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx1p",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tx1p.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twyc",
+      "hazardType": "EQ",
+      "title": "M 4.8 - central Mid-Atlantic Ridge",
+      "locationName": "central Mid-Atlantic Ridge",
+      "coordinates": {
+        "lon": -36.9451,
+        "lat": 7.703,
+        "depthKm": 10
+      },
+      "time": 1794155604915,
+      "sourceUpdatedAt": 1794158459040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twyc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twyc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twzn",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 119 km SW of Kokopo, Papua New Guinea",
+      "locationName": "119 km SW of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 151.4884,
+        "lat": -5.0941,
+        "depthKm": 120.843
+      },
+      "time": 1794177010325,
+      "sourceUpdatedAt": 1794194810040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twzn",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twzn.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twxn",
+      "hazardType": "EQ",
+      "title": "M 4.7 - Southwest Indian Ridge",
+      "locationName": "Southwest Indian Ridge",
+      "coordinates": {
+        "lon": 64.443,
+        "lat": -27.6901,
+        "depthKm": 10
+      },
+      "time": 1794140957722,
+      "sourceUpdatedAt": 1794142283040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twxn",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twxn.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twxf",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 46 km NW of Huara, Chile",
+      "locationName": "46 km NW of Huara, Chile",
+      "coordinates": {
+        "lon": -70.0603,
+        "lat": -19.6811,
+        "depthKm": 68.785
+      },
+      "time": 1794139112451,
+      "sourceUpdatedAt": 1794194452241,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 349
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twxf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twxf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twx1",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 137 km E of Miyako, Japan",
+      "locationName": "137 km E of Miyako, Japan",
+      "coordinates": {
+        "lon": 143.5257,
+        "lat": 39.8647,
+        "depthKm": 10
+      },
+      "time": 1794129815700,
+      "sourceUpdatedAt": 1794131578040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twx1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twx1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tx1i",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 69 km ESE of Takahagi, Japan",
+      "locationName": "69 km ESE of Takahagi, Japan",
+      "coordinates": {
+        "lon": 141.4485,
+        "lat": 36.4941,
+        "depthKm": 35
+      },
+      "time": 1794200513640,
+      "sourceUpdatedAt": 1794202279649,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx1i",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tx1i.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 34
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twyd",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 117 km NE of Tobelo, Indonesia",
+      "locationName": "117 km NE of Tobelo, Indonesia",
+      "coordinates": {
+        "lon": 128.6755,
+        "lat": 2.5497,
+        "depthKm": 224.59
+      },
+      "time": 1794156312938,
+      "sourceUpdatedAt": 1794157446040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twyd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twyd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000twz2",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 43 km E of Onagawa Chō, Japan",
+      "locationName": "43 km E of Onagawa Chō, Japan",
+      "coordinates": {
+        "lon": 141.937,
+        "lat": 38.3782,
+        "depthKm": 55.699
+      },
+      "time": 1794168990347,
+      "sourceUpdatedAt": 1794170183040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twz2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000twz2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 13,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
