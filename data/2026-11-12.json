@@ -1,0 +1,451 @@
+{
+  "generatedAt": 1794468733700,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txqr",
+      "hazardType": "EQ",
+      "title": "M 5.4 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -26.0288,
+        "lat": -59.0326,
+        "depthKm": 121.557
+      },
+      "time": 1794455156644,
+      "sourceUpdatedAt": 1794462654522,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txqr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txqr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txm8",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 80 km W of Panguna, Papua New Guinea",
+      "locationName": "80 km W of Panguna, Papua New Guinea",
+      "coordinates": {
+        "lon": 154.7612,
+        "lat": -6.3288,
+        "depthKm": 58.822
+      },
+      "time": 1794418702582,
+      "sourceUpdatedAt": 1794421474040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txm8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txm8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txjg",
+      "hazardType": "EQ",
+      "title": "M 5.1 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -27.7366,
+        "lat": -56.0247,
+        "depthKm": 104.66
+      },
+      "time": 1794411565949,
+      "sourceUpdatedAt": 1794412661040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txjg",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txjg.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txis",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 27 km WSW of Calama, Chile",
+      "locationName": "27 km WSW of Calama, Chile",
+      "coordinates": {
+        "lon": -69.1693,
+        "lat": -22.5427,
+        "depthKm": 91.309
+      },
+      "time": 1794397011281,
+      "sourceUpdatedAt": 1794412203743,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txis",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txis.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txir",
+      "hazardType": "EQ",
+      "title": "M 5.1 - Pulau Pulau Tanimbar, Indonesia",
+      "locationName": "Pulau Pulau Tanimbar, Indonesia",
+      "coordinates": {
+        "lon": 130.2513,
+        "lat": -7.9445,
+        "depthKm": 14.704
+      },
+      "time": 1794396744685,
+      "sourceUpdatedAt": 1794398102040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txir",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txir.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 78
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txmq",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 48 km NW of Ancud, Chile",
+      "locationName": "48 km NW of Ancud, Chile",
+      "coordinates": {
+        "lon": -74.1759,
+        "lat": -41.5234,
+        "depthKm": 34.893
+      },
+      "time": 1794424877374,
+      "sourceUpdatedAt": 1794432119663,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 386
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txmq",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txmq.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 63
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txpa",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 116 km E of Georgetown, Saint Helena",
+      "locationName": "116 km E of Georgetown, Saint Helena",
+      "coordinates": {
+        "lon": -13.3536,
+        "lat": -7.9928,
+        "depthKm": 10
+      },
+      "time": 1794434622425,
+      "sourceUpdatedAt": 1794446688040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txpa",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txpa.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txqx",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 155 km E of Noda, Japan",
+      "locationName": "155 km E of Noda, Japan",
+      "coordinates": {
+        "lon": 143.6115,
+        "lat": 40.3593,
+        "depthKm": 33.039
+      },
+      "time": 1794456452379,
+      "sourceUpdatedAt": 1794457701040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txqx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txqx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 49
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txqa",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 43 km SE of Severo-Kuril’sk, Russia",
+      "locationName": "43 km SE of Severo-Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 156.6137,
+        "lat": 50.4399,
+        "depthKm": 74.47
+      },
+      "time": 1794446324576,
+      "sourceUpdatedAt": 1794447189040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txqa",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txqa.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txi0",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 152 km WSW of Merizo Village, Guam",
+      "locationName": "152 km WSW of Merizo Village, Guam",
+      "coordinates": {
+        "lon": 143.3322,
+        "lat": 12.8418,
+        "depthKm": 137.374
+      },
+      "time": 1794386235449,
+      "sourceUpdatedAt": 1794387843040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txi0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txi0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txpk",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 73 km NNW of Gyalshing, India",
+      "locationName": "73 km NNW of Gyalshing, India",
+      "coordinates": {
+        "lon": 87.8857,
+        "lat": 27.8692,
+        "depthKm": 10
+      },
+      "time": 1794438022433,
+      "sourceUpdatedAt": 1794454491050,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 327
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txpk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txpk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txil",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 64 km NW of Port-Vila, Vanuatu",
+      "locationName": "64 km NW of Port-Vila, Vanuatu",
+      "coordinates": {
+        "lon": 167.9671,
+        "lat": -17.2615,
+        "depthKm": 42.696
+      },
+      "time": 1794394657101,
+      "sourceUpdatedAt": 1794406181040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txil",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txil.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 23
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txni",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 41 km SSE of Camiña, Chile",
+      "locationName": "41 km SSE of Camiña, Chile",
+      "coordinates": {
+        "lon": -69.3312,
+        "lat": -19.6783,
+        "depthKm": 112.957
+      },
+      "time": 1794429904390,
+      "sourceUpdatedAt": 1794435761875,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txni",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txni.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txmx",
+      "hazardType": "EQ",
+      "title": "M 4.5 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -179.8474,
+        "lat": -23.5023,
+        "depthKm": 527.582
+      },
+      "time": 1794426621669,
+      "sourceUpdatedAt": 1794427921040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txmx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txmx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txiz",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 62 km NNE of Port-Olry, Vanuatu",
+      "locationName": "62 km NNE of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 167.2586,
+        "lat": -14.5029,
+        "depthKm": 149.444
+      },
+      "time": 1794401106171,
+      "sourceUpdatedAt": 1794406926040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txiz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txiz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 15,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
