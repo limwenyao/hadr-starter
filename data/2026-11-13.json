@@ -1,0 +1,379 @@
+{
+  "generatedAt": 1794553412288,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txwp",
+      "hazardType": "EQ",
+      "title": "M 5.8 - 148 km NW of Kavieng, Papua New Guinea",
+      "locationName": "148 km NW of Kavieng, Papua New Guinea",
+      "coordinates": {
+        "lon": 149.8877,
+        "lat": -1.5882,
+        "depthKm": 10
+      },
+      "time": 1794521046729,
+      "sourceUpdatedAt": 1794528771122,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.8,
+        "sig": 518,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txwp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txwp.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txx9",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 39 km S of Moíres, Greece",
+      "locationName": "39 km S of Moíres, Greece",
+      "coordinates": {
+        "lon": 24.8798,
+        "lat": 34.6967,
+        "depthKm": 43.358
+      },
+      "time": 1794528304104,
+      "sourceUpdatedAt": 1794532906219,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 401
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txx9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txx9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 67
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txw9",
+      "hazardType": "EQ",
+      "title": "M 5.1 - western Indian-Antarctic Ridge",
+      "locationName": "western Indian-Antarctic Ridge",
+      "coordinates": {
+        "lon": 139.5909,
+        "lat": -51.4273,
+        "depthKm": 10
+      },
+      "time": 1794517754685,
+      "sourceUpdatedAt": 1794524412040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txw9",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txw9.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txxl",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 85 km W of Mwene-Ditu, Democratic Republic of the Congo",
+      "locationName": "85 km W of Mwene-Ditu, Democratic Republic of the Congo",
+      "coordinates": {
+        "lon": 22.68,
+        "lat": -6.9392,
+        "depthKm": 10
+      },
+      "time": 1794532366186,
+      "sourceUpdatedAt": 1794533249040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txxl",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txxl.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txxy",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Pagan region, Northern Mariana Islands",
+      "locationName": "Pagan region, Northern Mariana Islands",
+      "coordinates": {
+        "lon": 145.6025,
+        "lat": 18.8925,
+        "depthKm": 219.572
+      },
+      "time": 1794538503370,
+      "sourceUpdatedAt": 1794539201040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txxy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txxy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txvw",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 41 km N of Weining, China",
+      "locationName": "41 km N of Weining, China",
+      "coordinates": {
+        "lon": 104.1911,
+        "lat": 27.2239,
+        "depthKm": 10
+      },
+      "time": 1794513794062,
+      "sourceUpdatedAt": 1794516498040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txvw",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txvw.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txy5",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 27 km NNE of Labuan Lombok, Indonesia",
+      "locationName": "27 km NNE of Labuan Lombok, Indonesia",
+      "coordinates": {
+        "lon": 116.7507,
+        "lat": -8.262,
+        "depthKm": 9.626
+      },
+      "time": 1794545373549,
+      "sourceUpdatedAt": 1794548167087,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txy5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txy5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txwi",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 117 km S of Akureyri, Iceland",
+      "locationName": "117 km S of Akureyri, Iceland",
+      "coordinates": {
+        "lon": -17.6047,
+        "lat": 64.6502,
+        "depthKm": 10
+      },
+      "time": 1794520422535,
+      "sourceUpdatedAt": 1794528112287,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txwi",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txwi.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txxv",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 278 km E of Levuka, Fiji",
+      "locationName": "278 km E of Levuka, Fiji",
+      "coordinates": {
+        "lon": -178.0523,
+        "lat": -17.9443,
+        "depthKm": 527.134
+      },
+      "time": 1794536783505,
+      "sourceUpdatedAt": 1794546045040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txxv",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txxv.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txtd",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 115 km ESE of Bitung, Indonesia",
+      "locationName": "115 km ESE of Bitung, Indonesia",
+      "coordinates": {
+        "lon": 126.1127,
+        "lat": 1.1216,
+        "depthKm": 39.203
+      },
+      "time": 1794495512284,
+      "sourceUpdatedAt": 1794513205040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txtd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txtd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 20
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txsr",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 3 km E of Tako, Japan",
+      "locationName": "3 km E of Tako, Japan",
+      "coordinates": {
+        "lon": 140.5102,
+        "lat": 35.7319,
+        "depthKm": 73.353
+      },
+      "time": 1794490042321,
+      "sourceUpdatedAt": 1794498279040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txsr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txsr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txrk",
+      "hazardType": "EQ",
+      "title": "M 4.5 - off the coast of Oregon",
+      "locationName": "off the coast of Oregon",
+      "coordinates": {
+        "lon": -129.6205,
+        "lat": 44.4539,
+        "depthKm": 10
+      },
+      "time": 1794471448440,
+      "sourceUpdatedAt": 1794536853481,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txrk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txrk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 12,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
