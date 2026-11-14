@@ -1,0 +1,681 @@
+{
+  "generatedAt": 1794639196974,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty1a",
+      "hazardType": "EQ",
+      "title": "M 5.8 - 79 km WSW of Changuillo, Peru",
+      "locationName": "79 km WSW of Changuillo, Peru",
+      "coordinates": {
+        "lon": -75.8807,
+        "lat": -14.9934,
+        "depthKm": 10
+      },
+      "time": 1794588182131,
+      "sourceUpdatedAt": 1794638835040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.8,
+        "sig": 521,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty1a",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty1a.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty6n",
+      "hazardType": "EQ",
+      "title": "M 5.2 - off the west coast of northern Sumatra",
+      "locationName": "off the west coast of northern Sumatra",
+      "coordinates": {
+        "lon": 92.8261,
+        "lat": 3.304,
+        "depthKm": 10
+      },
+      "time": 1794625169180,
+      "sourceUpdatedAt": 1794630665644,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty6n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty6n.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty14",
+      "hazardType": "EQ",
+      "title": "M 5.2 - 79 km NE of Kuqa, China",
+      "locationName": "79 km NE of Kuqa, China",
+      "coordinates": {
+        "lon": 83.6657,
+        "lat": 42.1734,
+        "depthKm": 10
+      },
+      "time": 1794586671680,
+      "sourceUpdatedAt": 1794587701040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty14",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty14.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty0s",
+      "hazardType": "EQ",
+      "title": "M 5.2 - West Chile Rise",
+      "locationName": "West Chile Rise",
+      "coordinates": {
+        "lon": -97.9785,
+        "lat": -36.4434,
+        "depthKm": 10
+      },
+      "time": 1794579167843,
+      "sourceUpdatedAt": 1794580355040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.2,
+        "sig": 416
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty0s",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty0s.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 87
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty56",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 153 km NW of Kavieng, Papua New Guinea",
+      "locationName": "153 km NW of Kavieng, Papua New Guinea",
+      "coordinates": {
+        "lon": 149.92,
+        "lat": -1.5038,
+        "depthKm": 10
+      },
+      "time": 1794612638320,
+      "sourceUpdatedAt": 1794613828040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty56",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty56.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty3q",
+      "hazardType": "EQ",
+      "title": "M 5.1 - South Sandwich Islands region",
+      "locationName": "South Sandwich Islands region",
+      "coordinates": {
+        "lon": -25.7253,
+        "lat": -58.962,
+        "depthKm": 63.81
+      },
+      "time": 1794596647703,
+      "sourceUpdatedAt": 1794597749040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty3q",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty3q.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty4w",
+      "hazardType": "EQ",
+      "title": "M 4.9 - south of the Kermadec Islands",
+      "locationName": "south of the Kermadec Islands",
+      "coordinates": {
+        "lon": -178.6351,
+        "lat": -32.746,
+        "depthKm": 36.931
+      },
+      "time": 1794607842124,
+      "sourceUpdatedAt": 1794610157040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty4w",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty4w.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 54
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty3g",
+      "hazardType": "EQ",
+      "title": "M 4.9 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": 178.9205,
+        "lat": -23.1808,
+        "depthKm": 563.277
+      },
+      "time": 1794596140754,
+      "sourceUpdatedAt": 1794597199040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty3g",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty3g.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txz3",
+      "hazardType": "EQ",
+      "title": "M 4.9 - southeast of the Loyalty Islands",
+      "locationName": "southeast of the Loyalty Islands",
+      "coordinates": {
+        "lon": 173.4492,
+        "lat": -22.3729,
+        "depthKm": 10
+      },
+      "time": 1794563745053,
+      "sourceUpdatedAt": 1794565278040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txz3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txz3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty43",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 153 km NW of Kavieng, Papua New Guinea",
+      "locationName": "153 km NW of Kavieng, Papua New Guinea",
+      "coordinates": {
+        "lon": 149.9613,
+        "lat": -1.4671,
+        "depthKm": 10
+      },
+      "time": 1794599361768,
+      "sourceUpdatedAt": 1794601992040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty43",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty43.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty16",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 10 km SW of Guaymate, Dominican Republic",
+      "locationName": "10 km SW of Guaymate, Dominican Republic",
+      "coordinates": {
+        "lon": -69.0533,
+        "lat": 18.5286,
+        "depthKm": 136.742
+      },
+      "time": 1794587758400,
+      "sourceUpdatedAt": 1794630840038,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 363
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty16",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty16.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txzd",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 59 km WSW of Houma, Tonga",
+      "locationName": "59 km WSW of Houma, Tonga",
+      "coordinates": {
+        "lon": -175.8541,
+        "lat": -21.3036,
+        "depthKm": 162.78
+      },
+      "time": 1794568692734,
+      "sourceUpdatedAt": 1794570691040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txzd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txzd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty6p",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 54 km NW of San Antonio de los Cobres, Argentina",
+      "locationName": "54 km NW of San Antonio de los Cobres, Argentina",
+      "coordinates": {
+        "lon": -66.7642,
+        "lat": -23.9436,
+        "depthKm": 216.092
+      },
+      "time": 1794626306652,
+      "sourceUpdatedAt": 1794627146040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty6p",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty6p.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty59",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 100 km WSW of Lebu, Chile",
+      "locationName": "100 km WSW of Lebu, Chile",
+      "coordinates": {
+        "lon": -74.7229,
+        "lat": -37.922,
+        "depthKm": 10
+      },
+      "time": 1794614115232,
+      "sourceUpdatedAt": 1794621353040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty59",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty59.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty53",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 74 km S of Yudomari, Japan",
+      "locationName": "74 km S of Yudomari, Japan",
+      "coordinates": {
+        "lon": 130.4805,
+        "lat": 29.5604,
+        "depthKm": 40.852
+      },
+      "time": 1794612174402,
+      "sourceUpdatedAt": 1794624501040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty53",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty53.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 26
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty4n",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 33 km SSW of La Libertad, El Salvador",
+      "locationName": "33 km SSW of La Libertad, El Salvador",
+      "coordinates": {
+        "lon": -89.4564,
+        "lat": 13.2186,
+        "depthKm": 59.125
+      },
+      "time": 1794604795905,
+      "sourceUpdatedAt": 1794612391996,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 327
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty4n",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty4n.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txz0",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 84 km E of Barcelona, Philippines",
+      "locationName": "84 km E of Barcelona, Philippines",
+      "coordinates": {
+        "lon": 127.2035,
+        "lat": 8.2136,
+        "depthKm": 10
+      },
+      "time": 1794562847087,
+      "sourceUpdatedAt": 1794568808040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txz0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txz0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txyr",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 18 km WNW of Río Grande, Panama",
+      "locationName": "18 km WNW of Río Grande, Panama",
+      "coordinates": {
+        "lon": -81.4943,
+        "lat": 7.7821,
+        "depthKm": 10
+      },
+      "time": 1794556917936,
+      "sourceUpdatedAt": 1794559042040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txyr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txyr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty73",
+      "hazardType": "EQ",
+      "title": "M 4.5 - western Indian-Antarctic Ridge",
+      "locationName": "western Indian-Antarctic Ridge",
+      "coordinates": {
+        "lon": 139.6657,
+        "lat": -50.3735,
+        "depthKm": 10
+      },
+      "time": 1794632340633,
+      "sourceUpdatedAt": 1794633311040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty73",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty73.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty6e",
+      "hazardType": "EQ",
+      "title": "M 4.5 - Fiji region",
+      "locationName": "Fiji region",
+      "coordinates": {
+        "lon": -177.739,
+        "lat": -19.5803,
+        "depthKm": 587.447
+      },
+      "time": 1794622867393,
+      "sourceUpdatedAt": 1794623915040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty6e",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty6e.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000ty3x",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 9 km WSW of Chaparral, Colombia",
+      "locationName": "9 km WSW of Chaparral, Colombia",
+      "coordinates": {
+        "lon": -75.5584,
+        "lat": 3.6793,
+        "depthKm": 10
+      },
+      "time": 1794598997748,
+      "sourceUpdatedAt": 1794601212040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ty3x",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ty3x.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000txza",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 86 km NNE of Lagunas, Peru",
+      "locationName": "86 km NNE of Lagunas, Peru",
+      "coordinates": {
+        "lon": -75.3275,
+        "lat": -4.5227,
+        "depthKm": 10
+      },
+      "time": 1794567312777,
+      "sourceUpdatedAt": 1794592606040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txza",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000txza.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 43
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 22,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
