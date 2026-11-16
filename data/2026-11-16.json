@@ -1,0 +1,272 @@
+{
+  "generatedAt": 1794812711388,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyek",
+      "hazardType": "EQ",
+      "title": "M 5.5 - 9 km E of Union, Philippines",
+      "locationName": "9 km E of Union, Philippines",
+      "coordinates": {
+        "lon": 126.2,
+        "lat": 9.7595,
+        "depthKm": 9.971
+      },
+      "time": 1794750095701,
+      "sourceUpdatedAt": 1794784799141,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.5,
+        "sig": 472,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyek",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyek.geojson",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 6
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyhr",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 20 km NW of Anamizu, Japan",
+      "locationName": "20 km NW of Anamizu, Japan",
+      "coordinates": {
+        "lon": 136.7444,
+        "lat": 37.3664,
+        "depthKm": 273.644
+      },
+      "time": 1794803051718,
+      "sourceUpdatedAt": 1794810624250,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyhr",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyhr.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 2.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyf4",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 169 km NW of Gorontalo, Indonesia",
+      "locationName": "169 km NW of Gorontalo, Indonesia",
+      "coordinates": {
+        "lon": 122.1345,
+        "lat": 1.7527,
+        "depthKm": 487.384
+      },
+      "time": 1794757274978,
+      "sourceUpdatedAt": 1794758352040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyf4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyf4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyg6",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 256 km SSE of Ambon, Indonesia",
+      "locationName": "256 km SSE of Ambon, Indonesia",
+      "coordinates": {
+        "lon": 128.7523,
+        "lat": -5.9449,
+        "depthKm": 305.989
+      },
+      "time": 1794775916298,
+      "sourceUpdatedAt": 1794776943040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyg6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyg6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyfh",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 74 km N of Pārūn, Afghanistan",
+      "locationName": "74 km N of Pārūn, Afghanistan",
+      "coordinates": {
+        "lon": 70.9503,
+        "lat": 36.0947,
+        "depthKm": 100.728
+      },
+      "time": 1794764916959,
+      "sourceUpdatedAt": 1794766098040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyfh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyfh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyga",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 44 km S of Jurm, Afghanistan",
+      "locationName": "44 km S of Jurm, Afghanistan",
+      "coordinates": {
+        "lon": 70.9205,
+        "lat": 36.4657,
+        "depthKm": 191.363
+      },
+      "time": 1794778641082,
+      "sourceUpdatedAt": 1794780978040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyga",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyga.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tygk",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 141 km ESE of Petropavlovsk-Kamchatsky, Russia",
+      "locationName": "141 km ESE of Petropavlovsk-Kamchatsky, Russia",
+      "coordinates": {
+        "lon": 160.494,
+        "lat": 52.4937,
+        "depthKm": 10
+      },
+      "time": 1794782299154,
+      "sourceUpdatedAt": 1794783773040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tygk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tygk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyd3",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 92 km NW of Houma, Tonga",
+      "locationName": "92 km NW of Houma, Tonga",
+      "coordinates": {
+        "lon": -175.9354,
+        "lat": -20.589,
+        "depthKm": 177.524
+      },
+      "time": 1794728197211,
+      "sourceUpdatedAt": 1794729489040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyd3",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyd3.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyes",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 27 km ESE of Union, Philippines",
+      "locationName": "27 km ESE of Union, Philippines",
+      "coordinates": {
+        "lon": 126.3512,
+        "lat": 9.6916,
+        "depthKm": 10
+      },
+      "time": 1794752272535,
+      "sourceUpdatedAt": 1794771479040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyes",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyes.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 9,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
