@@ -1,0 +1,378 @@
+{
+  "generatedAt": 1794903507266,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tymu",
+      "hazardType": "EQ",
+      "title": "M 6.6 - 148 km WSW of Tual, Indonesia",
+      "locationName": "148 km WSW of Tual, Indonesia",
+      "coordinates": {
+        "lon": 131.4868,
+        "lat": -6.0804,
+        "depthKm": 68
+      },
+      "time": 1794863480515,
+      "sourceUpdatedAt": 1794893469040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.6,
+        "sig": 674,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tymu",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tymu.geojson",
+      "tier": "CRITICAL",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "GDACS",
+      "feedEventId": "1001351",
+      "hazardType": "TC",
+      "title": "Tropical Cyclone AKVAN-26",
+      "locationName": "India",
+      "coordinates": {
+        "lon": 87.2,
+        "lat": 11.6
+      },
+      "time": 1794852000000,
+      "sourceUpdatedAt": 1794902708000,
+      "updateProvenance": "source",
+      "metrics": {
+        "alertLevel": "orange"
+      },
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventid=1001351&episodeid=2&eventtype=TC",
+      "footprintRef": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=TC&eventid=1001351&episodeid=2",
+      "tier": "HIGH",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "gdacs",
+        "label": "Modeled affected area (GDACS · tropical cyclone)",
+        "isEstimate": false,
+        "radiusKm": 899
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tykh",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 95 km WSW of Changuillo, Peru",
+      "locationName": "95 km WSW of Changuillo, Peru",
+      "coordinates": {
+        "lon": -76.0259,
+        "lat": -15.0306,
+        "depthKm": 10
+      },
+      "time": 1794845805265,
+      "sourceUpdatedAt": 1794889375228,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tykh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tykh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 5.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyq5",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 137 km SSE of Kirakira, Solomon Islands",
+      "locationName": "137 km SSE of Kirakira, Solomon Islands",
+      "coordinates": {
+        "lon": 162.5497,
+        "lat": -11.5293,
+        "depthKm": 10
+      },
+      "time": 1794880817654,
+      "sourceUpdatedAt": 1794882162040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyq5",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyq5.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 71
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyqi",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 26 km E of Port-Olry, Vanuatu",
+      "locationName": "26 km E of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 167.3139,
+        "lat": -15.005,
+        "depthKm": 126.959
+      },
+      "time": 1794887552360,
+      "sourceUpdatedAt": 1794888535040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyqi",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyqi.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tykk",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 28 km SW of Changuillo, Peru",
+      "locationName": "28 km SW of Changuillo, Peru",
+      "coordinates": {
+        "lon": -75.4229,
+        "lat": -14.8364,
+        "depthKm": 39.085
+      },
+      "time": 1794846198453,
+      "sourceUpdatedAt": 1794853093588,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 355
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tykk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tykk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 44
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyjy",
+      "hazardType": "EQ",
+      "title": "M 4.8 - 166 km N of Caluula, Somalia",
+      "locationName": "166 km N of Caluula, Somalia",
+      "coordinates": {
+        "lon": 50.742,
+        "lat": 13.474,
+        "depthKm": 10
+      },
+      "time": 1794835833980,
+      "sourceUpdatedAt": 1794842419040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.8,
+        "sig": 354
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyjy",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyjy.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 58
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tym8",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 77 km WSW of Changuillo, Peru",
+      "locationName": "77 km WSW of Changuillo, Peru",
+      "coordinates": {
+        "lon": -75.8684,
+        "lat": -14.9779,
+        "depthKm": 10
+      },
+      "time": 1794857194776,
+      "sourceUpdatedAt": 1794868285040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tym8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tym8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 53
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyns",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 146 km SSE of Isangel, Vanuatu",
+      "locationName": "146 km SSE of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 169.818,
+        "lat": -20.7669,
+        "depthKm": 119.853
+      },
+      "time": 1794866158945,
+      "sourceUpdatedAt": 1794867353040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyns",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyns.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tymc",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 144 km NW of Kavieng, Papua New Guinea",
+      "locationName": "144 km NW of Kavieng, Papua New Guinea",
+      "coordinates": {
+        "lon": 149.8061,
+        "lat": -1.7205,
+        "depthKm": 10
+      },
+      "time": 1794857580666,
+      "sourceUpdatedAt": 1794868755040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tymc",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tymc.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyjz",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 113 km ESE of Wadomari, Japan",
+      "locationName": "113 km ESE of Wadomari, Japan",
+      "coordinates": {
+        "lon": 129.6312,
+        "lat": 26.8491,
+        "depthKm": 10
+      },
+      "time": 1794835945974,
+      "sourceUpdatedAt": 1794842946040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyjz",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyjz.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us7000tyjx",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 78 km S of Severo-Kuril’sk, Russia",
+      "locationName": "78 km S of Severo-Kuril’sk, Russia",
+      "coordinates": {
+        "lon": 155.9172,
+        "lat": 49.9837,
+        "depthKm": 85.011
+      },
+      "time": 1794835521731,
+      "sourceUpdatedAt": 1794841605040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyjx",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tyjx.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 12,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
