@@ -1,0 +1,718 @@
+{
+  "generatedAt": 1795420830708,
+  "surfaced": [
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucvm",
+      "hazardType": "EQ",
+      "title": "M 6.5 - Vanuatu region",
+      "locationName": "Vanuatu region",
+      "coordinates": {
+        "lon": 172.2672,
+        "lat": -13.5846,
+        "depthKm": 598
+      },
+      "time": 1795401658052,
+      "sourceUpdatedAt": 1795409212169,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 6.5,
+        "sig": 650,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucvm",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucvm.geojson",
+      "tier": "CRITICAL",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000201-hti",
+      "hazardType": "FL",
+      "title": "Haiti: Floods - Oct 2026",
+      "locationName": "Haiti",
+      "time": 1792800000000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000201-hti",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000196-cog",
+      "hazardType": "FL",
+      "title": "Congo: Floods - Oct 2026",
+      "locationName": "Congo",
+      "time": 1791504000000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000196-cog",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/eq-2026-000188-pan",
+      "hazardType": "EQ",
+      "title": "Panama: Earthquake - Oct 2026",
+      "locationName": "Panama",
+      "time": 1791504000000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/eq-2026-000188-pan",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/dr-2026-000178-idn",
+      "hazardType": "DR",
+      "title": "Indonesia: Drought - Sep 2026",
+      "locationName": "Indonesia",
+      "time": 1788825600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/dr-2026-000178-idn",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ep-2026-000174-bgd",
+      "hazardType": "EP",
+      "title": "Bangladesh: Dengue Outbreak - Sep 2026",
+      "locationName": "Bangladesh",
+      "time": 1788220800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ep-2026-000174-bgd",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000181-ner",
+      "hazardType": "FL",
+      "title": "Niger: Floods - Sep 2026",
+      "locationName": "Niger",
+      "time": 1788220800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000181-ner",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000193-ecu",
+      "hazardType": "FL",
+      "title": "Ecuador: Floods - Aug 2026",
+      "locationName": "Ecuador",
+      "time": 1787961600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000193-ecu",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000169-phl",
+      "hazardType": "FL",
+      "title": "Philippines: Floods - Aug 2026",
+      "locationName": "Philippines",
+      "time": 1787961600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000169-phl",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ff-2026-000162-npl",
+      "hazardType": "FF",
+      "title": "Nepal: Flash Floods - Aug 2026",
+      "locationName": "Nepal",
+      "time": 1787702400000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ff-2026-000162-npl",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000175-lbr",
+      "hazardType": "FL",
+      "title": "Liberia: Floods - Aug 2026",
+      "locationName": "Liberia",
+      "time": 1787529600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000175-lbr",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/eq-2026-000150-idn",
+      "hazardType": "EQ",
+      "title": "Indonesia: Earthquake - Aug 2026",
+      "locationName": "Indonesia",
+      "time": 1786752000000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/eq-2026-000150-idn",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/eq-2026-000146-col",
+      "hazardType": "EQ",
+      "title": "Colombia: Earthquake - Aug 2026",
+      "locationName": "Colombia",
+      "time": 1786320000000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/eq-2026-000146-col",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ff-2026-000152-sle",
+      "hazardType": "FF",
+      "title": "Sierra Leone: Flash Floods - Aug 2026",
+      "locationName": "Sierra Leone",
+      "time": 1785715200000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ff-2026-000152-sle",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000141-mmr",
+      "hazardType": "FL",
+      "title": "Myanmar: Floods - Jul 2026",
+      "locationName": "Myanmar",
+      "time": 1785369600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000141-mmr",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ep-2026-000200-mwi",
+      "hazardType": "EP",
+      "title": "Malawi: Measles Outbreak - Jul 2026",
+      "locationName": "Malawi",
+      "time": 1784505600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ep-2026-000200-mwi",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ff-2026-000120-afg",
+      "hazardType": "FF",
+      "title": "Afghanistan: Flash Floods - Jul 2026",
+      "locationName": "Afghanistan",
+      "time": 1784505600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ff-2026-000120-afg",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/ff-2026-000139-ind",
+      "hazardType": "FF",
+      "title": "India: Flash Floods - Jul 2026",
+      "locationName": "India",
+      "time": 1784419200000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/ff-2026-000139-ind",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000114-kgz",
+      "hazardType": "FL",
+      "title": "Kyrgyzstan: Flash Floods - Jul 2026",
+      "locationName": "Kyrgyzstan",
+      "time": 1783900800000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000114-kgz",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000111-tjk",
+      "hazardType": "FL",
+      "title": "Tajikistan: Floods - Jul 2026",
+      "locationName": "Tajikistan",
+      "time": 1783728000000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000111-tjk",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "ReliefWeb",
+      "feedEventId": "https://reliefweb.int/disaster/fl-2026-000109-bgd",
+      "hazardType": "FL",
+      "title": "Bangladesh: Flash Floods - Jul 2026",
+      "locationName": "Bangladesh",
+      "time": 1783209600000,
+      "metrics": {},
+      "sourceUrl": "https://reliefweb.int/disaster/fl-2026-000109-bgd",
+      "tier": "HIGH",
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucx6",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 181 km NE of Lospalos, Timor Leste",
+      "locationName": "181 km NE of Lospalos, Timor Leste",
+      "coordinates": {
+        "lon": 128.2414,
+        "lat": -7.4408,
+        "depthKm": 119.267
+      },
+      "time": 1795419381052,
+      "sourceUpdatedAt": 1795420490040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 449
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucx6",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucx6.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 3.5
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucuf",
+      "hazardType": "EQ",
+      "title": "M 5.4 - 9 km N of Carhuamayo, Peru",
+      "locationName": "9 km N of Carhuamayo, Peru",
+      "coordinates": {
+        "lon": -76.0169,
+        "lat": -10.8345,
+        "depthKm": 117.396
+      },
+      "time": 1795383331763,
+      "sourceUpdatedAt": 1795403976973,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.4,
+        "sig": 456,
+        "pagerAlert": "green"
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucuf",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucuf.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "shakemap",
+        "label": "Modeled shaking (USGS ShakeMap)",
+        "isEstimate": false,
+        "maxMmi": 4
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucrp",
+      "hazardType": "EQ",
+      "title": "M 5.1 - 45 km SE of Ürümqi, China",
+      "locationName": "45 km SE of Ürümqi, China",
+      "coordinates": {
+        "lon": 87.9381,
+        "lat": 43.4743,
+        "depthKm": 10
+      },
+      "time": 1795338508009,
+      "sourceUpdatedAt": 1795339403040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5.1,
+        "sig": 400
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucrp",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucrp.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 79
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucwd",
+      "hazardType": "EQ",
+      "title": "M 5.0 - 159 km ESE of Kokopo, Papua New Guinea",
+      "locationName": "159 km ESE of Kokopo, Papua New Guinea",
+      "coordinates": {
+        "lon": 153.6467,
+        "lat": -4.7591,
+        "depthKm": 98.944
+      },
+      "time": 1795407499641,
+      "sourceUpdatedAt": 1795409038040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 5,
+        "sig": 385
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucwd",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucwd.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucw1",
+      "hazardType": "EQ",
+      "title": "M 4.9 - Vanuatu region",
+      "locationName": "Vanuatu region",
+      "coordinates": {
+        "lon": 172.2236,
+        "lat": -13.5634,
+        "depthKm": 595.973
+      },
+      "time": 1795403272031,
+      "sourceUpdatedAt": 1795404333040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucw1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucw1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucvh",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 39 km NW of Kuqa, China",
+      "locationName": "39 km NW of Kuqa, China",
+      "coordinates": {
+        "lon": 82.544,
+        "lat": 41.9264,
+        "depthKm": 10
+      },
+      "time": 1795400099561,
+      "sourceUpdatedAt": 1795407506040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucvh",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucvh.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucuk",
+      "hazardType": "EQ",
+      "title": "M 4.9 - 170 km WNW of Port-Olry, Vanuatu",
+      "locationName": "170 km WNW of Port-Olry, Vanuatu",
+      "coordinates": {
+        "lon": 165.7555,
+        "lat": -14.1955,
+        "depthKm": 10
+      },
+      "time": 1795384695571,
+      "sourceUpdatedAt": 1795387171040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucuk",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucuk.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 64
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucs1",
+      "hazardType": "EQ",
+      "title": "M 4.9 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -176.3814,
+        "lat": -24.3316,
+        "depthKm": 82.906
+      },
+      "time": 1795344367004,
+      "sourceUpdatedAt": 1795348014040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.9,
+        "sig": 369
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucs1",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucs1.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucv4",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 221 km NE of Bitung, Indonesia",
+      "locationName": "221 km NE of Bitung, Indonesia",
+      "coordinates": {
+        "lon": 126.4079,
+        "lat": 2.9773,
+        "depthKm": 50.25
+      },
+      "time": 1795392480906,
+      "sourceUpdatedAt": 1795394078040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucv4",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucv4.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 18
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucv2",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 226 km NW of Tobelo, Indonesia",
+      "locationName": "226 km NW of Tobelo, Indonesia",
+      "coordinates": {
+        "lon": 126.468,
+        "lat": 3.0639,
+        "depthKm": 40.004
+      },
+      "time": 1795391444048,
+      "sourceUpdatedAt": 1795394630040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucv2",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucv2.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 36
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucu7",
+      "hazardType": "EQ",
+      "title": "M 4.7 - 25 km WSW of Isangel, Vanuatu",
+      "locationName": "25 km WSW of Isangel, Vanuatu",
+      "coordinates": {
+        "lon": 169.0592,
+        "lat": -19.6421,
+        "depthKm": 115.367
+      },
+      "time": 1795380892753,
+      "sourceUpdatedAt": 1795381720040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.7,
+        "sig": 340
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucu7",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucu7.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000uctj",
+      "hazardType": "EQ",
+      "title": "M 4.6 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": 179.6648,
+        "lat": -24.8265,
+        "depthKm": 533.96
+      },
+      "time": 1795370604057,
+      "sourceUpdatedAt": 1795371541040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000uctj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000uctj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000uct0",
+      "hazardType": "EQ",
+      "title": "M 4.6 - 55 km S of Kūh Sefīd, Iran",
+      "locationName": "55 km S of Kūh Sefīd, Iran",
+      "coordinates": {
+        "lon": 56.8102,
+        "lat": 28.7784,
+        "depthKm": 10
+      },
+      "time": 1795359946361,
+      "sourceUpdatedAt": 1795375634040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.6,
+        "sig": 326
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000uct0",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000uct0.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "footprint": {
+        "provenance": "estimated",
+        "label": "Estimated felt radius",
+        "isEstimate": true,
+        "radiusKm": 47
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucuj",
+      "hazardType": "EQ",
+      "title": "M 4.5 - 54 km NNE of Calama, Chile",
+      "locationName": "54 km NNE of Calama, Chile",
+      "coordinates": {
+        "lon": -68.7311,
+        "lat": -21.9972,
+        "depthKm": 123.268
+      },
+      "time": 1795384052112,
+      "sourceUpdatedAt": 1795386511040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucuj",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucuj.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    },
+    {
+      "feed": "USGS",
+      "feedEventId": "us6000ucu8",
+      "hazardType": "EQ",
+      "title": "M 4.5 - south of the Fiji Islands",
+      "locationName": "south of the Fiji Islands",
+      "coordinates": {
+        "lon": -178.1773,
+        "lat": -22.0776,
+        "depthKm": 381.828
+      },
+      "time": 1795381181943,
+      "sourceUpdatedAt": 1795383385040,
+      "updateProvenance": "source",
+      "metrics": {
+        "mag": 4.5,
+        "sig": 312
+      },
+      "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucu8",
+      "footprintRef": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000ucu8.geojson",
+      "tier": "MODERATE",
+      "change": {
+        "kind": "new"
+      },
+      "assessment": "Assessment unavailable this run — the metrics above are authoritative."
+    }
+  ],
+  "degradation": [],
+  "withdrawn": [],
+  "changeSummary": {
+    "new": 16,
+    "revised": 0,
+    "withdrawn": 0
+  }
+}
